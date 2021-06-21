@@ -51,7 +51,7 @@ public class BlockBreakListener implements Listener {
         }
 
         if (cancelIfBroken(heldItem)) {
-            event.getPlayer().sendMessage(ThemeUtils.WARNING + "Your tool is broken, you should really repair it!");
+            event.getPlayer().sendMessage(ThemeUtils.WARNING + "你的工具壞了，您真的應該修理它！");
             event.setCancelled(true);
             return;
         }

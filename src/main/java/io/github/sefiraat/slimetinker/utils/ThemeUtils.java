@@ -15,7 +15,7 @@ public final class ThemeUtils {
         throw new IllegalStateException("Utility class");
     }
 
-    public static final String PREFIX = "" + ChatColor.GRAY + "[Slime Tinker] ";
+    public static final String PREFIX = "" + ChatColor.GRAY + "[黏液科技打鐵] ";
     public static final String SUFFIX = "" + ChatColor.GRAY + "";
 
     public static final ChatColor WARNING = ChatColor.YELLOW;

@@ -69,7 +69,7 @@ public final class Experience {
             modSlots++;
             expRequired = (expRequired * EXP_GROWTH);
             promoteMaterial(itemStack, level, player);
-            player.sendMessage(ThemeUtils.SUCCESS + "Your Tinker's tool has leveled up! +1 Modifier Slot");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的打鐵工具升級了! 鑲嵌+1");
 
             if (matPropertyHead.equals(IDStrings.SILVER)) { // ENCHANTING
                 Enchantment randEnchant = Enchantment.values()[(int) (Math.random()*Enchantment.values().length)];
@@ -78,7 +78,7 @@ public final class Experience {
                 } else {
                     im.addEnchant(randEnchant, 1, true);
                 }
-                player.sendMessage(ThemeUtils.SUCCESS + "It also gained a random enchantment! Hope it's good :>");
+                player.sendMessage(ThemeUtils.SUCCESS + "它還獲得了隨機附魔！! 希望一切順利 :>");
             }
 
         } else {
@@ -117,13 +117,13 @@ public final class Experience {
     }
 
     public static String getLoreExp(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Level: " +
+        return ThemeUtils.ITEM_TOOL + "工具等級: " +
                 ChatColor.WHITE + Experience.getToolLevel(c) +
                 ThemeUtils.PASSIVE + " (" + Experience.getToolExp(c) + " / " + Experience.getToolRequiredExp(c) + ")";
     }
 
     public static String getLoreModSlots(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Modifier Slots: " +
+        return ThemeUtils.ITEM_TOOL + "鑲嵌: " +
                 ChatColor.WHITE + Experience.getToolModifierSlots(c);
     }
 
@@ -135,7 +135,7 @@ public final class Experience {
         String toolType = itemStack.getItemMeta().getPersistentDataContainer().get(SlimeTinker.inst().getKeys().getToolInfoToolType(), PersistentDataType.STRING);
         if (Tools.getToolGrowthMap().get(toolType).containsKey(level)) {
             itemStack.setType(Tools.getToolGrowthMap().get(toolType).get(level));
-            player.sendMessage(ThemeUtils.SUCCESS + "Your tool has been promoted!");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的工具已被升級!");
         }
 
     }

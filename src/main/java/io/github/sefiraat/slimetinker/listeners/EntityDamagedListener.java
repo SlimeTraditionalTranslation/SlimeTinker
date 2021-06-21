@@ -76,7 +76,7 @@ public class EntityDamagedListener implements Listener {
         EventResult eventResult = new EventResult();
 
         if (cancelIfBroken(heldItem) && !propHeadDuralium(eventResult, matPropertyHead)) {
-            player.sendMessage(ThemeUtils.WARNING + "Your weapon is broken, you should really repair it!");
+            player.sendMessage(ThemeUtils.WARNING + "你的武器壞了，你應該真的去修理它!");
             event.setCancelled(true);
             return;
         }

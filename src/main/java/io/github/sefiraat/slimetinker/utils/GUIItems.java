@@ -29,7 +29,7 @@ public final class GUIItems {
     public static CustomItem menuBackgroundInput() {
         return new CustomItem(
                 Material.LIGHT_BLUE_STAINED_GLASS_PANE,
-                ChatColor.BLUE + "Input",
+                ChatColor.BLUE + "輸入",
                 " "
         );
     }
@@ -37,7 +37,7 @@ public final class GUIItems {
     public static CustomItem menuBackgroundOutput() {
         return new CustomItem(
                 Material.ORANGE_STAINED_GLASS_PANE,
-                ChatColor.RED + "Output",
+                ChatColor.RED + "輸出",
                 " "
         );
     }
@@ -45,7 +45,7 @@ public final class GUIItems {
     public static CustomItem menuBackgroundCast() {
         return new CustomItem(
                 Material.LIME_STAINED_GLASS_PANE,
-                ChatColor.GREEN + "Cast/Die",
+                ChatColor.GREEN + "鑄造/模具",
                 " "
         );
     }
@@ -53,7 +53,7 @@ public final class GUIItems {
     public static CustomItem menuBackgroundPreview() {
         return new CustomItem(
                 Material.LIME_STAINED_GLASS_PANE,
-                ChatColor.GREEN + "Preview",
+                ChatColor.GREEN + "預覽",
                 " "
         );
     }
@@ -61,7 +61,7 @@ public final class GUIItems {
     public static CustomItem menuMarkerRod() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Rod Input",
+                ChatColor.RED + "桿 輸入",
                 " "
         );
     }
@@ -69,7 +69,7 @@ public final class GUIItems {
     public static CustomItem menuMarkerBinder() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Binder Input",
+                ChatColor.RED + "Binder 輸入",
                 " "
         );
     }
@@ -77,7 +77,7 @@ public final class GUIItems {
     public static CustomItem menuMarkerHead() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Head/Blade Input",
+                ChatColor.RED + "頭端/刃 輸入",
                 " "
         );
     }
@@ -98,9 +98,9 @@ public final class GUIItems {
             skull = SkullItem.fromBase64(SkullTextures.TANK_EMPTY);
         }
         List<String> meta = new ArrayList<>();
-        meta.add(ThemeUtils.GUI_HEAD + "Lava Tank");
+        meta.add(ThemeUtils.GUI_HEAD + "岩漿罐");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "Lava: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
+        meta.add(ThemeUtils.CLICK_INFO + "岩漿: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
         return new CustomItem(
                 skull,
                 meta
@@ -123,9 +123,9 @@ public final class GUIItems {
             skull = SkullItem.fromBase64(SkullTextures.TANK_EMPTY);
         }
         List<String> meta = new ArrayList<>();
-        meta.add(ThemeUtils.GUI_HEAD + "Metals Tank");
+        meta.add(ThemeUtils.GUI_HEAD + "金屬罐");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "Total Metal: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
+        meta.add(ThemeUtils.CLICK_INFO + "總金屬: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
         meta.add("");
         if (map != null) {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
@@ -133,7 +133,7 @@ public final class GUIItems {
                         ChatColor.of(ComponentMaterials.getById(e.getKey()).getColorHex()) +
                         ThemeUtils.toTitleCase(e.getKey());
                 String amount = e.getValue().toString();
-                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " units.");
+                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 單位.");
             }
         }
         meta.add("");
@@ -149,12 +149,12 @@ public final class GUIItems {
     public static CustomItem menuPurge() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.BUTTON_PURGE),
-                ThemeUtils.GUI_HEAD + "Purge Metals",
+                ThemeUtils.GUI_HEAD + "清除 金屬",
                 "",
-                ThemeUtils.PASSIVE + "Purge unwanted metals from the tank.",
+                ThemeUtils.PASSIVE + "重罐清除您不需要的金屬",
                 "",
-                ThemeUtils.CLICK_INFO + "Left Click: " + ChatColor.WHITE + "Remove the TOP MOST metal",
-                ThemeUtils.CLICK_INFO + "Right Click: " + ChatColor.WHITE + "Remove ALL metals"
+                ThemeUtils.CLICK_INFO + "左鍵點擊: " + ChatColor.WHITE + "移除最上面的金屬",
+                ThemeUtils.CLICK_INFO + "右鍵點擊: " + ChatColor.WHITE + "移除所有金屬"
         );
     }
 
