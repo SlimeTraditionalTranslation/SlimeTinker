@@ -18,70 +18,70 @@ public final class Categories {
     public static CustomItem catMain() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_MAIN),
-                ThemeUtils.MAIN + "SlimeTinker"
+                ThemeUtils.MAIN + "黏液打鐵"
         );
     }
 
     public static CustomItem catWorkstations() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_MAIN),
-                ThemeUtils.MAIN + "Workstations"
+                ThemeUtils.MAIN + "工作站"
         );
     }
 
     public static CustomItem catMaterials() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_MATERIALS),
-                ThemeUtils.MAIN + "Materials"
+                ThemeUtils.MAIN + "材料"
         );
     }
 
     public static CustomItem catAlloys() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_ALLOYS),
-                ThemeUtils.MAIN + "Alloy Metals"
+                ThemeUtils.MAIN + "合金金屬"
         );
     }
 
     public static CustomItem catProperties() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_PROPERTIES),
-                ThemeUtils.MAIN + "Metal Props"
+                ThemeUtils.MAIN + "金屬道具"
         );
     }
 
     public static CustomItem catCasts() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_CASTS),
-                ThemeUtils.MAIN + "Casts"
+                ThemeUtils.MAIN + "鑄造"
         );
     }
 
     public static CustomItem catParts() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.CAT_PARTS),
-                ThemeUtils.MAIN + "Parts"
+                ThemeUtils.MAIN + "部件"
         );
     }
 
     public static CustomItem catTools() {
         return new CustomItem(
                 Material.DIAMOND_SWORD,
-                ThemeUtils.MAIN + "Tools"
+                ThemeUtils.MAIN + "工具"
         );
     }
 
     public static CustomItem catModifications() {
         return new CustomItem(
                 Material.REDSTONE,
-                ThemeUtils.MAIN + "Mods"
+                ThemeUtils.MAIN + "模塊"
         );
     }
 
     public static CustomItem catDummy() {
         return new CustomItem(
                 Material.BARRIER,
-                ThemeUtils.MAIN + "SlimeTinker Dummy"
+                ThemeUtils.MAIN + "黏液打鐵 假人"
         );
     }
 
