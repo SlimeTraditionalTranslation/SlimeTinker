@@ -87,7 +87,7 @@ public class Table extends AbstractContainer {
     }
 
     protected void clearPreview() {
-        menu.replaceExistingItem(PREVIEW_SLOT, new ItemStack(Material.AIR));
+        menu.replaceExistingItem(PREVIEW_SLOT, GUIItems.menuPreview());
     }
 
     protected ItemStack getTool() {
@@ -106,7 +106,7 @@ public class Table extends AbstractContainer {
                 rod.getItemMeta().getPersistentDataContainer().get(SlimeTinker.inst().getKeys().getPartInfoMaterialType(), PersistentDataType.STRING)
         );
 
-        if (toolDefinition.getHeadMaterial().equals(IDStrings.REINFORCED) || toolDefinition.getRodMaterial().equals(IDStrings.HARD)) { // Reinforced Head/ Hard Rod tools are explosive
+        if (toolDefinition.getHeadMaterial().equals(IDStrings.REINFORCED) || toolDefinition.getRodMaterial().equals(IDStrings.HARD) || toolDefinition.getHeadMaterial().equals(IDStrings.SINGINFINITY) ) { // Reinforced Head/Hard Rod tools are explosive
             switch (toolDefinition.getPartType()) {
                 case IDStrings.SHOVEL:
                     itemStack = Tools.EXP_SHOVEL.getStack(toolDefinition);
@@ -208,6 +208,7 @@ public class Table extends AbstractContainer {
         blockMenuPreset.addItem(MARKER_ROD, GUIItems.menuMarkerRod());
         blockMenuPreset.addItem(MARKER_BINDER, GUIItems.menuMarkerBinder());
         blockMenuPreset.addItem(MARKER_HEAD, GUIItems.menuMarkerHead());
+        blockMenuPreset.addItem(PREVIEW_SLOT, GUIItems.menuPreview());
 
         blockMenuPreset.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> false);
         blockMenuPreset.addMenuClickHandler(MARKER_ROD, (player, i, itemStack, clickAction) -> false);

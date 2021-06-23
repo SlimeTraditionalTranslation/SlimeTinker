@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.utils;
 
-import io.github.sefiraat.slimetinker.items.ComponentMaterials;
+import io.github.sefiraat.slimetinker.items.componentmaterials.CMManager;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
 import net.md_5.bungee.api.ChatColor;
@@ -11,6 +11,7 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 
 public final class GUIItems {
 
@@ -46,6 +47,14 @@ public final class GUIItems {
         return new CustomItem(
                 Material.LIME_STAINED_GLASS_PANE,
                 ChatColor.GREEN + "鑄造/模具",
+                " "
+        );
+    }
+
+    public static CustomItem menuPreview() {
+        return new CustomItem(
+                Material.LIME_STAINED_GLASS_PANE,
+                ChatColor.GREEN + "Preview",
                 " "
         );
     }
@@ -130,7 +139,7 @@ public final class GUIItems {
         if (map != null) {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
                 String name =
-                        ChatColor.of(ComponentMaterials.getById(e.getKey()).getColorHex()) +
+                        ChatColor.of(CMManager.getById(e.getKey()).getColorHex()) +
                         ThemeUtils.toTitleCase(e.getKey());
                 String amount = e.getValue().toString();
                 meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 單位.");
