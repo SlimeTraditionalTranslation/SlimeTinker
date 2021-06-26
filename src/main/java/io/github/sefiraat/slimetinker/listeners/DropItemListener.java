@@ -29,11 +29,11 @@ public class DropItemListener implements Listener {
 
         if (rodMaterial.equals(IDStrings.SOLDER)) {
             event.setCancelled(true);
-            event.getPlayer().sendMessage(ThemeUtils.WARNING + "This tool is fused.");
+            event.getPlayer().sendMessage(ThemeUtils.WARNING + "這個工具是注入的.");
         }
         if (rodMaterial.equals(IDStrings.UNPATENTABLIUM)) {
             event.setCancelled(true);
-            event.getPlayer().sendMessage(ThemeUtils.WARNING + "This tool is bound to you by Incorporeal Right");
+            event.getPlayer().sendMessage(ThemeUtils.WARNING + "此工具在死後仍保留在物品欄!");
         }
 
     }

@@ -162,7 +162,7 @@ public final class Experience {
                 }
                 count++;
             }
-            player.sendMessage(ThemeUtils.SUCCESS + "It also gained [" + count + "] random enchantment(s)! Hope it's good :>");
+            player.sendMessage(ThemeUtils.SUCCESS + "它獲得 [" + count + "] 隨機附魔! 希望一切順利 :>");
         }
     }
 
