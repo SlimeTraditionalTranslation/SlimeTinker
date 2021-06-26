@@ -39,7 +39,7 @@ public final class Categories {
     ));
     public static final SubCategory CASTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryCasts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_CASTS),
-            ThemeUtils.MAIN + "鍛造"
+            ThemeUtils.MAIN + "鑄模"
     ));
     public static final SubCategory PARTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryParts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_PARTS),

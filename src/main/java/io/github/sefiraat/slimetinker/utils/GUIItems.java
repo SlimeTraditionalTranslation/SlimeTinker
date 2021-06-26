@@ -46,7 +46,7 @@ public final class GUIItems {
     public static CustomItem menuBackgroundCast() {
         return new CustomItem(
                 Material.LIME_STAINED_GLASS_PANE,
-                ChatColor.GREEN + "鑄造/模具",
+                ChatColor.GREEN + "鑄模/模具",
                 " "
         );
     }
@@ -54,7 +54,7 @@ public final class GUIItems {
     public static CustomItem menuPreview() {
         return new CustomItem(
                 Material.LIME_STAINED_GLASS_PANE,
-                ChatColor.GREEN + "Preview",
+                ChatColor.GREEN + "預演",
                 " "
         );
     }
@@ -170,7 +170,7 @@ public final class GUIItems {
     public static CustomItem menuAlloy() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.BUTTON_ALLOY),
-                ThemeUtils.GUI_HEAD + "Alloy Metals",
+                ThemeUtils.GUI_HEAD + "金屬合金",
                 "",
                 ThemeUtils.PASSIVE + "Mixes up the metals in the tank to",
                 ThemeUtils.PASSIVE + "try to create an alloy."
@@ -180,7 +180,7 @@ public final class GUIItems {
     public static CustomItem menuPour() {
         return new CustomItem(
                 SkullItem.fromBase64(SkullTextures.BUCKET_ORANGE),
-                ThemeUtils.GUI_HEAD + "Pour content",
+                ThemeUtils.GUI_HEAD + "倒出內含",
                 "",
                 ThemeUtils.PASSIVE + "Pours the first metal into the",
                 ThemeUtils.PASSIVE + "cast. After cooling, outputs the",
@@ -191,26 +191,26 @@ public final class GUIItems {
     public static CustomItem menuCraftWorkbench() {
         return new CustomItem(
                 Material.FLETCHING_TABLE,
-                ThemeUtils.GUI_HEAD + "Craft",
+                ThemeUtils.GUI_HEAD + "合成",
                 "",
-                ThemeUtils.PASSIVE + "Let's get crafting!"
+                ThemeUtils.PASSIVE + "讓我們開始合成!"
         );
     }
 
     public static CustomItem menuCraftTable() {
         return new CustomItem(
                 Material.SMITHING_TABLE,
-                ThemeUtils.GUI_HEAD + "Form Tool",
+                ThemeUtils.GUI_HEAD + "資訊工具",
                 "",
-                ThemeUtils.PASSIVE + "Forms a tool from the three given",
-                ThemeUtils.PASSIVE + "parts (Rod, Binding and Head/Blade)"
+                ThemeUtils.PASSIVE + "從三個特定部件組成一個工具",
+                ThemeUtils.PASSIVE + "部件 (桿狀, 接合 和 頭端/刀刃)"
         );
     }
 
     public static CustomItem menuCraftRepair() {
         return new CustomItem(
                 Material.CARTOGRAPHY_TABLE,
-                ThemeUtils.GUI_HEAD + "Repair",
+                ThemeUtils.GUI_HEAD + "磨刀",
                 "",
                 ThemeUtils.PASSIVE + "Repairs the tool in the first slot",
                 ThemeUtils.PASSIVE + "using the repair kit in the second."
@@ -220,18 +220,18 @@ public final class GUIItems {
     public static CustomItem menuCraftMod() {
         return new CustomItem(
                 Material.GRINDSTONE,
-                ThemeUtils.GUI_HEAD + "Apply Modification",
+                ThemeUtils.GUI_HEAD + "改造",
                 "",
-                ThemeUtils.PASSIVE + "Apply the modification to the tool."
+                ThemeUtils.PASSIVE + "將改造用到工具。"
         );
     }
 
     public static CustomItem menuCraftSwap() {
         return new CustomItem(
                 Material.SCAFFOLDING,
-                ThemeUtils.GUI_HEAD + "Swap out part",
+                ThemeUtils.GUI_HEAD + "更換部件",
                 "",
-                ThemeUtils.PASSIVE + "Swap tool parts."
+                ThemeUtils.PASSIVE + "更換這把工具的部件."
         );
     }
 
