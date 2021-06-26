@@ -25,13 +25,17 @@ public final class Categories {
             SkullItem.fromBase64(SkullTextures.CAT_MATERIALS),
             ThemeUtils.MAIN + "材料"
     ));
+    public static final SubCategory MOLTEN_METALS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryMolten(), MAIN, new CustomItem(
+            SkullItem.fromBase64(SkullTextures.CAT_MOLTEN),
+            ThemeUtils.MAIN + "Molten Metals"
+    ));
     public static final SubCategory ALLOYS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryAlloys(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_ALLOYS),
             ThemeUtils.MAIN + "和金金屬"
     ));
-    public static final SubCategory PROPERTIES = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
+    public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_PROPERTIES),
-            ThemeUtils.MAIN + "金屬道具"
+            ThemeUtils.MAIN + "Metal Traits"
     ));
     public static final SubCategory CASTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryCasts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_CASTS),
@@ -58,8 +62,9 @@ public final class Categories {
         MAIN.register(p);
         WORKSTATIONS.register(p);
         MATERIALS.register(p);
+        MOLTEN_METALS.register(p);
         ALLOYS.register(p);
-        PROPERTIES.register(p);
+        TRAITS.register(p);
         CASTS.register(p);
         PARTS.register(p);
         TOOLS.register(p);
