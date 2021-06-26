@@ -27,7 +27,7 @@ public final class Categories {
     ));
     public static final SubCategory MOLTEN_METALS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryMolten(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MOLTEN),
-            ThemeUtils.MAIN + "Molten Metals"
+            ThemeUtils.MAIN + "金屬冶煉"
     ));
     public static final SubCategory ALLOYS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryAlloys(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_ALLOYS),
