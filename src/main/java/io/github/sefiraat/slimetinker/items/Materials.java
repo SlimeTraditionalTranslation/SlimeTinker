@@ -25,7 +25,7 @@ public final class Materials {
                     "NUGGET_CAST_COPPER",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Copper Nugget",
+                    "銅粒",
                     "A nugget made from solid copper"
             );
 
@@ -34,7 +34,7 @@ public final class Materials {
                     "NUGGET_CAST_TIN",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Tin Nugget",
+                    "錫粒",
                     "A nugget made from solid tin"
             );
 
@@ -43,7 +43,7 @@ public final class Materials {
                     "NUGGET_CAST_ZINC",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Zinc Nugget",
+                    "鋅粒",
                     "A nugget made from solid zinc"
             );
 
@@ -52,7 +52,7 @@ public final class Materials {
                     "NUGGET_CAST_ALUMINUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Aluminum Nugget",
+                    "鋁粒",
                     "A nugget made from solid aluminum"
             );
 
@@ -61,7 +61,7 @@ public final class Materials {
                     "NUGGET_CAST_MAGNESIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnesium Nugget",
+                    "鎂粒",
                     "A nugget made from solid magnesium"
             );
 
@@ -70,7 +70,7 @@ public final class Materials {
                     "NUGGET_CAST_LEAD",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Lead Nugget",
+                    "鉛粒",
                     "A nugget made from solid lead"
             );
 
@@ -79,7 +79,7 @@ public final class Materials {
                     "NUGGET_CAST_SILVER",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Silver Nugget",
+                    "銀粒",
                     "A nugget made from solid silver"
             );
 
@@ -88,7 +88,7 @@ public final class Materials {
                     "NUGGET_CAST_COAL",
                     Material.POLISHED_BLACKSTONE_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Coal Nugget",
+                    "煤炭粒",
                     "A nugget made from liquifacted coal"
             );
 
@@ -97,7 +97,7 @@ public final class Materials {
                     "NUGGET_CAST_STEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Steel Nugget",
+                    "鋼粒",
                     "A nugget made from solid steel"
             );
 
@@ -106,7 +106,7 @@ public final class Materials {
                     "NUGGET_CAST_DAMASCUS_STEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Damascus Steel Nugget",
+                    "大馬士革鋼粒",
                     "A nugget made from damascus steel"
             );
 
@@ -115,7 +115,7 @@ public final class Materials {
                     "NUGGET_CAST_DURALIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Duralium Nugget",
+                    "硬鋁粒",
                     "A nugget made from duralium"
             );
 
@@ -124,7 +124,7 @@ public final class Materials {
                    "NUGGET_CAST_BRONZE",
                    Material.ACACIA_BUTTON,
                    ThemeUtils.ThemeItemType.CRAFTING,
-                   "Bronze Nugget",
+                   "青銅粒",
                    "A nugget made from bronze"
            );
 
@@ -133,7 +133,7 @@ public final class Materials {
                   "NUGGET_CAST_ALU_BRONZE",
                   Material.GOLD_NUGGET,
                   ThemeUtils.ThemeItemType.CRAFTING,
-                  "Aluminum Bronze Nugget",
+                  "鋁黃銅粒",
                   "A nugget made from aluminum bronze"
           );
 
@@ -142,7 +142,7 @@ public final class Materials {
                     "NUGGET_CAST_HARD_METAL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Hardened Metal Nugget",
+                    "硬化金屬粒",
                     "A nugget made from hardened metal"
             );
 
@@ -151,7 +151,7 @@ public final class Materials {
                     "NUGGET_CAST_COR_BRONZE",
                     Material.GOLD_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Corinthian Bronze Nugget",
+                    "科林斯青銅粒",
                     "A nugget made from corinthian bronze"
             );
 
@@ -160,7 +160,7 @@ public final class Materials {
                     "NUGGET_CAST_SOLDER",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Solder Nugget",
+                    "焊錫粒",
                     "A nugget made from solder"
             );
 
@@ -169,7 +169,7 @@ public final class Materials {
                     "NUGGET_CAST_BILLON",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Billon Nugget",
+                    "銀銅合金粒",
                     "A nugget made from billon"
             );
 
@@ -178,7 +178,7 @@ public final class Materials {
                     "NUGGET_CAST_BRASS",
                     Material.GOLD_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Brass Nugget",
+                    "黃銅粒",
                     "A nugget made from brass"
             );
 
@@ -187,7 +187,7 @@ public final class Materials {
                     "NUGGET_CAST_ALU_BRASS",
                     Material.GOLD_INGOT,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Aluminum Brass Nugget",
+                    "鋁黃銅粒",
                     "A nugget made from aluminum brass"
             );
 
@@ -196,7 +196,7 @@ public final class Materials {
                     "NUGGET_CAST_NICKEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Nickel Nugget",
+                    "鎳粒",
                     "A nugget made from nickel"
             );
 
@@ -205,7 +205,7 @@ public final class Materials {
                     "NUGGET_CAST_COBALT",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Cobalt Nugget",
+                    "鈷粒",
                     "A nugget made from cobalt"
             );
 
@@ -214,7 +214,7 @@ public final class Materials {
                     "NUGGET_CAST_REINFORCED",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Alloy Nugget",
+                    "強化合金粒",
                     "A nugget made from reinforced alloy"
             );
 
@@ -223,7 +223,7 @@ public final class Materials {
                     "NUGGET_CAST_FERROSILICON",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Ferrosilicon Nugget",
+                    "矽鐵粒",
                     "A nugget made from ferrosilicon"
             );
 
@@ -232,7 +232,7 @@ public final class Materials {
                     "NUGGET_CAST_REDSTONE_ALLOY",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Redstone Alloy Nugget",
+                    "紅石合金粒",
                     "A nugget made from redstone alloy"
             );
     // endregion
@@ -242,7 +242,7 @@ public final class Materials {
                     "BLOCK_CAST_COPPER",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Copper Block",
+                    "Copper 塊",
                     "A block made from solid copper"
             );
 
@@ -251,7 +251,7 @@ public final class Materials {
                     "BLOCK_CAST_TIN",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Tin Block",
+                    "錫塊",
                     "A block made from solid tin"
             );
 
@@ -260,7 +260,7 @@ public final class Materials {
                     "BLOCK_CAST_ZINC",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Zinc Block",
+                    "Zinc 塊",
                     "A block made from solid zinc"
             );
 
@@ -269,7 +269,7 @@ public final class Materials {
                     "BLOCK_CAST_ALUMINUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Aluminum Block",
+                    "鋁塊",
                     "A block made from solid aluminum"
             );
 
@@ -278,7 +278,7 @@ public final class Materials {
                     "BLOCK_CAST_MAGNESIUM",
                     Material.PINK_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnesium Block",
+                    "鎂塊",
                     "A block made from solid magnesium"
             );
 
@@ -287,7 +287,7 @@ public final class Materials {
                     "BLOCK_CAST_LEAD",
                     Material.PURPLE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Lead Block",
+                    "鉛塊",
                     "A block made from solid lead"
             );
 
@@ -296,7 +296,7 @@ public final class Materials {
                     "BLOCK_CAST_SILVER",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Silver Block",
+                    "銀塊",
                     "A block made from solid silver"
             );
 
@@ -305,7 +305,7 @@ public final class Materials {
                     "BLOCK_CAST_STEEL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Steel Block",
+                    "鋼塊",
                     "A block made from solid steel"
             );
 
@@ -314,7 +314,7 @@ public final class Materials {
                     "BLOCK_CAST_DAMASCUS_STEEL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Damascus Steel Block",
+                    "大馬士革鋼塊",
                     "A block made from damascus steel"
             );
 
@@ -323,7 +323,7 @@ public final class Materials {
                     "BLOCK_CAST_DURALIUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Duralium Block",
+                    "硬鋁塊",
                     "A block made from duralium"
             );
 
@@ -332,7 +332,7 @@ public final class Materials {
                     "BLOCK_CAST_BRONZE",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Bronze Block",
+                    "青銅塊",
                     "A block made from bronze"
             );
 
@@ -341,7 +341,7 @@ public final class Materials {
                     "BLOCK_CAST_ALU_BRONZE",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Aluminum Bronze Block",
+                    "鋁青銅塊",
                     "A block made from aluminum bronze"
             );
 
@@ -350,7 +350,7 @@ public final class Materials {
                     "BLOCK_CAST_HARD_METAL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Hardened Metal Block",
+                    "硬化金屬塊",
                     "A block made from hardened metal"
             );
     public static final SlimefunItemStack BLOCK_CAST_COR_BRONZE =
@@ -358,7 +358,7 @@ public final class Materials {
                     "BLOCK_CAST_COR_BRONZE",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Corinthian Bronze Block",
+                    "科林斯青銅塊",
                     "A block made from corinthian bronze"
             );
 
@@ -367,7 +367,7 @@ public final class Materials {
                     "BLOCK_CAST_SOLDER",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Solder Block",
+                    "焊錫塊",
                     "A block made from solder"
             );
 
@@ -376,7 +376,7 @@ public final class Materials {
                     "BLOCK_CAST_BILLON",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Billon Block",
+                    "銀銅合金塊",
                     "A block made from billon"
             );
 
@@ -385,7 +385,7 @@ public final class Materials {
                     "BLOCK_CAST_BRASS",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Brass Block",
+                    "黃銅塊",
                     "A block made from brass"
             );
 
@@ -394,7 +394,7 @@ public final class Materials {
                     "BLOCK_CAST_ALU_BRASS",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Aluminum Brass Block",
+                    "鋁黃銅塊",
                     "A block made from aluminum brass"
             );
 
@@ -403,7 +403,7 @@ public final class Materials {
                     "BLOCK_CAST_NICKEL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Nickel Block",
+                    "鎳塊",
                     "A block made from nickel"
             );
 
@@ -412,7 +412,7 @@ public final class Materials {
                     "BLOCK_CAST_COBALT",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Cobalt Block",
+                    "鈷塊",
                     "A block made from cobalt"
             );
 
@@ -421,7 +421,7 @@ public final class Materials {
                     "BLOCK_CAST_REINFORCED",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Alloy Block",
+                    "強化合金塊",
                     "A block made from reinforced alloy"
             );
 
@@ -430,7 +430,7 @@ public final class Materials {
                     "BLOCK_CAST_FERROSILICON",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Ferrosilicon Block",
+                    "矽鐵塊",
                     "A block made from ferrosilicon"
             );
 
@@ -439,7 +439,7 @@ public final class Materials {
                     "BLOCK_CAST_REDSTONE_ALLOY",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Redstone Alloy Block",
+                    "紅石合金塊",
                     "A block made from redstone alloy"
             );
     // endregion
@@ -449,9 +449,9 @@ public final class Materials {
                     "MOD_PLATE",
                     Material.OBSIDIAN,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Reinforced Plate",
-                    ThemeUtils.PASSIVE + "A modification for tools that gives.",
-                    ThemeUtils.PASSIVE + "a chance to ignore tool damage."
+                    "強化板",
+                    ThemeUtils.PASSIVE + "強化素材之一",
+                    ThemeUtils.PASSIVE + "減少工具或武器的耐久度消耗"
             );
 
     public static final SlimefunItemStack GROUT =
@@ -459,8 +459,8 @@ public final class Materials {
                     "GROUT",
                     Material.GRAVEL,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Grout",
-                    ThemeUtils.PASSIVE + "Used to make seared bricks."
+                    "水泥",
+                    ThemeUtils.PASSIVE + "製作焦黑磚的材料"
             );
 
 
@@ -469,8 +469,8 @@ public final class Materials {
                     "SEARED_BRICK",
                     Material.BRICK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Seared Brick",
-                    ThemeUtils.PASSIVE + "Used in crafting smeltery blocks."
+                    "焦黑磚",
+                    ThemeUtils.PASSIVE + "製作焦黑物品的材料"
             );
 
     public static final SlimefunItemStack SMELTERY_CONTROLLER =
@@ -478,8 +478,8 @@ public final class Materials {
                     "SMELTERY_CONTROLLER",
                     Material.CHISELED_POLISHED_BLACKSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "Smeltery Controller",
-                    ThemeUtils.PASSIVE + "Used in crafting smeltery blocks."
+                    "焦黑冶煉爐控制器",
+                    ThemeUtils.PASSIVE + "焦黑冶煉爐的互動方塊"
             );
 
     public static final SlimefunItemStack SEARED_TANK =
@@ -487,8 +487,8 @@ public final class Materials {
                     "SEARED_TANK",
                     Material.RED_NETHER_BRICK_WALL,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Seared Tank",
-                    ThemeUtils.PASSIVE + "Used in building the smeltery."
+                    "焦黑儲液罐",
+                    ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
 
     public static final SlimefunItemStack SPOUT =
@@ -496,8 +496,8 @@ public final class Materials {
                     "SPOUT",
                     Material.POLISHED_BLACKSTONE_BRICK_WALL,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Seared Spout",
-                    ThemeUtils.PASSIVE + "Used in building the smeltery."
+                    "焦黑流嘴",
+                    ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
 
     public static final SlimefunItemStack SEARED_BRICK_BLOCK =
@@ -505,8 +505,8 @@ public final class Materials {
                     "SEARED_BRICK_BLOCK",
                     Material.POLISHED_BLACKSTONE_BRICKS,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Seared Brick Block",
-                    ThemeUtils.PASSIVE + "Used in building the smeltery."
+                    "黑焦石磚",
+                    ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
     // endregion
     // endregion
@@ -518,7 +518,7 @@ public final class Materials {
                     "NUGGET_CAST_INFINITY",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Infinity Nugget",
+                    "Infinity 粒",
                     "A nugget made from solid infinity... yup!"
             );
 
@@ -527,7 +527,7 @@ public final class Materials {
                     "NUGGET_CAST_MAGSTEEL",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "MagSteel Nugget",
+                    "MagSteel 粒",
                     "A nugget made from solid MagSteel"
             );
 
@@ -536,7 +536,7 @@ public final class Materials {
                     "NUGGET_CAST_TITANIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Titanium Nugget",
+                    "Titanium 粒",
                     "A nugget made from solid Titanium"
             );
 
@@ -545,7 +545,7 @@ public final class Materials {
                     "NUGGET_CAST_MYTHRIL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mythril Nugget",
+                    "Mythril 粒",
                     "A nugget made from solid Mythril"
             );
 
@@ -554,7 +554,7 @@ public final class Materials {
                     "NUGGET_CAST_ADAMANTITE",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Adamantite Nugget",
+                    "Adamantite 粒",
                     "A nugget made from solid Adamantite"
             );
 
@@ -563,7 +563,7 @@ public final class Materials {
                     "NUGGET_CAST_MAGNONIUM",
                     Material.CRIMSON_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnonium Nugget",
+                    "Magnonium 粒",
                     "A nugget made from solid Magnonium"
             );
 
@@ -574,7 +574,7 @@ public final class Materials {
                     "BLOCK_CAST_VOID",
                     Material.NETHERITE_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Void Block",
+                    "Void 塊",
                     "A block made from ... void?"
             );
 
@@ -583,7 +583,7 @@ public final class Materials {
                     "BLOCK_CAST_INFINITY",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Infinity Block",
+                    "Infinity 塊",
                     "A block made from *sigh* infinity."
             );
 
@@ -592,7 +592,7 @@ public final class Materials {
                     "BLOCK_CAST_MAGSTEEL",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "MagSteel Block",
+                    "MagSteel 塊",
                     "A block made from MagSteel."
             );
 
@@ -601,7 +601,7 @@ public final class Materials {
                     "BLOCK_CAST_TITANIUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Titanium Block",
+                    "Titanium 塊",
                     "A block made from Titanium."
             );
 
@@ -610,7 +610,7 @@ public final class Materials {
                     "BLOCK_CAST_MYTHRIL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mythril Block",
+                    "Mythril 塊",
                     "A block made from Mythril."
             );
 
@@ -619,7 +619,7 @@ public final class Materials {
                     "BLOCK_CAST_ADAMANTITE",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Adamanitite Block",
+                    "Adamanitite 塊",
                     "A block made from Adamanitite."
             );
 
@@ -628,7 +628,7 @@ public final class Materials {
                     "BLOCK_CAST_MAGNONIUM",
                     Material.PURPLE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnonium Block",
+                    "Magnonium 塊",
                     "A block made from Magnonium."
             );
 
@@ -642,7 +642,7 @@ public final class Materials {
                     "NUGGET_CAST_SLIMESTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Slimesteel Nugget",
+                    "Slimesteel 粒",
                     "A nugget of slimesteel"
             );
 
@@ -651,7 +651,7 @@ public final class Materials {
                     "NUGGET_CAST_REINFORCED_SLIMESTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Slimesteel Nugget",
+                    "Reinforced Slimesteel 粒",
                     "A nugget of reinforced slimesteel"
             );
 
@@ -660,7 +660,7 @@ public final class Materials {
                     "NUGGET_CAST_OSMIUM",
                     Material.WARPED_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Nugget",
+                    "Osmium 粒",
                     "A nugget of osmium"
             );
 
@@ -669,7 +669,7 @@ public final class Materials {
                     "NUGGET_CAST_OSMIUM_SUPER_ALLOY",
                     Material.WARPED_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Superalloy Nugget",
+                    "Osmium Superalloy 粒",
                     "A nugget of osmium superalloy"
             );
 
@@ -678,7 +678,7 @@ public final class Materials {
                     "NUGGET_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Unpatentabilum Nugget",
+                    "Unpatentabilum 粒",
                     "A nugget of unpatentabilum"
             );
 
@@ -689,7 +689,7 @@ public final class Materials {
                     "BLOCK_CAST_SLIMESTEEL",
                     Material.SLIME_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Slimesteel Block",
+                    "Slimesteel 塊",
                     "A block of slimesteel"
             );
 
@@ -698,7 +698,7 @@ public final class Materials {
                     "BLOCK_CAST_REINFORCED_SLIMESTEEL",
                     Material.SLIME_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Slimesteel Block",
+                    "Reinforced Slimesteel 塊",
                     "A block of reinforced slimesteel"
             );
 
@@ -707,7 +707,7 @@ public final class Materials {
                     "BLOCK_CAST_OSMIUM",
                     Material.LIGHT_BLUE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Block",
+                    "Osmium 塊",
                     "A block of osmium"
             );
 
@@ -716,7 +716,7 @@ public final class Materials {
                     "BLOCK_CAST_OSMIUM_SUPER_ALLOY",
                     Material.BLUE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Superalloy Block",
+                    "Osmium Superalloy 塊",
                     "A block of osmium superalloy"
             );
 
@@ -725,7 +725,7 @@ public final class Materials {
                     "BLOCK_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Unpatentabilum Block",
+                    "Unpatentabilum 塊",
                     "A block of unpatentabilum"
             );
 
@@ -739,7 +739,7 @@ public final class Materials {
                     "NUGGET_CAST_STAINLESSSTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel Nugget",
+                    "Stainless Steel 粒",
                     "A nugget of stainless steel"
             );
 
@@ -750,7 +750,7 @@ public final class Materials {
                     "BLOCK_CAST_STAINLESSSTEEL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel Block",
+                    "Stainless Steel 塊",
                     "A block of stainless"
             );
 
@@ -765,7 +765,7 @@ public final class Materials {
                     "NUGGET_CAST_REFINED_IRON",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Refined Iron Nugget",
+                    "Refined Iron 粒",
                     "A nugget of refined iron"
             );
 
@@ -774,7 +774,7 @@ public final class Materials {
                     "NUGGET_CAST_MIXED_METAL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mixed Metal Nugget",
+                    "Mixed Metal 粒",
                     "A nugget of mixed metal"
             );
 
@@ -783,7 +783,7 @@ public final class Materials {
                     "NUGGET_CAST_ADVANCED_ALLOY",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Advanced Alloy Nugget",
+                    "Advanced Alloy 粒",
                     "A nugget of advanced alloy"
             );
 
@@ -792,7 +792,7 @@ public final class Materials {
                     "NUGGET_CAST_MAG_THOR",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mag-Thor Nugget",
+                    "Mag-Thor 粒",
                     "A nugget of mag-thor"
             );
 
@@ -801,7 +801,7 @@ public final class Materials {
                     "NUGGET_CAST_SCRAP",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Scrap Nugget",
+                    "Scrap 粒",
                     "A nugget of scrap"
             );
 
@@ -810,7 +810,7 @@ public final class Materials {
                     "NUGGET_CAST_IRIDIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel Nugget",
+                    "Stainless Steel 粒",
                     "A nugget of stainless steel"
             );
 
@@ -821,7 +821,7 @@ public final class Materials {
                     "BLOCK_CAST_REFINED_IRON",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Refined Iron Block",
+                    "Refined Iron 塊",
                     "A block of refined iron"
             );
 
@@ -830,7 +830,7 @@ public final class Materials {
                     "BLOCK_CAST_MIXED_METAL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mixed Metal Block",
+                    "Mixed Metal 塊",
                     "A block of mixed metal"
             );
 
@@ -839,7 +839,7 @@ public final class Materials {
                     "BLOCK_CAST_ADVANCED_ALLOY",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Advanced Alloy Block",
+                    "Advanced Alloy 塊",
                     "A block of advacned alloy"
             );
 
@@ -848,7 +848,7 @@ public final class Materials {
                     "BLOCK_CAST_MAG_THOR",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mag-Thor Block",
+                    "Mag-Thor 塊",
                     "A block of mag-thor"
             );
 
@@ -857,7 +857,7 @@ public final class Materials {
                     "BLOCK_CAST_SCRAP",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Scrap Block",
+                    "Scrap 塊",
                     "A block of scrap"
             );
 
@@ -866,7 +866,7 @@ public final class Materials {
                     "BLOCK_CAST_IRIDIUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Iridium Block",
+                    "Iridium 塊",
                     "A block of iridium"
             );
 

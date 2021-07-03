@@ -26,7 +26,7 @@ public final class Workstations {
                     "TINKERS_SMELTERY_CORE",
                     Material.CHISELED_POLISHED_BLACKSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "大型冶煉爐〔黏液打鐵〕",
+                    "焦黑冶煉爐〔黏液打鐵〕",
                     "需要岩漿作為燃料，",
                     "將金屬熔化成液體後，",
                     "可以用來製作合金，",
@@ -72,7 +72,7 @@ public final class Workstations {
                     ThemeUtils.ThemeItemType.MACHINE,
                     "部件更換站〔黏液打鐵〕",
                     "將新部件更換到工具或武器上",
-                    "註:綁定結不能替換"
+                    "註:黏接物不能替換"
             );
 
     // Modification

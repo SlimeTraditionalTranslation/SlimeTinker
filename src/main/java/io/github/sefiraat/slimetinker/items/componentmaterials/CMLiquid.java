@@ -28,7 +28,7 @@ public class CMLiquid {
                 parent.getId() + "_LIQUID",
                 texture,
                 ThemeUtils.ThemeItemType.MOLTEN_METAL,
-                "Molten " + titName,
+                "熔融" + titName,
                 ThemeUtils.PASSIVE + "The molten form of " + titName
         );
 

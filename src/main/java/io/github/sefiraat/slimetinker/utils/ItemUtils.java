@@ -92,9 +92,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "H: " + formatMaterialName(matHead));
-        lore.add(ThemeUtils.CLICK_INFO + "B: " + formatMaterialName(matBind));
-        lore.add(ThemeUtils.CLICK_INFO + "R: " + formatMaterialName(matRod));
+        lore.add(ThemeUtils.CLICK_INFO + "前端: " + formatMaterialName(matHead));
+        lore.add(ThemeUtils.CLICK_INFO + "接合: " + formatMaterialName(matBind));
+        lore.add(ThemeUtils.CLICK_INFO + "手柄: " + formatMaterialName(matRod));
         lore.add(ThemeUtils.getLine());
 
         // Material properties

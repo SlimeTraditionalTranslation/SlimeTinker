@@ -34,7 +34,7 @@ public class CMAlloy {
                         parent.getId() + "_ALLOY",
                         parent.getLiquidTexture(),
                         ThemeUtils.ThemeItemType.MOLTEN_METAL,
-                        "Molten " + titName,
+                        "熔融" + titName,
                         ThemeUtils.PASSIVE + "A molten alloy metal of " + titName
                 );
         assert parent.getAlloyRecipe() != null;

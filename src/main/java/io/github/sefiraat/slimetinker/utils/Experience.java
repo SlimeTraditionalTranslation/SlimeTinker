@@ -113,7 +113,7 @@ public final class Experience {
     public static String getLoreExp(PersistentDataContainer c) {
         return ThemeUtils.ITEM_TOOL + "熟練等級： " +
                 ChatColor.WHITE + Experience.getToolLevel(c) +
-                ThemeUtils.PASSIVE + "(" + Experience.getToolExp(c) + "/" + Experience.getToolRequiredExp(c) + ")";
+                ThemeUtils.PASSIVE + " (" + Experience.getToolExp(c) + "/" + Experience.getToolRequiredExp(c) + ")";
     }
 
     public static String getLoreModSlots(PersistentDataContainer c) {
