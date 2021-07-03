@@ -30,7 +30,7 @@ public final class Workstations {
                     "需要岩漿作為燃料，",
                     "將金屬熔化成液體後，",
                     "可以用來製作合金，",
-                    "然後利用模具鑄造成指定樣式。"
+                    "然後利用模具澆鑄成指定的樣式。"
             );
 
     // Workbench
@@ -51,7 +51,7 @@ public final class Workstations {
                     Material.SMITHING_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "組裝站〔黏液打鐵〕",
-                    "將配件組裝成工具或武器"
+                    "將部件組裝成工具或武器"
             );
 
     // Repair
@@ -70,8 +70,8 @@ public final class Workstations {
                     "TINKERS_SWAPPING_STATION",
                     Material.SCAFFOLDING,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "配件更換站〔黏液打鐵〕",
-                    "將新配件更換到工具或武器上",
+                    "部件更換站〔黏液打鐵〕",
+                    "將新部件更換到工具或武器上",
                     "註:綁定結不能替換"
             );
 

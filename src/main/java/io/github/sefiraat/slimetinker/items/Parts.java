@@ -17,7 +17,7 @@ import org.bukkit.inventory.ItemStack;
 @UtilityClass
 public final class Parts {
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = "錯誤";
 
     protected static ItemStack[] getDummyCastRecipe(ItemStack cast) {
         return new ItemStack[]{
@@ -32,8 +32,8 @@ public final class Parts {
                     "PART_SHOVEL_HEAD_DUMMY",
                     SkullTextures.PART_SHOVEL_HEAD,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Shovel Head",
-                    ThemeUtils.PASSIVE + "A cast shovel head."
+                    "部件:鏟子前端",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:鏟子前端"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_PICKAXE_HEAD_DUMMY =
@@ -41,8 +41,8 @@ public final class Parts {
                     "PART_PICKAXE_HEAD_DUMMY",
                     SkullTextures.PART_PICKAXE_HEAD,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Pickaxe Head",
-                    ThemeUtils.PASSIVE + "A cast pickaxe head."
+                    "部件:鎬子前端",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:鎬子前端"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_AXE_HEAD_DUMMY =
@@ -50,8 +50,8 @@ public final class Parts {
                     "PART_AXE_HEAD_DUMMY",
                     SkullTextures.PART_AXE_HEAD,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Axe Head",
-                    ThemeUtils.PASSIVE + "A cast axe head."
+                    "部件:斧頭前端",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:斧頭前端"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_HOE_HEAD_DUMMY =
@@ -59,8 +59,8 @@ public final class Parts {
                     "PART_HOE_HEAD_DUMMY",
                     SkullTextures.PART_HOE_HEAD,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Hoe Head",
-                    ThemeUtils.PASSIVE + "A cast hoe head."
+                    "部件:鋤頭前端",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:鋤頭前端"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_SWORD_BLADE_DUMMY =
@@ -68,8 +68,8 @@ public final class Parts {
                     "PART_SWORD_BLADE_DUMMY",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Sword Blade",
-                    ThemeUtils.PASSIVE + "A cast sword blade."
+                    "部件:劍刃",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:劍刃"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_TOOL_ROD_DUMMY =
@@ -77,8 +77,8 @@ public final class Parts {
                     "PART_TOOL_ROD_DUMMY",
                     SkullTextures.PART_TOOL_ROD,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Tool Rod",
-                    ThemeUtils.PASSIVE + "A cast tool rod."
+                    "部件:手柄",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:手柄"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_BINDING_DUMMY =
@@ -86,8 +86,10 @@ public final class Parts {
                     "PART_BINDING_DUMMY",
                     SkullTextures.PART_BINDING,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Binding",
-                    ThemeUtils.PASSIVE + "A binging to hold parts together."
+                    "部件:黏接物",
+                    ThemeUtils.PASSIVE + "將前端或劍刃跟手柄黏接在一起",
+                    ThemeUtils.PASSIVE + "可以作為材料的有:",
+                    ThemeUtils.PASSIVE + "線、史萊姆球......"
             );
 
     public static final SlimefunItemStack PART_REPAIR_KIT_DUMMY =
@@ -95,8 +97,9 @@ public final class Parts {
                     "PART_REPAIR_KIT_DUMMY",
                     Material.CHEST_MINECART,
                     ThemeUtils.ThemeItemType.CAST,
-                    "Part: Repair Kit",
-                    ThemeUtils.PASSIVE + "Repairs broken items in the Repair Bench."
+                    "部件:維修零件",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:維修零件"+ThemeUtils.PASSIVE+"上，即可取得",
+                    "可以在維修站消耗維修零件，將工具或武器維修"
             );
 
     public static final SlimefunItemStack PART_AXE_HEAD =

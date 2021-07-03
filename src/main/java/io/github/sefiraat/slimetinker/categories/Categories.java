@@ -39,7 +39,7 @@ public final class Categories {
     ));
     public static final SubCategory PARTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryParts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_PARTS),
-            ThemeUtils.MAIN + "鑄造配件說明(通則)"
+            ThemeUtils.MAIN + "鑄造部件說明(通則)"
     ));
     public static final SubCategory TOOLS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryTools(), MAIN, new CustomItem(
             Material.DIAMOND_SWORD,
@@ -55,7 +55,7 @@ public final class Categories {
     ));
     public static final SubCategory PART_DICT = new SubCategory(SlimeTinker.inst().getKeys().getCategoryPartDict(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.PART_PICKAXE_HEAD),
-            ThemeUtils.MAIN + "鑄造配件說明(細則)"
+            ThemeUtils.MAIN + "鑄造部件說明(細則)"
     ));
     public static final DummyCategory DUMMY = new DummyCategory(SlimeTinker.inst().getKeys().getCategoryDummy(), new CustomItem(
             Material.BARRIER,
