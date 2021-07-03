@@ -18,10 +18,10 @@ public final class Mods {
                     "MOD_REDSTONE_DUMMY",
                     Material.REDSTONE,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Redstone",
-                    ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-                    ThemeUtils.PASSIVE + "will be given Haste matching the level",
-                    ThemeUtils.PASSIVE + "of the modification."
+                    "強化素材：紅石",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "玩家手持此工具或武器，",
+                    ThemeUtils.PASSIVE + "可以獲得相對應強化級數的挖掘加速"
             );
 
     public static final SlimefunItemStack MOD_LAPIS_DUMMY =
@@ -29,11 +29,11 @@ public final class Mods {
                     "MOD_LAPIS_DUMMY",
                     Material.LAPIS_LAZULI,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Lapis",
-                    ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-                    ThemeUtils.PASSIVE + "will drop bonus items from blocks or",
-                    ThemeUtils.PASSIVE + "kills. Calculated after fortune/looting.",
-                    ThemeUtils.PASSIVE + "10% per level."
+                    "強化素材：青金石",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "玩家手持此工具或武器，",
+                    ThemeUtils.PASSIVE + "會有相當於掠奪與幸運的效果",
+                    ThemeUtils.PASSIVE + "每提升1個強化等級，增加10%的效果"
             );
 
     public static final SlimefunItemStack MOD_QUARTZ_DUMMY =
@@ -41,11 +41,11 @@ public final class Mods {
                     "MOD_QUARTZ_DUMMY",
                     Material.QUARTZ,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Quartz",
-                    ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-                    ThemeUtils.PASSIVE + "will deal bonus damage. Calculated after",
-                    ThemeUtils.PASSIVE + "sharpness or other damage enchants.",
-                    ThemeUtils.PASSIVE + "20% per level"
+                    "強化素材：石英",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "玩家手持此工具，",
+                    ThemeUtils.PASSIVE + "將增加工具或武器的傷害",
+                    ThemeUtils.PASSIVE + "每提升1個強化等級，增加20%的效果"
             );
 
     public static final SlimefunItemStack MOD_DIAMOND_DUMMY =
@@ -53,10 +53,11 @@ public final class Mods {
                     "MOD_DIAMOND_DUMMY",
                     Material.DIAMOND,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Diamond",
-                    ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-                    ThemeUtils.PASSIVE + "has a chance to reflect damage taken",
-                    ThemeUtils.PASSIVE + "back on to the attacker. 10% per level"
+                    "強化素材：鑽石",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "玩家手持此工具，",
+                    ThemeUtils.PASSIVE + "受到傷害時有機率對攻擊者產生傷害",
+                    ThemeUtils.PASSIVE + "每提升1個強化等級，增加10%的效果"
             );
 
     public static final SlimefunItemStack MOD_EMERALD_DUMMY =
@@ -64,11 +65,10 @@ public final class Mods {
                     "MOD_EMERALD_DUMMY",
                     Material.EMERALD,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Emerald",
-                    ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-                    ThemeUtils.PASSIVE + "will gain bonus tool EXP per action",
-                    ThemeUtils.PASSIVE + "undertaken. +1 exp for tools and 10%",
-                    ThemeUtils.PASSIVE + "for weapons."
+                    "強化素材：綠寶石",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "每次動作將會獲得額外的工具經驗或武器經驗",
+                    ThemeUtils.PASSIVE + "每提升1個強化等級，增加1工具經驗或10%武器經驗"
             );
 
 
@@ -77,10 +77,10 @@ public final class Mods {
                     "MOD_PLATE_DUMMY",
                     Material.OBSIDIAN,
                     ThemeUtils.ThemeItemType.MOD,
-                    "Modification: Reinforced Plate",
-                    ThemeUtils.PASSIVE + "A tool with this modification has a",
-                    ThemeUtils.PASSIVE + "chance to not take durability damage. 10%",
-                    ThemeUtils.PASSIVE + "per level - at Level 10 tools are unbreakable"
+                    "強化素材：黑曜石",
+                    ThemeUtils.PASSIVE + "將此強化新增到工具後，",
+                    ThemeUtils.PASSIVE + "每提升1個強化等級，增加10%的機率減少工具耐久度",
+                    ThemeUtils.PASSIVE + "當此強化等級為10時，該工具就不會消耗耐久度"
             );
 
 

@@ -71,7 +71,7 @@ public final class Experience {
             modSlots++;
             expRequired = (expRequired * EXP_GROWTH);
             promoteMaterial(itemStack, level, player);
-            player.sendMessage(ThemeUtils.SUCCESS + "你的打鐵工具升級了! 鑲嵌+1");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的工具或武器升級了! 強化次數+1");
 
             silverChecks(matPropertyHead, im, itemStack, player);
 
@@ -111,13 +111,13 @@ public final class Experience {
     }
 
     public static String getLoreExp(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "工具等級: " +
+        return ThemeUtils.ITEM_TOOL + "熟練等級： " +
                 ChatColor.WHITE + Experience.getToolLevel(c) +
                 ThemeUtils.PASSIVE + " (" + Experience.getToolExp(c) + " / " + Experience.getToolRequiredExp(c) + ")";
     }
 
     public static String getLoreModSlots(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "鑲嵌: " +
+        return ThemeUtils.ITEM_TOOL + "剩餘強化次數： " +
                 ChatColor.WHITE + Experience.getToolModifierSlots(c);
     }
 
@@ -132,7 +132,7 @@ public final class Experience {
         if (Tools.getToolGrowthMap().get(toolType).containsKey(level)) {
             itemStack.setType(Tools.getToolGrowthMap().get(toolType).get(level));
             ItemUtils.repairTool(itemStack);
-            player.sendMessage(ThemeUtils.SUCCESS + "你的工具已被升級!");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的工具或武器已被升級!");
             ItemUtils.repairTool(itemStack);
         }
 
@@ -166,7 +166,7 @@ public final class Experience {
                 }
                 count++;
             }
-            player.sendMessage(ThemeUtils.SUCCESS + "它獲得 [" + count + "] 隨機附魔! 希望一切順利 :>");
+            player.sendMessage(ThemeUtils.SUCCESS + "獲得 [" + count + "] 隨機附魔! 希望一切順利 :>");
         }
     }
 

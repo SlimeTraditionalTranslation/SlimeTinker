@@ -31,35 +31,35 @@ public final class Categories {
     ));
     public static final SubCategory ALLOYS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryAlloys(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_ALLOYS),
-            ThemeUtils.MAIN + "和金金屬"
+            ThemeUtils.MAIN + "合金冶煉"
     ));
     public static final SubCategory CASTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryCasts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_CASTS),
-            ThemeUtils.MAIN + "鑄模"
+            ThemeUtils.MAIN + "鑄造"
     ));
     public static final SubCategory PARTS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryParts(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_PARTS),
-            ThemeUtils.MAIN + "Part Building Guide"
+            ThemeUtils.MAIN + "鑄造配件說明(通則)"
     ));
     public static final SubCategory TOOLS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryTools(), MAIN, new CustomItem(
             Material.DIAMOND_SWORD,
-            ThemeUtils.MAIN + "Tool Building Guide"
+            ThemeUtils.MAIN + "工具配裝說明"
     ));
     public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_TRAITS),
-            ThemeUtils.MAIN + "Metal Traits"
+            ThemeUtils.MAIN + "特性說明"
     ));
     public static final SubCategory MODIFICATIONS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryModifications(), MAIN, new CustomItem(
             Material.REDSTONE,
-            ThemeUtils.MAIN + "模塊"
+            ThemeUtils.MAIN + "強化素材說明"
     ));
     public static final SubCategory PART_DICT = new SubCategory(SlimeTinker.inst().getKeys().getCategoryPartDict(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.PART_PICKAXE_HEAD),
-            ThemeUtils.MAIN + "Part Dictionary"
+            ThemeUtils.MAIN + "鑄造配件說明(細則)"
     ));
     public static final DummyCategory DUMMY = new DummyCategory(SlimeTinker.inst().getKeys().getCategoryDummy(), new CustomItem(
             Material.BARRIER,
-            ThemeUtils.MAIN + "黏液打鐵 假人"
+            ThemeUtils.MAIN + "SlimeTinker Dummy (作者未完成)"
     ));
 
     public static void set(SlimeTinker p) {

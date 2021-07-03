@@ -27,10 +27,10 @@ public final class Workstations {
                     Material.CHISELED_POLISHED_BLACKSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "大型冶煉爐〔黏液打鐵〕",
-                    "將金屬熔化成液體後，可以用來製",
-                    "作合金，然後利用模板鑄造成指定",
-                    "樣式。",
-                    "註：需要岩漿作為燃料"
+                    "需要岩漿作為燃料，",
+                    "將金屬熔化成液體後，",
+                    "可以用來製作合金，",
+                    "然後利用模具鑄造成指定樣式。"
             );
 
     // Workbench
@@ -40,8 +40,8 @@ public final class Workstations {
                     Material.FLETCHING_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "合成站〔黏液打鐵〕",
-                    "用於製作黏液打鐵的各種物品和零",
-                    "件，也可用作增強型工作台。"
+                    "用於製作黏液打鐵的各種物品和零件，",
+                    "也可用作增強型工作台。"
             );
 
     // Table
@@ -51,7 +51,7 @@ public final class Workstations {
                     Material.SMITHING_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "組裝站〔黏液打鐵〕",
-                    "將配件組裝成工具"
+                    "將配件組裝成工具或武器"
             );
 
     // Repair
@@ -81,8 +81,10 @@ public final class Workstations {
                     "TINKERS_MOD_STATION",
                     Material.GRINDSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "改裝站〔黏液打鐵〕",
-                    "將工具或武器進行修改"
+                    "強化站〔黏液打鐵〕",
+                    "將工具或武器進行強化",
+                    "新增或升級強化項目，將會消耗1次強化次數",
+                    "可以利用大量素材提供強化項目經驗"
             );
 
     protected static final ItemStack[] RECIPE_TINKERS_SMELTERY_MULTI = new ItemStack[] {
