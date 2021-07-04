@@ -6,42 +6,42 @@ import lombok.experimental.UtilityClass;
 public final class IDStrings {
 
     // Vanilla + Core SF
-    public static final String IRON = "IRON";
-    public static final String GOLD = "GOLD";
-    public static final String COPPER = "COPPER";
-    public static final String SILVER = "SILVER";
-    public static final String TIN = "TIN";
-    public static final String MAGNESIUM = "MAGNESIUM";
-    public static final String ALUMINUM = "ALUMINUM";
-    public static final String LEAD = "LEAD";
-    public static final String ZINC = "ZINC";
-    public static final String COAL = "COAL";
-    public static final String STEEL = "STEEL";
-    public static final String DAMSTEEL = "DAMASCUS_STEEL";
-    public static final String DURALIUM = "DURALIUM";
-    public static final String BRONZE = "BRONZE";
-    public static final String ALUBRONZE = "ALUMINUM_BRONZE";
-    public static final String HARD = "HARDENED_METAL";
-    public static final String CORBRONZE = "CORINTHIAN_BRONZE";
-    public static final String SOLDER = "SOLDER";
-    public static final String BILLON = "BILLON";
-    public static final String BRASS = "BRASS";
-    public static final String ALUBRASS = "ALUMINUM_BRASS";
-    public static final String NICKEL = "NICKEL";
-    public static final String COBALT = "COBALT";
-    public static final String REINFORCED = "REINFORCED_ALLOY";
-    public static final String STRING = "STRING";
-    public static final String VINE = "VINE";
-    public static final String CRIMSON_ROOTS = "CRIMSON_ROOT";
-    public static final String WARPED_ROOTS = "WARPED_ROOT";
-    public static final String WEEPING_VINES = "WEEPING_VINE";
-    public static final String TWISTED_VINES = "TWISTED_VINE";
-    public static final String SLIME = "SLIME";
-    public static final String DIAMOND = "DIAMOND";
-    public static final String REDSTONE = "REDSTONE";
-    public static final String REDSTONE_ALLOY = "REDSTONE_ALLOY";
-    public static final String SILICON = "SILICON";
-    public static final String FERROSILICON = "FERROSILICON";
+    public static final String IRON = "鐵";
+    public static final String GOLD = "金";
+    public static final String COPPER = "銅";
+    public static final String SILVER = "銀";
+    public static final String TIN = "錫";
+    public static final String MAGNESIUM = "鎂";
+    public static final String ALUMINUM = "鋁";
+    public static final String LEAD = "鉛";
+    public static final String ZINC = "鋅";
+    public static final String COAL = "煤炭";
+    public static final String STEEL = "鋼";
+    public static final String DAMSTEEL = "大馬士革鋼";
+    public static final String DURALIUM = "硬鋁";
+    public static final String BRONZE = "青銅";
+    public static final String ALUBRONZE = "鋁青銅";
+    public static final String HARD = "硬化金屬";
+    public static final String CORBRONZE = "科林斯青銅";
+    public static final String SOLDER = "焊錫";
+    public static final String BILLON = "銀銅合金";
+    public static final String BRASS = "黃銅";
+    public static final String ALUBRASS = "鋁黃銅";
+    public static final String NICKEL = "鎳";
+    public static final String COBALT = "鈷";
+    public static final String REINFORCED = "強化合金";
+    public static final String STRING = "線";
+    public static final String VINE = "藤蔓";
+    public static final String CRIMSON_ROOTS = "緋紅蕈根";
+    public static final String WARPED_ROOTS = "扭曲蕈根";
+    public static final String WEEPING_VINES = "垂泣藤";
+    public static final String TWISTED_VINES = "扭曲藤";
+    public static final String SLIME = "史萊姆";
+    public static final String DIAMOND = "鑽石";
+    public static final String REDSTONE = "紅石";
+    public static final String REDSTONE_ALLOY = "紅石合金";
+    public static final String SILICON = "矽";
+    public static final String FERROSILICON = "矽鐵";
 
     // Infinity Expansion
     public static final String VOID = "VOID";
@@ -94,16 +94,16 @@ public final class IDStrings {
     public static final String IRIDIUM = "IRIDIUM";
 
     // Other
-    public static final String HEAD = "HEAD";
-    public static final String BINDING = "BINDING";
-    public static final String ROD = "ROD";
-    public static final String REPAIR = "REPAIR";
+    public static final String HEAD = "前端";
+    public static final String BINDING = "接合物";
+    public static final String ROD = "手柄";
+    public static final String REPAIR = "維修零件";
 
-    public static final String SHOVEL = "SHOVEL";
-    public static final String PICKAXE = "PICK";
-    public static final String AXE = "AXE";
-    public static final String HOE = "HOE";
-    public static final String SWORD = "SWORD";
+    public static final String SHOVEL = "鏟子";
+    public static final String PICKAXE = "鎬子";
+    public static final String AXE = "斧頭";
+    public static final String HOE = "鋤頭";
+    public static final String SWORD = "劍";
 
     public static final String PLACED = "st-placed-block";
 }

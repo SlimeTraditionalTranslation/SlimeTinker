@@ -35,7 +35,7 @@ public class CMAlloy {
                         parent.getLiquidTexture(),
                         ThemeUtils.ThemeItemType.MOLTEN_METAL,
                         "熔融" + titName,
-                        ThemeUtils.PASSIVE + "A molten alloy metal of " + titName
+                        ThemeUtils.PASSIVE + "熔融狀態的" + titName
                 );
         assert parent.getAlloyRecipe() != null;
         this.item = new SlimefunItem(Categories.ALLOYS, itemStack, DummySmelteryAlloy.TYPE, parent.getAlloyRecipe().toArray(new ItemStack[9]));

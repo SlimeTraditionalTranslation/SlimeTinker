@@ -72,7 +72,7 @@ public final class Workstations {
                     ThemeUtils.ThemeItemType.MACHINE,
                     "部件更換站〔黏液打鐵〕",
                     "將新部件更換到工具或武器上",
-                    "註:黏接物不能替換"
+                    "註:接合物不能替換"
             );
 
     // Modification

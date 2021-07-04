@@ -99,7 +99,7 @@ public final class Dies {
                     "DIE_SWORD_BLADE",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeUtils.ThemeItemType.CAST,
-                    "壓模樣品:石製劍刃",
+                    "壓模樣品:石製劍前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 

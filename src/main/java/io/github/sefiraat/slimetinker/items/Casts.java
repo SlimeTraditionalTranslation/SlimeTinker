@@ -188,11 +188,11 @@ public final class Casts {
                     "CAST_SWORDBLADE",
                     Material.ORANGE_CARPET,
                     ThemeUtils.ThemeItemType.CAST,
-                    "模具:劍刃",
+                    "模具:劍前端",
                     ThemeUtils.PASSIVE + CAST_DESC,
                     "",
                     ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_SWORDBLADE + UNIT_DESC,
-                    ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 劍刃"
+                    ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 劍前端"
             );
 
     public static final SlimefunItemStack CAST_TOOLROD =

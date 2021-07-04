@@ -99,23 +99,23 @@ public class ComponentMaterial {
         // Heads (and repair kits)
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_SWORDBLADE().put(this, Parts.SWORD_BLADE.getStack(cmIdentity.getId(), HEAD, SWORD, getColor()));
-            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "SWORD", SkullTextures.PART_SWORD_BLADE), DummySmeltery.TYPE, headRecipe(Casts.CAST_SWORDBLADE, getLiquidItemStack(2)), cmIdentity.getId()).register(SlimeTinker.inst());
+            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "劍", SkullTextures.PART_SWORD_BLADE), DummySmeltery.TYPE, headRecipe(Casts.CAST_SWORDBLADE, getLiquidItemStack(2)), cmIdentity.getId()).register(SlimeTinker.inst());
         }
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_HOEHEAD().put(this, Parts.HOE_HEAD.getStack(cmIdentity.getId(), HEAD, HOE, getColor()));
-            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "HOE", SkullTextures.PART_HOE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_HOEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
+            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "鋤頭", SkullTextures.PART_HOE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_HOEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
         }
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_AXEHEAD().put(this, Parts.AXE_HEAD.getStack(cmIdentity.getId(), HEAD, AXE, getColor()));
-            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "AXE", SkullTextures.PART_AXE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_AXEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
+            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "斧頭", SkullTextures.PART_AXE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_AXEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
         }
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_PICKAXEHEAD().put(this, Parts.PICKAXE_HEAD.getStack(cmIdentity.getId(), HEAD, PICKAXE, getColor()));
-            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "PICK", SkullTextures.PART_PICKAXE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_PICKAXEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
+            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "鎬子", SkullTextures.PART_PICKAXE_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_PICKAXEHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
         }
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_SHOVELHEAD().put(this, Parts.SHOVEL_HEAD.getStack(cmIdentity.getId(), HEAD, SHOVEL, getColor()));
-            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "SHOVEL", SkullTextures.PART_SHOVEL_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_SHOVELHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
+            new PartTemplate(Categories.PART_DICT, headStack(cmIdentity.getId(), "鏟子", SkullTextures.PART_SHOVEL_HEAD), DummySmeltery.TYPE, headRecipe(Casts.CAST_SHOVELHEAD, getLiquidItemStack(1)), cmIdentity.getId()).register(SlimeTinker.inst());
         }
         if (cmToolMakeup.isValidHead()) {
             //CMManager.getMAP_CAST_REPAIRKIT().put(this, Parts.REPAIR_KIT.getStack(cmIdentity.getId(), REPAIR, getColor()));
@@ -137,8 +137,8 @@ public class ComponentMaterial {
                 "PART_HEAD_" + type + name,
                 skullTexture,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " Head",
-        ThemeUtils.PASSIVE + "A tool head made of " + titName + "."
+                getColor() + titName + ThemeUtils.ITEM_PART + "" + ThemeUtils.toTitleCase(type) + "前端",
+        ThemeUtils.PASSIVE + "由" + titName + "製成的前端"
         );
     }
 
@@ -149,8 +149,8 @@ public class ComponentMaterial {
                 "PART_BINDING_" + name,
                 SkullTextures.PART_BINDING,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART +  " Binding",
-                ThemeUtils.PASSIVE + "A binding made of " + titName + "."
+                getColor() + titName + ThemeUtils.ITEM_PART +  "接合物",
+                ThemeUtils.PASSIVE + "由" + titName + "製成的接合物"
         );
         ItemMeta im = i.getItemMeta();
         assert im != null;
@@ -167,8 +167,8 @@ public class ComponentMaterial {
                 "PART_ROD_" + name,
                 SkullTextures.PART_TOOL_ROD,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART + " Rod",
-                ThemeUtils.PASSIVE + "A tool rod made of " + titName + "."
+                getColor() + titName + ThemeUtils.ITEM_PART + "手柄",
+                ThemeUtils.PASSIVE + "由" + titName + "製成的手柄."
         );
     }
 
@@ -178,9 +178,9 @@ public class ComponentMaterial {
                 "PART_REPAIR_KIT_" + name,
                 Material.CHEST_MINECART,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART + " Repair Kit",
-                ThemeUtils.PASSIVE + "A kit that is able to repair items",
-                "made out of " + titName + "."
+                getColor() + titName + ThemeUtils.ITEM_PART + "維修零件",
+                ThemeUtils.PASSIVE + "維修物品的耗材",
+                "由" + titName + "製成的維修零件"
         );
     }
 

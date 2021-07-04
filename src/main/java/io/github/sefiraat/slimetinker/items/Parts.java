@@ -68,8 +68,8 @@ public final class Parts {
                     "PART_SWORD_BLADE_DUMMY",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeUtils.ThemeItemType.CAST,
-                    "部件:劍刃",
-                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:劍刃"+ThemeUtils.PASSIVE+"上，即可取得"
+                    "部件:劍前端",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:劍前端"+ThemeUtils.PASSIVE+"上，即可取得"
             );
 
     public static final SlimefunItemStack PART_TOOL_ROD_DUMMY =
@@ -86,10 +86,10 @@ public final class Parts {
                     "PART_BINDING_DUMMY",
                     SkullTextures.PART_BINDING,
                     ThemeUtils.ThemeItemType.CAST,
-                    "部件:黏接物",
-                    ThemeUtils.PASSIVE + "將前端或劍刃跟手柄黏接在一起",
+                    "部件:接合物",
+                    ThemeUtils.PASSIVE + "將前端與手柄接合在一起",
                     ThemeUtils.PASSIVE + "可以作為材料的有:",
-                    ThemeUtils.PASSIVE + "線、史萊姆球......"
+                    ThemeUtils.PASSIVE + "線、史萊姆球、藤蔓......"
             );
 
     public static final SlimefunItemStack PART_REPAIR_KIT_DUMMY =

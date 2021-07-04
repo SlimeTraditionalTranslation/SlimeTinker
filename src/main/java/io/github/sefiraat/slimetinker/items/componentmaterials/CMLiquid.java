@@ -29,7 +29,7 @@ public class CMLiquid {
                 texture,
                 ThemeUtils.ThemeItemType.MOLTEN_METAL,
                 "熔融" + titName,
-                ThemeUtils.PASSIVE + "The molten form of " + titName
+                ThemeUtils.PASSIVE + "熔融狀態的" + titName
         );
 
         this.item = new SlimefunItem(Categories.MOLTEN_METALS, itemStack, DummySmelteryMolten.TYPE, new ItemStack[] {
