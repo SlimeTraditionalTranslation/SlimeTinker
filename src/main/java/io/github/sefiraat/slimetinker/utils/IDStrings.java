@@ -44,54 +44,54 @@ public final class IDStrings {
     public static final String FERROSILICON = "矽鐵";
 
     // Infinity Expansion
-    public static final String VOID = "VOID";
-    public static final String INFINITY = "INFINITE";
-    public static final String FORTUNE = "FORTUNE_SINGULARITY";
-    public static final String MAGIC = "MAGIC_SINGULARITY";
-    public static final String EARTH = "EARTH_SINGULARITY";
-    public static final String METAL = "METAL_SINGULARITY";
-    public static final String MAGSTEEL = "MAGSTEEL";
-    public static final String TITANIUM = "TITANIUM";
-    public static final String MYTHRIL = "MYTHRIL";
-    public static final String ADAMANTITE = "ADAMANTITE";
-    public static final String MAGNONIUM = "MAGNONIUM";
-    public static final String SINGCOPPER = "COPPER_SINGULARITY";
-    public static final String SINGZINC = "ZINC_SINGULARITY";
-    public static final String SINGTIN = "TIN_SINGULARITY";
-    public static final String SINGALUMINUM = "ALUMINUM_SINGULARITY";
-    public static final String SINGSILVER = "SILVER_SINGULARITY";
-    public static final String SINGMAGNESIUM = "MAGNESIUM_SINGULARITY";
-    public static final String SINGLEAD = "LEAD_SINGULARITY";
-    public static final String SINGGOLD = "GOLD_SINGULARITY";
-    public static final String SINGIRON = "IRON_SINGULARITY";
-    public static final String SINGDIAMOND = "DIAMOND_SINGULARITY";
-    public static final String SINGINFINITY = "INFINITY_SINGULARITY";
+    public static final String VOID = "虛空";
+    public static final String INFINITY = "無限";
+    public static final String FORTUNE = "幸運奇點";
+    public static final String MAGIC = "魔法奇點";
+    public static final String EARTH = "地球奇點";
+    public static final String METAL = "金屬奇點";
+    public static final String MAGSTEEL = "鎂鋼";
+    public static final String TITANIUM = "鈦";
+    public static final String MYTHRIL = "秘銀";
+    public static final String ADAMANTITE = "精金";
+    public static final String MAGNONIUM = "磁振子元素";
+    public static final String SINGCOPPER = "銅奇點";
+    public static final String SINGZINC = "鋅奇點";
+    public static final String SINGTIN = "錫奇點";
+    public static final String SINGALUMINUM = "鋁奇點";
+    public static final String SINGSILVER = "銀奇點";
+    public static final String SINGMAGNESIUM = "鎂奇點";
+    public static final String SINGLEAD = "鉛奇點";
+    public static final String SINGGOLD = "金奇點";
+    public static final String SINGIRON = "鐵奇點";
+    public static final String SINGDIAMOND = "鑽石奇點";
+    public static final String SINGINFINITY = "無限奇點";
 
     // Slimefun Warfare
-    public static final String SLIMESTEEL = "SLIME_STEEL";
-    public static final String REINFORCED_SLIMESTEEL = "REINFORCED_SLIME_STEEL";
-    public static final String OSMIUM_SUPERALLOY = "OSMIUM_SUPERALLOY";
-    public static final String OSMIUM = "OSMIUM";
+    public static final String SLIMESTEEL = "黏液鋼";
+    public static final String REINFORCED_SLIMESTEEL = "強化黏液鋼";
+    public static final String OSMIUM_SUPERALLOY = "鋨超級合金";
+    public static final String OSMIUM = "鋨";
     public static final String SEGGANESSON = "SEGGANESSON";
-    public static final String UNPATENTABLIUM = "UNPATENTABLIUM";
+    public static final String UNPATENTABLIUM = "非專利能量元素";
 
     // DynaTech
-    public static final String STAINLESS_STEEL = "STAINLESS_STEEL";
-    public static final String VEX_GEM = "VEX_GEM";
-    public static final String STARDUST = "STAR_DUST";
-    public static final String GHOSTLY_ESSENCE = "GHOSTLY_ESSENCE";
-    public static final String TESSERACT = "TESSERACTING_MATERIAL";
+    public static final String STAINLESS_STEEL = "不銹鋼";
+    public static final String VEX_GEM = "惱鬼寶石";
+    public static final String STARDUST = "星塵";
+    public static final String GHOSTLY_ESSENCE = "幽靈精華";
+    public static final String TESSERACT = "光學傳輸材料";
 
     // LiteXpansion
-    public static final String RUBBER = "RUBBER";
-    public static final String REFINED_IRON = "REFINED_IRON";
-    public static final String MIXED_METAL = "MIXED_METAL";
-    public static final String ADVANCED_ALLOY = "ADVANCED_ALLOY";
-    public static final String THORIUM = "THORIUM";
-    public static final String MAG_THOR = "MAG_THOR";
-    public static final String CARBON_MESH = "CARBON_MESH";
-    public static final String SCRAP = "SCRAP";
-    public static final String IRIDIUM = "IRIDIUM";
+    public static final String RUBBER = "橡膠";
+    public static final String REFINED_IRON = "精煉鐵";
+    public static final String MIXED_METAL = "混合金屬";
+    public static final String ADVANCED_ALLOY = "高級合金";
+    public static final String THORIUM = "釷";
+    public static final String MAG_THOR = "釷鎂合金";
+    public static final String CARBON_MESH = "碳纖維網";
+    public static final String SCRAP = "廢料";
+    public static final String IRIDIUM = "銥";
 
     // Other
     public static final String HEAD = "前端";

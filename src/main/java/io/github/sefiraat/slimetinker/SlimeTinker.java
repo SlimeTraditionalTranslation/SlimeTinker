@@ -93,7 +93,7 @@ public class SlimeTinker extends AbstractAddon {
 
     @Override
     protected @NotNull String getGithubPath() {
-        return "Sefiraat/SlimeTinker/master";
+        return "SlimeTraditionalTranslation/SlimeTinker/master";
     }
 
 }

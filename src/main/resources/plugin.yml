@@ -1,6 +1,6 @@
 name: SlimeTinker
 author: Sefiraat
-description: An addon that is trying to recreate Tinker's Construct within Slimefun. Adds new customisable tools with leveling and modifiers.
+description: 黏液科技附加 黏液工匠 繁體翻譯版.
 main: io.github.sefiraat.slimetinker.SlimeTinker
 website: https://github.com/Sefiraat/SlimeTinker
 version: ${project.version}
