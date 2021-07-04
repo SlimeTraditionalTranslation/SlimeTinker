@@ -26,7 +26,7 @@ public final class Workstations {
                     "TINKERS_SMELTERY_CORE",
                     Material.CHISELED_POLISHED_BLACKSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "焦黑冶煉爐〔黏液打鐵〕",
+                    "焦黑冶煉爐〔黏液工匠〕",
                     "需要岩漿作為燃料，",
                     "將金屬熔化成液體後，",
                     "可以用來製作合金，",
@@ -39,8 +39,8 @@ public final class Workstations {
                     "TINKERS_WORKBENCH",
                     Material.FLETCHING_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "合成站〔黏液打鐵〕",
-                    "用於製作黏液打鐵的各種物品和零件，",
+                    "合成站〔黏液工匠〕",
+                    "用於製作黏液工匠的各種物品和零件，",
                     "也可用作增強型工作台。"
             );
 
@@ -50,7 +50,7 @@ public final class Workstations {
                     "TINKERS_TABLE",
                     Material.SMITHING_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "組裝站〔黏液打鐵〕",
+                    "組裝站〔黏液工匠〕",
                     "將部件組裝成工具或武器"
             );
 
@@ -60,7 +60,7 @@ public final class Workstations {
                     "TINKERS_REPAIR_BENCH",
                     Material.CARTOGRAPHY_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "維修站〔黏液打鐵〕",
+                    "維修站〔黏液工匠〕",
                     "修理工具或武器"
             );
 
@@ -70,7 +70,7 @@ public final class Workstations {
                     "TINKERS_SWAPPING_STATION",
                     Material.SCAFFOLDING,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "部件更換站〔黏液打鐵〕",
+                    "部件更換站〔黏液工匠〕",
                     "將新部件更換到工具或武器上",
                     "註:接合物不能替換"
             );
@@ -81,7 +81,7 @@ public final class Workstations {
                     "TINKERS_MOD_STATION",
                     Material.GRINDSTONE,
                     ThemeUtils.ThemeItemType.MACHINE,
-                    "強化站〔黏液打鐵〕",
+                    "強化站〔黏液工匠〕",
                     "將工具或武器進行強化",
                     "新增或升級強化項目，將會消耗1次強化次數",
                     "可以利用大量素材提供強化項目經驗"

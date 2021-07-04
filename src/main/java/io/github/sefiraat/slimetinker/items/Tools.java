@@ -22,7 +22,7 @@ import java.util.Map;
 @UtilityClass
 public final class Tools {
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = "錯誤";
     public static final int LEVEL_NETHERITE = 10;
     public static final int LEVEL_DIAMOND = 8;
     public static final int LEVEL_IRON = 6;
@@ -44,10 +44,11 @@ public final class Tools {
                     "TOOL_SHOVEL_DUMMY",
                     Material.STONE_SHOVEL,
                     ThemeUtils.ThemeItemType.TOOL,
-                    "Tinker's Shovel",
-                    ThemeUtils.PASSIVE + "A shovel formed of three parts.",
-                    ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-                    ThemeUtils.PASSIVE + "given extra properties and modifiers."
+                    "黏液工匠-鏟子",
+                    ThemeUtils.PASSIVE + "由手柄、接合物、鏟子前端所組成。",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會依照你的材質而有不同的屬性，",
+                    ThemeUtils.PASSIVE + "而且可以升級並獲得強化次數。"
             );
 
     public static final SlimefunItemStack TOOL_PICKAXE_DUMMY =
@@ -55,10 +56,11 @@ public final class Tools {
                     "TOOL_PICKAXE_DUMMY",
                     Material.STONE_PICKAXE,
                     ThemeUtils.ThemeItemType.TOOL,
-                    "Tinker's Pickaxe",
-                    ThemeUtils.PASSIVE + "A pickaxe formed of three parts.",
-                    ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-                    ThemeUtils.PASSIVE + "given extra properties and modifiers."
+                    "黏液工匠-鎬子",
+                    ThemeUtils.PASSIVE + "由手柄、接合物、鎬子前端所組成。",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會依照你的材質而有不同的屬性，",
+                    ThemeUtils.PASSIVE + "而且可以升級並獲得強化次數。"
             );
 
     public static final SlimefunItemStack TOOL_AXE_DUMMY =
@@ -66,10 +68,11 @@ public final class Tools {
                     "TOOL_AXE_DUMMY",
                     Material.STONE_AXE,
                     ThemeUtils.ThemeItemType.TOOL,
-                    "Tinker's Axe",
-                    ThemeUtils.PASSIVE + "An axe formed of three parts.",
-                    ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-                    ThemeUtils.PASSIVE + "given extra properties and modifiers."
+                    "黏液工匠-斧頭",
+                    ThemeUtils.PASSIVE + "由手柄、接合物、斧頭前端所組成。",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會依照你的材質而有不同的屬性，",
+                    ThemeUtils.PASSIVE + "而且可以升級並獲得強化次數。"
             );
 
     public static final SlimefunItemStack TOOL_HOE_DUMMY =
@@ -77,10 +80,11 @@ public final class Tools {
                     "TOOL_HOE_DUMMY",
                     Material.STONE_HOE,
                     ThemeUtils.ThemeItemType.TOOL,
-                    "Tinker's Hoe",
-                    ThemeUtils.PASSIVE + "A hoe formed of three parts.",
-                    ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-                    ThemeUtils.PASSIVE + "given extra properties and modifiers."
+                    "黏液工匠-鋤頭",
+                    ThemeUtils.PASSIVE + "由手柄、接合物、鋤頭前端所組成。",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會依照你的材質而有不同的屬性，",
+                    ThemeUtils.PASSIVE + "而且可以升級並獲得強化次數。"
             );
 
     public static final SlimefunItemStack TOOL_SWORD_DUMMY =
@@ -88,10 +92,11 @@ public final class Tools {
                     "TOOL_SWORD_DUMMY",
                     Material.STONE_SWORD,
                     ThemeUtils.ThemeItemType.TOOL,
-                    "Tinker's Sword",
-                    ThemeUtils.PASSIVE + "A sword formed of three parts.",
-                    ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-                    ThemeUtils.PASSIVE + "given extra properties and modifiers."
+                    "黏液工匠-劍",
+                    ThemeUtils.PASSIVE + "由手柄、接合物、劍前端所組成。",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會依照你的材質而有不同的屬性，",
+                    ThemeUtils.PASSIVE + "而且可以升級並獲得強化次數。"
             );
 
     public static final SlimefunItemStack TOOL_AXE =

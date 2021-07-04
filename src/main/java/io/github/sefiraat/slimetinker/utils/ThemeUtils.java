@@ -15,7 +15,7 @@ import java.util.List;
 @UtilityClass
 public final class ThemeUtils {
 
-    public static final String PREFIX = "" + ChatColor.GRAY + "[黏液打鐵] ";
+    public static final String PREFIX = "" + ChatColor.GRAY + "[黏液工匠] ";
     public static final String SUFFIX = "" + ChatColor.GRAY + "";
 
     public static final ChatColor WARNING = ChatColor.YELLOW;
@@ -47,7 +47,7 @@ public final class ThemeUtils {
     public static final ChatColor ADD_DYNATECH = ChatColor.of("#60d1cd");
     public static final ChatColor ADD_LITEXPANSION = ChatColor.of("#8a8a8a");
 
-    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "Crafting Material";
+    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "製作材料";
     public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "機器";
     public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "Drop";
     public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "Base Resource";
@@ -56,9 +56,9 @@ public final class ThemeUtils {
     public static final String LORE_LIQUID = ITEM_TYPEDESC + "ComponentMaterial";
     public static final String LORE_CAST = ITEM_TYPEDESC + "鑄造";
     public static final String LORE_PART = ITEM_TYPEDESC + "部件";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "Tinker's Tool";
-    public static final String LORE_INFO = ITEM_TYPEDESC + "Info";
-    public static final String LORE_MOD = ITEM_TYPEDESC + "Modification";
+    public static final String LORE_TOOL = ITEM_TYPEDESC + "黏液工匠";
+    public static final String LORE_INFO = ITEM_TYPEDESC + "資訊";
+    public static final String LORE_MOD = ITEM_TYPEDESC + "強化";
     public static final String LORE_PROP = ITEM_TYPEDESC + "Material Trait";
     public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Mutliblock";
 

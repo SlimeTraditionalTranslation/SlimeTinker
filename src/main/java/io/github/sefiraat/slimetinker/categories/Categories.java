@@ -15,7 +15,7 @@ public final class Categories {
 
     public static final MultiCategory MAIN = new MultiCategory(SlimeTinker.inst().getKeys().getCategoryMain(), new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MAIN),
-            ThemeUtils.MAIN + "黏液打鐵"
+            ThemeUtils.MAIN + "黏液工匠"
     ));
     public static final SubCategory WORKSTATIONS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryWorkstations(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MAIN),
@@ -23,7 +23,7 @@ public final class Categories {
     ));
     public static final SubCategory MATERIALS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryMaterials(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MATERIALS),
-            ThemeUtils.MAIN + "材料"
+            ThemeUtils.MAIN + "製作材料"
     ));
     public static final SubCategory MOLTEN_METALS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryMolten(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MOLTEN),
@@ -43,11 +43,11 @@ public final class Categories {
     ));
     public static final SubCategory TOOLS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryTools(), MAIN, new CustomItem(
             Material.DIAMOND_SWORD,
-            ThemeUtils.MAIN + "工具配裝說明"
+            ThemeUtils.MAIN + "工具組裝說明"
     ));
     public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_TRAITS),
-            ThemeUtils.MAIN + "特性說明"
+            ThemeUtils.MAIN + "屬性說明"
     ));
     public static final SubCategory MODIFICATIONS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryModifications(), MAIN, new CustomItem(
             Material.REDSTONE,
