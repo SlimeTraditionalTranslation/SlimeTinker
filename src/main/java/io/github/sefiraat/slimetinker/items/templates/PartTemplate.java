@@ -24,7 +24,7 @@ public class PartTemplate extends UnplaceableBlock {
 
     private final String name;
 
-    public String getName(String material) { return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + " " + name;
+    public String getName(String material) { return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + "" + name;
     }
 
     public List<String> getLore(String material, ChatColor color) {
@@ -35,7 +35,7 @@ public class PartTemplate extends UnplaceableBlock {
         list.add(ThemeUtils.PASSIVE + "但可以在組裝站，");
         list.add(ThemeUtils.PASSIVE + "組合出自己滿意的工具或武器。");
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "材質:" + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + "材質: " + color + ThemeUtils.toTitleCase(material));
         return list;
     }
 

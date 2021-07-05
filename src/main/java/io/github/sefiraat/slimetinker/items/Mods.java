@@ -41,7 +41,7 @@ public final class Mods {
                     "MOD_QUARTZ_DUMMY",
                     Material.QUARTZ,
                     ThemeUtils.ThemeItemType.MOD,
-                    "強化素材:石英",
+                    "強化素材:地獄石英",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "玩家手持此工具，",
                     ThemeUtils.PASSIVE + "將增加工具或武器的傷害",

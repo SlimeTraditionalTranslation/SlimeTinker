@@ -137,7 +137,7 @@ public class ComponentMaterial {
                 "PART_HEAD_" + type + name,
                 skullTexture,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART + "" + ThemeUtils.toTitleCase(type) + "前端",
+                getColor() + titName + ThemeUtils.ITEM_PART + ThemeUtils.toTitleCase(type) + "前端",
         ThemeUtils.PASSIVE + "由" + titName + "製成的前端"
         );
     }

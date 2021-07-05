@@ -194,10 +194,10 @@ public final class Tools {
                     "TOOL_INFO",
                     SkullTextures.INFO,
                     ThemeUtils.ThemeItemType.INFO,
-                    "Tinker's Tools Info",
-                    ThemeUtils.PASSIVE + "Tinker's tools start at Stone. As you",
-                    ThemeUtils.PASSIVE + "level the tools up, they will promote",
-                    ThemeUtils.PASSIVE + "through Gold > Iron > Diamond > Netherite."
+                    "黏液工匠資訊",
+                    ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
+                    ThemeUtils.PASSIVE + "會隨著熟練等級提升，",
+                    ThemeUtils.PASSIVE + "品質由「石→金→鐵→鑽石→獄髓」"
             );
 
     public static final ToolTemplate SHOVEL = new ToolTemplate(Categories.DUMMY, TOOL_SHOVEL, DummyTable.TYPE, new ItemStack[9]);

@@ -56,10 +56,10 @@ public final class ThemeUtils {
     public static final String LORE_LIQUID = ITEM_TYPEDESC + "ComponentMaterial";
     public static final String LORE_CAST = ITEM_TYPEDESC + "鑄造";
     public static final String LORE_PART = ITEM_TYPEDESC + "部件";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "黏液工匠";
+    public static final String LORE_TOOL = ITEM_TYPEDESC + "黏液工匠-工具和武器";
     public static final String LORE_INFO = ITEM_TYPEDESC + "資訊";
     public static final String LORE_MOD = ITEM_TYPEDESC + "強化";
-    public static final String LORE_PROP = ITEM_TYPEDESC + "Material Trait";
+    public static final String LORE_PROP = ITEM_TYPEDESC + "黏液工匠-屬性";
     public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Mutliblock";
 
     public static SlimefunItemStack themedItemStack(String id, String skull, ThemeItemType type, String name, String... loreLines) {

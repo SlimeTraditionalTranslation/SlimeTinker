@@ -27,7 +27,7 @@ public class RepairkitTemplate extends UnplaceableBlock {
     private final String name;
 
     public String getName(String material) {
-        return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + " " + name;
+        return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + "" + name;
     }
 
     public List<String> getLore(String material, ChatColor color) {
@@ -37,7 +37,7 @@ public class RepairkitTemplate extends UnplaceableBlock {
         list.add(ThemeUtils.PASSIVE + "可以在維修站，");
         list.add(ThemeUtils.PASSIVE + "修復對應前端材質的工具或武器。");
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "材質:" + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + "材質: " + color + ThemeUtils.toTitleCase(material));
         return list;
     }
 
