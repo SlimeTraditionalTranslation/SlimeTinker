@@ -228,7 +228,7 @@ public final class GUIItems {
 
     public static CustomItem menuCraftSwap() {
         return new CustomItem(
-                Material.SCAFFOLDING,
+                Material.LOOM,
                 ThemeUtils.GUI_HEAD + "更換部件",
                 "",
                 ThemeUtils.PASSIVE + "更換這把工具的部件."

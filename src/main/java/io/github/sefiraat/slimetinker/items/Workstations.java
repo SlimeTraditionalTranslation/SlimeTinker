@@ -68,7 +68,7 @@ public final class Workstations {
     public static final SlimefunItemStack TINKERS_SWAPPING_STATION =
             ThemeUtils.themedItemStack(
                     "TINKERS_SWAPPING_STATION",
-                    Material.SCAFFOLDING,
+                    Material.LOOM,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "部件更換站〔黏液工匠〕",
                     "將新部件更換到工具或武器上",
