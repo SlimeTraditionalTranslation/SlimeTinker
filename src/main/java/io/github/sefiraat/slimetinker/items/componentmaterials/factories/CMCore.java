@@ -15,6 +15,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.ComponentMaterial
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.TraitEventType;
 import io.github.sefiraat.slimetinker.utils.enums.TraitPartType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
@@ -58,18 +59,24 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "穩定Stability",
-                                                "-需求部件:前端",
-                                                "-屬性說明:什麼也沒做！"
+                                                "穩定",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鐵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"什麼也沒做！"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "夏普Sharp 1",
-                                                "-需求部件:手柄",
-                                                "-屬性說明:增加傷害，可以與其他屬性疊加",
-                                                "-藥水效果:力量1"
+                                                "銳利1",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鐵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"增加傷害，可以與其他屬性疊加",
+                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
+                                                ThemeUtils.PASSIVE+"力量1(有銳利1或銳利2即可)",
+                                                ThemeUtils.PASSIVE+"力量2(同時有銳利1和銳利2)"
                                         )
                                 )
                         ));
@@ -96,20 +103,26 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "金面紗Golden Veil",
-                                                "-需求部件:前端",
-                                                "-屬性說明:手持工具或武器時，使玩家隱形，",
-                                                "如果用在武器上-100%傷害",
-                                                "-藥水效果:隱形1"
+                                                "金面紗",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"手持工具或武器時，",
+                                                ThemeUtils.PASSIVE+"使玩家隱形，如果用在武器上-100%傷害",
+                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
+                                                ThemeUtils.PASSIVE+"隱形1"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "閃閃發光的一切All that Glitters",
-                                                "-需求部件:手柄",
-                                                "-屬性說明:手持工具或武器時，使玩家發光",
-                                                "-藥水效果:發光1"
+                                                "閃閃發光的一切",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"手持工具或武器時，使玩家發光",
+                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
+                                                ThemeUtils.PASSIVE+"發光1"
                                         )
                                 )
                         ));
@@ -136,17 +149,21 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "大腦，不是肌肉Brains, Not Brawn",
-                                                "-需求部件:前端",
-                                                "-屬性說明:熟練經驗+200%，造成傷害-50%"
+                                                "智力好，體力差",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"熟練經驗+200%，造成傷害-50%"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "導電Conductive",
-                                                "-需求部件:手柄 All tool exp is converted to player exp.",
-                                                "-屬性說明:所有工具或武器的熟練經驗，轉換為玩家經驗"
+                                                "經驗導流",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"所有工具或武器的熟練經驗，轉換為玩家經驗"
                                         )
                                 )
                         ));
@@ -173,18 +190,24 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "有毒Poisonous",
-                                                "-需求部件:前端擊中生物時有25%的機率造成中毒25% chance to afflict poison on hit.",
-                                                "88888"
+                                                "有毒",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鉛)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"擊中生物時有25%的機率造成中毒"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "水蛭Leech",
-                                                "-需求部件:手柄Bonus health, but drains your energy.",
-                                                "-屬性說明:手持工具或武器時，緩慢消耗飽食度，提高生命值",
-                                                "-藥水效果:飢餓1、生命提升3"
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鉛)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"手持工具或武器時，緩慢消耗飽食度，提高生命值",
+                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
+                                                ThemeUtils.PASSIVE+"飢餓1",
+                                                ThemeUtils.PASSIVE+"生命提升3"
                                         )
                                 )
                         ));
@@ -585,10 +608,14 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "夏普 2Sharp 2",
-                                                "Gives increased damage, stacks with",
-                                                "mods and other properties.",
-                                                "增加傷害，與模組和其他屬性疊加。”"
+                                                "銳利2",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋁青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
+                                                ThemeUtils.PASSIVE+"增加傷害，可以與其他屬性疊加",
+                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
+                                                ThemeUtils.PASSIVE+"力量1(有銳利1或銳利2即可)",
+                                                ThemeUtils.PASSIVE+"力量2(同時有銳利1和銳利2)"
                                         ),
                                         null,
                                         new CMTrait(
@@ -627,7 +654,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "夏普 2Sharp 2",
+                                                "Sharp2",
                                                 "擊退任何擊中的東西並有機會擊暈。Knocks back anything hit with a chance",
                                                 "to stun."
                                         ),
@@ -635,7 +662,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "重的Heavy",
+                                                "槌子Heavy",
                                                 "在 3x3 區域中挖掘。Mines in a 3x3 area."
                                         )
                                 )
