@@ -40,13 +40,13 @@ public class CMTrait {
 
         List<String> newLore = new ArrayList<>(Arrays.asList(lore));
         newLore.add("");
-        newLore.add(ThemeUtils.ITEM_TYPEDESC + "由" + addedBy + "新增");
+        newLore.add(ThemeUtils.ITEM_TYPEDESC + "由" + addedBy + ThemeUtils.ITEM_TYPEDESC + "新增");
         this.itemStack =
                 ThemeUtils.themedItemStack(
                         traitName.toUpperCase(Locale.ROOT).replace(" ","_") + "_TRAIT_" + StackUtils.getIDorType(parentCM.getRepresentativeStack()),
                         CMTraits.getTraitTexture(addedBy),
                         ThemeUtils.ThemeItemType.PROP,
-                        "屬性:" + traitName,
+                        "屬性: " + traitName,
                         newLore
                 );
         this.item = new SlimefunItem(Categories.TRAITS, itemStack, DummySmelteryTrait.TYPE, CMTraits.propRecipe(partType, parentCM.getRepresentativeStack()));

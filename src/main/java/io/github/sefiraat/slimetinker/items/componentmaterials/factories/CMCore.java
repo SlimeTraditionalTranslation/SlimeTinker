@@ -60,7 +60,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "穩定Stability",
                                                 "-需求部件:前端",
-                                                "-說明:什麼也沒做！"
+                                                "-屬性說明:什麼也沒做！"
                                         ),
                                         null,
                                         new CMTrait(
@@ -68,7 +68,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "夏普Sharp 1",
                                                 "-需求部件:手柄",
-                                                "-說明:增加傷害，可以與其他屬性疊加",
+                                                "-屬性說明:增加傷害，可以與其他屬性疊加",
                                                 "-藥水效果:力量1"
                                         )
                                 )
@@ -98,7 +98,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "金面紗Golden Veil",
                                                 "-需求部件:前端",
-                                                "-說明:手持工具或武器時，使玩家隱形，",
+                                                "-屬性說明:手持工具或武器時，使玩家隱形，",
                                                 "如果用在武器上-100%傷害",
                                                 "-藥水效果:隱形1"
                                         ),
@@ -108,7 +108,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "閃閃發光的一切All that Glitters",
                                                 "-需求部件:手柄",
-                                                "-說明:手持工具或武器時，使玩家發光",
+                                                "-屬性說明:手持工具或武器時，使玩家發光",
                                                 "-藥水效果:發光1"
                                         )
                                 )
@@ -138,7 +138,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "大腦，不是肌肉Brains, Not Brawn",
                                                 "-需求部件:前端",
-                                                "-說明:熟練經驗+200%，造成傷害-50%"
+                                                "-屬性說明:熟練經驗+200%，造成傷害-50%"
                                         ),
                                         null,
                                         new CMTrait(
@@ -146,7 +146,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "導電Conductive",
                                                 "-需求部件:手柄 All tool exp is converted to player exp.",
-                                                "-說明:所有工具或武器的熟練經驗，轉換為玩家經驗"
+                                                "-屬性說明:所有工具或武器的熟練經驗，轉換為玩家經驗"
                                         )
                                 )
                         ));
@@ -183,8 +183,8 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "水蛭Leech",
                                                 "-需求部件:手柄Bonus health, but drains your energy.",
-                                                "-說明:手持工具或武器時，緩慢消耗飽食度，提高生命值",
-                                                "99999飢餓1、生命提升3"
+                                                "-屬性說明:手持工具或武器時，緩慢消耗飽食度，提高生命值",
+                                                "-藥水效果:飢餓1、生命提升3"
                                         )
                                 )
                         ));
@@ -213,7 +213,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "嫵媚Enchanting",
                                                 "-需求部件:前端Tool exp gain is halved. Tools add a",
-                                                "-說明:熟練經驗-50%，在工具或武器升級時，隨機給予一項附魔。random vanilla enchant when leveling. May or",
+                                                "-屬性說明:熟練經驗-50%，在工具或武器升級時，隨機給予一項附魔。random vanilla enchant when leveling. May or",
                                                 "對工具或武器，可能適合，也可能不適合。may not match the tool type."
                                         ),
                                         null,
@@ -222,8 +222,8 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "觸感柔軟Soft Touch",
                                                 "-需求部件:前端+手柄You feel lighter.",
-                                                "-說明:你感覺更輕",
-                                                "99999緩降3"
+                                                "-屬性說明:你感覺更輕",
+                                                "-藥水效果:緩降3"
                                         )
                                 )
                         ));
@@ -252,7 +252,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "可回收Recyclable",
                                                 "-需求部件:前端Chance to restore durability on hit/block break",
-                                                "-說明:有機會在命中或格擋中斷時恢復耐久度"
+                                                "-屬性說明:有機會在命中或格擋中斷時恢復耐久度"
                                         ),
                                         null,
                                         new CMTrait(
@@ -260,7 +260,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "柔軟的Soft",
                                                 "-需求部件:手柄Durability loss +100%, tool EXP +50%.",
-                                                "-說明:耐久消耗+100%，熟練經驗+50%"
+                                                "-屬性說明:耐久消耗+100%，熟練經驗+50%"
                                         )
                                 )
                         ));
@@ -289,7 +289,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "延展性Malleable",
                                                 "-需求部件:前端Deal 50% less damage but gain luck.",
-                                                "-說明:造成傷害-50%，但會獲得運氣"
+                                                "-屬性說明:造成傷害-50%，但會獲得運氣"
                                         ),
                                         null,
                                         new CMTrait(
@@ -297,7 +297,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "能Can",
                                                 "-需求部件:手柄Your hunger just fades away",
-                                                "-說明:你的飢餓感逐漸消失"
+                                                "-屬性說明:你的飢餓感逐漸消失"
                                         )
                                 )
                         ));
@@ -326,7 +326,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "優美Graceful",
                                                 "-需求部件:前端DOLPHIN POWERS, ACTIVATE!",
-                                                "-說明:海豚的力量，激活！"
+                                                "-屬性說明:海豚的力量，激活！"
                                         ),
                                         null,
                                         new CMTrait(
@@ -334,7 +334,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "超輕量級Super Lightweight",
                                                 "-需求部件:手柄Makes you lighter than air when not sneaking.",
-                                                "-說明:讓你在不潛行時比空氣輕。"
+                                                "-屬性說明:讓你在不潛行時比空氣輕。"
                                         )
                                 )
                         ));
@@ -363,7 +363,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "易燃Flammable",
                                                 "-需求部件:前端Has a (Tool level x 5)% chance to",
-                                                "-說明:有(熟練等級x5)%的機率讓你的敵人著火”set your enemies ablaze."
+                                                "-屬性說明:有(熟練等級x5)%的機率讓你的敵人著火”set your enemies ablaze."
                                         ),
                                         null,
                                         new CMTrait(
@@ -371,7 +371,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "鎂Magnetesium",
                                                 "-需求部件:手柄Random items are drawn to you from",
-                                                "-說明:從5格範圍內隨機抽取物品within a 5 block range"
+                                                "-屬性說明:從5格範圍內隨機抽取物品within a 5 block range"
                                         )
                                 )
                         ));
@@ -426,16 +426,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Stainless",
-                                                "The tool/weapon repels blood."
+                                                "防鏽的Stainless",
+                                                "The tool/weapon repels blood.",
+                                                "工具/武器排斥血液。"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Lightweight",
+                                                "輕的Lightweight",
                                                 "Random items are drawn to you from",
-                                                "within a 5 block range"
+                                                "隨機物品會從 5 格範圍內向您抽取within a 5 block range"
                                         )
                                 )
                         ));
@@ -466,16 +467,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Vampirism",
+                                                "吸血鬼Vampirism",
                                                 "Chance to heal by damage given.",
-                                                "Damage dealt varies by time of day."
+                                                "Damage dealt varies by time of day.",
+                                                "“通過受到的傷害獲得治療。造成的傷害因一天中的時間而異。”"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Nightstalker",
-                                                "Gives night vision."
+                                                "夜行者Nightstalker",
+                                                "提供夜視功能。Gives night vision."
                                         )
                                 )
                         ));
@@ -505,16 +507,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Durable",
+                                                "耐用的Durable",
                                                 "Ignores being broken but damage 50%,",
-                                                "mining will be slower and 0 exp."
+                                                "mining will be slower and 0 exp.",
+                                                "“無視被破壞但傷害50%，採礦會更慢，0經驗。”"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Easy Fix",
-                                                "Only 1 kit is needed to fully repair."
+                                                "輕鬆修復Easy Fix",
+                                                "只需 1 個套件即可完全修復。Only 1 kit is needed to fully repair."
                                         )
                                 )
                         ));
@@ -544,15 +547,15 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Resistance",
-                                                "Gives fire resistance while held."
+                                                "抵抗性Resistance",
+                                                "持有時提供耐火性。Gives fire resistance while held."
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Ingheights",
-                                                "Something is wrong with this tool."
+                                                "輸入高度Ingheights",
+                                                "這個工具有問題。Something is wrong with this tool."
                                         )
                                 )
                         ));
@@ -582,16 +585,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Sharp 2",
+                                                "夏普 2Sharp 2",
                                                 "Gives increased damage, stacks with",
-                                                "mods and other properties."
+                                                "mods and other properties.",
+                                                "增加傷害，與模組和其他屬性疊加。”"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Brittle",
-                                                "Durability loss is doubled."
+                                                "脆Brittle",
+                                                "耐久性損失成倍增加。Durability loss is doubled."
                                         )
                                 )
                         ));
@@ -623,16 +627,16 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Sharp 2",
-                                                "Knocks back anything hit with a chance",
+                                                "夏普 2Sharp 2",
+                                                "擊退任何擊中的東西並有機會擊暈。Knocks back anything hit with a chance",
                                                 "to stun."
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Heavy",
-                                                "Mines in a 3x3 area."
+                                                "重的Heavy",
+                                                "在 3x3 區域中挖掘。Mines in a 3x3 area."
                                         )
                                 )
                         ));
@@ -664,14 +668,14 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Flaming Hot",
-                                                "Smelts broken blocks when possible."
+                                                "熾熱Flaming Hot",
+                                                "在可能的情況下熔煉破碎的方塊。Smelts broken blocks when possible."
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Too Hot to Handle",
+                                                "太燙了Too Hot to Handle",
                                                 "?"
                                         )
                                 )
@@ -702,16 +706,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Hidden",
-                                                "Grants invisibility, breaks instantly."
+                                                "隱Hidden",
+                                                "授予隱身，立即打破。Grants invisibility, breaks instantly."
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Fused",
+                                                "熔斷的Fused",
                                                 "Tool cannot be dropped either by the",
-                                                "player or on death."
+                                                "player or on death.",
+                                                "玩家或死亡時都不會掉落工具。"
                                         )
                                 )
                         ));
@@ -741,16 +746,17 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Fast",
+                                                "快速地Fast",
                                                 "Move speed increased and haste applied.",
-                                                "Stacks with modifiers."
+                                                "Stacks with modifiers.",
+                                                "移動速度提高並施加急速。 與修飾符堆疊。"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Springs",
-                                                "Makes you jump higher."
+                                                "彈簧Springs",
+                                                "讓你跳得更高。Makes you jump higher."
                                         )
                                 )
                         ));
