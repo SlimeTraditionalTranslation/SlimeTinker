@@ -179,7 +179,7 @@ public class ComponentMaterial {
                 Material.CHEST_MINECART,
                 ThemeUtils.ThemeItemType.PART,
                 getColor() + titName + ThemeUtils.ITEM_PART + "維修零件",
-                ThemeUtils.PASSIVE + "維修物品的耗材",
+                ThemeUtils.PASSIVE + "修復工具或武器的耗材",
                 "由" + titName + "製成的維修零件"
         );
     }

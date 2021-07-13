@@ -196,8 +196,10 @@ public final class Tools {
                     ThemeUtils.ThemeItemType.INFO,
                     "黏液工匠資訊",
                     ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
-                    ThemeUtils.PASSIVE + "會隨著熟練等級提升，",
-                    ThemeUtils.PASSIVE + "品質由「石→金→鐵→鑽石→獄髓」"
+                    ThemeUtils.PASSIVE + "每次攻擊或破壞時，",
+                    ThemeUtils.PASSIVE + "可以獲得熟練經驗，",
+                    ThemeUtils.PASSIVE + "隨著熟練等級提升，",
+                    ThemeUtils.PASSIVE + "品質由「石→金→鐵→鑽石→獄髓」。"
             );
 
     public static final ToolTemplate SHOVEL = new ToolTemplate(Categories.DUMMY, TOOL_SHOVEL, DummyTable.TYPE, new ItemStack[9]);

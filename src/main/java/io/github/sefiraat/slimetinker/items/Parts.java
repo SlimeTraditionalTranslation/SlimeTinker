@@ -99,7 +99,7 @@ public final class Parts {
                     ThemeUtils.ThemeItemType.CAST,
                     "部件:維修零件",
                     ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:維修零件"+ThemeUtils.PASSIVE+"上，即可取得",
-                    "可以在維修站消耗維修零件，將工具或武器維修"
+                    "可以在維修站消耗維修零件，將工具或武器修復"
             );
 
     public static final SlimefunItemStack PART_AXE_HEAD =

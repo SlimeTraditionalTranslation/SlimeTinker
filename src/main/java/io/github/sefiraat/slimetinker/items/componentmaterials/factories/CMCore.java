@@ -62,21 +62,23 @@ public final class CMCore {
                                                 "穩定",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(鐵)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"什麼也沒做！"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"什麼也沒做！",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "銳利1",
+                                                "銳利A",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(鐵)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"增加傷害，可以與其他屬性疊加",
-                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
-                                                ThemeUtils.PASSIVE+"力量1(有銳利1或銳利2即可)",
-                                                ThemeUtils.PASSIVE+"力量2(同時有銳利1和銳利2)"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*力量I (有銳利A或銳利B即可)",
+                                                ThemeUtils.PASSIVE+"*力量II (同時有銳利A和銳利B)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -103,26 +105,26 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "金面紗",
+                                                "隱形A",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(金)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"手持工具或武器時，",
-                                                ThemeUtils.PASSIVE+"使玩家隱形，如果用在武器上-100%傷害",
-                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
-                                                ThemeUtils.PASSIVE+"隱形1"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*隱形I",
+                                                ThemeUtils.PASSIVE+"*造成傷害-100%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "閃閃發光的一切",
+                                                "發光",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(金)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"手持工具或武器時，使玩家發光",
-                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
-                                                ThemeUtils.PASSIVE+"發光1"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*發光I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -152,8 +154,11 @@ public final class CMCore {
                                                 "智力好，體力差",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(銅)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"熟練經驗+200%，造成傷害-50%"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*熟練經驗+200%",
+                                                ThemeUtils.PASSIVE+"*造成傷害-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
@@ -162,8 +167,11 @@ public final class CMCore {
                                                 "經驗導流",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(銅)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"所有工具或武器的熟練經驗，轉換為玩家經驗"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*將獲得的熟練經驗，",
+                                                ThemeUtils.PASSIVE+" 轉換為玩家經驗",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -193,21 +201,24 @@ public final class CMCore {
                                                 "有毒",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(鉛)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"擊中生物時有25%的機率造成中毒"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*擊中生物時",
+                                                ThemeUtils.PASSIVE+" 有25%的機率造成中毒",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "水蛭Leech",
+                                                "強壯",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(鉛)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"手持工具或武器時，緩慢消耗飽食度，提高生命值",
-                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
-                                                ThemeUtils.PASSIVE+"飢餓1",
-                                                ThemeUtils.PASSIVE+"生命提升3"
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*飢餓I",
+                                                ThemeUtils.PASSIVE+"*生命提升III",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -234,19 +245,28 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "嫵媚Enchanting",
-                                                "-需求部件:前端Tool exp gain is halved. Tools add a",
-                                                "-屬性說明:熟練經驗-50%，在工具或武器升級時，隨機給予一項附魔。random vanilla enchant when leveling. May or",
-                                                "對工具或武器，可能適合，也可能不適合。may not match the tool type."
+                                                "隨機附魔",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銀)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*在工具或武器升級時，",
+                                                ThemeUtils.PASSIVE+" 隨機給予一項附魔，",
+                                                ThemeUtils.PASSIVE+" 附魔項目不一定適合工具或武器",
+                                                ThemeUtils.PASSIVE+"*熟練經驗-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 SlimefunItems.SILVER_INGOT,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "觸感柔軟Soft Touch",
-                                                "-需求部件:前端+手柄You feel lighter.",
-                                                "-屬性說明:你感覺更輕",
-                                                "-藥水效果:緩降3"
+                                                "緩降",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銀)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*緩降III",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -273,17 +293,27 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "可回收Recyclable",
-                                                "-需求部件:前端Chance to restore durability on hit/block break",
-                                                "-屬性說明:有機會在命中或格擋中斷時恢復耐久度"
+                                                "耐久恢復",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋁)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*擊中或破壞時，",
+                                                ThemeUtils.PASSIVE+" 有機率恢復耐久度",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "柔軟的Soft",
-                                                "-需求部件:手柄Durability loss +100%, tool EXP +50%.",
-                                                "-屬性說明:耐久消耗+100%，熟練經驗+50%"
+                                                "柔軟",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋁)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*耐久消耗+100%",
+                                                ThemeUtils.PASSIVE+"*熟練經驗+50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -310,17 +340,26 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "延展性Malleable",
-                                                "-需求部件:前端Deal 50% less damage but gain luck.",
-                                                "-屬性說明:造成傷害-50%，但會獲得運氣"
+                                                "幸運",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(錫)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*幸運I",
+                                                ThemeUtils.PASSIVE+"*造成傷害-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "能Can",
-                                                "-需求部件:手柄Your hunger just fades away",
-                                                "-屬性說明:你的飢餓感逐漸消失"
+                                                "飽食",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(錫)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*飽食I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -347,17 +386,25 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "優美Graceful",
-                                                "-需求部件:前端DOLPHIN POWERS, ACTIVATE!",
-                                                "-屬性說明:海豚的力量，激活！"
+                                                "海豚悠游",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*海豚悠游I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "超輕量級Super Lightweight",
-                                                "-需求部件:手柄Makes you lighter than air when not sneaking.",
-                                                "-屬性說明:讓你在不潛行時比空氣輕。"
+                                                "漂浮",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*漂浮II",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -385,16 +432,25 @@ public final class CMCore {
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "易燃Flammable",
-                                                "-需求部件:前端Has a (Tool level x 5)% chance to",
-                                                "-屬性說明:有(熟練等級x5)%的機率讓你的敵人著火”set your enemies ablaze."
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鎂)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*有(熟練等級x5)%的機率，",
+                                                ThemeUtils.PASSIVE+" 讓敵人著火",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "鎂Magnetesium",
-                                                "-需求部件:手柄Random items are drawn to you from",
-                                                "-屬性說明:從5格範圍內隨機抽取物品within a 5 block range"
+                                                "磁鐵",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鎂)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*從5格範圍內隨機撿起物品",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -449,7 +505,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "防鏽的Stainless",
+                                                "防鏽的Stainless(未知)",
                                                 "The tool/weapon repels blood.",
                                                 "工具/武器排斥血液。"
                                         ),
@@ -457,7 +513,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "輕的Lightweight",
+                                                "輕的Lightweight(未知)",
                                                 "Random items are drawn to you from",
                                                 "隨機物品會從 5 格範圍內向您抽取within a 5 block range"
                                         )
@@ -499,8 +555,13 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "夜行者Nightstalker",
-                                                "提供夜視功能。Gives night vision."
+                                                "夜視",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(大馬士革鋼)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*夜視I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -530,17 +591,29 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "耐用的Durable",
-                                                "Ignores being broken but damage 50%,",
-                                                "mining will be slower and 0 exp.",
-                                                "“無視被破壞但傷害50%，採礦會更慢，0經驗。”"
+                                                "耐用",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(硬鋁)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*工具損壞時，依然可以使用，",
+                                                ThemeUtils.PASSIVE+" 但造成傷害-50%，",
+                                                ThemeUtils.PASSIVE+" 採礦速度減慢，",
+                                                ThemeUtils.PASSIVE+" 不會有熟練經驗",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "輕鬆修復Easy Fix",
-                                                "只需 1 個套件即可完全修復。Only 1 kit is needed to fully repair."
+                                                "完整修復",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(硬鋁)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*只需要1個維修零件，",
+                                                ThemeUtils.PASSIVE+" 就可完全修復",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -570,15 +643,25 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "抵抗性Resistance",
-                                                "持有時提供耐火性。Gives fire resistance while held."
+                                                "抗火",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*抗火I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "輸入高度Ingheights",
-                                                "這個工具有問題。Something is wrong with this tool."
+                                                "凋零",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*凋零I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -608,20 +691,20 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "銳利2",
+                                                "銳利B",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
-                                                ThemeUtils.PASSIVE+"手柄(鋁青銅)",
-                                                ThemeUtils.ITEM_MACHINE+"屬性說明:",
-                                                ThemeUtils.PASSIVE+"增加傷害，可以與其他屬性疊加",
-                                                ThemeUtils.ITEM_MACHINE + "藥水效果:",
-                                                ThemeUtils.PASSIVE+"力量1(有銳利1或銳利2即可)",
-                                                ThemeUtils.PASSIVE+"力量2(同時有銳利1和銳利2)"
+                                                ThemeUtils.PASSIVE+"前端(鋁青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*力量I (有銳利A或銳利B即可)",
+                                                ThemeUtils.PASSIVE+"*力量II (同時有銳利A和銳利B)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "脆Brittle",
+                                                "脆弱Brittle",
                                                 "耐久性損失成倍增加。Durability loss is doubled."
                                         )
                                 )
@@ -695,15 +778,26 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "熾熱Flaming Hot",
-                                                "在可能的情況下熔煉破碎的方塊。Smelts broken blocks when possible."
+                                                "自動熔煉",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(柯林斯青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*挖取石頭時，",
+                                                ThemeUtils.PASSIVE+" 掉落燒製後的物品",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "太燙了Too Hot to Handle",
-                                                "?"
+                                                "噁心",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(柯林斯青銅)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*噁心I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -733,17 +827,26 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "隱Hidden",
-                                                "授予隱身，立即打破。Grants invisibility, breaks instantly."
+                                                "隱形B",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(焊錫)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*隱形I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "熔斷的Fused",
-                                                "Tool cannot be dropped either by the",
-                                                "player or on death.",
-                                                "玩家或死亡時都不會掉落工具。"
+                                                "靈魂綁定",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(焊錫)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*玩家死亡時不會掉落此物品",
+                                                ThemeUtils.PASSIVE+"*此物品也無法丟棄",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -773,17 +876,25 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "快速地Fast",
-                                                "Move speed increased and haste applied.",
-                                                "Stacks with modifiers.",
-                                                "移動速度提高並施加急速。 與修飾符堆疊。"
+                                                "挖掘加速",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銀銅合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*挖掘加速I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "彈簧Springs",
-                                                "讓你跳得更高。Makes you jump higher."
+                                                "跳躍提升",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銀銅合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*跳躍提升IV",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
