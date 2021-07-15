@@ -197,7 +197,10 @@ public final class Tools {
                     "黏液工匠資訊",
                     ThemeUtils.PASSIVE + "黏液工匠的工具或武器，",
                     ThemeUtils.PASSIVE + "每次攻擊或破壞時，",
-                    ThemeUtils.PASSIVE + "可以獲得熟練經驗，",
+                    ThemeUtils.PASSIVE + "可以獲得熟練經驗",
+                    ThemeUtils.PASSIVE + "(工具每破壞一次獲得1經驗，",
+                    ThemeUtils.PASSIVE + "武器則根據造成傷害獲得經驗)。",
+                    ThemeUtils.PASSIVE + "每次升級可以獲得1次強化次數，",
                     ThemeUtils.PASSIVE + "隨著熟練等級提升，",
                     ThemeUtils.PASSIVE + "品質由「石→金→鐵→鑽石→獄髓」。"
             );

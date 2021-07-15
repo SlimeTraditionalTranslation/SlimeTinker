@@ -97,7 +97,7 @@ public final class IDStrings {
     public static final String HEAD = "前端";
     public static final String BINDING = "接合物";
     public static final String ROD = "手柄";
-    public static final String REPAIR = "維修零件";
+    public static final String REPAIR = "修復零件";
 
     public static final String SHOVEL = "鏟子";
     public static final String PICKAXE = "鎬子";

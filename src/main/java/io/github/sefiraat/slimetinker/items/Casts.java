@@ -212,11 +212,11 @@ public final class Casts {
                     "CAST_REPAIRKIT",
                     Material.YELLOW_CARPET,
                     ThemeUtils.ThemeItemType.CAST,
-                    "模具:維修零件",
+                    "模具:修復零件",
                     ThemeUtils.PASSIVE + CAST_DESC,
                     "",
                     ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_KIT + UNIT_DESC,
-                    ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 維修零件"
+                    ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 修復零件"
             );
 
     public static void set(SlimeTinker p) {

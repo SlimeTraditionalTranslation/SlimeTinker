@@ -449,7 +449,7 @@ public final class Materials {
                     "MOD_PLATE",
                     Material.OBSIDIAN,
                     ThemeUtils.ThemeItemType.MOD,
-                    "強化板",
+                    "強化黑曜石板",
                     ThemeUtils.PASSIVE + "強化素材之一",
                     ThemeUtils.PASSIVE + "減少工具或武器的耐久度消耗"
             );

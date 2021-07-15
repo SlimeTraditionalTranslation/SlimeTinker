@@ -97,9 +97,9 @@ public final class Parts {
                     "PART_REPAIR_KIT_DUMMY",
                     Material.CHEST_MINECART,
                     ThemeUtils.ThemeItemType.CAST,
-                    "部件:維修零件",
-                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:維修零件"+ThemeUtils.PASSIVE+"上，即可取得",
-                    "可以在維修站消耗維修零件，將工具或武器修復"
+                    "部件:修復零件",
+                    ThemeUtils.PASSIVE + "將液體澆鑄在"+ThemeUtils.ITEM_CAST+"模具:修復零件"+ThemeUtils.PASSIVE+"上，即可取得",
+                    "可以在修復台消耗修復零件，將工具或武器修復"
             );
 
     public static final SlimefunItemStack PART_AXE_HEAD =
@@ -184,7 +184,7 @@ public final class Parts {
     public static final PartTemplate HOE_HEAD = new PartTemplate(Categories.DUMMY, PART_HOE_HEAD, DummySmeltery.TYPE, new ItemStack[9], "鋤頭前端");
     public static final PartTemplate SWORD_BLADE = new PartTemplate(Categories.DUMMY, PART_SWORD_BLADE, DummySmeltery.TYPE, new ItemStack[9], "劍前端");
     public static final PartTemplate TOOL_ROD = new PartTemplate(Categories.DUMMY, PART_TOOL_ROD, DummySmeltery.TYPE, new ItemStack[9], "手柄");
-    public static final RepairkitTemplate REPAIR_KIT = new RepairkitTemplate(Categories.DUMMY, PART_REPAIR_KIT, DummySmeltery.TYPE, new ItemStack[9], "維修零件");
+    public static final RepairkitTemplate REPAIR_KIT = new RepairkitTemplate(Categories.DUMMY, PART_REPAIR_KIT, DummySmeltery.TYPE, new ItemStack[9], "修復零件");
 
     public static void set(SlimeTinker p) {
 

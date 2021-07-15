@@ -19,7 +19,7 @@ public final class Categories {
     ));
     public static final SubCategory WORKSTATIONS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryWorkstations(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MAIN),
-            ThemeUtils.MAIN + "工作站"
+            ThemeUtils.MAIN + "工匠設備"
     ));
     public static final SubCategory MATERIALS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryMaterials(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_MATERIALS),
@@ -43,7 +43,7 @@ public final class Categories {
     ));
     public static final SubCategory TOOLS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryTools(), MAIN, new CustomItem(
             Material.DIAMOND_SWORD,
-            ThemeUtils.MAIN + "工具組裝說明"
+            ThemeUtils.MAIN + "組裝說明"
     ));
     public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_TRAITS),

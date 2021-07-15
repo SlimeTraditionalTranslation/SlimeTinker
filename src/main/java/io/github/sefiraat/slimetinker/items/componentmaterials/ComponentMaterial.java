@@ -178,9 +178,9 @@ public class ComponentMaterial {
                 "PART_REPAIR_KIT_" + name,
                 Material.CHEST_MINECART,
                 ThemeUtils.ThemeItemType.PART,
-                getColor() + titName + ThemeUtils.ITEM_PART + "維修零件",
+                getColor() + titName + ThemeUtils.ITEM_PART + "修復零件",
                 ThemeUtils.PASSIVE + "修復工具或武器的耗材",
-                "由" + titName + "製成的維修零件"
+                "由" + titName + "製成的修復零件"
         );
     }
 

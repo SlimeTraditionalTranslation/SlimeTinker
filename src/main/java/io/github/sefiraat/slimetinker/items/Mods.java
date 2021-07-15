@@ -77,10 +77,10 @@ public final class Mods {
                     "MOD_PLATE_DUMMY",
                     Material.OBSIDIAN,
                     ThemeUtils.ThemeItemType.MOD,
-                    "強化素材:強化板",
+                    "強化素材:強化黑曜石板",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "每提升1個強化等級，增加10%的機率減少工具耐久度",
-                    ThemeUtils.PASSIVE + "當此強化等級為10時，該工具就不會消耗耐久度"
+                    ThemeUtils.PASSIVE + "當此強化等級為10時，該工具或武器就不會消耗耐久度"
             );
 
 

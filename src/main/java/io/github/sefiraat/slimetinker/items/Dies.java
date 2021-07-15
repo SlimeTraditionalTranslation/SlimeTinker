@@ -117,7 +117,7 @@ public final class Dies {
                     "DIE_REPAIR_KIT",
                     Material.MINECART,
                     ThemeUtils.ThemeItemType.CAST,
-                    "壓模樣品:石製維修零件",
+                    "壓模樣品:石製修復零件",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
