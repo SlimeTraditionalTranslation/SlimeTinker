@@ -18,9 +18,9 @@ public final class DummyTable {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_TABLE",
             Material.SMITHING_TABLE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Table",
+            ThemeUtils.ITEM_MACHINE + "裝配台",
             "",
-            ThemeUtils.PASSIVE + "This item is made on a Tinker's Table.",
+            ThemeUtils.PASSIVE + "該物品是在配裝台上組裝",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

@@ -49,8 +49,8 @@ public class CMTraits {
                     "PROP_HEAD",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeUtils.ThemeItemType.PART,
-                    "Part: Head",
-                    ThemeUtils.PASSIVE + "Any 'Head' item (Sword Blade, Axe Head etc.)"
+                    "部件:前端",
+                    ThemeUtils.PASSIVE + "任何「前端」的物品(鏟子、鎬子、斧頭、鋤頭、劍)"
             );
     // Used to display the 'binding' item in Property explanation recipes only
     public static final SlimefunItemStack PROP_BINDING =
@@ -58,8 +58,8 @@ public class CMTraits {
                     "PROP_BINDING",
                     SkullTextures.PART_BINDING,
                     ThemeUtils.ThemeItemType.PART,
-                    "Part: Binder",
-                    ThemeUtils.PASSIVE + "Any 'Binder' item."
+                    "部件:接合物",
+                    ThemeUtils.PASSIVE + "任何「接合物」的物品"
             );
     // Used to display the 'rod' item in Property explanation recipes only
     public static final SlimefunItemStack PROP_ROD =
@@ -67,8 +67,8 @@ public class CMTraits {
                     "PROP_ROD",
                     SkullTextures.PART_TOOL_ROD,
                     ThemeUtils.ThemeItemType.PART,
-                    "Part: Tool Rod",
-                    ThemeUtils.PASSIVE + "Any 'Tool Rod' item."
+                    "部件:手柄",
+                    ThemeUtils.PASSIVE + "任何「手柄」的物品"
             );
 
     protected static ItemStack[] propRecipe(SlimefunItemStack part, ItemStack stack) {

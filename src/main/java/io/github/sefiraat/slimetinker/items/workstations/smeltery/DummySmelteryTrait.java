@@ -18,11 +18,14 @@ public final class DummySmelteryTrait {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY_PROP",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Smeltery",
+            ThemeUtils.ITEM_MACHINE + "說明",
             "",
-            ThemeUtils.PASSIVE + "When a matching part is made using this",
-            ThemeUtils.PASSIVE + "metal, it will give the finished tool",
-            ThemeUtils.PASSIVE + "this property.",
+            ThemeUtils.PASSIVE + "當使用此種材料製作配件時，",
+            ThemeUtils.PASSIVE + "組裝後的工具或武器，",
+            ThemeUtils.PASSIVE + "將會有此材料的屬性。",
+            ThemeUtils.PASSIVE + "前端、手柄需要在焦黑冶煉爐用模具澆鑄而成",
+            ThemeUtils.PASSIVE + "接合物要在工作台〔黏液工匠〕，以X(叉)方式擺放",
+
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

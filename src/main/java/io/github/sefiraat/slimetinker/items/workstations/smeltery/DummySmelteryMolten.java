@@ -18,12 +18,10 @@ public final class DummySmelteryMolten {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY_MOLTEN",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Smeltery",
+            ThemeUtils.ITEM_MACHINE + "焦黑冶煉爐",
             "",
-            ThemeUtils.PASSIVE + "Molten metals are made by putting",
-            ThemeUtils.PASSIVE + "items made from the metal into the",
-            ThemeUtils.PASSIVE + "Smeltery. Items melt when provided",
-            ThemeUtils.PASSIVE + "enough lava as a heat source.",
+            ThemeUtils.PASSIVE + "將固體金屬(塊、錠、粒)放入焦黑冶煉爐，",
+            ThemeUtils.PASSIVE + "並消耗岩漿把金屬熔化",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

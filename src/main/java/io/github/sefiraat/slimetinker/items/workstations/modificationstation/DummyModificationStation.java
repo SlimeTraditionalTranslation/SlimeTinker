@@ -18,12 +18,13 @@ public final class DummyModificationStation {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_MODIFICATION_STATION",
             Material.GRINDSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Modification Station",
+            ThemeUtils.ITEM_MACHINE + "強化台",
             "",
-            ThemeUtils.PASSIVE + "Tools are augmented on the Modification",
-            ThemeUtils.PASSIVE + "station using the appropriate material.",
-            ThemeUtils.PASSIVE + "Once enough material has been added, the",
-            ThemeUtils.PASSIVE + "modification will level.",
+            ThemeUtils.PASSIVE + "強化素材是指冒號後面的物品，",
+            ThemeUtils.PASSIVE + "可以讓工具或武器獲得對應的強化效果，",
+            ThemeUtils.PASSIVE + "或是升級對應的強化效果。",
+            ThemeUtils.PASSIVE + "每個強化效果都有等級上限，",
+            ThemeUtils.PASSIVE + "到了上限就無法繼續升級強化效果。",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

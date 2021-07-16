@@ -18,10 +18,10 @@ public final class DummySmelteryMulti {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY_MULTI",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Smeltery",
+            ThemeUtils.ITEM_MACHINE + "焦黑冶煉爐",
             "",
-            "This is a multiblock, build in the world",
-            "as shown here.",
+            "此機器必須在世界中建造出來",
+            "",
             ThemeUtils.LORE_TYPE_MACHINE
     );
 

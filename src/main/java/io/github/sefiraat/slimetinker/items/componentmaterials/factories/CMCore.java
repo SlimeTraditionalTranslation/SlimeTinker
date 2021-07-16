@@ -444,7 +444,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "磁鐵",
+                                                "磁鐵(撿起)",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(鎂)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
@@ -1047,7 +1047,8 @@ public final class CMCore {
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(鎳)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*玩家經驗+200%",
+                                                ThemeUtils.PASSIVE+"*攻擊生物時，",
+                                                ThemeUtils.PASSIVE+" 有機率熟練經驗+200%",
                                                 ThemeUtils.PASSIVE+" (需要正極和負極同時存在)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
@@ -1060,7 +1061,8 @@ public final class CMCore {
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(鎳)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*玩家經驗+200%",
+                                                ThemeUtils.PASSIVE+"*攻擊生物時，",
+                                                ThemeUtils.PASSIVE+" 有機率熟練經驗+200%",
                                                 ThemeUtils.PASSIVE+" (需要正極和負極同時存在)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
@@ -1098,7 +1100,8 @@ public final class CMCore {
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(鈷)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*玩家經驗+200%",
+                                                ThemeUtils.PASSIVE+"*攻擊生物時，",
+                                                ThemeUtils.PASSIVE+" 有機率熟練經驗+200%",
                                                 ThemeUtils.PASSIVE+" (需要正極和負極同時存在)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
@@ -1111,7 +1114,8 @@ public final class CMCore {
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(鈷)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*玩家經驗+200%",
+                                                ThemeUtils.PASSIVE+"*攻擊生物時，",
+                                                ThemeUtils.PASSIVE+" 有機率熟練經驗+200%",
                                                 ThemeUtils.PASSIVE+" (需要正極和負極同時存在)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
@@ -1196,8 +1200,8 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Works(沒有效果)",
-                                                "No special effects.(沒有效果)"
+                                                "沒有效果",
+                                                "沒有效果"
                                         ),
                                         null
                                 )
@@ -1366,9 +1370,14 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Attraction",
-                                                "All drops are drawn to you within a",
-                                                "5 block range."
+                                                "磁鐵(吸引)",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(扭曲藤)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*吸引5格範圍內的物品，",
+                                                ThemeUtils.PASSIVE+" 到玩家身邊",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null
                                 )
@@ -1397,8 +1406,13 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Bouncy",
-                                                "Fall damage is halved."
+                                                "史萊姆",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(史萊姆)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*摔落傷害-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null
                                 )
@@ -1453,7 +1467,7 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Slow Learner",
+                                                "Slow Learner(不詳)",
                                                 "Tool exp gain when breaking blocks is",
                                                 "increased by (Tool Level x 5%)"
                                         ),
@@ -1486,8 +1500,13 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Hydrogen",
-                                                "Float away from danger."
+                                                "氫",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(矽鐵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*受到傷害時，獲得漂浮I",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                                 ),
                                         null,
                                         null
@@ -1522,8 +1541,13 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Lightning Rod",
-                                                "A chance to strike hit mobs with lightning."
+                                                "閃電",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(紅石合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*攻擊時，有機率召喚閃電",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));

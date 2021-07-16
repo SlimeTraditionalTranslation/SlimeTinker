@@ -18,11 +18,9 @@ public final class DummySmeltery {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Smeltery",
+            ThemeUtils.ITEM_MACHINE + "焦黑冶煉爐",
             "",
-            ThemeUtils.PASSIVE + "This item is cast out from the",
-            ThemeUtils.PASSIVE + "tinkers smeltery using the",
-            ThemeUtils.PASSIVE + "relevant cast and metal/liquid.",
+            ThemeUtils.PASSIVE + "利用焦黑冶煉爐，將熔融金屬透過模具澆鑄而成",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

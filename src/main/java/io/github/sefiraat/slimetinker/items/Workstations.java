@@ -41,7 +41,7 @@ public final class Workstations {
                     ThemeUtils.ThemeItemType.MACHINE,
                     "工作台〔黏液工匠〕",
                     "用於製作黏液工匠的各種物品和零件，",
-                    "也可用作增進階工作台。"
+                    "也可當作「工作台〔黏液科技〕」來使用。"
             );
 
     // Table
@@ -61,7 +61,9 @@ public final class Workstations {
                     Material.CARTOGRAPHY_TABLE,
                     ThemeUtils.ThemeItemType.MACHINE,
                     "修復台",
-                    "修理工具或武器"
+                    "修理工具或武器",
+                    "註:如果有自動鐵砧",
+                    "   也可以用它來修理"
             );
 
     // Swapping
