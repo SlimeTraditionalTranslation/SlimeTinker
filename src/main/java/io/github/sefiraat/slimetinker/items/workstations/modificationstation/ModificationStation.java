@@ -48,19 +48,19 @@ public class ModificationStation extends AbstractContainer {
 
         // No tool dummy!
         if (tool == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a tool into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第一格欄位放入工具或武器");
             return false;
         }
 
         // Still no tool, nice try
         if (!ToolTemplate.isTool(tool)) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's tool.");
+            player.sendMessage(ThemeUtils.WARNING + "第一格欄位的物品，不是黏液工匠的工具或武器");
             return false;
         }
 
         // No modifier!
         if (modItem == null || !Modifications.getMODIFICATION_LIST().contains(StackUtils.getIDorType(modItem))) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a valid modifier into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第二格欄位放入強化素材");
             return false;
         }
 
@@ -76,7 +76,7 @@ public class ModificationStation extends AbstractContainer {
         int currentLevel = Modifications.getModLevel(mod, tool); // The current level of this mod (or 0)
 
         if (!mod.getRequirementMap().containsKey(currentLevel + 1)) { // Max level
-            player.sendMessage(ThemeUtils.WARNING + "You have already maxed out this modifier");
+            player.sendMessage(ThemeUtils.WARNING + "此強化效果已經達到最高等級");
             return false;
         }
 
@@ -85,7 +85,7 @@ public class ModificationStation extends AbstractContainer {
 
         if (currentAmount <= 0) {
             if (modSlots == 0) { // New mod and no slots
-                player.sendMessage(ThemeUtils.WARNING + "You do not have enough free Modification slots for this");
+                player.sendMessage(ThemeUtils.WARNING + "沒有足夠的強化次數");
                 return false;
             } else { // Remove mod slot
                 Experience.setToolModifierSlots(c,modSlots - 1);
@@ -107,7 +107,7 @@ public class ModificationStation extends AbstractContainer {
         ItemStack newTool = tool.clone();
 
         if (!blockMenu.fits(newTool, OUTPUT_SLOT)) {
-            player.sendMessage(ThemeUtils.WARNING + "Clear the output slot first");
+            player.sendMessage(ThemeUtils.WARNING + "輸出欄位有物品，將物品取下後再強化一次");
             return false;
         }
 

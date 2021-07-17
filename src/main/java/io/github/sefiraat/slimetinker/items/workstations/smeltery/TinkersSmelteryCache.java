@@ -242,7 +242,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast item is null or not a cast
         if (inputItem == null || !SlimeTinker.inst().getCmManager().castingRecipes.containsKey(StackUtils.getIDorType(inputItem))) {
-            player.sendMessage(ThemeUtils.WARNING + "Please input a valid cast before trying to pour metals.");
+            player.sendMessage(ThemeUtils.WARNING + "澆鑄前，請先放入模具");
             return false;
         }
 
@@ -251,7 +251,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // No metals in the tank - cant pour
         if (!first.isPresent() ) {
-            player.sendMessage(ThemeUtils.WARNING + "There isn't any metal to pour.");
+            player.sendMessage(ThemeUtils.WARNING + "沒有金屬可以澆鑄");
             return false;
         }
 
@@ -260,7 +260,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast valid, but this cast and metal combination doesn't work
         if (!result.getOutputs().containsKey(componentMaterial)) {
-            player.sendMessage(ThemeUtils.WARNING + "The selected metal cannot be shaped into the selected cast.");
+            player.sendMessage(ThemeUtils.WARNING + "該金屬無法用此模具澆鑄");
             return false;
         }
 
@@ -269,13 +269,13 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Does not have enough metal to cats this specific item
         if (tankContent.get(metalID) < metalAmount) {
-            player.sendMessage(ThemeUtils.WARNING + "You do not have enough metal to fill this cast");
+            player.sendMessage(ThemeUtils.WARNING + "沒有足夠的金屬來鑄造這個模具");
             return false;
         }
 
         // Lastly, can we fit the output?
         if (!blockMenu.fits(outputItem, TinkersSmeltery.OUTPUT_SLOT)) {
-            player.sendMessage(ThemeUtils.WARNING + "Please clear your casting table first");
+            player.sendMessage(ThemeUtils.WARNING + "輸出欄位有物品，將物品取下後再澆鑄一次");
             return false;
         }
 

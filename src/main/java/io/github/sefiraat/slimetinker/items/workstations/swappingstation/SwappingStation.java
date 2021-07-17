@@ -48,19 +48,19 @@ public class SwappingStation extends AbstractContainer {
 
         // No tool dummy!
         if (tool == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a tool into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第一格欄位放入工具或武器");
             return false;
         }
 
         // Still no tool, nice try
         if (!ToolTemplate.isTool(tool)) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's tool.");
+            player.sendMessage(ThemeUtils.WARNING + "第一格欄位的物品，不是黏液工匠的工具或武器");
             return false;
         }
 
         // No part!
         if (part == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a replacement part into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第二格欄位放入要替換的部件");
             return false;
         }
 
@@ -80,7 +80,7 @@ public class SwappingStation extends AbstractContainer {
         
         // Item in part slot is NOT a part
         if (partClass == null) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the part slot is not a valid part.");
+            player.sendMessage(ThemeUtils.WARNING + "第二格欄位的物品，不是可替換的物品");
             return false;
         }
 
@@ -88,7 +88,7 @@ public class SwappingStation extends AbstractContainer {
 
         // The part is a head part but the type is either null or not matching to tool (Axe head part for shovel etc.)
         if (partClass.equals(IDStrings.HEAD) && (partType != null && !partType.equals(toolPartType))) {
-            player.sendMessage(ThemeUtils.WARNING + "This part cannot be swapped onto this tool.");
+            player.sendMessage(ThemeUtils.WARNING + "此部件無法替換到該工具或武器上");
             return false;
         }
 

@@ -177,11 +177,11 @@ public class Table extends AbstractTickingContainer {
         ItemStack rod = blockMenu.getItemInSlot(INPUT_ROD);
 
         if (head == null || binding == null || rod == null) { // Missing one or more items
-            player.sendMessage(ThemeUtils.ERROR + "Not all items present");
+            player.sendMessage(ThemeUtils.ERROR + "有欄位缺少物品");
             return false;
         }
         if (!validateClass(head, IDStrings.HEAD) || !validateBinder(binding) || !validateClass(rod, IDStrings.ROD)) { // One or more items are not the correct part
-            player.sendMessage(ThemeUtils.WARNING + "One or more items are either not Tinker's parts or in the wrong slot?");
+            player.sendMessage(ThemeUtils.WARNING + "輸入欄位可能有不是黏液工匠的物品，或是有物品放錯欄位");
             return false;
         }
 

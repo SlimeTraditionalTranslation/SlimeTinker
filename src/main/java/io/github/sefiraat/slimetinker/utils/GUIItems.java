@@ -186,6 +186,7 @@ public final class GUIItems {
                 ThemeUtils.PASSIVE + "將最上層的金屬進行澆鑄，",
                 ThemeUtils.PASSIVE + "模具會決定熔融金屬的樣式，",
                 ThemeUtils.PASSIVE + "成品會放在輸出欄位。",
+                "",
                 ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "將最上層液體進行澆鑄"
         );
     }

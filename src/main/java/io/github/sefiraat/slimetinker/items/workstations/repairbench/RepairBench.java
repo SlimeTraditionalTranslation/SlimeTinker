@@ -45,19 +45,19 @@ public class RepairBench extends AbstractContainer {
 
         // No tool dummy!
         if (tool == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a tool into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第一格欄位放入工具或武器");
             return false;
         }
 
         // Still no tool, nice try
         if (!ToolTemplate.isTool(tool)) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's tool.");
+            player.sendMessage(ThemeUtils.WARNING + "第一格欄位的物品，不是黏液工匠的工具或武器");
             return false;
         }
 
         // No kit!
         if (kit == null || !RepairkitTemplate.isRepairKit(kit)) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a repair kit into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + "請在第二格欄位放入修復零件");
             return false;
         }
 
@@ -66,7 +66,7 @@ public class RepairBench extends AbstractContainer {
         String partMaterial = ItemUtils.getPartMaterial(kit);
 
         if (!toolMaterial.equals(partMaterial)) {
-            player.sendMessage(ThemeUtils.WARNING + "The kit type does not match the tool material.");
+            player.sendMessage(ThemeUtils.WARNING + "修復零件與前端材質不相同");
             return false;
         }
 

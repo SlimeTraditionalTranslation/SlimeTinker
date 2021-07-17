@@ -151,7 +151,7 @@ public class TinkersSmeltery extends AbstractContainer {
         Map<String, Integer>  blockMapZY = getBlockMapZY(b);
 
         if (!blockMapXY.equals(blockMapMaster) && !blockMapZY.equals(blockMapMaster)) {
-            player.sendMessage(ThemeUtils.WARNING + "This multiblock has not been setup correctly.");
+            player.sendMessage(ThemeUtils.WARNING + "此多方塊結構不正確");
             blockMenu.close();
         }
 

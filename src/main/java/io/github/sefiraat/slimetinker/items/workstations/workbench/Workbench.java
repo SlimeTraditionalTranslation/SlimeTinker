@@ -58,14 +58,14 @@ public class Workbench extends AbstractContainer {
         RecipeOutput<ItemStack> matchedOutput = craftingRecipes.get(inputs);
 
         if (matchedOutput == null) {
-            player.sendMessage(ThemeUtils.ERROR + "Not a valid crafting recipe");
+            player.sendMessage(ThemeUtils.ERROR + "沒有此合成方式");
             return false;
         }
 
         ItemStack itemStack = matchedOutput.getOutput().clone();
 
         if (!blockMenu.fits(itemStack, OUTPUT_SLOT)) {
-            player.sendMessage(ThemeUtils.WARNING + "Tidy up your workbench, you have no room!");
+            player.sendMessage(ThemeUtils.WARNING + "輸出欄位有物品，將物品取下後再合成一次");
             return false;
         }
 
