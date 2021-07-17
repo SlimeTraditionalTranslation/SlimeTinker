@@ -1,6 +1,6 @@
 ![](https://github.com/Sefiraat/SlimeTinker/blob/master/images/logo/logo_large.png?raw=true)
 
-黏液工匠是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct))。
+黏液工匠是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) 。
 
 ## 內容介紹:
 * 熔化原版Minecraft和黏液科技的金屬。
