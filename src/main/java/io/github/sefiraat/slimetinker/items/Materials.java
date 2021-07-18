@@ -518,8 +518,8 @@ public final class Materials {
                     "NUGGET_CAST_INFINITY",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Infinity 粒",
-                    "A nugget made from solid infinity... yup!"
+                    "無限粒",
+                    "由熔融無限製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_MAGSTEEL =
@@ -527,8 +527,8 @@ public final class Materials {
                     "NUGGET_CAST_MAGSTEEL",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "MagSteel 粒",
-                    "A nugget made from solid MagSteel"
+                    "鎂鋼粒",
+                    "由熔融鎂鋼製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_TITANIUM =
@@ -536,8 +536,8 @@ public final class Materials {
                     "NUGGET_CAST_TITANIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Titanium 粒",
-                    "A nugget made from solid Titanium"
+                    "鈦粒",
+                    "由熔融鈦製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_MYTHRIL =
@@ -545,8 +545,8 @@ public final class Materials {
                     "NUGGET_CAST_MYTHRIL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mythril 粒",
-                    "A nugget made from solid Mythril"
+                    "秘銀粒",
+                    "由熔融秘銀製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_ADAMANTITE =
@@ -554,8 +554,8 @@ public final class Materials {
                     "NUGGET_CAST_ADAMANTITE",
                     Material.ACACIA_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Adamantite 粒",
-                    "A nugget made from solid Adamantite"
+                    "精金粒",
+                    "由熔融精金製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_MAGNONIUM =
@@ -563,8 +563,8 @@ public final class Materials {
                     "NUGGET_CAST_MAGNONIUM",
                     Material.CRIMSON_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnonium 粒",
-                    "A nugget made from solid Magnonium"
+                    "磁振子元素粒",
+                    "由熔融磁振子元素製成的粒"
             );
 
     // endregion
@@ -574,8 +574,8 @@ public final class Materials {
                     "BLOCK_CAST_VOID",
                     Material.NETHERITE_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Void 塊",
-                    "A block made from ... void?"
+                    "虛空塊",
+                    "由熔融虛空製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_INFINITY =
@@ -583,8 +583,8 @@ public final class Materials {
                     "BLOCK_CAST_INFINITY",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Infinity 塊",
-                    "A block made from *sigh* infinity."
+                    "無限塊",
+                    "由熔融無限製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_MAGSTEEL =
@@ -592,8 +592,8 @@ public final class Materials {
                     "BLOCK_CAST_MAGSTEEL",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "MagSteel 塊",
-                    "A block made from MagSteel."
+                    "鎂鋼塊",
+                    "由熔融鎂鋼製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_TITANIUM =
@@ -601,8 +601,8 @@ public final class Materials {
                     "BLOCK_CAST_TITANIUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Titanium 塊",
-                    "A block made from Titanium."
+                    "鈦塊",
+                    "由熔融鈦製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_MYTHRIL =
@@ -610,8 +610,8 @@ public final class Materials {
                     "BLOCK_CAST_MYTHRIL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mythril 塊",
-                    "A block made from Mythril."
+                    "秘銀塊",
+                    "由熔融秘銀製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_ADAMANTITE =
@@ -619,8 +619,8 @@ public final class Materials {
                     "BLOCK_CAST_ADAMANTITE",
                     Material.TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Adamanitite 塊",
-                    "A block made from Adamanitite."
+                    "精金塊",
+                    "由熔融精金製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_MAGNONIUM =
@@ -628,8 +628,8 @@ public final class Materials {
                     "BLOCK_CAST_MAGNONIUM",
                     Material.PURPLE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Magnonium 塊",
-                    "A block made from Magnonium."
+                    "磁振子元素塊",
+                    "由熔融磁振子元素製成的塊"
             );
 
     // endregion
@@ -642,8 +642,8 @@ public final class Materials {
                     "NUGGET_CAST_SLIMESTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Slimesteel 粒",
-                    "A nugget of slimesteel"
+                    "黏液鋼粒",
+                    "由熔融黏液鋼製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_REINFORCED_SLIMESTEEL =
@@ -651,8 +651,8 @@ public final class Materials {
                     "NUGGET_CAST_REINFORCED_SLIMESTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Slimesteel 粒",
-                    "A nugget of reinforced slimesteel"
+                    "強化黏液鋼粒",
+                    "由熔融強化黏液鋼製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_OSMIUM =
@@ -660,8 +660,8 @@ public final class Materials {
                     "NUGGET_CAST_OSMIUM",
                     Material.WARPED_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium 粒",
-                    "A nugget of osmium"
+                    "鋨粒",
+                    "由熔融鋨製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_OSMIUM_SUPER_ALLOY =
@@ -669,8 +669,8 @@ public final class Materials {
                     "NUGGET_CAST_OSMIUM_SUPER_ALLOY",
                     Material.WARPED_BUTTON,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Superalloy 粒",
-                    "A nugget of osmium superalloy"
+                    "鋨超級合金粒",
+                    "由熔融鋨超級合金製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_UNPATENTABILUM =
@@ -678,8 +678,8 @@ public final class Materials {
                     "NUGGET_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Unpatentabilum 粒",
-                    "A nugget of unpatentabilum"
+                    "非專利能量元素粒",
+                    "由熔融非專利能量元素製成的粒"
             );
 
     // endregion
@@ -689,8 +689,8 @@ public final class Materials {
                     "BLOCK_CAST_SLIMESTEEL",
                     Material.SLIME_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Slimesteel 塊",
-                    "A block of slimesteel"
+                    "黏液鋼塊",
+                    "由熔融黏液鋼製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_REINFORCED_SLIMESTEEL =
@@ -698,8 +698,8 @@ public final class Materials {
                     "BLOCK_CAST_REINFORCED_SLIMESTEEL",
                     Material.SLIME_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Reinforced Slimesteel 塊",
-                    "A block of reinforced slimesteel"
+                    "強化黏液鋼塊",
+                    "由熔融強化黏液鋼製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_OSMIUM =
@@ -707,8 +707,8 @@ public final class Materials {
                     "BLOCK_CAST_OSMIUM",
                     Material.LIGHT_BLUE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium 塊",
-                    "A block of osmium"
+                    "鋨塊",
+                    "由熔融鋨製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_OSMIUM_SUPER_ALLOY =
@@ -716,8 +716,8 @@ public final class Materials {
                     "BLOCK_CAST_OSMIUM_SUPER_ALLOY",
                     Material.BLUE_TERRACOTTA,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Osmium Superalloy 塊",
-                    "A block of osmium superalloy"
+                    "鋨超級合金塊",
+                    "由熔融鋨超級合金製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_UNPATENTABILUM =
@@ -725,8 +725,8 @@ public final class Materials {
                     "BLOCK_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Unpatentabilum 塊",
-                    "A block of unpatentabilum"
+                    "非專利能量元素塊",
+                    "由熔融非專利能量元素製成的塊"
             );
 
     // endregion
@@ -739,8 +739,8 @@ public final class Materials {
                     "NUGGET_CAST_STAINLESSSTEEL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel 粒",
-                    "A nugget of stainless steel"
+                    "不銹鋼粒",
+                    "由熔融不銹鋼製成的粒"
             );
 
     // endregion
@@ -750,8 +750,8 @@ public final class Materials {
                     "BLOCK_CAST_STAINLESSSTEEL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel 塊",
-                    "A block of stainless"
+                    "不銹鋼塊",
+                    "由熔融不鏽鋼製成的塊"
             );
 
 
@@ -765,8 +765,8 @@ public final class Materials {
                     "NUGGET_CAST_REFINED_IRON",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Refined Iron 粒",
-                    "A nugget of refined iron"
+                    "精煉鐵粒",
+                    "由熔融精煉鐵製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_MIXED_METAL =
@@ -774,8 +774,8 @@ public final class Materials {
                     "NUGGET_CAST_MIXED_METAL",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mixed Metal 粒",
-                    "A nugget of mixed metal"
+                    "混合金屬粒",
+                    "由熔融混合金屬製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_ADVANCED_ALLOY =
@@ -783,8 +783,8 @@ public final class Materials {
                     "NUGGET_CAST_ADVANCED_ALLOY",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Advanced Alloy 粒",
-                    "A nugget of advanced alloy"
+                    "高級合金粒",
+                    "由熔融高級合金製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_MAG_THOR =
@@ -792,8 +792,8 @@ public final class Materials {
                     "NUGGET_CAST_MAG_THOR",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mag-Thor 粒",
-                    "A nugget of mag-thor"
+                    "釷鎂合金粒",
+                    "由熔融釷鎂合金製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_SCRAP =
@@ -801,8 +801,8 @@ public final class Materials {
                     "NUGGET_CAST_SCRAP",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Scrap 粒",
-                    "A nugget of scrap"
+                    "廢料粒",
+                    "由熔融廢料製成的粒"
             );
 
     public static final SlimefunItemStack NUGGET_CAST_IRIDIUM =
@@ -810,8 +810,8 @@ public final class Materials {
                     "NUGGET_CAST_IRIDIUM",
                     Material.IRON_NUGGET,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Stainless Steel 粒",
-                    "A nugget of stainless steel"
+                    "銥粒",
+                    "由熔融銥製成的粒"
             );
 
     // endregion
@@ -821,8 +821,8 @@ public final class Materials {
                     "BLOCK_CAST_REFINED_IRON",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Refined Iron 塊",
-                    "A block of refined iron"
+                    "精煉鐵塊",
+                    "由熔融精煉鐵製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_MIXED_METAL =
@@ -830,8 +830,8 @@ public final class Materials {
                     "BLOCK_CAST_MIXED_METAL",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mixed Metal 塊",
-                    "A block of mixed metal"
+                    "混合金屬塊",
+                    "由熔融混合金屬製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_ADVANCED_ALLOY =
@@ -839,8 +839,8 @@ public final class Materials {
                     "BLOCK_CAST_ADVANCED_ALLOY",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Advanced Alloy 塊",
-                    "A block of advacned alloy"
+                    "高級合金塊",
+                    "由熔融高級合金製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_MAG_THOR =
@@ -848,8 +848,8 @@ public final class Materials {
                     "BLOCK_CAST_MAG_THOR",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Mag-Thor 塊",
-                    "A block of mag-thor"
+                    "釷鎂合金塊",
+                    "由熔融釷鎂製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_SCRAP =
@@ -857,8 +857,8 @@ public final class Materials {
                     "BLOCK_CAST_SCRAP",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Scrap 塊",
-                    "A block of scrap"
+                    "廢料塊",
+                    "由熔融廢料製成的塊"
             );
 
     public static final SlimefunItemStack BLOCK_CAST_IRIDIUM =
@@ -866,8 +866,8 @@ public final class Materials {
                     "BLOCK_CAST_IRIDIUM",
                     Material.IRON_BLOCK,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Iridium 塊",
-                    "A block of iridium"
+                    "銥塊",
+                    "由熔融銥製成的塊"
             );
 
 
