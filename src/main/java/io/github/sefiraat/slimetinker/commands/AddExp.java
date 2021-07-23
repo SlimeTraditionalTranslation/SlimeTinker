@@ -12,7 +12,7 @@ import java.util.List;
 public class AddExp extends AbstractCommand {
 
     public AddExp() {
-        super("AddExp", "gives exp to tool in hand", true);
+        super("AddExp", "給予在手上的工具經驗值", true);
     }
 
     @Override

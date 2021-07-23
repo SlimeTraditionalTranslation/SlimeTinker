@@ -111,7 +111,7 @@ public final class PlayerDamagedEvents {
             p.getWorld().spawnParticle(Particle.REDSTONE, p.getLocation(), 30, 3, 3, 3, 1, dustOptions3);
             Instant cd = Instant.ofEpochMilli(time).plusSeconds(1200);
             c.set(key, PersistentDataType.LONG, cd.toEpochMilli());
-            p.sendMessage(ThemeUtils.WARNING + "Protective has saved you from death. It's now on cooldown - take care!");
+            p.sendMessage(ThemeUtils.WARNING + "保護使你免於死亡. 它現在處於冷卻狀態 - 請小心!");
             i.setItemMeta(im);
         }
     }

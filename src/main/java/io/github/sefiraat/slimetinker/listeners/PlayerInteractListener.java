@@ -66,7 +66,7 @@ public class PlayerInteractListener implements Listener {
                 EntityDamageEvents.headDuralium(friend);
             }
             if (!friend.isDuraliumCheck()) {
-                player.sendMessage(ThemeUtils.WARNING + "Your tool is broken, you should really repair it!");
+                player.sendMessage(ThemeUtils.WARNING + "你的工具已損壞，你真的該修理它了!");
                 event.setCancelled(true);
                 return;
             }
@@ -105,23 +105,23 @@ public class PlayerInteractListener implements Listener {
         if (p.isSneaking()) {
             // Setting location
             c.set(keyLoc, PersistentDataType.STRING, GeneralUtils.serializeLocation(p.getLocation()));
-            p.sendMessage(ThemeUtils.SUCCESS + "Location set!");
+            p.sendMessage(ThemeUtils.SUCCESS + "位置已設定!");
         } else {
             // Actioning location
             if (c.has(keyCd, PersistentDataType.LONG)) {
                 Long cd = c.get(keyCd, PersistentDataType.LONG);
                 assert cd != null;
                 if (cd > time) {
-                    p.sendMessage(ThemeUtils.WARNING + "Recall is on cooldown!");
+                    p.sendMessage(ThemeUtils.WARNING + "回傳正在冷卻中!");
                     return;
                 }
             }
             if (!c.has(keyLoc, PersistentDataType.STRING)) {
-                p.sendMessage(ThemeUtils.WARNING + "You have not yet set a location to recall to!");
+                p.sendMessage(ThemeUtils.WARNING + "你還沒設置一個回傳地點!");
                 return;
             }
             p.teleport(GeneralUtils.deserializeLocation(Objects.requireNonNull(c.get(keyLoc, PersistentDataType.STRING))));
-            p.sendMessage(ThemeUtils.SUCCESS + "Whoosh!");
+            p.sendMessage(ThemeUtils.SUCCESS + "呼呼!");
             Instant cd = Instant.ofEpochMilli(time).plusSeconds(300);
             c.set(keyCd, PersistentDataType.LONG, cd.toEpochMilli());
         }

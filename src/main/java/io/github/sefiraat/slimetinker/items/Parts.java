@@ -170,10 +170,10 @@ public final class Parts {
                     "PART_BINDING_GENERAL_DISPLAY",
                     Material.STRING,
                     ThemeUtils.ThemeItemType.CRAFTING,
-                    "Binding Material",
-                    ThemeUtils.PASSIVE + "A material suitable to make binding from.",
-                    ThemeUtils.PASSIVE + "This is not JUST string, experiment with",
-                    ThemeUtils.PASSIVE + "similar materials."
+                    "接合物材料",
+                    ThemeUtils.PASSIVE + "一種適合做接合物的材料.",
+                    ThemeUtils.PASSIVE + "這並不是單純只能用線合成, 可以用其他",
+                    ThemeUtils.PASSIVE + "類似的材料 並擺放的像這樣即可."
             );
 
 

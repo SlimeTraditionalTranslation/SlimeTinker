@@ -18,9 +18,9 @@ public final class DummyWorkbench {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY",
             Material.FLETCHING_TABLE,
-            ThemeUtils.ITEM_MACHINE + "Table",
+            ThemeUtils.ITEM_MACHINE + "工作台〔黏液工匠〕",
             "",
-            ThemeUtils.PASSIVE + "This item is crafted in the workbench.",
+            ThemeUtils.PASSIVE + "該物品是在黏液工匠的工作台上製作",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );

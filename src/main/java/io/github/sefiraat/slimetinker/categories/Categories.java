@@ -59,7 +59,7 @@ public final class Categories {
     ));
     public static final DummyCategory DUMMY = new DummyCategory(SlimeTinker.inst().getKeys().getCategoryDummy(), new CustomItem(
             Material.BARRIER,
-            ThemeUtils.MAIN + "SlimeTinker Dummy (作者未完成)"
+            ThemeUtils.MAIN + "黏液工匠模型 (作者未完成)"
     ));
 
     public static void set(SlimeTinker p) {
