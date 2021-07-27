@@ -15,6 +15,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.ComponentMaterial
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.TraitEventType;
 import io.github.sefiraat.slimetinker.utils.enums.TraitPartType;
 import lombok.Getter;
@@ -59,8 +60,13 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Insulated",
-                                                "Become immune to lightning."
+                                                "絕緣",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(橡膠)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*對閃電免疫.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null
                                 )
@@ -89,16 +95,27 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Really Stable",
-                                                "Does nothing. Perhaps if you level it up?."
+                                                "真的穩定",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(精煉鐵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*甚麼都沒做. 或許如果你升級了工具等級?.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Manners Maketh Man",
-                                                "Speed 1, Damage + 50%. Your fights look",
-                                                "super cool."
+                                                "禮儀造就人",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(精煉鐵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*加速I",
+                                                ThemeUtils.PASSIVE+"*傷害+50%",
+                                                ThemeUtils.PASSIVE+"*你的戰鬥看起來非常酷炫",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -130,16 +147,26 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Mixed Metals",
-                                                "Has the effects of all it's ingredients but",
-                                                "their power is halved."
+                                                "混合金屬",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(混合金屬)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*擁有其所有成分的效果,",
+                                                ThemeUtils.PASSIVE+" 但其力量減半.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Stiff",
-                                                "Double damage. Unlucky!"
+                                                "僵硬",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(混合金屬)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*雙倍傷害. 多麼的不幸運!",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -167,17 +194,27 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Cleave",
-                                                "Half damage to all nearby entities.",
-                                                "Cleave damage does not trigger Tinker's effects."
+                                                "劈開",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(高級合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*對附近所有實體造成一半的傷害.",
+                                                ThemeUtils.PASSIVE+" 劈開傷害並不會觸發工匠的特殊效果.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Heavy Duty",
-                                                "When durability gets low, it eats 1 iron",
-                                                "ingot from your inventory to restore some."
+                                                "重職責",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(高級合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*當耐久度變低時, 它將會從你的",
+                                                ThemeUtils.PASSIVE+" 物品欄內吃掉一個鐵錠來回復一些.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -236,16 +273,26 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Heat Resistant",
-                                                "Lava is no longer your enemy."
+                                                "耐熱性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(釷鎂合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*岩漿不在是你的敵人.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Vampirism",
-                                                "Chance to heal by damage given.",
-                                                "Damage dealt varies by time of day."
+                                                "吸血主義",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(釷鎂合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*有機率會按給予的傷害進行治療.",
+                                                ThemeUtils.PASSIVE+" 造成的傷害因時間而異.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -274,8 +321,14 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Nimble",
-                                                "Speed 1. Take 33% less damage"
+                                                "敏捷性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(碳纖維網)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*加速I",
+                                                ThemeUtils.PASSIVE+"*受到傷害減少33%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null
                                 )
@@ -304,16 +357,25 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Terrible",
-                                                "+300% durability loss. 0% Exp Gain."
+                                                "糟糕的",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(廢料)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*耐久度損失 +300%",
+                                                ThemeUtils.PASSIVE+"*經驗值收益 0%"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Brains, Not Brawn.",
-                                                "Tool exp gain is doubled. Damage",
-                                                "dealt is halved."
+                                                "用腦, 而不是用肌肉.",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(廢料)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*工具經驗獲得雙倍化.",
+                                                ThemeUtils.PASSIVE+"*造成的傷害減半",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -341,15 +403,27 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Protective",
-                                                "Saves you from deaths. 20min CD."
+                                                "保護性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銥)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*使你免於死亡",
+                                                ThemeUtils.PASSIVE+" (20分鐘冷卻)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "Warp",
-                                                "Turns your opponent around. 20s CD."
+                                                "扭轉性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銥)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*使你的對手轉身.",
+                                                ThemeUtils.PASSIVE+" (20秒冷卻)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
