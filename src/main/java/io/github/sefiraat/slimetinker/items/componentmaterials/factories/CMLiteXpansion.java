@@ -368,7 +368,7 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "用腦, 而不是用肌肉.",
+                                                "用腦, 而不是用肌肉",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(廢料)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",

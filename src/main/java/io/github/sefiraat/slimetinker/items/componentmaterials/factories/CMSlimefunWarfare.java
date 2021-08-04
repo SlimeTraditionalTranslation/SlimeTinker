@@ -318,7 +318,7 @@ public final class CMSlimefunWarfare {
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(非專利能量元素)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*工具無法在被丟掉或死亡時遺失."
+                                                ThemeUtils.PASSIVE+"*工具無法在死亡時遺失或被丟掉."
                                         )
                                 )
                         ));
