@@ -92,7 +92,7 @@ public final class CMSlimefunWarfare {
                                         CMCore.getMap().get(IDStrings.STEEL).getLiquidItemStack(1),
                                         CMCore.getMap().get(IDStrings.SLIME).getLiquidItemStack(1)
                                 ),
-                                new CMToolMakeup(true, false, true),
+                                new CMToolMakeup(false, true, false),
                                 new CMForms(
                                         Materials.NUGGET_CAST_SLIMESTEEL.getItemId(),
                                     "SLIMESTEEL_INGOT",
@@ -302,13 +302,11 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "蠻力",
+                                                "改革",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(非專利能量元素)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*降低揮動速度, 被擊中的敵人會短暫暈眩.",
-                                                ThemeUtils.PASSIVE+"*造成傷害+100%",
-                                                ThemeUtils.PASSIVE+"*額外33%機率在造成爆擊+100%",
+                                                ThemeUtils.PASSIVE+"*+100% 在白天獲得的工具與玩家經驗值.",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
@@ -316,14 +314,11 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "堅固物",
+                                                "無形的權利",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"手柄(非專利能量元素)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*降低揮動速度, 被擊中的敵人會短暫暈眩.",
-                                                ThemeUtils.PASSIVE+" 擊退並暈眩任何被擊中的生物.",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
+                                                ThemeUtils.PASSIVE+"*工具無法在被丟掉或死亡時遺失."
                                         )
                                 )
                         ));
