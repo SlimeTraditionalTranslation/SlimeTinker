@@ -721,7 +721,7 @@ public final class CMInfinity {
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
                                                 ThemeUtils.PASSIVE+"*玩家經驗",
                                                 ThemeUtils.PASSIVE+" +100%(挖掘)",
-                                                ThemeUtils.PASSIVE+" +50%(怪物",
+                                                ThemeUtils.PASSIVE+" +50%(怪物)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
