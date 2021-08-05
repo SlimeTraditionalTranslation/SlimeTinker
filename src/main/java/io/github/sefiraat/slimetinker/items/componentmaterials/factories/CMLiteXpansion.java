@@ -194,12 +194,12 @@ public final class CMLiteXpansion {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "劈開",
+                                                "劈斬",
                                                 ThemeUtils.ITEM_MACHINE+"需求部件:",
                                                 ThemeUtils.PASSIVE+"前端(高級合金)",
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
-                                                ThemeUtils.PASSIVE+"*對附近所有實體造成一半的傷害.",
-                                                ThemeUtils.PASSIVE+" 劈開傷害並不會觸發工匠的特殊效果.",
+                                                ThemeUtils.PASSIVE+"*對附近所有實體造成傷害.",
+                                                ThemeUtils.PASSIVE+" 劈斬傷害並不會觸發工匠的特殊效果.",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
