@@ -15,6 +15,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.ComponentMaterial
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.TraitEventType;
 import io.github.sefiraat.slimetinker.utils.enums.TraitPartType;
 import lombok.Getter;
@@ -58,15 +59,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Void Miner",
-                                                "Randomly generates ores while mining/digging."
+                                                "虛空礦工",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(虛空)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*隨機在採礦/挖掘時候產生礦物.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Fear the Void",
-                                                "Damage +150%. 250% in the End."
+                                                "虛空恐懼",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(虛空)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*造成傷害+150%",
+                                                ThemeUtils.PASSIVE+"*在終界時 造成傷害+250%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -97,16 +109,24 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Really Stainless",
-                                                "Like Stainless, but.. REALLY."
+                                                "真正的不鏽鋼",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鎂鋼)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*就像是不鏽鋼, 但.. 真的."
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Flammable",
-                                                "Has a (Tool level x 5)% chance to",
-                                                "set your enemies ablaze."
+                                                "易燃性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鎂鋼)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*有(工具等級x5)%的機率讓",
+                                                ThemeUtils.PASSIVE+" 被攻擊的敵人著火",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -138,16 +158,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Reinforced",
-                                                "Any Plate mod on the tool is counted twice."
+                                                "加強性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鈦)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*任何在此工具下的屬性將會計算兩次.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Durable",
-                                                "Ignores being broken but damage 50%,",
-                                                "mining will be slower and 0 exp."
+                                                "耐用性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鈦)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*無視損壞, 但傷害50%,",
+                                                ThemeUtils.PASSIVE+" 挖掘速度會更慢, 經驗值為0.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -175,15 +205,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Stability II",
-                                                "Still does Nothing"
+                                                "穩定 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鐵奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"仍然甚麼都沒做!",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Sharp 1 II",
-                                                "What a bad naming convention. +Damage"
+                                                "尖銳 1 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鐵奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*+造成傷害",
+                                                ThemeUtils.PASSIVE+"多麼糟糕的命名方式.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -211,16 +252,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Golden Veil II",
-                                                "Makes the player invisible. If used on",
-                                                "a weapon, +150% damage."
+                                                "黃金面罩 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(金奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*使玩家隱形.",
+                                                ThemeUtils.PASSIVE+"*如果用於武器,",
+                                                ThemeUtils.PASSIVE+" +150% 造成傷害",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "All That Glitters II",
-                                                "Makes you shiny AND rainbow...y"
+                                                "閃閃發光的一切 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(金奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*讓你閃耀與彩虹...嗯"
                                         )
                                 )
                         ));
@@ -248,16 +298,28 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Brains, Not Brawn II",
-                                                "Tool exp +200%, Damage 50%"
+                                                "用腦, 而不是用肌肉 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銅奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*+200%工具經驗值",
+                                                ThemeUtils.PASSIVE+"*+50% 造成傷害",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Conductive II",
-                                                "All tool exp is converted to player exp",
-                                                "with a 50% bonus."
+                                                "經驗導流 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銅奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*將獲得的熟練經驗，",
+                                                ThemeUtils.PASSIVE+" 轉換為玩家經驗",
+                                                ThemeUtils.PASSIVE+"*+50%額外經驗",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -285,15 +347,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Poisonous II",
-                                                "Poisons more frequently and for longer."
+                                                "有毒 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鉛奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*中毒的更頻繁, 持續時間更長.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Leech II",
-                                                "Bonus health, but drains your energy."
+                                                "吸血鬼 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鉛奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*額外的血量, 但會消耗你的能量.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -321,17 +393,28 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Enchanting II",
-                                                "Poisons more frequently and for longer."
+                                                "隨機附魔 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(銀奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*在工具或武器升級時，",
+                                                ThemeUtils.PASSIVE+" 隨機給予一項附魔，",
+                                                ThemeUtils.PASSIVE+" 附魔項目不一定適合工具或武器",
+                                                ThemeUtils.PASSIVE+"*熟練經驗-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Soft Touch II",
-                                                "Tool exp gain is halved. Tools add 1-3",
-                                                "randomly selected enchants when leveling",
-                                                "up. These enchants may not be useful!"
+                                                "緩降 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(銀奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*無摔落傷害",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -359,15 +442,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Recyclable II",
-                                                "Chance to restore durability on hit/block break"
+                                                "耐久恢復 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋁奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*擊中或破壞時，",
+                                                ThemeUtils.PASSIVE+" 有機率恢復耐久度",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Soft II",
-                                                "Durability loss +100%, tool EXP +100%."
+                                                "柔軟 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋁奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*耐久消耗+100%",
+                                                ThemeUtils.PASSIVE+"*熟練經驗+100%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -395,16 +490,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Malleable II",
-                                                "Deal 50% less damage but gain lots of",
-                                                "Luck and Speed."
+                                                "減傷，幸運 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(錫奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*幸運II",
+                                                ThemeUtils.PASSIVE+"*加速II",
+                                                ThemeUtils.PASSIVE+"*造成傷害-50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Can II",
-                                                "No Hunger Loss"
+                                                "飽食 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(錫奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*飽食III",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -432,15 +538,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Graceful II",
-                                                "DOLPHIN POWERS, ACTIVATE... MORE!"
+                                                "海豚悠游 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋅奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*海豚悠游II",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Super Lightweight II",
-                                                "Makes you lighter than air when not sneaking."
+                                                "漂浮 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋅奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*漂浮II",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -468,17 +584,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Flammable II",
-                                                "Has a (Tool level x 10)% chance to",
-                                                "set your enemies ablaze for a longer time."
+                                                "燃燒 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鎂奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*有(熟練等級x10)%的機率，",
+                                                ThemeUtils.PASSIVE+" 讓敵人著火",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Magnetesium II",
-                                                "Random items are drawn to you from",
-                                                "within a 10 block range"
+                                                "磁鐵(撿起) II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鎂奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*從10格範圍內隨機撿起物品",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -536,15 +661,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Elven Speed",
-                                                "Haste 2, Speed 1. Durability loss +50%"
+                                                "精靈的速度",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(秘銀)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*挖掘加速II",
+                                                ThemeUtils.PASSIVE+"*加速I",
+                                                ThemeUtils.PASSIVE+"*耐久消耗+50%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Sting of Gondolin",
-                                                "All nearby, hostile, mobs are repelled."
+                                                "剛多林之刺",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(秘銀)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*附近所有的敵對生物將會被擊退.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -576,15 +713,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Mystic",
-                                                "Player Exp + 100% (Mining) +50% (Mobs)"
+                                                "神秘性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(精金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*玩家經驗",
+                                                ThemeUtils.PASSIVE+" +100%(挖掘)",
+                                                ThemeUtils.PASSIVE+" +50%(怪物)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Adamant",
-                                                "Become immune to all explosions"
+                                                "堅硬性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(精金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*免疫所有爆炸",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -612,15 +761,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Magnanimous",
-                                                "You're just far too kind"
+                                                "寬容大量",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(磁振子元素)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*你實在太善良了",
+                                                ThemeUtils.PASSIVE+"*敲方塊有機率將工具丟出去",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Flaming Hot",
-                                                "Smelts things when possible."
+                                                "熾熱",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(磁振子元素)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*在可以的情況下熔煉東西.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -649,16 +809,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Fortunate",
-                                                "200% drops from fortune. Stacks",
-                                                "with Lapis modifiers."
+                                                "超級幸運",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(幸運奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*200%機率從幸運掉落.",
+                                                ThemeUtils.PASSIVE+"*與青金石屬性疊加.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Merchant's Veil",
-                                                "Invisibility with none of the drawbacks!"
+                                                "商人面罩",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(幸運奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*沒有任何缺點的隱形",
+                                                ThemeUtils.PASSIVE+"*隱形III",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -686,15 +857,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Tricks",
-                                                "Plays nasty tricks on nearby things."
+                                                "技巧性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(魔法奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*對附近的東西耍花招.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Secrets Revealed",
-                                                "Reveals all nearby living (or not!) things."
+                                                "秘密揭曉",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(魔法奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*顯示附近所有活著 (或不是活著!) 的東西.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -722,17 +903,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Earth Shaker",
-                                                "Knocks back hit mobs and stuns them",
-                                                "when they land."
+                                                "撼地者",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(地球奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*擊退生物並使其",
+                                                ThemeUtils.PASSIVE+" 在落地時昏迷.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Grinder",
-                                                "Breaking blocks act as if they have",
-                                                "gone through the grinder."
+                                                "粉碎機",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(地球奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*打破方塊就像是它們已經通過粉碎機一樣.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -760,16 +950,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Clean Cut",
-                                                "Damage +100%. Haste 2"
+                                                "漂亮切割",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(金屬奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*造成傷害+100%",
+                                                ThemeUtils.PASSIVE+"*挖掘加速II",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Conductor",
-                                                "All player exp is converted to tool",
-                                                "exp at a 10 : 1 ratio."
+                                                "經驗反向導流",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(金屬奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*將所有獲得的玩家經驗值轉換為",
+                                                ThemeUtils.PASSIVE+" 工具經驗值, 比例為 10 : 1",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -798,15 +999,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Infinite",
-                                                "This tool will live on forever."
+                                                "無限性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(無限)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*這個工具將會永遠存在.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Conceptual Defence",
-                                                "All damage is halved (rounded up)."
+                                                "概念性防禦",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(無限)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*所有傷害減半 (四捨五入).",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         )
                                 )
                         ));
@@ -834,9 +1045,16 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Breakpoint",
-                                                "Unbreakable. +200% Damage.",
-                                                "+200% Tool Exp and 3x3 Mining."
+                                                "突破點",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(無限奇點)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*不可破壞",
+                                                ThemeUtils.PASSIVE+"*+200%造成傷害",
+                                                ThemeUtils.PASSIVE+"*+200%工具經驗值",
+                                                ThemeUtils.PASSIVE+"*在挖掘類工具上能挖3x3範圍",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         null
