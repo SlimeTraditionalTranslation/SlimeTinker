@@ -4,6 +4,7 @@ import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.categories.Categories;
 import io.github.sefiraat.slimetinker.items.workstations.modificationstation.DummyModificationStation;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
+import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
@@ -17,7 +18,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_REDSTONE_DUMMY",
                     Material.REDSTONE,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:紅石",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "玩家手持此工具或武器，",
@@ -28,7 +29,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_LAPIS_DUMMY",
                     Material.LAPIS_LAZULI,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:青金石",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "玩家手持此工具或武器，",
@@ -40,7 +41,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_QUARTZ_DUMMY",
                     Material.QUARTZ,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:地獄石英",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "玩家手持此工具，",
@@ -52,7 +53,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_DIAMOND_DUMMY",
                     Material.DIAMOND,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:鑽石",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "玩家手持此工具，",
@@ -64,7 +65,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_EMERALD_DUMMY",
                     Material.EMERALD,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:綠寶石",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "每次動作將會獲得額外的工具經驗或武器經驗",
@@ -76,7 +77,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_PLATE_DUMMY",
                     Material.OBSIDIAN,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化素材:強化黑曜石板",
                     ThemeUtils.PASSIVE + "將此強化新增到工具後，",
                     ThemeUtils.PASSIVE + "每提升1個強化等級，增加10%的機率減少工具耐久度",

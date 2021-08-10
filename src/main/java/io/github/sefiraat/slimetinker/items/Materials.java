@@ -7,6 +7,7 @@ import io.github.sefiraat.slimetinker.items.workstations.smeltery.TinkersSmelter
 import io.github.sefiraat.slimetinker.items.workstations.workbench.Workbench;
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
+import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
@@ -24,7 +25,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_COPPER",
                     Material.ACACIA_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銅粒",
                     "由熔融銅製成的粒"
             );
@@ -33,7 +34,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_TIN",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "錫粒",
                     "由熔融錫製成的粒"
             );
@@ -42,7 +43,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_ZINC",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋅粒",
                     "由熔融鋅製成的粒"
             );
@@ -51,7 +52,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_ALUMINUM",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋁粒",
                     "由熔融鋁製成的粒"
             );
@@ -60,7 +61,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MAGNESIUM",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎂粒",
                     "由熔融鎂製成的粒"
             );
@@ -69,7 +70,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_LEAD",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鉛粒",
                     "由熔融鉛製成的粒"
             );
@@ -78,7 +79,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_SILVER",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銀粒",
                     "由熔融銀製成的粒"
             );
@@ -87,7 +88,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_COAL",
                     Material.POLISHED_BLACKSTONE_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "煤炭粒",
                     "由熔融煤炭製成的粒"
             );
@@ -96,7 +97,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_STEEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋼粒",
                     "由熔融鋼製成的粒"
             );
@@ -105,7 +106,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_DAMASCUS_STEEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "大馬士革鋼粒",
                     "由熔融大馬士革鋼製成的粒"
             );
@@ -114,7 +115,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_DURALIUM",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "硬鋁粒",
                     "由熔融硬鋁製成的粒"
             );
@@ -123,7 +124,7 @@ public final class Materials {
            ThemeUtils.themedItemStack(
                    "NUGGET_CAST_BRONZE",
                    Material.ACACIA_BUTTON,
-                   ThemeUtils.ThemeItemType.CRAFTING,
+                   ThemeItemType.CRAFTING,
                    "青銅粒",
                    "由熔融青銅製成的粒"
            );
@@ -132,7 +133,7 @@ public final class Materials {
           ThemeUtils.themedItemStack(
                   "NUGGET_CAST_ALU_BRONZE",
                   Material.GOLD_NUGGET,
-                  ThemeUtils.ThemeItemType.CRAFTING,
+                  ThemeItemType.CRAFTING,
                   "鋁黃銅粒",
                   "由熔融鋁黃銅製成的粒"
           );
@@ -141,7 +142,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_HARD_METAL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "硬化金屬粒",
                     "由熔融硬化金屬製成的粒"
             );
@@ -150,7 +151,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_COR_BRONZE",
                     Material.GOLD_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "科林斯青銅粒",
                     "由熔融柯林斯青銅製成的粒"
             );
@@ -159,7 +160,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_SOLDER",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "焊錫粒",
                     "由熔融焊錫製成的粒"
             );
@@ -168,7 +169,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_BILLON",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銀銅合金粒",
                     "由熔融銀銅合金製成的粒"
             );
@@ -177,7 +178,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_BRASS",
                     Material.GOLD_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "黃銅粒",
                     "由熔融黃銅製成的粒"
             );
@@ -185,8 +186,8 @@ public final class Materials {
     public static final SlimefunItemStack NUGGET_CAST_ALU_BRASS =
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_ALU_BRASS",
-                    Material.GOLD_INGOT,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    Material.GOLD_NUGGET,
+                    ThemeItemType.CRAFTING,
                     "鋁黃銅粒",
                     "由熔融鋁黃銅製成的粒"
             );
@@ -195,7 +196,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_NICKEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎳粒",
                     "由熔融鎳製成的粒"
             );
@@ -204,7 +205,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_COBALT",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鈷粒",
                     "由熔融鈷製成的粒"
             );
@@ -213,7 +214,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_REINFORCED",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "強化合金粒",
                     "由熔融強化合金製成的粒"
             );
@@ -222,7 +223,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_FERROSILICON",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "矽鐵粒",
                     "由熔融矽鐵製成的粒"
             );
@@ -231,17 +232,36 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_REDSTONE_ALLOY",
                     Material.ACACIA_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "紅石合金粒",
                     "由熔融紅石合金製成的粒"
             );
+
+    public static final SlimefunItemStack NUGGET_CAST_BOOMERITE =
+            ThemeUtils.themedItemStack(
+                    "NUGGET_CAST_BOOMERITE",
+                    Material.ACACIA_BUTTON,
+                    ThemeItemType.CRAFTING,
+                    "Boomerite Nugget",
+                    "A nugget made from boomerite"
+            );
     // endregion
+    // region Ingots
+    public static final SlimefunItemStack INGOT_CAST_BOOMERITE =
+            ThemeUtils.themedItemStack(
+                    "INGOT_CAST_BOOMERITE",
+                    Material.BRICK,
+                    ThemeItemType.CRAFTING,
+                    "Boomerite Ingot",
+                    "A very rare ingot. Origins unknown."
+            );
+    // End Region
     // region Blocks
     public static final SlimefunItemStack BLOCK_CAST_COPPER =
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_COPPER",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銅塊",
                     "由熔融銅製成的塊"
             );
@@ -250,7 +270,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_TIN",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "錫塊",
                     "由熔融錫製成塊"
             );
@@ -259,7 +279,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ZINC",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋅塊",
                     "由熔融鋅製成塊"
             );
@@ -268,7 +288,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ALUMINUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋁塊",
                     "由熔融鋁製成塊"
             );
@@ -277,7 +297,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MAGNESIUM",
                     Material.PINK_TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎂塊",
                     "由熔融鎂製成塊"
             );
@@ -286,7 +306,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_LEAD",
                     Material.PURPLE_TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鉛塊",
                     "由熔融鉛製成塊"
             );
@@ -295,7 +315,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_SILVER",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銀塊",
                     "由熔融銀製成塊"
             );
@@ -304,7 +324,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_STEEL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋼塊",
                     "由熔融鋼製成塊"
             );
@@ -313,7 +333,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_DAMASCUS_STEEL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "大馬士革鋼塊",
                     "由熔融大馬士革鋼製成塊"
             );
@@ -322,7 +342,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_DURALIUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "硬鋁塊",
                     "由熔融硬鋁製成塊"
             );
@@ -331,7 +351,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_BRONZE",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "青銅塊",
                     "由熔融青銅製成塊"
             );
@@ -340,7 +360,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ALU_BRONZE",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋁青銅塊",
                     "由熔融鋁青銅製成塊"
             );
@@ -349,7 +369,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_HARD_METAL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "硬化金屬塊",
                     "由熔融硬化金屬製成塊"
             );
@@ -357,7 +377,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_COR_BRONZE",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "科林斯青銅塊",
                     "由熔融科林斯青銅製成塊"
             );
@@ -366,7 +386,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_SOLDER",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "焊錫塊",
                     "由熔融焊錫製成塊"
             );
@@ -375,7 +395,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_BILLON",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銀銅合金塊",
                     "由熔融銀銅合金製成塊"
             );
@@ -384,7 +404,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_BRASS",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "黃銅塊",
                     "由熔融黃銅製成塊"
             );
@@ -393,7 +413,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ALU_BRASS",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋁黃銅塊",
                     "由熔融鋁黃銅製成塊"
             );
@@ -402,7 +422,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_NICKEL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎳塊",
                     "由熔融鎳製成塊"
             );
@@ -411,7 +431,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_COBALT",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鈷塊",
                     "由熔融鈷製成塊"
             );
@@ -420,7 +440,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_REINFORCED",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "強化合金塊",
                     "由熔融強化合金製成塊"
             );
@@ -429,7 +449,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_FERROSILICON",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "矽鐵塊",
                     "由熔融矽鐵製成塊"
             );
@@ -437,10 +457,19 @@ public final class Materials {
     public static final SlimefunItemStack BLOCK_CAST_REDSTONE_ALLOY =
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_REDSTONE_ALLOY",
-                    Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    Material.TERRACOTTA,
+                    ThemeItemType.CRAFTING,
                     "紅石合金塊",
                     "由熔融紅石合金製成塊"
+            );
+
+    public static final SlimefunItemStack BLOCK_CAST_BOOMERITE =
+            ThemeUtils.themedItemStack(
+                    "BLOCK_CAST_BOOMERITE",
+                    Material.TERRACOTTA,
+                    ThemeItemType.CRAFTING,
+                    "Boomerite Block",
+                    "A block made from boomerite"
             );
     // endregion
     // region Crafts
@@ -448,7 +477,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "MOD_PLATE",
                     Material.OBSIDIAN,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "強化黑曜石板",
                     ThemeUtils.PASSIVE + "強化素材之一",
                     ThemeUtils.PASSIVE + "減少工具或武器的耐久度消耗"
@@ -458,7 +487,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "GROUT",
                     Material.GRAVEL,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "水泥",
                     ThemeUtils.PASSIVE + "製作焦黑磚的材料"
             );
@@ -468,7 +497,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "SEARED_BRICK",
                     Material.BRICK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "焦黑磚",
                     ThemeUtils.PASSIVE + "製作焦黑物品的材料"
             );
@@ -477,7 +506,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "SMELTERY_CONTROLLER",
                     Material.CHISELED_POLISHED_BLACKSTONE,
-                    ThemeUtils.ThemeItemType.MACHINE,
+                    ThemeItemType.MACHINE,
                     "焦黑冶煉爐控制器",
                     ThemeUtils.PASSIVE + "焦黑冶煉爐的互動方塊"
             );
@@ -486,7 +515,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "SEARED_TANK",
                     Material.RED_NETHER_BRICK_WALL,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "焦黑儲液罐",
                     ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
@@ -495,7 +524,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "SPOUT",
                     Material.POLISHED_BLACKSTONE_BRICK_WALL,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "焦黑流嘴",
                     ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
@@ -504,7 +533,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "SEARED_BRICK_BLOCK",
                     Material.POLISHED_BLACKSTONE_BRICKS,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "黑焦石磚",
                     ThemeUtils.PASSIVE + "用於建造焦黑冶煉爐"
             );
@@ -517,7 +546,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_INFINITY",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "無限粒",
                     "由熔融無限製成的粒"
             );
@@ -526,7 +555,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MAGSTEEL",
                     Material.ACACIA_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎂鋼粒",
                     "由熔融鎂鋼製成的粒"
             );
@@ -535,7 +564,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_TITANIUM",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鈦粒",
                     "由熔融鈦製成的粒"
             );
@@ -544,7 +573,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MYTHRIL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "秘銀粒",
                     "由熔融秘銀製成的粒"
             );
@@ -553,7 +582,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_ADAMANTITE",
                     Material.ACACIA_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "精金粒",
                     "由熔融精金製成的粒"
             );
@@ -562,7 +591,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MAGNONIUM",
                     Material.CRIMSON_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "磁振子元素粒",
                     "由熔融磁振子元素製成的粒"
             );
@@ -573,7 +602,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_VOID",
                     Material.NETHERITE_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "虛空塊",
                     "由熔融虛空製成的塊"
             );
@@ -582,7 +611,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_INFINITY",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "無限塊",
                     "由熔融無限製成的塊"
             );
@@ -591,7 +620,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MAGSTEEL",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鎂鋼塊",
                     "由熔融鎂鋼製成的塊"
             );
@@ -600,7 +629,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_TITANIUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鈦塊",
                     "由熔融鈦製成的塊"
             );
@@ -609,7 +638,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MYTHRIL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "秘銀塊",
                     "由熔融秘銀製成的塊"
             );
@@ -618,7 +647,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ADAMANTITE",
                     Material.TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "精金塊",
                     "由熔融精金製成的塊"
             );
@@ -627,7 +656,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MAGNONIUM",
                     Material.PURPLE_TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "磁振子元素塊",
                     "由熔融磁振子元素製成的塊"
             );
@@ -641,7 +670,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_SLIMESTEEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "黏液鋼粒",
                     "由熔融黏液鋼製成的粒"
             );
@@ -650,7 +679,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_REINFORCED_SLIMESTEEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "強化黏液鋼粒",
                     "由熔融強化黏液鋼製成的粒"
             );
@@ -659,7 +688,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_OSMIUM",
                     Material.WARPED_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋨粒",
                     "由熔融鋨製成的粒"
             );
@@ -668,7 +697,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_OSMIUM_SUPER_ALLOY",
                     Material.WARPED_BUTTON,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋨超級合金粒",
                     "由熔融鋨超級合金製成的粒"
             );
@@ -677,7 +706,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "非專利能量元素粒",
                     "由熔融非專利能量元素製成的粒"
             );
@@ -688,7 +717,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_SLIMESTEEL",
                     Material.SLIME_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "黏液鋼塊",
                     "由熔融黏液鋼製成的塊"
             );
@@ -697,7 +726,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_REINFORCED_SLIMESTEEL",
                     Material.SLIME_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "強化黏液鋼塊",
                     "由熔融強化黏液鋼製成的塊"
             );
@@ -706,7 +735,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_OSMIUM",
                     Material.LIGHT_BLUE_TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋨塊",
                     "由熔融鋨製成的塊"
             );
@@ -715,7 +744,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_OSMIUM_SUPER_ALLOY",
                     Material.BLUE_TERRACOTTA,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "鋨超級合金塊",
                     "由熔融鋨超級合金製成的塊"
             );
@@ -724,7 +753,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_UNPATENTABILUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "非專利能量元素塊",
                     "由熔融非專利能量元素製成的塊"
             );
@@ -738,7 +767,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_STAINLESSSTEEL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "不銹鋼粒",
                     "由熔融不銹鋼製成的粒"
             );
@@ -749,7 +778,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_STAINLESSSTEEL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "不銹鋼塊",
                     "由熔融不鏽鋼製成的塊"
             );
@@ -764,7 +793,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_REFINED_IRON",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "精煉鐵粒",
                     "由熔融精煉鐵製成的粒"
             );
@@ -773,7 +802,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MIXED_METAL",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "混合金屬粒",
                     "由熔融混合金屬製成的粒"
             );
@@ -782,7 +811,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_ADVANCED_ALLOY",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "高級合金粒",
                     "由熔融高級合金製成的粒"
             );
@@ -791,7 +820,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_MAG_THOR",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "釷鎂合金粒",
                     "由熔融釷鎂合金製成的粒"
             );
@@ -800,7 +829,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_SCRAP",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "廢料粒",
                     "由熔融廢料製成的粒"
             );
@@ -809,7 +838,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "NUGGET_CAST_IRIDIUM",
                     Material.IRON_NUGGET,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銥粒",
                     "由熔融銥製成的粒"
             );
@@ -820,7 +849,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_REFINED_IRON",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "精煉鐵塊",
                     "由熔融精煉鐵製成的塊"
             );
@@ -829,7 +858,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MIXED_METAL",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "混合金屬塊",
                     "由熔融混合金屬製成的塊"
             );
@@ -838,7 +867,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_ADVANCED_ALLOY",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "高級合金塊",
                     "由熔融高級合金製成的塊"
             );
@@ -847,7 +876,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_MAG_THOR",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "釷鎂合金塊",
                     "由熔融釷鎂製成的塊"
             );
@@ -856,7 +885,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_SCRAP",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "廢料塊",
                     "由熔融廢料製成的塊"
             );
@@ -865,7 +894,7 @@ public final class Materials {
             ThemeUtils.themedItemStack(
                     "BLOCK_CAST_IRIDIUM",
                     Material.IRON_BLOCK,
-                    ThemeUtils.ThemeItemType.CRAFTING,
+                    ThemeItemType.CRAFTING,
                     "銥塊",
                     "由熔融銥製成的塊"
             );
@@ -998,6 +1027,10 @@ public final class Materials {
 
         new UnplaceableBlock(Categories.MATERIALS, NUGGET_CAST_REDSTONE_ALLOY, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_NUGGET)).register(p);
         new UnplaceableBlock(Categories.MATERIALS, BLOCK_CAST_REDSTONE_ALLOY, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_BLOCK)).register(p);
+
+        new UnplaceableBlock(Categories.MATERIALS, NUGGET_CAST_BOOMERITE, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_NUGGET)).register(p);
+        new UnplaceableBlock(Categories.MATERIALS, INGOT_CAST_BOOMERITE, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_INGOT)).register(p);
+        new UnplaceableBlock(Categories.MATERIALS, BLOCK_CAST_BOOMERITE, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_BLOCK)).register(p);
 
         new UnplaceableBlock(Categories.MATERIALS, NUGGET_CAST_COAL, DummySmeltery.TYPE, Parts.getDummyCastRecipe(Casts.CAST_NUGGET)).register(p);
 

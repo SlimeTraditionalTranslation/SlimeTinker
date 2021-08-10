@@ -5,7 +5,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public final class IDStrings {
 
-    // Vanilla + Core SF
+    // TODO Collapse into Map and then form command completions from this
+    // Vanilla + Core SF + Tinkers
     public static final String IRON = "鐵";
     public static final String GOLD = "金";
     public static final String COPPER = "銅";
@@ -37,11 +38,13 @@ public final class IDStrings {
     public static final String WEEPING_VINES = "垂泣藤";
     public static final String TWISTED_VINES = "扭曲藤";
     public static final String SLIME = "史萊姆";
+    public static final String LEATHER = "LEATHER";
     public static final String DIAMOND = "鑽石";
     public static final String REDSTONE = "紅石";
     public static final String REDSTONE_ALLOY = "紅石合金";
     public static final String SILICON = "矽";
     public static final String FERROSILICON = "矽鐵";
+    public static final String BOOMERITE = "BOOMERITE";
 
     // Infinity Expansion
     public static final String VOID = "虛空";
@@ -97,13 +100,22 @@ public final class IDStrings {
     public static final String HEAD = "前端";
     public static final String BINDING = "接合物";
     public static final String ROD = "手柄";
-    public static final String REPAIR = "修復零件";
+    public static final String PLATE = "PLATE";
+    public static final String GAMBESON = "GAMBESON";
+    public static final String LINKS = "LINKS";
 
     public static final String SHOVEL = "鏟子";
     public static final String PICKAXE = "鎬子";
     public static final String AXE = "斧頭";
     public static final String HOE = "鋤頭";
     public static final String SWORD = "劍";
+
+    public static final String HELMET = "HELMET";
+    public static final String CHESTPLATE = "CHESTPLATE";
+    public static final String LEGGINGS = "LEGGINGS";
+    public static final String BOOTS = "BOOTS";
+
+    public static final String REPAIR = "修復零件";
 
     public static final String PLACED = "st-placed-block";
 }
