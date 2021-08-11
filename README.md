@@ -3,15 +3,17 @@
 黏液工匠是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) 。
 
 ## 內容介紹:
-* 熔化原版Minecraft和黏液科技的金屬。
-* 將熔融金屬鑄造成塊、錠、粒、各式部件(鏟子、鎬子、斧頭、鋤頭、劍、手柄、修復零件)。
-* 可以用前端、接合物、手柄，組合成自己獨一無二的工具或武器。
-* 每個材質的部件都有自己的屬性，例如：自動熔煉、3×3挖掘、隱身、懸浮......
-* 工具或武器的等級，會隨著使用而升級，每次升級可以獲得1次強化次數，升級到一定等級，品質會由「石→金→鐵→鑽石→獄髓」。
-* 強化次數可以為工具增加其他效果，例如：挖掘速度、掠奪/幸運、傷害增加......
-* 耐久度為0時，並不會爆掉，可以利用與前端相同材質的修復零件進行修復。
-* 部件可以隨意更換，且更換後會保留原本的經驗等級、強化效果。
-* 有些效果適用原版附魔，傷害、經驗、耐久是可以疊加的，而且可以互相配合。
+* The ability to melt all Vanilla and Core Slimefun metals and alloys. 熔化原版Minecraft和黏液科技的金屬。
+* Casting out metals into nuggets, ingots and blocks for all metals.
+* Casting into tools parts (Axe Heads, Sword Blades etc.) and casting into Armour Plates and Chain Mail Links.
+* Creation of custom tools based on any combination of Head, Binding and Rod parts for a unique tool 可以用前端、接合物、手柄，組合成自己獨一無二的工具或武器。
+* Creation of custom armour peices based on any combination of Plates, Gambeson and Mail Link parts for a unique armour peice
+* Each Part/metal combination has a specific trait. Traits range from Auto smelting to Levitation, invisibilty to 3x3 mining.
+* Tools and Armour peices level as you use them, as they level they unlock new Modifier slots and can promote from Stone > Gold > Iron > Diamond and Netherite or Leather > Chain > Iron > Diamond > Netherite. 工具或武器的等級，會隨著使用而升級，每次升級可以獲得1次強化次數，升級到一定等級，品質會由「石→金→鐵→鑽石→獄髓」。
+* Modifier slots can be used to add special modifiers to the tool from bonus drops (on top of looting/fortune) to more haste, damage and more.
+* Tools and armour do not break, they just stop working until you repair them using the same metal type the tool is made of. Armour will fall off when in need of repair
+* Parts can be swapped out at will leaving the tool/armour peices level/mods intact. Want to start with Copper to level faster THEN swap to Reinforced for 3x3? Go for it!
+* All effects/mods (when applicable) work with Vanilla Enchants. Damage, exp and durability modifications are all stackable and work nicely with each other. 有些效果適用原版附魔，傷害、經驗、耐久是可以疊加的，而且可以互相配合。
 
 如果想要知道更詳細的內容介紹，可以參考由Boomer_1製作的影片。
 [![Boomer shows off SlimeTinker](https://res.cloudinary.com/marcomontalbano/image/upload/v1626509062/video_to_markdown/images/youtube--gAUoxj-h26s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/gAUoxj-h26s "Boomer shows off SlimeTinker")
