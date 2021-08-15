@@ -16,6 +16,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.cmelements.CMTrai
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -60,15 +61,26 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Super Dooper Stainless",
-                                                "Like Steel or MagSteel but yet more absurd."
+                                                "超級不鏽鋼",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(不銹鋼)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*就像鋼或鎂鋼一樣,",
+                                                ThemeUtils.PASSIVE+" 但更加的荒唐.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Cutlery",
-                                                "Hitting animals will directly feed you. Grim"
+                                                "刀具",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(不銹鋼)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*攻擊動物將會直接食用它. 喔不",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -109,9 +121,14 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "NoClip",
-                                                "Right click while holding to randomly teleport.",
-                                                "5 min cooldown."
+                                                "穿越性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(惱鬼寶石)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*按住右鍵來隨機傳送.",
+                                                ThemeUtils.PASSIVE+" (五分鐘冷卻)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
@@ -147,17 +164,27 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Bright Fury",
-                                                "Attacks dazzle and blind while being.",
-                                                "50% more powerful."
+                                                "光明之怒",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(星塵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*攻擊時會眩目與失明.",
+                                                ThemeUtils.PASSIVE+"*50%更加強大.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Yvaine",
-                                                "Gives an ethereal glow and makes villagers",
-                                                "friendlier to you."
+                                                "伊薇",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(星塵)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*散發出空靈的光芒,",
+                                                ThemeUtils.PASSIVE+" 使村民對你更友好.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -199,16 +226,27 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Incorporeal",
-                                                "Projectiles just pass right through you."
+                                                "虛無性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(幽靈精華)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*投擲物直接穿過你.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "HyperCube [B]",
-                                                "Only works with both [A] and [B]. Shift + Right",
-                                                "click to store a location. Right click to recall",
-                                                "to that location. 10min CD."
+                                                "超立方體 [B]",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(幽靈精華)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*Shift + 右鍵 儲存位置",
+                                                ThemeUtils.PASSIVE+"*右鍵 來回傳儲存位置",
+                                                ThemeUtils.PASSIVE+" (十分鐘冷卻)",
+                                                ThemeUtils.PASSIVE+" (需要同時有超立方體 A與B)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
@@ -248,10 +286,16 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "HyperCube [A]",
-                                                "Only works with both [A] and [B]. Shift + Right",
-                                                "click to store a location. Right click to recall",
-                                                "to that location. 10min CD."
+                                                "超立方體 [A]",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(光學傳輸材料)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*Shift + 右鍵 儲存位置",
+                                                ThemeUtils.PASSIVE+"*右鍵 來回傳儲存位置",
+                                                ThemeUtils.PASSIVE+" (十分鐘冷卻)",
+                                                ThemeUtils.PASSIVE+" (需要同時有超立方體 A與B)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
