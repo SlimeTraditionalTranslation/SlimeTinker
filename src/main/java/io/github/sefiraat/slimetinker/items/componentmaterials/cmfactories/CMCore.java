@@ -257,7 +257,7 @@ public final class CMCore {
                                         ),
                                         null,
                                         new CMTrait(
-                                                SlimefunItems.SILVER_INGOT,
+                                                CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Soft Touch",
                                                 "You feel lighter."
@@ -527,8 +527,7 @@ public final class CMCore {
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Lightweight",
-                                                "Random items are drawn to you from",
-                                                "within a 5 block range"
+                                                "Tool Exp +50%. Speed + 1"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -1547,7 +1546,7 @@ public final class CMCore {
                                                 CMTraits.PROP_GAMBESON,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Slow Learner",
-                                                "Armour exp gain = (Level * 10%)"
+                                                "Armour exp gain = (Level * 5%)"
                                         ),
                                         null)
                         ));
@@ -1585,7 +1584,7 @@ public final class CMCore {
                                                 CMTraits.PROP_GAMBESON,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Thick",
-                                                "Armour exp gain + 50%"
+                                                "Armour exp gain + 10%"
                                         ),
                                         null)
                         ));
@@ -1774,8 +1773,8 @@ public final class CMCore {
                                                                                                                                             // Conductive (Special case - in Experience.java, should be moved out)
         map.get(IDStrings.CRIMSON_ROOTS).addEvent(TraitEventType.TICK, TraitPartType.BINDER, TickEvents::binderCrimsonRoot);                // Decay
         map.get(IDStrings.WEEPING_VINES).addEvent(TraitEventType.TICK, TraitPartType.BINDER, TickEvents::binderWeepingVine);                // Doom
-                                                                                                                                            // Durable - Damage (Special Case - in EntityDamageListener.java - cant move)
-                                                                                                                                            // Durable - Block Break (Special Case - in BlockBreakListener.java - cant move)
+        map.get(IDStrings.DURALIUM).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.HEAD, EntityDamageEvents::headDuralium);          // Durable - Entity Damage - Damage Reduction + No Exp
+        map.get(IDStrings.DURALIUM).addEvent(TraitEventType.BLOCK_BREAK, TraitPartType.HEAD, BlockBreakEvents::headDuralium);               // Durable - Block Break -  No Exp
         map.get(IDStrings.DURALIUM).addEvent(TraitEventType.TICK, TraitPartType.HEAD, TickEvents::headDuralium);                            // Durable - Tick
                                                                                                                                             // Easy Fix (Special case - in RepairBench.java. Will have to stay there)
                                                                                                                                             // Enchanting (Special case - in Experience.java - could be moved if I raise an event)
@@ -1795,6 +1794,7 @@ public final class CMCore {
         map.get(IDStrings.BOOMERITE).addEvent(TraitEventType.RIGHT_CLICK, TraitPartType.HEAD, RightClickEvents::headBoomerite);             // Ladder Simulator™
         map.get(IDStrings.LEAD).addEvent(TraitEventType.TICK, TraitPartType.ROD, TickEvents::rodLead);                                      // Leech
         map.get(IDStrings.REDSTONE_ALLOY).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.ROD, EntityDamageEvents::rodRedstoneAlloy); // Lightning Rod
+        map.get(IDStrings.STEEL).addEvent(TraitEventType.TICK, TraitPartType.ROD, TickEvents::rodSteel);                                    // Lightweight
         map.get(IDStrings.MAGNESIUM).addEvent(TraitEventType.TICK, TraitPartType.ROD, TickEvents::rodMagnesium);                            // Magnetisium
         map.get(IDStrings.TIN).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.HEAD, EntityDamageEvents::headTin);                    // Malleable - Damage
         map.get(IDStrings.TIN).addEvent(TraitEventType.TICK, TraitPartType.HEAD, TickEvents::headTin);                                      // Malleable - Tick

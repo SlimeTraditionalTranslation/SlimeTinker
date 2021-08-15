@@ -136,29 +136,33 @@ public final class PlayerDamagedEvents {
     }
 
     public static void plateBrass(EventFriend friend) {
-        Damageable damagable = (Damageable) friend.getActiveStack().getItemMeta();
-        int dmgPerc = (damagable.getDamage() / friend.getActiveStack().getType().getMaxDurability()) * 100;
+        ItemStack itemStack = friend.getActiveStack();
+        Damageable damagable = (Damageable) itemStack.getItemMeta();
+        Validate.notNull(damagable, "Damagable is null, this means the world is a lie!");
+        int maxDurability = itemStack.getType().getMaxDurability();
+        int damage = damagable.getDamage();
+        float dmgPerc = ((float) damage) / ((float) maxDurability);
         if (dmgPerc <= 0) {
             friend.setDamageMod(friend.getDamageMod() + 0.25);
-        } else if (dmgPerc <= 10) {
+        } else if (dmgPerc <= 0.1) {
             friend.setDamageMod(friend.getDamageMod() + 0.20);
-        } else if (dmgPerc <= 20) {
+        } else if (dmgPerc <= 0.2) {
             friend.setDamageMod(friend.getDamageMod() + 0.15);
-        } else if (dmgPerc <= 30) {
+        } else if (dmgPerc <= 0.3) {
             friend.setDamageMod(friend.getDamageMod() + 0.10);
-        } else if (dmgPerc <= 40) {
+        } else if (dmgPerc <= 0.4) {
             friend.setDamageMod(friend.getDamageMod() + 0.05);
-        } else if (dmgPerc <= 50) {
+        } else if (dmgPerc <= 0.5) {
             friend.setDamageMod(friend.getDamageMod() + 0.00);
-        } else if (dmgPerc <= 60) {
+        } else if (dmgPerc <= 0.6) {
             friend.setDamageMod(friend.getDamageMod() - 0.05);
-        } else if (dmgPerc <= 70) {
+        } else if (dmgPerc <= 0.7) {
             friend.setDamageMod(friend.getDamageMod() - 0.10);
-        } else if (dmgPerc <= 80) {
+        } else if (dmgPerc <= 0.8) {
             friend.setDamageMod(friend.getDamageMod() - 0.15);
-        } else if (dmgPerc <= 90) {
+        } else if (dmgPerc <= 0.9) {
             friend.setDamageMod(friend.getDamageMod() - 0.20);
-        } else if (dmgPerc <= 100) {
+        } else if (dmgPerc <= 1) {
             friend.setDamageMod(friend.getDamageMod() - 0.25);
         }
     }
@@ -314,7 +318,7 @@ public final class PlayerDamagedEvents {
     }
 
     public static void linksSingTin(EventFriend friend) {
-        increaseEffect(PotionEffectType.ABSORPTION, friend.getPotionEffects(), 1);
+        increaseEffect(PotionEffectType.ABSORPTION, friend.getPotionEffects(), 2);
     }
 
     public static void linksMythril(EventFriend friend) {
