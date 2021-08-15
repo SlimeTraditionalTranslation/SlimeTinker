@@ -17,6 +17,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.cmelements.CMTrai
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -58,16 +59,27 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Overcharge",
-                                                "Stores energy each time you hit a mob.",
-                                                "Every 10th attack releases this back."
+                                                "過度充能",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(Segganesson)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*每次攻擊怪物時儲存能量.",
+                                                ThemeUtils.PASSIVE+" 在第十次攻擊將會釋出電力.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Blinding Speed",
-                                                "Gain insane speed but with a side effect."
+                                                "盲目速度",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(Segganesson)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*獲得瘋狂的速度,",
+                                                ThemeUtils.PASSIVE+" 但會有副作用",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -113,8 +125,13 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Bouncy II",
-                                                "Fall damage halved with a jump boost."
+                                                "彈性 II",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"接合物(黏液鋼錠)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*摔落傷害會隨著跳躍提升而減少",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
@@ -158,17 +175,28 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Strong and Sticky",
-                                                "Dropped blocks go into your inventory",
-                                                "when possible to do so"
+                                                "強力黏液",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(強化黏液鋼錠)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*當背包有空間時,",
+                                                ThemeUtils.PASSIVE+" 掉落的物品將直接被黏入物品欄.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Flexibility",
-                                                "Incoming damage reduced and durability is lost",
-                                                "instead. Doesn't work while tool is broken."
+                                                "靈活性",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(強化黏液鋼錠)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*當背包有空間時,",
+                                                ThemeUtils.PASSIVE+" 受到傷害減少, 但會消耗工具耐久度.",
+                                                ThemeUtils.PASSIVE+" 工具在壞掉時不起作用.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -208,15 +236,25 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Heavy",
-                                                "Mines in a 3x3 Area"
+                                                "重量",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋨)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*一次挖3x3的大小",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Heavy Pommel",
-                                                "Struck mobs are slowed and cannot teleport."
+                                                "重型鞍座",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋨)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*被擊中的怪物速度減慢並無法傳送.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -262,17 +300,28 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Brute",
-                                                "Slow swinging speed. Hit enemies are stunned",
-                                                "briefly. Damage +100% with an additional 33%",
-                                                "chance to crit for a further +100%"
+                                                "蠻力",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(鋨超級合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*降低揮動速度, 被擊中的敵人會短暫暈眩.",
+                                                ThemeUtils.PASSIVE+"*造成傷害+100%",
+                                                ThemeUtils.PASSIVE+"*額外33%機率在造成爆擊+100%",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Tuff Stuff",
-                                                "Knocks back anything hit and stuns."
+                                                "堅固物",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(鋨超級合金)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*降低揮動速度, 被擊中的敵人會短暫暈眩.",
+                                                ThemeUtils.PASSIVE+" 擊退並暈眩任何被擊中的生物.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -314,15 +363,23 @@ public final class CMSlimefunWarfare {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Innovation",
-                                                "+100% Tool and Player EXP during the day."
+                                                "改革",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"前端(非專利能量元素)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*+100% 在白天獲得的工具與玩家經驗值.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE,
-                                                "Incoporeal Right",
-                                                "Tool cannot be dropped or lost on death."
+                                                "無形的權利",
+                                                ThemeUtils.ITEM_MACHINE+"需求部件:",
+                                                ThemeUtils.PASSIVE+"手柄(非專利能量元素)",
+                                                ThemeUtils.ITEM_MACHINE+"屬性效果:",
+                                                ThemeUtils.PASSIVE+"*工具無法在死亡時遺失或被丟掉."
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
