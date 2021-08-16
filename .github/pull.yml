@@ -4,4 +4,7 @@ rules:
     upstream: Sefiraat:master
     mergeMethod: merge
     conflictReviewers:
-      - SlimeTraditionalTranslation/Translate-Maintainer
+      - mchen4644
+      - weiii-joe
+      - xhuanfux
+      - xMikux
