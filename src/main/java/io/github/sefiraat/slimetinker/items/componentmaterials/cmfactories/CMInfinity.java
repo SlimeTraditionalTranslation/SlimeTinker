@@ -309,7 +309,7 @@ public final class CMInfinity {
                                                 ThemeUtils.ITEM_MACHINE+"屬性效果:",
                                                 ThemeUtils.PASSIVE+"*使玩家隱形.",
                                                 ThemeUtils.PASSIVE+"*如果用於武器,",
-                                                ThemeUtils.PASSIVE+" +150% 造成傷害",
+                                                ThemeUtils.PASSIVE+" +50% 造成傷害",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL+"必須手持工具或武器才有效果"
                                         ),
@@ -388,7 +388,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Beginner II",
-                                                "Damage Taken +20%. Armour Exp +40%"
+                                                "Damage Taken +50%. Armour Exp +40%"
                                         ),
                                         null,
                                         new CMTrait(
@@ -569,7 +569,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Foil II",
-                                                "Damage Taken +25%. Speed + 2"
+                                                "Damage Taken +50%. Speed + 2"
                                         ),
                                         null,
                                         new CMTrait(
@@ -695,7 +695,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Acupuncture II",
-                                                "Cactus pricks heal you and removes all effects."
+                                                "Cactus pricks heal you."
                                         ))
                         ));
 
@@ -747,7 +747,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Light II",
-                                                "Damage Dealt -25%. Speed + 2"
+                                                "Damage Dealt -50%. Speed + 2"
                                         ),
                                         null,
                                         new CMTrait(
@@ -1273,7 +1273,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Oroborus",
-                                                "20% chance to reflect 50% damage taken."
+                                                "20% chance to reflect damage taken."
                                         ))
                         ));
 
@@ -1317,7 +1317,7 @@ public final class CMInfinity {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "Infinitly Powerful",
-                                                "Every 300 points of damage taken (before",
+                                                "Every 2000 points of damage taken (before",
                                                 "reductions) will unlock a new, random,",
                                                 "enchantment. No upper limits."
                                         ),
@@ -1434,7 +1434,7 @@ public final class CMInfinity {
         map.get(IDStrings.MAGNONIUM).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.LINKS, PlayerDamagedEvents::linksMagnonium);         // Oxygenated
         map.get(IDStrings.VOID).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.PLATE, PlayerDamagedEvents::plateVoid);                   // Planewalker
         map.get(IDStrings.SINGGOLD).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.PLATE, PlayerDamagedEvents::plateSingGold);           // Prosperous II
-        map.get(IDStrings.SINGIRON).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.LINKS, EntityDamageEvents::linksIron);                // Rusty II
+        map.get(IDStrings.SINGIRON).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.LINKS, EntityDamageEvents::linksSingIron);            // Rusty II
         map.get(IDStrings.SINGLEAD).addEvent(TraitEventType.TICK, TraitPartType.LINKS, TickEvents::linksSingLead);                              // Sickly II - Links
         map.get(IDStrings.SINGLEAD).addEvent(TraitEventType.TICK, TraitPartType.PLATE, TickEvents::plateSingLead);                              // Sickly II - Plate
         map.get(IDStrings.SINGZINC).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.PLATE, EntityDamageEvents::plateSingZinc);            // Sneaky II
