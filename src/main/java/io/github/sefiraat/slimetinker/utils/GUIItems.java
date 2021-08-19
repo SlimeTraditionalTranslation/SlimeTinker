@@ -164,7 +164,7 @@ public final class GUIItems {
         meta.add("");
         meta.add(ThemeUtils.PASSIVE + "澆鑄會先從" + ChatColor.BOLD + "最上層" + ThemeUtils.PASSIVE + "的金屬開始");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "將最上層的金屬移至最下層");
+        meta.add(ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "將最上層的金屬移至最下層");
         return new CustomItem(
                 skull,
                 meta
@@ -178,8 +178,8 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "可以清除你不需要的金屬(直接移除)",
                 "",
-                ThemeUtils.CLICK_INFO + "左鍵點擊: " + ChatColor.WHITE + "移除最上層的金屬",
-                ThemeUtils.CLICK_INFO + "右鍵點擊: " + ChatColor.WHITE + "移除所有金屬"
+                ThemeUtils.ITEM_TYPEDESC + "左鍵點擊: " + ChatColor.WHITE + "移除最上層的金屬",
+                ThemeUtils.ITEM_TYPEDESC + "右鍵點擊: " + ChatColor.WHITE + "移除所有金屬"
         );
     }
 
@@ -190,7 +190,7 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "混合金屬罐中可以製作合金的金屬",
                 "",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "自動混合金屬"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "自動混合金屬"
         );
     }
 
@@ -203,7 +203,7 @@ public final class GUIItems {
                 ThemeUtils.PASSIVE + "模具會決定熔融金屬的樣式，",
                 ThemeUtils.PASSIVE + "成品會放在輸出欄位。",
                 "",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "將最上層液體進行澆鑄"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "將最上層液體進行澆鑄"
         );
     }
 
@@ -212,7 +212,7 @@ public final class GUIItems {
                 Material.FLETCHING_TABLE,
                 ThemeUtils.GUI_HEAD + "合成",
                 "",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "開始合成"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "開始合成"
         );
     }
 
@@ -223,7 +223,7 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "將三個部件(手柄、接合物、前端)，",
                 ThemeUtils.PASSIVE + "組裝成一個工具或武器",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "開始組裝"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "開始組裝"
         );
     }
 
@@ -234,7 +234,7 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "第一格放入要修復的工具或武器",
                 ThemeUtils.PASSIVE + "第二格放入對應前端材質的修復零件",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "開始修復"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "開始修復"
         );
     }
 
@@ -245,7 +245,7 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "第一格放入要強化的工具或武器",
                 ThemeUtils.PASSIVE + "第二格放入對應的強化素材",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "開始強化"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "開始強化"
         );
     }
 
@@ -256,7 +256,7 @@ public final class GUIItems {
                 "",
                 ThemeUtils.PASSIVE + "第一格放入要更換的工具或武器",
                 ThemeUtils.PASSIVE + "第二格放入要更換的部件",
-                ThemeUtils.CLICK_INFO + "點擊此處" + ChatColor.WHITE + "開始更換"
+                ThemeUtils. ITEM_TYPEDESC + "點擊此處" + ChatColor.WHITE + "開始更換"
         );
     }
 

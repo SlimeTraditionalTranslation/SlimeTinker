@@ -27,7 +27,7 @@ public final class ThemeUtils {
 
     public static final ChatColor MAIN = ChatColor.of("#21588f");
     public static final ChatColor GUI_HEAD = ChatColor.of("#03fcdf");
-    public static final ChatColor CLICK_INFO = ChatColor.of("#e4ed32");
+    public static final ChatColor CLICK_INFO = ChatColor.of("#58D68D");
     public static final ChatColor ITEM_TYPEDESC = ChatColor.of("#f0ea4f");
     public static final ChatColor ITEM_CRAFTING = ChatColor.of("#dbcea9");
     public static final ChatColor ITEM_MACHINE = ChatColor.of("#3295a8");
@@ -36,7 +36,7 @@ public final class ThemeUtils {
     public static final ChatColor ITEM_CHEST = ChatColor.of("#b89b1c");
     public static final ChatColor ITEM_MOLTEN_METAL = ChatColor.of("#a60a0a");
     public static final ChatColor ITEM_LIQUID = ChatColor.of("#65dbb4");
-    public static final ChatColor ITEM_CAST = ChatColor.of("#ffe138");
+    public static final ChatColor ITEM_CAST = ChatColor.of("#E67E22");
     public static final ChatColor ITEM_PART = ChatColor.of("#42c8f5");
     public static final ChatColor ITEM_TOOL = ChatColor.of("#c2fc03");
     public static final ChatColor ITEM_ARMOUR = ChatColor.of("#c2fc03");
@@ -48,9 +48,11 @@ public final class ThemeUtils {
     public static final ChatColor ADD_SLIMEFUN_WARFARE = ChatColor.of("#c1db4d");
     public static final ChatColor ADD_DYNATECH = ChatColor.of("#60d1cd");
     public static final ChatColor ADD_LITEXPANSION = ChatColor.of("#8a8a8a");
+    public static final ChatColor ARMOUR = ChatColor.of("#9B59B6");
+    public static final ChatColor TOOL = ChatColor.of("#2ECC71");
 
     public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "製作材料";
-    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "機器";
+    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "工匠設備";
     public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "Drop";
     public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "Base Resource";
     public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "Chest";
@@ -58,11 +60,11 @@ public final class ThemeUtils {
     public static final String LORE_LIQUID = ITEM_TYPEDESC + "ComponentMaterial";
     public static final String LORE_CAST = ITEM_TYPEDESC + "鑄造";
     public static final String LORE_PART = ITEM_TYPEDESC + "部件";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "黏液工匠-工具和武器";
-    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "Tinker's Armour";
+    public static final String LORE_TOOL = ITEM_TYPEDESC + "工具和武器";
+    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "裝備";
     public static final String LORE_INFO = ITEM_TYPEDESC + "資訊";
     public static final String LORE_MOD = ITEM_TYPEDESC + "強化";
-    public static final String LORE_PROP = ITEM_TYPEDESC + "黏液工匠-屬性";
+    public static final String LORE_PROP = ITEM_TYPEDESC + "屬性";
     public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Mutliblock";
 
     public static SlimefunItemStack themedItemStack(String id, String skull, ThemeItemType type, String name, String... loreLines) {

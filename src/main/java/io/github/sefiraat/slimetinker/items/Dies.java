@@ -94,7 +94,7 @@ public final class Dies {
                     "DIE_SHOVEL_HEAD",
                     SkullTextures.PART_SHOVEL_HEAD,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製鏟子前端",
+                    "壓模樣品: 鏟子前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -103,7 +103,7 @@ public final class Dies {
                     "DIE_PICKAXE_HEAD",
                     SkullTextures.PART_PICKAXE_HEAD,
                     ThemeItemType.CAST,
-                    "壓模樣品：石製鎬子前端",
+                    "壓模樣品： 鎬子前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -112,7 +112,7 @@ public final class Dies {
                     "DIE_AXE_HEAD",
                     SkullTextures.PART_AXE_HEAD,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製斧頭前端",
+                    "壓模樣品: 斧頭前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -121,7 +121,7 @@ public final class Dies {
                     "DIE_HOE_HEAD",
                     SkullTextures.PART_HOE_HEAD,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製鋤頭前端",
+                    "壓模樣品: 鋤頭前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -130,7 +130,7 @@ public final class Dies {
                     "DIE_SWORD_BLADE",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製劍前端",
+                    "壓模樣品: 劍前端",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -139,7 +139,7 @@ public final class Dies {
                     "DIE_TOOL_ROD",
                     SkullTextures.PART_TOOL_ROD,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製手柄",
+                    "壓模樣品: 手柄",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -193,7 +193,7 @@ public final class Dies {
                     "DIE_REPAIR_KIT",
                     Material.MINECART,
                     ThemeItemType.CAST,
-                    "壓模樣品:石製修復零件",
+                    "壓模樣品: 修復零件",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 

@@ -52,7 +52,7 @@ public final class Workstations {
                     "TINKERS_TABLE",
                     Material.SMITHING_TABLE,
                     ThemeItemType.MACHINE,
-                    "Tinker's Tool Table",
+                    "裝配台"+ThemeUtils.TOOL+"(工具和武器)",
                     "裝配台",
                     "將部件組裝成工具或武器"
             );
@@ -63,7 +63,7 @@ public final class Workstations {
                     "TINKERS_ARMOUR_TABLE",
                     Material.SMITHING_TABLE,
                     ThemeItemType.MACHINE,
-                    "Tinker's Armour Table",
+                    "裝配台"+ThemeUtils.ARMOUR+"(裝備)",
                     "Combines parts into armour pieces."
             );
 
