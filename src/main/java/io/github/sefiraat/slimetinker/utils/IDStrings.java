@@ -110,10 +110,10 @@ public final class IDStrings {
     public static final String HOE = "鋤頭";
     public static final String SWORD = "劍";
 
-    public static final String HELMET = "HELMET";
-    public static final String CHESTPLATE = "CHESTPLATE";
-    public static final String LEGGINGS = "LEGGINGS";
-    public static final String BOOTS = "BOOTS";
+    public static final String HELMET = "頭盔";
+    public static final String CHESTPLATE = "胸甲";
+    public static final String LEGGINGS = "護腿";
+    public static final String BOOTS = "鞋子";
 
     public static final String REPAIR = "修復零件";
 
