@@ -123,7 +123,7 @@ public final class PlayerDamagedEvents {
                 p.sendMessage(ThemeUtils.WARNING + "Protective has saved you from death. It's now on cooldown - take care!");
                 ItemUtils.setCooldown(i, "PROTECTIVE", 1200000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "Skill is on cooldown");
+                p.sendMessage(ThemeUtils.WARNING + "技能正在冷卻");
             }
 
         }
