@@ -18,10 +18,9 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.cmelements.CMTrai
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
-import io.github.sefiraat.slimetinker.utils.ThemeUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -40,7 +39,7 @@ public final class CMLiteXpansion {
         map.put(IDStrings.RUBBER,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.RUBBER, Objects.requireNonNull(SlimefunItem.getByID("RUBBER")).getItem(), SkullTextures.ALLOY_BROWN, "#38414d"),
+                                new CMIdentity(IDStrings.RUBBER, Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getItem(), SkullTextures.ALLOY_BROWN, "#38414d"),
                                 null,
                                 new CMToolMakeup(false, true, false, false, true, false),
                                 new CMForms(
@@ -48,7 +47,7 @@ public final class CMLiteXpansion {
                                         null,
                                         null,
                                         null,
-                                        Objects.requireNonNull(SlimefunItem.getByID("RUBBER")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getId(),
                                         null,
                                         null,
                                         null,
@@ -83,12 +82,12 @@ public final class CMLiteXpansion {
         map.put(IDStrings.REFINED_IRON,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.REFINED_IRON, Objects.requireNonNull(SlimefunItem.getByID("REFINED_IRON")).getItem(), SkullTextures.ALLOY_SILVER, "#ababab"),
+                                new CMIdentity(IDStrings.REFINED_IRON, Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getItem(), SkullTextures.ALLOY_SILVER, "#ababab"),
                                 null,
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_REFINED_IRON.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("REFINED_IRON")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getId(),
                                         Materials.BLOCK_CAST_REFINED_IRON.getItemId(),
                                         null,
                                         null,
@@ -146,7 +145,7 @@ public final class CMLiteXpansion {
         map.put(IDStrings.MIXED_METAL,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.MIXED_METAL, Objects.requireNonNull(SlimefunItem.getByID("MIXED_METAL_INGOT")).getItem(), SkullTextures.ALLOY_SILVER, "#6e7a66"),
+                                new CMIdentity(IDStrings.MIXED_METAL, Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getItem(), SkullTextures.ALLOY_SILVER, "#6e7a66"),
                                 Arrays.asList(
                                         map.get(IDStrings.REFINED_IRON).getLiquidItemStack(3),
                                         CMCore.getMap().get(IDStrings.BRONZE).getLiquidItemStack(3),
@@ -155,7 +154,7 @@ public final class CMLiteXpansion {
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_MIXED_METAL.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("MIXED_METAL_INGOT")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getId(),
                                         Materials.BLOCK_CAST_MIXED_METAL.getItemId(),
                                         null,
                                         null,
@@ -209,12 +208,12 @@ public final class CMLiteXpansion {
         map.put(IDStrings.ADVANCED_ALLOY,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.ADVANCED_ALLOY, Objects.requireNonNull(SlimefunItem.getByID("ADVANCED_ALLOY")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#78aba2"),
+                                new CMIdentity(IDStrings.ADVANCED_ALLOY, Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#78aba2"),
                                 null,
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_ADVANCED_ALLOY.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("ADVANCED_ALLOY")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getId(),
                                         Materials.BLOCK_CAST_ADVANCED_ALLOY.getItemId(),
                                         null,
                                         null,
@@ -269,7 +268,7 @@ public final class CMLiteXpansion {
         map.put(IDStrings.THORIUM,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.THORIUM, Objects.requireNonNull(SlimefunItem.getByID("THORIUM")).getItem(), SkullTextures.ALLOY_GREEN, "#33de4d"),
+                                new CMIdentity(IDStrings.THORIUM, Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getItem(), SkullTextures.ALLOY_GREEN, "#33de4d"),
                                 null,
                                 new CMToolMakeup(false, false, false, false, false, false),
                                 new CMForms(
@@ -277,7 +276,7 @@ public final class CMLiteXpansion {
                                         null,
                                         null,
                                         null,
-                                        Objects.requireNonNull(SlimefunItem.getByID("THORIUM")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getId(),
                                         null,
                                         null,
                                         null,
@@ -297,7 +296,7 @@ public final class CMLiteXpansion {
         map.put(IDStrings.MAG_THOR,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.MAG_THOR, Objects.requireNonNull(SlimefunItem.getByID("MAG_THOR")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#33de4d"),
+                                new CMIdentity(IDStrings.MAG_THOR, Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#33de4d"),
                                 Arrays.asList(
                                         CMCore.getMap().get(IDStrings.REINFORCED).getLiquidItemStack(1),
                                         map.get(IDStrings.THORIUM).getLiquidItemStack(1),
@@ -307,7 +306,7 @@ public final class CMLiteXpansion {
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_MAG_THOR.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("MAG_THOR")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getId(),
                                         Materials.BLOCK_CAST_MAG_THOR.getItemId(),
                                         null,
                                         null,
@@ -361,7 +360,7 @@ public final class CMLiteXpansion {
         map.put(IDStrings.CARBON_MESH,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.CARBON_MESH, Objects.requireNonNull(SlimefunItem.getByID("RAW_CARBON_MESH")).getItem(), SkullTextures.ALLOY_BROWN, "#192927"),
+                                new CMIdentity(IDStrings.CARBON_MESH, Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getItem(), SkullTextures.ALLOY_BROWN, "#192927"),
                                 null,
                                 new CMToolMakeup(false, true, false, true, true, false),
                                 new CMForms(
@@ -369,7 +368,7 @@ public final class CMLiteXpansion {
                                         null,
                                         null,
                                         null,
-                                        Objects.requireNonNull(SlimefunItem.getByID("RAW_CARBON_MESH")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getId(),
                                         null,
                                         null,
                                         null,
@@ -405,12 +404,12 @@ public final class CMLiteXpansion {
         map.put(IDStrings.SCRAP,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.SCRAP, Objects.requireNonNull(SlimefunItem.getByID("SCRAP")).getItem(), SkullTextures.ALLOY_BROWN, "#5c451d"),
+                                new CMIdentity(IDStrings.SCRAP, Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getItem(), SkullTextures.ALLOY_BROWN, "#5c451d"),
                                 null,
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_SCRAP.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("SCRAP")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getId(),
                                         Materials.BLOCK_CAST_SCRAP.getItemId(),
                                         null,
                                         null,
@@ -467,12 +466,12 @@ public final class CMLiteXpansion {
         map.put(IDStrings.IRIDIUM,
                 new ComponentMaterial
                         (
-                                new CMIdentity(IDStrings.IRIDIUM, Objects.requireNonNull(SlimefunItem.getByID("IRIDIUM")).getItem(), SkullTextures.ALLOY_PINK, "#c999c9"),
+                                new CMIdentity(IDStrings.IRIDIUM, Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getItem(), SkullTextures.ALLOY_PINK, "#c999c9"),
                                 null,
                                 new CMToolMakeup(true, false, true, true, false, true),
                                 new CMForms(
                                         Materials.NUGGET_CAST_IRIDIUM.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getByID("IRIDIUM")).getId(),
+                                        Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getId(),
                                         Materials.BLOCK_CAST_IRIDIUM.getItemId(),
                                         null,
                                         null,
