@@ -1,5 +1,6 @@
 package io.github.sefiraat.slimetinker.items.componentmaterials.cmfactories;
 
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.events.BlockBreakEvents;
 import io.github.sefiraat.slimetinker.events.DurabilityEvents;
 import io.github.sefiraat.slimetinker.events.EntityDamageEvents;
