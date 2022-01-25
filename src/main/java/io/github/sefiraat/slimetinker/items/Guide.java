@@ -25,7 +25,7 @@ import java.util.Map;
 @UtilityClass
 public final class Guide {
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = "錯誤";
     public static final int LEVEL_TOOLS_NETHERITE = 10;
     public static final int LEVEL_TOOLS_DIAMOND = 8;
     public static final int LEVEL_TOOLS_IRON = 6;
@@ -40,102 +40,89 @@ public final class Guide {
             "TOOL_SHOVEL_DUMMY",
             Material.STONE_SHOVEL,
             ThemeItemType.TOOL,
-            "Tinker's Shovel",
-            ThemeUtils.PASSIVE + "A shovel formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers."
+            "黏液工匠 鏟子",
+            ThemeUtils.PASSIVE + "由三個部件組成的鏟子。",
+            ThemeUtils.PASSIVE + "黏液工匠的工具可以升級並獲得額外的屬性和修飾符。"
         );
     public static final SlimefunItemStack TOOL_PICKAXE_DUMMY =
         ThemeUtils.themedItemStack(
             "TOOL_PICKAXE_DUMMY",
             Material.STONE_PICKAXE,
             ThemeItemType.TOOL,
-            "Tinker's Pickaxe",
-            ThemeUtils.PASSIVE + "A pickaxe formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers."
+            "黏液工匠 鎬子",
+            ThemeUtils.PASSIVE + "由三個部件組成的鎬子。",
+            ThemeUtils.PASSIVE + "黏液工匠的工具可以升級並獲得額外的屬性和修飾符。"
         );
     public static final SlimefunItemStack TOOL_AXE_DUMMY =
         ThemeUtils.themedItemStack(
             "TOOL_AXE_DUMMY",
             Material.STONE_AXE,
             ThemeItemType.TOOL,
-            "Tinker's Axe",
-            ThemeUtils.PASSIVE + "An axe formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers."
+            "黏液工匠 斧頭",
+            ThemeUtils.PASSIVE + "由三個部件組成的斧頭。",
+            ThemeUtils.PASSIVE + "黏液工匠的工具可以升級並獲得額外的屬性和修飾符。"
         );
     public static final SlimefunItemStack TOOL_HOE_DUMMY =
         ThemeUtils.themedItemStack(
             "TOOL_HOE_DUMMY",
             Material.STONE_HOE,
             ThemeItemType.TOOL,
-            "Tinker's Hoe",
-            ThemeUtils.PASSIVE + "A hoe formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers."
+            "黏液工匠 鋤頭",
+            ThemeUtils.PASSIVE + "由三個部件組成的鋤頭。",
+            ThemeUtils.PASSIVE + "黏液工匠的工具可以升級並獲得額外的屬性和修飾符。"
         );
     public static final SlimefunItemStack TOOL_SWORD_DUMMY =
         ThemeUtils.themedItemStack(
             "TOOL_SWORD_DUMMY",
             Material.STONE_SWORD,
             ThemeItemType.TOOL,
-            "Tinker's Sword",
-            ThemeUtils.PASSIVE + "A sword formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers."
+            "黏液工匠 劍",
+            ThemeUtils.PASSIVE + "由三個部件組成的劍。",
+            ThemeUtils.PASSIVE + "黏液工匠的工具可以升級並獲得額外的屬性和修飾符。"
         );
     public static final SlimefunItemStack ARMOUR_HELMET_DUMMY =
         ThemeUtils.themedItemStack(
             "ARMOUR_HELMET_DUMMY",
             Material.LEATHER_HELMET,
             ThemeItemType.ARMOUR,
-            "Tinker's Helmet",
-            ThemeUtils.PASSIVE + "A helmet formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-            ThemeUtils.PASSIVE + "When broken it's unequipped.",
-            ThemeUtils.WARNING + "If there's no room in your inventory",
-            ThemeUtils.WARNING + "then the item drops on the floor"
+            "黏液工匠 頭盔",
+            ThemeUtils.PASSIVE + "由三個部件組成的頭盔。",
+            ThemeUtils.PASSIVE + "壞了就沒有裝備了。",
+            ThemeUtils.PASSIVE + "黏液工匠的盔甲可以升級並獲得額外的屬性和修飾符。",
+            ThemeUtils.WARNING + "如果您的庫存中沒有空間，那麼該物品會掉在地板上"
         );
     public static final SlimefunItemStack ARMOUR_CHESTPLATE_DUMMY =
         ThemeUtils.themedItemStack(
             "ARMOUR_CHESTPLATE_DUMMY",
             Material.LEATHER_CHESTPLATE,
             ThemeItemType.ARMOUR,
-            "Tinker's Chestplate",
-            ThemeUtils.PASSIVE + "A chestplate formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-            ThemeUtils.PASSIVE + "When broken it's unequipped.",
-            ThemeUtils.WARNING + "If there's no room in your inventory",
-            ThemeUtils.WARNING + "then the item drops on the floor"
+            "黏液工匠 胸甲",
+            ThemeUtils.PASSIVE + "由三個部件組成的胸甲。",
+            ThemeUtils.PASSIVE + "壞了就沒有裝備了。",
+            ThemeUtils.PASSIVE + "黏液工匠的盔甲可以升級並獲得額外的屬性和修飾符。",
+            ThemeUtils.WARNING + "如果您的庫存中沒有空間，那麼該物品會掉在地板上"
         );
     public static final SlimefunItemStack ARMOUR_LEGGINGS_DUMMY =
         ThemeUtils.themedItemStack(
             "ARMOUR_LEGGINGS_DUMMY",
             Material.LEATHER_LEGGINGS,
             ThemeItemType.ARMOUR,
-            "Tinker's Leggings",
-            ThemeUtils.PASSIVE + "A pair of leggings formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-            ThemeUtils.PASSIVE + "When broken it's unequipped.",
-            ThemeUtils.WARNING + "If there's no room in your inventory",
-            ThemeUtils.WARNING + "then the item drops on the floor"
+            "黏液工匠 護腿",
+            ThemeUtils.PASSIVE + "由三個部件組成的護腿。",
+            ThemeUtils.PASSIVE + "壞了就沒有裝備了。",
+            ThemeUtils.PASSIVE + "黏液工匠的盔甲可以升級並獲得額外的屬性和修飾符。",
+            ThemeUtils.WARNING + "如果您的庫存中沒有空間，那麼該物品會掉在地板上"
         );
     public static final SlimefunItemStack ARMOUR_BOOTS_DUMMY =
         ThemeUtils.themedItemStack(
             "ARMOUR_BOOTS_DUMMY",
             Material.LEATHER_BOOTS,
             ThemeItemType.ARMOUR,
-            "Tinker's Boots",
-            ThemeUtils.PASSIVE + "A pair of boots formed of three parts.",
-            ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-            ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-            ThemeUtils.PASSIVE + "When broken it's unequipped.",
-            ThemeUtils.WARNING + "If there's no room in your inventory",
-            ThemeUtils.WARNING + "then the item drops on the floor"
+            "黏液工匠 靴子",
+            ThemeUtils.PASSIVE + "由三個部件組成的靴子。",
+            ThemeUtils.PASSIVE + "壞了就沒有裝備了。",
+            ThemeUtils.PASSIVE + "黏液工匠的盔甲可以升級並獲得額外的屬性和修飾符。",
+            ThemeUtils.WARNING + "如果您的庫存中沒有空間，那麼該物品會掉在地板上"
         );
     public static final SlimefunItemStack TOOL_AXE =
         ThemeUtils.themedItemStack(
@@ -254,20 +241,18 @@ public final class Guide {
             "TOOL_INFO",
             SkullTextures.INFO,
             ThemeItemType.INFO,
-            "Tinker's Tools Info",
-            ThemeUtils.PASSIVE + "Tinker's tools start at Stone. As you",
-            ThemeUtils.PASSIVE + "level the tools up, they will promote",
-            ThemeUtils.PASSIVE + "through Gold > Iron > Diamond > Netherite."
+            "黏液工匠 工具資訊",
+            ThemeUtils.PASSIVE + "黏液工匠的工具從 石製 開始。",
+            ThemeUtils.PASSIVE + "當您升級工具時，它們將以 金>鐵>鑽石>獄髓 的順序進行升級。"
         );
     public static final SlimefunItemStack ARMOUR_INFO =
         ThemeUtils.themedItemStack(
             "ARMOUR_INFO",
             SkullTextures.INFO,
             ThemeItemType.INFO,
-            "Tinker's Armour Info",
-            ThemeUtils.PASSIVE + "Tinker's armour starts at Leather. As you",
-            ThemeUtils.PASSIVE + "level the pieces up, they will promote",
-            ThemeUtils.PASSIVE + "through Chain > Iron > Diamond > Netherite."
+            "黏液工匠 裝備資訊",
+            ThemeUtils.PASSIVE + "黏液工匠的工具從 皮革製 開始。",
+            ThemeUtils.PASSIVE + "當你升級碎片時，它們將以 鎖鏈>鐵>鑽石>獄髓 的順序進行升級。"
         );
     public static final ToolTemplate SHOVEL = new ToolTemplate(ItemGroups.DUMMY, TOOL_SHOVEL, DummyToolTable.TYPE, new ItemStack[9]);
     public static final ToolTemplate PICKAXE = new ToolTemplate(ItemGroups.DUMMY, TOOL_PICKAXE, DummyToolTable.TYPE, new ItemStack[9]);
