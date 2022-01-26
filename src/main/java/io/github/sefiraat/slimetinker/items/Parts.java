@@ -18,118 +18,118 @@ import org.bukkit.inventory.ItemStack;
 @UtilityClass
 public final class Parts {
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = "錯誤";
     public static final SlimefunItemStack PART_SHOVEL_HEAD_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_SHOVEL_HEAD_DUMMY",
             SkullTextures.PART_SHOVEL_HEAD,
             ThemeItemType.CAST,
-            "Part: Shovel Head",
-            ThemeUtils.PASSIVE + "A cast shovel head."
+            "部件： 鏟子頭端",
+            ThemeUtils.PASSIVE + "製作鏟子的主要部分。"
         );
     public static final SlimefunItemStack PART_PICKAXE_HEAD_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_PICKAXE_HEAD_DUMMY",
             SkullTextures.PART_PICKAXE_HEAD,
             ThemeItemType.CAST,
-            "Part: Pickaxe Head",
-            ThemeUtils.PASSIVE + "A cast pickaxe head."
+            "部件： 鎬子頭端",
+            ThemeUtils.PASSIVE + "製作鎬子的主要部分。"
         );
     public static final SlimefunItemStack PART_AXE_HEAD_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_AXE_HEAD_DUMMY",
             SkullTextures.PART_AXE_HEAD,
             ThemeItemType.CAST,
-            "Part: Axe Head",
-            ThemeUtils.PASSIVE + "A cast axe head."
+            "部件： 斧頭頭端",
+            ThemeUtils.PASSIVE + "製作斧頭的主要部分。"
         );
     public static final SlimefunItemStack PART_HOE_HEAD_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_HOE_HEAD_DUMMY",
             SkullTextures.PART_HOE_HEAD,
             ThemeItemType.CAST,
-            "Part: Hoe Head",
-            ThemeUtils.PASSIVE + "A cast hoe head."
+            "部件： 鋤頭頭端",
+            ThemeUtils.PASSIVE + "製作鋤頭的主要部分。"
         );
     public static final SlimefunItemStack PART_SWORD_BLADE_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_SWORD_BLADE_DUMMY",
             SkullTextures.PART_SWORD_BLADE,
             ThemeItemType.CAST,
-            "Part: Sword Blade",
-            ThemeUtils.PASSIVE + "A cast sword blade."
+            "部件： 刀刃",
+            ThemeUtils.PASSIVE + "製作劍的主要部分。"
         );
     public static final SlimefunItemStack PART_TOOL_ROD_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_TOOL_ROD_DUMMY",
             SkullTextures.PART_TOOL_ROD,
             ThemeItemType.CAST,
-            "Part: Tool Rod",
-            ThemeUtils.PASSIVE + "A cast tool rod."
+            "部件： 手柄",
+            ThemeUtils.PASSIVE + "製作工具的一部分。"
         );
     public static final SlimefunItemStack PART_BINDING_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_BINDING_DUMMY",
             SkullTextures.PART_BINDING,
             ThemeItemType.CAST,
-            "Part: Binding",
-            ThemeUtils.PASSIVE + "A binging to hold parts together."
+            "部件： 接合綁定",
+            ThemeUtils.PASSIVE + "將頭端與手柄固定在一起。"
         );
     public static final SlimefunItemStack PART_HELM_PLATE_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_HELM_PLATE_DUMMY",
             SkullTextures.PART_HELM_PLATES,
             ThemeItemType.CAST,
-            "Part: Helmet Plates",
-            ThemeUtils.PASSIVE + "A cast helmet plate set."
+            "部件： 頭盔基板",
+            ThemeUtils.PASSIVE + "製作頭盔的主要部分"
         );
     public static final SlimefunItemStack PART_CHEST_PLATE_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_CHEST_PLATE_DUMMY",
             SkullTextures.PART_CHEST_PLATES,
             ThemeItemType.CAST,
-            "Part: Chest Plates",
-            ThemeUtils.PASSIVE + "A cast chest plate set."
+            "部件： 胸甲基板",
+            ThemeUtils.PASSIVE + "製作胸甲的主要部分"
         );
     public static final SlimefunItemStack PART_LEG_PLATE_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_LEG_PLATE_DUMMY",
             SkullTextures.PART_LEG_PLATES,
             ThemeItemType.CAST,
-            "Part: Leg Plates",
-            ThemeUtils.PASSIVE + "A cast legging plate set."
+            "部件： 護腿基板",
+            ThemeUtils.PASSIVE + "製作護腿的主要部分。"
         );
     public static final SlimefunItemStack PART_BOOT_PLATE_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_BOOT_PLATE_DUMMY",
             SkullTextures.PART_BOOTS_PLATES,
             ThemeItemType.CAST,
-            "Part: Boot Plates",
-            ThemeUtils.PASSIVE + "A cast legging plate set."
+            "部件： 靴子基板",
+            ThemeUtils.PASSIVE + "製作靴子的主要部分。"
         );
     public static final SlimefunItemStack PART_MAIL_LINKS_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_MAIL_LINKS_DUMMY",
             SkullTextures.PART_LINKS,
             ThemeItemType.CAST,
-            "Part: Mail Links",
-            ThemeUtils.PASSIVE + "A flexible mesh of cast metal links"
+            "部件： 護甲夾板",
+            ThemeUtils.PASSIVE + "Mail Links是一種用金屬連接起來的網格。"
         );
     public static final SlimefunItemStack PART_GAMBESON_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_GAMBESON_DUMMY",
             SkullTextures.PART_GAMBESON,
             ThemeItemType.CAST,
-            "Part: Gambeson",
-            ThemeUtils.PASSIVE + "A fabric under-armour garment"
+            "部件： 護甲板",
+            ThemeUtils.PASSIVE + "Gambeson是一種加厚加襯式的防禦性外衣。"
         );
     public static final SlimefunItemStack PART_REPAIR_KIT_DUMMY =
         ThemeUtils.themedItemStack(
             "PART_REPAIR_KIT_DUMMY",
             Material.CHEST_MINECART,
             ThemeItemType.CAST,
-            "Part: Repair Kit",
-            ThemeUtils.PASSIVE + "Repairs broken items in the Repair Bench."
+            "部件： 修復包",
+            ThemeUtils.PASSIVE + "在修理台中修理損壞的物品。"
         );
     public static final SlimefunItemStack PART_AXE_HEAD =
         ThemeUtils.themedItemStack(
