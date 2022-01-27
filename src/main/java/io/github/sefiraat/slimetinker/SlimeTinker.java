@@ -18,7 +18,7 @@ import io.github.sefiraat.slimetinker.runnables.RunnableManager;
 import io.github.sefiraat.slimetinker.utils.Keys;
 import lombok.Getter;
 import lombok.Setter;
-import org.bstats.bukkit.Metrics;
+//import org.bstats.bukkit.Metrics;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -52,7 +52,7 @@ public class SlimeTinker extends AbstractAddon {
     @Override
     public void enable() {
 
-        new Metrics(this, 11748);
+        //new Metrics(this, 11748);
 
         instance = this;
         keys = new Keys();
