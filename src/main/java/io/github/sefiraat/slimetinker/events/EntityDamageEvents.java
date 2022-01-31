@@ -5,12 +5,11 @@ import io.github.sefiraat.slimetinker.events.friend.EventFriend;
 import io.github.sefiraat.slimetinker.utils.EntityUtils;
 import io.github.sefiraat.slimetinker.utils.GeneralUtils;
 import io.github.sefiraat.slimetinker.utils.ItemUtils;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-import lombok.experimental.UtilityClass;
-import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Effect;
@@ -31,12 +30,25 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static io.github.sefiraat.slimetinker.utils.EntityUtils.push;
 
-@UtilityClass
 public final class EntityDamageEvents {
+
+    public static final Set<Particle.DustOptions> DAXI_DUST_OPTIONS = Stream.of(
+        new Particle.DustOptions(Color.RED, 1),
+        new Particle.DustOptions(Color.YELLOW, 1),
+        new Particle.DustOptions(Color.GREEN, 1),
+        new Particle.DustOptions(Color.BLUE, 1)
+    ).collect(Collectors.toSet());
+
+    private EntityDamageEvents() {
+        throw new UnsupportedOperationException("Utility Class");
+    }
 
     public static void headAluBrass(EventFriend friend) {
         int rnd = ThreadLocalRandom.current().nextInt(1, 4);
@@ -229,7 +241,7 @@ public final class EntityDamageEvents {
     public static void rodOsmium(EventFriend friend) {
         LivingEntity e = (LivingEntity) friend.getDamagedEntity();
         if (e.getType() == EntityType.ENDERMAN) {
-            PersistentDataAPI.setString(e, new NamespacedKey(SlimeTinker.inst(), "ST_STOP_TELEPORT"), "Y");
+            PersistentDataAPI.setString(e, new NamespacedKey(SlimeTinker.getInstance(), "ST_STOP_TELEPORT"), "Y");
             e.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 100, 5, true, true));
         }
     }
@@ -403,8 +415,7 @@ public final class EntityDamageEvents {
             LivingEntity e = (LivingEntity) friend.getDamagedEntity();
             ItemStack i = friend.getActiveStack();
             ItemMeta im = i.getItemMeta();
-            NamespacedKey k = SlimeTinker.inst().getKeys().getArmourSoulsStored();
-            Validate.notNull(im, "Meta is not null, this is odd!");
+            NamespacedKey k = Keys.ARMOUR_SOULS_STORED;
             long souls = PersistentDataAPI.getLong(im, k, 0);
             friend.setDamageMod(friend.getDamageMod() + ((double) souls / 10000L));
             if (friend.getInitialDamage() >= e.getHealth()) {
@@ -425,5 +436,23 @@ public final class EntityDamageEvents {
 
     public static void binderLeather(EventFriend friend) {
         friend.incrementItemExpMod(0.5);
+    }
+
+    public static void headDaxiStrength(EventFriend friend) {
+        if (GeneralUtils.testChance(20, 100)) {
+            final Player player = friend.getPlayer();
+            final Location location = friend.getDamagedEntity().getLocation();
+
+            friend.setDamageMod(friend.getDamageMod() + 1);
+            for (Particle.DustOptions dustOption : DAXI_DUST_OPTIONS) {
+                for (int i2 = 0; i2 <= 6; i2++) {
+                    double rndX = ThreadLocalRandom.current().nextDouble(-2.0, 2.1);
+                    double rndY = ThreadLocalRandom.current().nextDouble(-2.0, 2.1);
+                    double rndZ = ThreadLocalRandom.current().nextDouble(-2.0, 2.1);
+                    player.getWorld().spawnParticle(Particle.REDSTONE, location.clone().add(rndX, rndY, rndZ), 2, dustOption);
+                }
+            }
+
+        }
     }
 }

@@ -2,20 +2,22 @@ package io.github.sefiraat.slimetinker.items;
 
 import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.itemgroups.ItemGroups;
-import io.github.sefiraat.slimetinker.items.componentmaterials.CMManager;
+import io.github.sefiraat.slimetinker.items.tinkermaterials.TinkerMaterialManager;
 import io.github.sefiraat.slimetinker.items.workstations.smeltery.DummySmeltery;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
-import lombok.experimental.UtilityClass;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-@UtilityClass
 public final class Casts {
+
+    private Casts() {
+        throw new UnsupportedOperationException("Utility Class");
+    }
 
     public static final String CAST_DESC = "用於製作金屬部件。";
     public static final String INPUT_DESC = "輸入 : ";
@@ -29,7 +31,7 @@ public final class Casts {
             "模具： 粒",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_NUGGET + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_NUGGET + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 粒"
         );
     public static final SlimefunItemStack CAST_BLOCK =
@@ -40,7 +42,7 @@ public final class Casts {
             "模具： 塊",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_BLOCK + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_BLOCK + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 塊"
         );
     public static final SlimefunItemStack CAST_INGOT =
@@ -51,7 +53,7 @@ public final class Casts {
             "模具： 錠",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_INGOT + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_INGOT + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 錠"
         );
     public static final SlimefunItemStack CAST_GEM =
@@ -62,7 +64,7 @@ public final class Casts {
             "模具： 寶石",
             ThemeUtils.PASSIVE + "用於非金屬液體的鑄件。",
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_GEM + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_GEM + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 寶石"
         );
     public static final SlimefunItemStack CAST_SHOVELHEAD =
@@ -73,7 +75,7 @@ public final class Casts {
             "模具： 鏟子頭端",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_SHOVELHEAD + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_SHOVELHEAD + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 鏟子頭端"
         );
     public static final SlimefunItemStack CAST_PICKAXEHEAD =
@@ -84,7 +86,7 @@ public final class Casts {
             "模具： 鎬子頭端",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_PICKAXEHEAD + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_PICKAXEHEAD + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 鎬子頭端"
         );
     public static final SlimefunItemStack CAST_AXEHEAD =
@@ -95,7 +97,7 @@ public final class Casts {
             "模具： 斧頭頭端",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_AXEHEAD + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_AXEHEAD + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 斧頭頭端"
         );
     public static final SlimefunItemStack CAST_HOEHEAD =
@@ -106,7 +108,7 @@ public final class Casts {
             "模具： 鋤頭頭端",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_HOEHEAD + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_HOEHEAD + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 鋤頭頭端"
         );
     public static final SlimefunItemStack CAST_SWORDBLADE =
@@ -117,7 +119,7 @@ public final class Casts {
             "模具： 刀刃",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_SWORDBLADE + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_SWORDBLADE + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 刀刃"
         );
     public static final SlimefunItemStack CAST_TOOLROD =
@@ -128,7 +130,7 @@ public final class Casts {
             "模具： 手柄",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_TOOLROD + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_TOOLROD + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 手柄"
         );
     public static final SlimefunItemStack CAST_HELM_PLATE =
@@ -139,7 +141,7 @@ public final class Casts {
             "模具： 頭盔基板",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_ARM_HELM + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_HELM + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 頭盔基板"
         );
     public static final SlimefunItemStack CAST_CHEST_PLATE =
@@ -150,7 +152,7 @@ public final class Casts {
             "模具： 胸甲基板",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_ARM_CHEST + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_CHEST + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 胸甲基板"
         );
     public static final SlimefunItemStack CAST_LEG_PLATE =
@@ -161,7 +163,7 @@ public final class Casts {
             "模具： 護腿基板",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_ARM_LEG + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_LEG + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 護腿基板"
         );
     public static final SlimefunItemStack CAST_BOOT_PLATE =
@@ -172,7 +174,7 @@ public final class Casts {
             "模具： 靴子基板",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_ARM_BOOT + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_BOOT + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 靴子基板"
         );
     public static final SlimefunItemStack CAST_MAIL_LINK =
@@ -183,7 +185,7 @@ public final class Casts {
             "模具： 護甲夾板",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_ARM_LINKS + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_LINKS + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 護甲板"
         );
     public static final SlimefunItemStack CAST_REPAIRKIT =
@@ -194,7 +196,7 @@ public final class Casts {
             "模具： 修復包",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
-            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + CMManager.AMOUNT_KIT + UNIT_DESC,
+            ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_KIT + UNIT_DESC,
             ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 修復包"
         );
     protected static final ItemStack[] RECIPE_CAST_NUGGET = new ItemStack[]{
