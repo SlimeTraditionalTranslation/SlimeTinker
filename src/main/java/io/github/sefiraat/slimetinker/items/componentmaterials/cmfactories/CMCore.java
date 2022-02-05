@@ -60,29 +60,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Stability",
-                            "Does... nothing!"
+                            "穩定",
+                            "什麼也沒做！"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Sharp 1",
-                            "Gives increased damage, stacks with",
-                            "mods and other properties."
+                            "鋒利的 I",
+                            "增加傷害，與模組和其他屬性疊加。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Steadfast",
-                            "33% chance to ignore an explosion"
+                            "堅定不移",
+                            "33%的機率忽略爆炸。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Rusty",
-                            "Armour durability loss +10%. Player Exp gain +10%"
+                            "生鏽的",
+                            "護甲耐久度損失+10%。",
+                            "玩家經驗增加+10%。"
                         ))
                 ));
         map.put(IDStrings.GOLD,
@@ -108,29 +108,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Golden Veil",
-                            "Makes the player invisible. If used on",
-                            "a weapon, -100% damage."
+                            "金色面紗",
+                            "使玩家隱形。",
+                            "如果用在武器上，-100%傷害。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "All that Glitters",
-                            "Makes you all shiny..."
+                            "所有的閃光",
+                            "讓你們都閃閃發光......"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Prosperous",
-                            "1% chance to drop a gold nugget when hit"
+                            "繁榮",
+                            "擊中時有1%機率掉落金錠。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Barter",
-                            "Piglins like your armour"
+                            "物物交換",
+                            "豬布林喜歡你的盔甲。"
                         ))
                 ));
         map.put(IDStrings.COPPER,
@@ -156,29 +156,32 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Brains, Not Brawn",
-                            "Tool exp gain is doubled. Damage",
-                            "dealt is halved."
+                            "大腦，而不是肌肉",
+                            "工具經驗增益加倍。",
+                            "造成的傷害減半。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Conductive",
-                            "All tool exp is converted to player exp."
+                            "導電的",
+                            "所有工具經驗都轉換為玩家經驗。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Beginner",
-                            "Damage taken +25%. Armour Exp +20%"
+                            "初學者",
+                            "受到的傷害+25%。",
+                            "護甲經驗+20%。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Tarnished",
-                            "Outgoing damage reduced by 25%. Armour Exp +20%"
+                            "玷污",
+                            "輸出傷害降低25%。",
+                            "護甲經驗+20%。",
+                            "註：玷(ㄉ一ㄢˋ)。"
                         ))
                 ));
         map.put(IDStrings.LEAD,
@@ -204,28 +207,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Poisonous",
-                            "25% chance to afflict poison on hit."
+                            "有毒",
+                            "擊中時有25%的機率使目標中毒。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Leech",
-                            "Bonus health, but drains your energy."
+                            "水蛭",
+                            "提供額外的生命值，但會消耗飽食度。",
+                            "註：蛭(ㄓˋ)。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Sickly",
-                            "Lead Armour is not a good idea"
+                            "病態的",
+                            "用鉛製作裝備不是個好主意。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Sickly",
-                            "Lead Armour is not a good idea"
+                            "病態的",
+                            "用鉛製作裝備不是個好主意。"
                         ))
                 ));
         map.put(IDStrings.SILVER,
@@ -251,31 +255,31 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Enchanting",
-                            "Tool exp gain is halved. Tools add a",
-                            "random vanilla enchant when leveling. May or",
-                            "may not match the tool type."
+                            "附魔",
+                            "工具經驗增益減半。",
+                            "工具在升級時會隨機增加一個附魔。",
+                            "可能與工具類型相符，也可能不相符。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Soft Touch",
-                            "You feel lighter."
+                            "觸感柔軟",
+                            "你感覺更輕了。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Conductivity",
-                            "Immune to lightning and even reflect it back!"
+                            "導電度",
+                            "對閃電免疫，甚至將其反射回來！"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Enchanting",
-                            "Gains a random enchantment every time this",
-                            "peice of armour levels up. May not be useful."
+                            "附魔",
+                            "每次這件盔甲升級時，都會獲得一個隨機附魔。",
+                            "可能沒用。"
                         ))
                 ));
         map.put(IDStrings.ALUMINUM,
@@ -301,28 +305,30 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Recyclable",
-                            "Chance to restore durability on hit/block break"
+                            "可回收",
+                            "擊中/格擋破壞時有機會恢復耐久度。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Soft",
-                            "Durability loss +100%, tool EXP +50%."
+                            "柔軟的",
+                            "耐久損失+100%。",
+                            "工具經驗+50%。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Foil",
-                            "Damage Taken +50%. Speed + 1"
+                            "挫敗",
+                            "受到的傷害+50%。",
+                            "速度+1。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Easily Shaped",
-                            "Repairs only need a single kit."
+                            "易於成型",
+                            "維修只需要一個維修包。"
                         ))
                 ));
         map.put(IDStrings.TIN,
@@ -348,28 +354,28 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Malleable",
-                            "Deal 50% less damage but gain luck."
+                            "可塑的",
+                            "造成的傷害減少50%，但會獲得好運。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Can",
-                            "Your hunger just fades away"
+                            "能",
+                            "你的飢餓感就會消失。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Non-Corrosive",
-                            "Immune to poison"
+                            "非腐蝕性",
+                            "免疫中毒。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Boost",
-                            "When taking heavy damage, gain absorption"
+                            "鼓舞",
+                            "受到重傷時獲得吸收。"
                         ))
                 ));
         map.put(IDStrings.ZINC,
@@ -395,29 +401,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Graceful",
-                            "DOLPHIN POWERS, ACTIVATE!"
+                            "優美",
+                            "海豚的力量，啟動！"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Super Lightweight",
-                            "Makes you lighter than air when not sneaking."
+                            "超輕量級",
+                            "不偷偷摸摸的時候讓你比空氣還輕。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Sneaky",
-                            "Damage doubled if target is facing away.",
-                            "Small tolerance"
+                            "鬼鬼祟祟的",
+                            "目標背對時傷害翻倍。",
+                            "小公差。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Acupuncture",
-                            "Take no damage from cactus pricks"
+                            "針刺",
+                            "不受仙人掌刺傷。"
                         ))
                 ));
         map.put(IDStrings.MAGNESIUM,
@@ -443,30 +449,30 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Flammable",
-                            "Has a (Tool level x 5)% chance to",
-                            "set your enemies ablaze."
+                            "易燃的",
+                            "有（工具等級x5）%的機率點燃你的敵人。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Magnetesium",
-                            "Random items are drawn to you from",
-                            "within a 5 block range"
+                            "鎂",
+                            "從5個方塊的範圍內隨機吸取物品。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Light",
-                            "Damage dealt -25%. Speed + 1"
+                            "光",
+                            "造成的傷害-25%。",
+                            "速度+1。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
                             "MagneSight™",
-                            "Gain Nightvision."
+                            "獲得夜視。",
+                            "註：MagneSight 已窮盡搜尋能力，仍然不知道是什麼。"
                         ))
                 ));
         map.put(IDStrings.COAL,
@@ -520,28 +526,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Stainless",
-                            "The tool/weapon repels blood."
+                            "防鏽的",
+                            "工具/武器排斥血液。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Lightweight",
-                            "Tool Exp +50%. Speed + 1"
+                            "輕的",
+                            "工具經驗+50%。",
+                            "速度+1。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Hardy",
-                            "Explosions do 25% less damage"
+                            "強壯的",
+                            "爆炸造成的傷害降低25%"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Strong",
-                            "Health boost + 1"
+                            "強健的",
+                            "血量提升+1"
                         ))
                 ));
         map.put(IDStrings.DAMSTEEL,
@@ -571,30 +578,30 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Vampirism",
-                            "Chance to heal by damage given.",
-                            "Damage dealt varies by time of day."
+                            "吸血鬼",
+                            "造成傷害時，有機會回復血量。",
+                            "造成的傷害因一天中的時間而異。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Nightstalker",
-                            "Gives night vision."
+                            "夜行者",
+                            "提供夜視。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Compounding",
-                            "Gain extra health equal for each compounding",
-                            "piece. Amount stacks on it's own gain"
+                            "複利",
+                            "獲得額外生命值，每個複合件都相等。 Gain extra health equal for each compounding",
+                            "數量堆疊在它自己的收益上。piece. Amount stacks on it's own gain"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Snroht",
-                            "Thorns damage is ignored and relfected back"
+                            "反向荊棘 Snroht",
+                            "荊棘傷害被忽略並反射回來。Thorns damage is ignored and relfected back"
                         ))
                 ));
         map.put(IDStrings.DURALIUM,
@@ -623,29 +630,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Durable",
-                            "Ignores being broken but damage 50%,",
+                            "耐用的",
+                            "忽略被破壞，但損壞50%，採礦速度會變慢，0exp。Ignores being broken but damage 50%,",
                             "mining will be slower and 0 exp."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Easy Fix",
-                            "Only 1 kit is needed to fully repair."
+                            "輕鬆修復",
+                            "完全修復只需要1個修復包。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Durable",
-                            "Works when broken but damage taken +20%"
+                            "耐用的Durable",
+                            "破損時有效，但受到的傷害 +20%Works when broken but damage taken +20%"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Shock Absorbant",
-                            "10% chance to ignore damage. Not additive"
+                            "減震器Shock Absorbant",
+                            "10% 機率忽略傷害。 不添加10% chance to ignore damage. Not additive"
                         ))
                 ));
         map.put(IDStrings.BRONZE,
@@ -674,29 +681,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Resistance",
-                            "Gives fire resistance while held."
+                            "反抗Resistance",
+                            "手持時給予抗火性。Gives fire resistance while held."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Ingheights",
-                            "Something is wrong with this tool."
+                            "高度Ingheights",
+                            "這個工具有問題。Something is wrong with this tool."
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Farmer",
-                            "All crop drops 1 extra item. Not effected by fortune.",
-                            "Does not stack with itself but does with other effects."
+                            "農民Farmer",
+                            "所有作物掉落1個額外物品。不受財運影響。All crop drops 1 extra item. Not effected by fortune.",
+                            "不與自身疊加，但與其他效果疊加。Does not stack with itself but does with other effects."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Brittle",
-                            "Durability loss doubled."
+                            "易碎的",
+                            "耐久損失加倍。"
                         ))
                 ));
         map.put(IDStrings.ALUBRONZE,
@@ -725,29 +732,28 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Sharp 2",
-                            "Gives increased damage, stacks with",
-                            "mods and other properties."
+                            "鋒利的 II",
+                            "增加傷害，與模組和其他屬性疊加。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Brittle",
-                            "Durability loss is doubled."
+                            "易碎的",
+                            "耐久損失加倍。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Beautiful",
-                            "Chance to grow flowers as you walk."
+                            "美麗的Beautiful",
+                            "走路時有機會種花。Chance to grow flowers as you walk."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Eject!",
-                            "If damaged when below 1/2 health - Eject!"
+                            "噴射！Eject!",
+                            "如果在低於 1/2 生命值時損壞 - 彈出！If damaged when below 1/2 health - Eject!"
                         ))
                 ));
         map.put(IDStrings.HARD,
@@ -778,29 +784,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Tuff Stuff",
-                            "Knocks back anything hit with a chance",
+                            "凝灰岩的東西Tuff Stuff",
+                            "擊退任何被擊中的東西，並有機會擊暈。Knocks back anything hit with a chance",
                             "to stun."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Heavy",
-                            "Mines in a 3x3 area."
+                            "錘子",
+                            "挖掘3x3範圍。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Toughened",
-                            "Will not lose durability."
+                            "使堅韌Toughened",
+                            "不會失去耐久度。Will not lose durability."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Dwarven Skills",
-                            "Chance to find rare artifacts while mining."
+                            "矮人技能Dwarven Skills",
+                            "採礦時有機會找到稀有文物。Chance to find rare artifacts while mining."
                         ))
                 ));
         map.put(IDStrings.CORBRONZE,
@@ -831,29 +837,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Flaming Hot",
-                            "Smelts broken blocks when possible."
+                            "熾熱Flaming Hot",
+                            "在可能的情況下熔煉破碎的方塊。Smelts broken blocks when possible."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Too Hot to Handle",
+                            "太熱而無法處理Too Hot to Handle",
                             "?"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Superhot",
-                            "Chance to set nearby entities on fire"
+                            "超熱Superhot",
+                            "有機會點燃附近的實體Chance to set nearby entities on fire"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Warm Blodded",
-                            "Speed + 2 when hot in the nether.",
-                            "Slow + 1 when cold in the end"
+                            "熱血的Warm Blodded",
+                            "下界熾熱時速度 + 2。Speed + 2 when hot in the nether.",
+                            "最終寒冷時減速 + 1。Slow + 1 when cold in the end"
                         ))
                 ));
         map.put(IDStrings.SOLDER,
@@ -882,29 +888,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Hidden",
-                            "Grants invisibility, breaks instantly."
+                            "隱Hidden",
+                            "授予隱身，立即中斷。Grants invisibility, breaks instantly."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Fused",
-                            "Tool cannot be dropped either by the",
+                            "融合Fused",
+                            "玩家或死亡時都不能掉落工具。Tool cannot be dropped either by the",
                             "player or on death."
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Soft Landing",
-                            "Hitting walls no longer hurts"
+                            "輕柔的著陸",
+                            "不會有墜落傷害。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Fused",
-                            "Cannot be dropped on death or on purpose."
+                            "保險",
+                            "不會在死亡時掉落，也不能故意丟棄。"
                         ))
                 ));
         map.put(IDStrings.BILLON,
@@ -933,29 +939,29 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Fast",
-                            "Move speed increased and haste applied.",
-                            "Stacks with modifiers."
+                            "迅速的",
+                            "移動速度和挖掘速度增加。Move speed increased and haste applied.",
+                            "可以與模組疊加。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Springs",
-                            "Makes you jump higher."
+                            "彈簧",
+                            "讓你跳得更高。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
                             "WHM",
-                            "Your attacks heal instead of harm."
+                            "你的攻擊會治療而不是傷害。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Heat Conductor",
-                            "Magma blocks no longer cause damage"
+                            "熱導體",
+                            "岩漿塊不再對你造成傷害。"
                         ))
                 ));
         map.put(IDStrings.BRASS,
@@ -984,29 +990,30 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Stiff",
-                            "Damage +50% but makes you unlucky"
+                            "艱難的",
+                            "傷害+50%，但會讓你不幸。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Oxygenated",
-                            "Gives water breathing while held."
+                            "充氧的",
+                            "手持時給予水中呼吸。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
                             "Band",
-                            "Durability loss + 200%. Damage reduced between 1-25%",
-                            "getting lower as durability drops."
+                            "耐久度損失+200%。",
+                            "隨著耐久度的下降，傷害降低1-25%。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
                             "Scarpaaarr!",
-                            "Durability loss doubled. When damaged below 1/2 health, gain Speed 3."
+                            "耐久度損失翻倍。",
+                            "當傷害低於1/2生命值時，獲得速度3。"
                         ))
                 ));
         map.put(IDStrings.ALUBRASS,
@@ -1036,29 +1043,28 @@ public final class CMCore {
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
                             "Abra",
-                            "Any hit mob has a % chance to be",
-                            "randomly teleported."
+                            "任何命中的生物都有%的機率被隨機傳送。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Studious",
-                            "Tool and Player exp +50% but damage halved",
-                            "and you are slower to act."
+                            "好學",
+                            "工具和玩家經驗+50%，",
+                            "但傷害減半，且你的行動更慢。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Magus",
-                            "Magic Damage -50%"
+                            "魔術師",
+                            "魔法傷害-50%"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Escape",
-                            "Randomly teleport then hit (10s CD)"
+                            "逃脫",
+                            "Randomly teleport then hit (冷卻10秒)。"
                         ))
                 ));
         map.put(IDStrings.NICKEL,
@@ -1087,15 +1093,15 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Charged Head -",
-                            "Doesn't do anything... on it's own..."
+                            "充電棒-",
+                            "什麼都不做……自己做……"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Charged Rod -",
-                            "Doesn't do anything... on it's own..."
+                            "充電棒-",
+                            "什麼都不做……自己做……"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
@@ -1142,15 +1148,15 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Charged Head +",
-                            "Doesn't do anything... on it's own..."
+                            "充電棒+",
+                            "什麼都不做……自己做……"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Charged Rod +",
-                            "Doesn't do anything... on it's own..."
+                            "充電棒+",
+                            "什麼都不做……自己做……"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
@@ -1200,28 +1206,28 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Bulky",
-                            "Mines in a 3x3 area"
+                            "笨重的",
+                            "挖掘3x3區域內的方塊"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
                             "Reinforced",
-                            "Any Plate mod on the tool is counted twice."
+                            "該工具上的任何 Plate mod 都會計算兩次。Any Plate mod on the tool is counted twice."
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Reinforcable",
-                            "Plate mods count twice."
+                            "Reinforced",
+                            "板模型計算兩次。Plate mods count twice."
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Witherproof",
-                            "Immune to the wither effect."
+                            "防凋零",
+                            "免疫凋零效果。"
                         ))
                 ));
         map.put(IDStrings.STRING,
@@ -1248,16 +1254,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Works",
-                            "No special effects."
+                            "工作",
+                            "無特殊效果。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Works",
-                            "No special effects but makes armour quickly."
+                            "工作",
+                            "沒有特殊效果，但可以快速製造盔甲。"
                         ),
                         null)
                 ));
@@ -1285,17 +1291,18 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Growth",
-                            "Slowly repairs the tool during the day.",
-                            "Stacks with mods. Must be in hand"
+                            "生長",
+                            "白天慢慢修工具。",
+                            "可以與模組疊加。",
+                            "必須拿在手上"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Growth",
-                            "Slowly repairs during the day."
+                            "生長",
+                            "白天慢慢修復。"
                         ),
                         null)
                 ));
@@ -1323,17 +1330,18 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Decay",
-                            "Slowly repairs the tool at night.",
-                            "Stacks with mods. Must be in hand"
+                            "衰變",
+                            "晚上慢慢修工具。",
+                            "可以與模組疊加。",
+                            "必須拿在手上"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Decay",
-                            "Slowly repairs during night."
+                            "衰變",
+                            "晚上慢慢修復。"
                         ),
                         null)
                 ));
@@ -1361,16 +1369,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Refreshing",
-                            "Slowly heals the holder."
+                            "清爽",
+                            "慢慢治愈擁有者。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Refreshing",
-                            "Slowly heals the equipping player."
+                            "清爽",
+                            "慢慢治療有穿裝備的玩家。"
                         ),
                         null)
                 ));
@@ -1398,16 +1406,17 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Dooom",
-                            "I get a bad feeling from this..."
+                            "末日",
+                            "從這件事上我有一種不好的感覺......"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Doom",
-                            "Gives you bad omen. Hide your villagers!"
+                            "厄運",
+                            "給你帶來不祥之兆。",
+                            "隱藏你的村民！"
                         ),
                         null)
                 ));
@@ -1435,17 +1444,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Attraction",
-                            "All drops are drawn to you within a",
-                            "5 block range."
+                            "吸引力",
+                            "在5格範圍內，所有掉落物都會吸引到你身上。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Attraction",
-                            "Nearby drops (5x5 area) are drawn to you."
+                            "吸引力",
+                            "附近的掉落物（5x5區域）將被你吸引。"
                         ),
                         null)
                 ));
@@ -1473,16 +1481,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Bouncy",
-                            "Fall damage is halved."
+                            "有彈性的",
+                            "墜落傷害減半。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Bouncy",
-                            "Fall damage -25%"
+                            "有彈性的",
+                            "墜落傷害-25%。"
                         ),
                         null)
                 ));
@@ -1538,17 +1546,17 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Slow Learner",
-                            "Tool exp gain when breaking blocks is",
-                            "increased by (Tool Level x 5%)"
+                            "慢學",
+                            "破壞方塊時，",
+                            "獲得工具經驗增加（工具等級x5%）。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Slow Learner",
-                            "Armour exp gain = (Level * 5%)"
+                            "慢學",
+                            "護甲經驗增益=（等級×5%）。"
                         ),
                         null)
                 ));
@@ -1577,16 +1585,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_BINDING,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Thick",
-                            "Tool exp gain + 50%"
+                            "厚的",
+                            "工具經驗增益+50%。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_GAMBESON,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Thick",
-                            "Armour exp gain + 10%"
+                            "厚的",
+                            "護甲經驗增益+10%。"
                         ),
                         null)
                 ));
@@ -1617,16 +1625,16 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Hydrogen",
-                            "Float away from danger."
+                            "氫",
+                            "飄離危險。"
                         ),
                         null,
                         null,
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Solar Powered",
-                            "Restores durability during the day time."
+                            "太陽能",
+                            "白天時，恢復耐久度。"
                         ),
                         null,
                         new CMTrait(
@@ -1634,7 +1642,8 @@ public final class CMCore {
                             SupportedPluginsManager.CORE_NOTE,
                             "Brightburn",
                             "Gives on stack of Burning Bright! With 4 ",
-                            "stacks, hostile mobs are repelled (not bosses)."
+                            "stacks, hostile mobs are repelled (not bosses).",
+                            "註：Brightburn 是一部2019年美國超級英雄科幻恐怖片。"
                         ))
                 ));
         map.put(IDStrings.REDSTONE_ALLOY,
@@ -1666,21 +1675,21 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_ROD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Lightning Rod",
-                            "A chance to strike hit mobs with lightning."
+                            "避雷針",
+                            "有機會用閃電擊中擊中的生物。"
                         ),
                         new CMTrait(
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Powered On",
-                            "Randomly powers a block within a 5x2x5 range."
+                            "開機",
+                            "隨機為5x2x5範圍內的方塊提供紅石訊號。"
                         ),
                         null,
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Who needs pressure plates?",
-                            "The block you stand on is powered."
+                            "誰需要壓力板？",
+                            "你站立的方塊會有紅石訊號。"
                         ))
                 ));
         map.put(IDStrings.DIAMOND,
@@ -1739,7 +1748,8 @@ public final class CMCore {
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
                             "Ladder Simulator™",
-                            "Spawns ladders on right click."
+                            "右鍵單擊生成梯子。",
+                            "註：Ladder Simulator 是一款適用於Android操作系統的模擬器，具有模擬真實PLC的I/O端口的輸入和輸出對象。"
                         ),
                         null,
                         null,
@@ -1747,7 +1757,8 @@ public final class CMCore {
                             CMTraits.PROP_PLATES,
                             SupportedPluginsManager.CORE_NOTE,
                             "Go Boomer",
-                            "Warning... things will go boom..."
+                            "警告......事情會變得繁榮......",
+                            "註：boomer 戰後嬰兒潮（指1945至1965年間英國和美國）。"
                         ),
                         null,
                         null)
@@ -1775,8 +1786,8 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_HEAD,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Celebrate",
-                            "Time to celebrate"
+                            "慶祝",
+                            "是時候慶祝了！"
                         ),
                         null,
                         null,
@@ -1843,8 +1854,8 @@ public final class CMCore {
                         new CMTrait(
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
-                            "Feeling Festive",
-                            "Get that festive feeling!"
+                            "感覺節日",
+                            "感受節日的氣氛！"
                         ))
                 ));
 
