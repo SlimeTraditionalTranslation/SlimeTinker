@@ -1158,6 +1158,25 @@ public final class Traits {
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCringleium);
 
+    public static final MaterialTrait CORE_LOVE_LINKS = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_LINKS)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("It's all you need")
+        .setLore(
+            "You are loved"
+        )
+        .addConsumer(TraitEventType.TICK, TickEvents::linksLove);
+
+    public static final MaterialTrait CORE_NICEINIUM_HEAD = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_HEAD)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("Nice")
+        .setLore(
+            "Nice"
+        )
+        .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headNice)
+        .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headNice);
+
     // endregion
 
     // region Infinity Expansion

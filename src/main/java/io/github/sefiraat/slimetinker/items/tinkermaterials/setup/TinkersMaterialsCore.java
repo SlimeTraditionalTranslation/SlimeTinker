@@ -478,12 +478,12 @@ public final class TinkersMaterialsCore {
         .setTraitArmorPlates(Traits.CORE_SEFIRITE_PLATES)
         .setFormNugget(Materials.NUGGET_CAST_SEFIRITE.getItemId())
         .setFormIngot(Materials.INGOT_CAST_SEFIRITE.getItemId())
+        .setFormBlock(Materials.BLOCK_CAST_SEFIRITE.getItemId())
         .build();
 
     private static final TinkerMaterial LIQUID_CHRISTMAS = new TinkerMaterial(Ids.LIQUID_CHRISTMAS, SlimefunItems.CHRISTMAS_PRESENT, "#00cc36")
         .setLiquidTexture(SkullTextures.ALLOY_GREEN)
         .setFormIngot(SlimefunItems.CHRISTMAS_PRESENT.getItemId())
-        .setFormBlock(Materials.BLOCK_CAST_SEFIRITE.getItemId())
         .build();
 
     private static final TinkerMaterial CRINGLEIUM = new TinkerMaterial(Ids.CRINGLEIUM, Materials.INGOT_CAST_CRINGLEIUM, "#00cc36")
@@ -496,6 +496,54 @@ public final class TinkersMaterialsCore {
             REINFORCED_ALLOY.getLiquidItemStack(2),
             LIQUID_CHRISTMAS.getLiquidItemStack(3),
             MAGNESIUM.getLiquidItemStack(2)
+        )
+        .build();
+
+    private static final TinkerMaterial FLOWING_FONDNESS = new TinkerMaterial(Ids.FLOWING_FONDNESS, SlimefunItems.RAINBOW_GLASS_VALENTINE, "#eb34d2")
+        .setLiquidTexture(SkullTextures.ALLOY_PINK)
+        .setFormNugget(Materials.NUGGET_CAST_FONDNESS.getItemId())
+        .setFormIngot(Materials.INGOT_CAST_FONDNESS.getItemId())
+        .setFormBlock(SlimefunItems.RAINBOW_GLASS_VALENTINE.getItemId())
+        .build();
+
+    private static final TinkerMaterial DETAILED_DEVOTION = new TinkerMaterial(Ids.DETAILED_DEVOTION, SlimefunItems.RAINBOW_CONCRETE_VALENTINE, "#e68cd9")
+        .setLiquidTexture(SkullTextures.ALLOY_PINK)
+        .setFormNugget(Materials.NUGGET_CAST_DEVOTION.getItemId())
+        .setFormIngot(Materials.INGOT_CAST_DEVOTION.getItemId())
+        .setFormBlock(SlimefunItems.RAINBOW_CONCRETE_VALENTINE.getItemId())
+        .build();
+
+    private static final TinkerMaterial PURIFIED_PASSION = new TinkerMaterial(Ids.PURIFIED_PASSION, SlimefunItems.RAINBOW_GLAZED_TERRACOTTA_VALENTINE, "#471240")
+        .setLiquidTexture(SkullTextures.ALLOY_PINK)
+        .setFormNugget(Materials.NUGGET_CAST_PASSION.getItemId())
+        .setFormIngot(Materials.INGOT_CAST_PASSION.getItemId())
+        .setFormBlock(SlimefunItems.RAINBOW_GLAZED_TERRACOTTA_VALENTINE.getItemId())
+        .build();
+
+    private static final TinkerMaterial LIQUID_LOVE = new TinkerMaterial(Ids.LIQUID_LOVE, Materials.INGOT_CAST_LOVE, "#eb34d2")
+        .setLiquidTexture(SkullTextures.ALLOY_PINK)
+        .setFormNugget(Materials.NUGGET_CAST_LOVE.getItemId())
+        .setFormIngot(Materials.INGOT_CAST_LOVE.getItemId())
+        .setFormBlock(Materials.BLOCK_CAST_LOVE.getItemId())
+        .setTraitArmorLinks(Traits.CORE_LOVE_LINKS)
+        .addAlloyRecipe(
+            FLOWING_FONDNESS.getLiquidItemStack(1),
+            DETAILED_DEVOTION.getLiquidItemStack(1),
+            PURIFIED_PASSION.getLiquidItemStack(1)
+        )
+        .build();
+
+    private static final TinkerMaterial NICEINIUM = new TinkerMaterial(Ids.NICEINIUM, Materials.INGOT_CAST_NICE, "#80550d")
+        .setLiquidTexture(SkullTextures.ALLOY_TAN)
+        .setFormNugget(Materials.NUGGET_CAST_NICE.getItemId())
+        .setFormIngot(Materials.INGOT_CAST_NICE.getItemId())
+        .setFormBlock(Materials.BLOCK_CAST_NICE.getItemId())
+        .setTraitToolHead(Traits.CORE_NICEINIUM_HEAD)
+        .addAlloyRecipe(
+            REINFORCED_ALLOY.getLiquidItemStack(3),
+            HARDENED_METAL.getLiquidItemStack(3),
+            REDSTONE.getLiquidItemStack(10),
+            DIAMOND.getLiquidItemStack(5)
         )
         .build();
 
@@ -541,6 +589,11 @@ public final class TinkersMaterialsCore {
         CM_MAP.put(Ids.SEFIRITE, SEFIRITE);
         CM_MAP.put(Ids.LIQUID_CHRISTMAS, LIQUID_CHRISTMAS);
         CM_MAP.put(Ids.CRINGLEIUM, CRINGLEIUM);
+        CM_MAP.put(Ids.FLOWING_FONDNESS, FLOWING_FONDNESS);
+        CM_MAP.put(Ids.DETAILED_DEVOTION, DETAILED_DEVOTION);
+        CM_MAP.put(Ids.PURIFIED_PASSION, PURIFIED_PASSION);
+        CM_MAP.put(Ids.LIQUID_LOVE, LIQUID_LOVE);
+        CM_MAP.put(Ids.NICEINIUM, NICEINIUM);
     }
 
     public static Map<String, TinkerMaterial> getCmMap() {
