@@ -1,7 +1,17 @@
-![](https://github.com/Sefiraat/SlimeTinker/blob/master/images/logo/logo_large.png?raw=true)
+<p align="center">
+<img width="800" src="https://github.com/Sefiraat/SlimeTinker/blob/master/images/logo/logo.svg"><br><br>
+</p>
 
 SlimeTinker is a Slimefun4 addon that tries it's best to recreate the amazing Tinker's Construct
 Mod ([link](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) in Vanilla Minecraft.
+
+## Download SlimeTinker
+
+[![Build Status](https://thebusybiscuit.github.io/builds/Sefiraat/SlimeTinker/master/badge.svg)](https://thebusybiscuit.github.io/builds/Sefiraat/SlimeTinker/master)
+
+## Info
+
+For more information about SlimeTinker, please visit my <a href="https://sefiraat.gitbook.io/docs/slimetinker/basics">documentation</a> page.
 
 ## Features include:
 
