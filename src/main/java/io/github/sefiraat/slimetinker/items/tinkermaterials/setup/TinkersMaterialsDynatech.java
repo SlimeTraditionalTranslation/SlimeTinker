@@ -13,7 +13,7 @@ import java.util.Map;
 public final class TinkersMaterialsDynatech {
 
     private TinkersMaterialsDynatech() {
-        throw new UnsupportedOperationException("實用工具類");
+        throw new UnsupportedOperationException("Utility Class");
     }
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
@@ -50,21 +50,21 @@ public final class TinkersMaterialsDynatech {
         .setFormGem("星塵")
         .build();
 
-    private static final TinkerMaterial GHOSTLY_ESSENCE = new TinkerMaterial(Ids.GHOSTLY_ESSENCE, SlimefunItem.getById("GHOSTLY_ESSENCE").getItem(), "#d4ffef")
+    private static final TinkerMaterial GHOSTLY_ESSENCE = new TinkerMaterial(Ids.GHOSTLY_ESSENCE, SlimefunItem.getById("幽靈精華").getItem(), "#d4ffef")
         .setLiquidTexture(SkullTextures.ALLOY_BROWN)
         .setTraitToolBinder(Traits.DYN_GHOSTLY_ESSENCE_BINDING)
         .setTraitToolRod(Traits.DYN_GHOSTLY_ESSENCE_ROD)
         .setTraitArmorGambeson(Traits.DYN_GHOSTLY_ESSENCE_GAMBESON)
         .setTraitArmorLinks(Traits.DYN_GHOSTLY_ESSENCE_LINKS)
-        .setFormDust("GHOSTLY_ESSENCE")
+        .setFormDust("幽靈精華")
         .build();
 
-    private static final TinkerMaterial TESSERACT = new TinkerMaterial(Ids.TESSERACT, SlimefunItem.getById("TESSERACTING_OBJ").getItem(), "#c7ba9f")
+    private static final TinkerMaterial TESSERACT = new TinkerMaterial(Ids.TESSERACT, SlimefunItem.getById("鑲嵌斷續器").getItem(), "#c7ba9f")
         .setLiquidTexture(SkullTextures.ALLOY_TAN)
         .setTraitToolHead(Traits.DYN_TESSERACT_HEAD)
         .setTraitArmorPlates(Traits.DYN_TESSERACT_PLATES)
         .setTraitArmorLinks(Traits.DYN_TESSERACT_LINKS)
-        .setFormBlock("TESSERACTING_OBJ")
+        .setFormBlock("鑲嵌斷續器")
         .build();
 
     static {

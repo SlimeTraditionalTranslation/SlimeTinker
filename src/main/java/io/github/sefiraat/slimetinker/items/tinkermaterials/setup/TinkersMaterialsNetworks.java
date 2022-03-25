@@ -17,17 +17,17 @@ public final class TinkersMaterialsNetworks {
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
 
-    private static final TinkerMaterial MOLTEN_PRESENCE = new TinkerMaterial(Ids.MOLTEN_PRESENCE, SlimefunItem.getById("NTW_INTERDIMENSIONAL_PRESENCE").getItem(), "#15ab26")
+    private static final TinkerMaterial MOLTEN_PRESENCE = new TinkerMaterial(Ids.MOLTEN_PRESENCE, SlimefunItem.getById("NTW 跨維存在").getItem(), "#15ab26")
         .setLiquidTexture(SkullTextures.ALLOY_GREEN)
-        .setFormBlock("NTW_INTERDIMENSIONAL_PRESENCE")
+        .setFormBlock("NTW 跨維存在")
         .build();
 
-    private static final TinkerMaterial REMOTININIUM = new TinkerMaterial(Ids.REMOTININIUM, SlimefunItem.getById("NTW_REMOTE_PRISTINE").getItem(), "#acacac")
+    private static final TinkerMaterial REMOTININIUM = new TinkerMaterial(Ids.REMOTININIUM, SlimefunItem.getById("NTW 遠端純淨").getItem(), "#acacac")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
-        .setFormBlock("NTW_REMOTE_PRISTINE")
+        .setFormBlock("NTW 遠端純淨")
         .build();
 
-    private static final TinkerMaterial ULTIMANINIUM = new TinkerMaterial(Ids.ULTIMANINIUM, SlimefunItem.getById("NTW_REMOTE_ULTIMATE").getItem(), "#acacac")
+    private static final TinkerMaterial ULTIMANINIUM = new TinkerMaterial(Ids.ULTIMANINIUM, SlimefunItem.getById("NTW 遠端終極版").getItem(), "#acacac")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .addAlloyRecipe(
             MOLTEN_PRESENCE.getLiquidItemStack(1),

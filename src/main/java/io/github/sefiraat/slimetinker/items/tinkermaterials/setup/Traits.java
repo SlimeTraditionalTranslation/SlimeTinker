@@ -22,46 +22,46 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Stability")
+        .setTraitName("穩定性")
         .setLore(
-            "Does... nothing!"
+            "做...無！"
         );
 
     public static final MaterialTrait CORE_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sharp 1")
+        .setTraitName("鋒利 1")
         .setLore(
-            "Gives increased damage, stacks with",
-            "mods and other properties."
+            "增加傷害，堆疊",
+            "模組和其他屬性."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodIron);
 
     public static final MaterialTrait CORE_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Steadfast")
+        .setTraitName("堅定")
         .setLore(
-            "33% chance to ignore an explosion"
+            "33% 幾率忽略爆炸"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateIron);
 
     public static final MaterialTrait CORE_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Rusty")
+        .setTraitName("生鏽")
         .setLore(
-            "Armour durability loss +10%. Player Exp gain +10%"
+            "裝甲耐久性損失 +10%。玩家經驗值收益 +10%"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksIron);
 
     public static final MaterialTrait CORE_GOLD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Golden Veil")
+        .setTraitName("金色面紗")
         .setLore(
-            "Makes the player invisible. If used on",
-            "a weapon, -100% damage."
+            "使玩家不可見。如果用於",
+            "武器，-100%傷害。"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headGold)
         .addConsumer(TraitEventType.TICK, TickEvents::headGold);
@@ -69,37 +69,37 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("All that Glitters")
+        .setTraitName("閃閃發光")
         .setLore(
-            "Makes you all shiny..."
+            "讓你們都閃閃發光..."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodGold);
 
     public static final MaterialTrait CORE_GOLD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Prosperous")
+        .setTraitName("繁榮")
         .setLore(
-            "1% chance to drop a gold nugget when hit"
+            "1%幾率在被擊中時掉落金塊"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateGold);
 
     public static final MaterialTrait CORE_GOLD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Barter")
+        .setTraitName("實物交易")
         .setLore(
-            "Piglins like your armour"
+            "哥布林喜歡你的盔甲"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGold);
 
     public static final MaterialTrait CORE_COPPER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Brains, Not Brawn")
+        .setTraitName("大腦，而不是布朗")
         .setLore(
-            "Tool exp gain is doubled. Damage",
-            "dealt is halved."
+            "刀具經驗增益加倍。損傷",
+            "成交減半."
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCopper);
@@ -108,17 +108,17 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Conductive")
+        .setTraitName("傳導")
         .setLore(
-            "All tool exp is converted to player exp."
+            "所有工具經驗轉換為玩家經驗."
         );
 
     public static final MaterialTrait CORE_COPPER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Beginner")
+        .setTraitName("初學者")
         .setLore(
-            "Damage taken +25%. Armour Exp +20%"
+            "受到的傷害 +25%。護甲經驗 +20%"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateCopper)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateCopper);
@@ -126,45 +126,45 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Tarnished")
+        .setTraitName("玷污")
         .setLore(
-            "Outgoing damage reduced by 25%. Armour Exp +20%"
+            "輸出傷害降低 25%。護甲經驗 +20%"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksCopper);
 
     public static final MaterialTrait CORE_LEAD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Poisonous")
+        .setTraitName("有毒")
         .setLore(
-            "25% chance to afflict poison on hit."
+            "擊中時有 25% 機率使毒中毒."
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headLead);
 
     public static final MaterialTrait CORE_LEAD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Leech")
+        .setTraitName("水蛭")
         .setLore(
-            "Bonus health, but drains your energy."
+            "額外的健康，但會消耗你的能量."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodLead);
 
     public static final MaterialTrait CORE_LEAD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sickly")
+        .setTraitName("虛弱")
         .setLore(
-            "Lead Armour is not a good idea"
+            "鉛甲不是個好主意"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateLead);
 
     public static final MaterialTrait CORE_LEAD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sickly")
+        .setTraitName("虛弱")
         .setLore(
-            "Lead Armour is not a good idea"
+            "鉛甲不是個好主意"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLead);
 
@@ -172,11 +172,11 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Enchanting")
+        .setTraitName("迷人")
         .setLore(
-            "Tool exp gain is halved. Tools add a",
-            "random vanilla enchant when leveling. May or",
-            "may not match the tool type."
+            "工具經驗增益減半。工具添加一個",
+            "升級時隨機香草附魔。可能或",
+            "可能與工具類型不匹配."
         );
 
     public static final MaterialTrait CORE_SILVER_ROD = new MaterialTrait()

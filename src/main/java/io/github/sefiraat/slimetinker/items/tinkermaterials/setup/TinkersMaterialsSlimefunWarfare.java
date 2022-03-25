@@ -18,21 +18,21 @@ public final class TinkersMaterialsSlimefunWarfare {
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
 
-    private static final TinkerMaterial SEGGANESSON = new TinkerMaterial(Ids.SEGGANESSON, SlimefunItem.getById("SEGGANESSON").getItem(), "#4bacbf")
+    private static final TinkerMaterial SEGGANESSON = new TinkerMaterial(Ids.SEGGANESSON, SlimefunItem.getById("賽格尼松").getItem(), "#4bacbf")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.SFW_SEGGANESSON_HEAD)
         .setTraitToolRod(Traits.SFW_SEGGANESSON_ROD)
         .setTraitArmorPlates(Traits.SFW_SEGGANESSON_PLATES)
         .setTraitArmorLinks(Traits.SFW_SEGGANESSON_LINKS)
-        .setFormIngot("SEGGANESSON")
+        .setFormIngot("賽格尼松")
         .build();
 
-    private static final TinkerMaterial SLIMESTEEL = new TinkerMaterial(Ids.SLIMESTEEL, SlimefunItem.getById("SLIMESTEEL_INGOT").getItem(), "#aed197")
+    private static final TinkerMaterial SLIMESTEEL = new TinkerMaterial(Ids.SLIMESTEEL, SlimefunItem.getById("黏液錠").getItem(), "#aed197")
         .setLiquidTexture(SkullTextures.ALLOY_GREEN)
         .setTraitToolBinder(Traits.SFW_SLIMESTEEL_BINDING)
         .setTraitArmorGambeson(Traits.SFW_SLIMESTEEL_GAMBESON)
         .setFormNugget(Materials.NUGGET_CAST_SLIMESTEEL.getItemId())
-        .setFormIngot("SLIMESTEEL_INGOT")
+        .setFormIngot("黏液錠")
         .setFormBlock(Materials.BLOCK_CAST_SLIMESTEEL.getItemId())
         .addAlloyRecipe(
             TinkersMaterialsCore.getCmMap().get(Ids.STEEL).getLiquidItemStack(1),
@@ -40,14 +40,14 @@ public final class TinkersMaterialsSlimefunWarfare {
         )
         .build();
 
-    private static final TinkerMaterial REINFORCED_SLIMESTEEL = new TinkerMaterial(Ids.REINFORCED_SLIMESTEEL, SlimefunItem.getById("REINFORCED_SLIMESTEEL_INGOT").getItem(), "#aed197")
+    private static final TinkerMaterial REINFORCED_SLIMESTEEL = new TinkerMaterial(Ids.REINFORCED_SLIMESTEEL, SlimefunItem.getById("強化型黏液錠").getItem(), "#aed197")
         .setLiquidTexture(SkullTextures.ALLOY_GREEN)
         .setTraitToolHead(Traits.SFW_REINFORCED_SLIMESTEEL_HEAD)
         .setTraitToolRod(Traits.SFW_REINFORCED_SLIMESTEEL_ROD)
         .setTraitArmorPlates(Traits.SFW_REINFORCED_SLIMESTEEL_PLATES)
         .setTraitArmorLinks(Traits.SFW_REINFORCED_SLIMESTEEL_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_REINFORCED_SLIMESTEEL.getItemId())
-        .setFormIngot("REINFORCED_SLIMESTEEL_INGOT")
+        .setFormIngot("強化型黏液錠")
         .setFormBlock(Materials.BLOCK_CAST_REINFORCED_SLIMESTEEL.getItemId())
         .addAlloyRecipe(
             SLIMESTEEL.getLiquidItemStack(1),
@@ -59,36 +59,36 @@ public final class TinkersMaterialsSlimefunWarfare {
         )
         .build();
 
-    private static final TinkerMaterial OSMIUM = new TinkerMaterial(Ids.OSMIUM, SlimefunItem.getById("OSMIUM_INGOT").getItem(), "#8dd6c0")
+    private static final TinkerMaterial OSMIUM = new TinkerMaterial(Ids.OSMIUM, SlimefunItem.getById("鋨錠").getItem(), "#8dd6c0")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.SFW_OSMIUM_HEAD)
         .setTraitToolRod(Traits.SFW_OSMIUM_ROD)
         .setTraitArmorPlates(Traits.SFW_OSMIUM_PLATES)
         .setTraitArmorLinks(Traits.SFW_OSMIUM_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_OSMIUM.getItemId())
-        .setFormIngot("OSMIUM_INGOT")
+        .setFormIngot("鋨錠")
         .setFormBlock(Materials.BLOCK_CAST_OSMIUM.getItemId())
         .build();
 
-    private static final TinkerMaterial OSMIUM_SUPERALLOY = new TinkerMaterial(Ids.OSMIUM_SUPERALLOY, SlimefunItem.getById("OSMIUM_SUPERALLOY").getItem(), "#8dd6c0")
+    private static final TinkerMaterial OSMIUM_SUPERALLOY = new TinkerMaterial(Ids.OSMIUM_SUPERALLOY, SlimefunItem.getById("鋨合金").getItem(), "#8dd6c0")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.SFW_OSMIUM_SUPERALLOY_HEAD)
         .setTraitToolRod(Traits.SFW_OSMIUM_SUPERALLOY_ROD)
         .setTraitArmorPlates(Traits.SFW_OSMIUM_SUPERALLOY_PLATES)
         .setTraitArmorLinks(Traits.SFW_OSMIUM_SUPERALLOY_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_OSMIUM_SUPER_ALLOY.getItemId())
-        .setFormIngot("OSMIUM_SUPERALLOY")
+        .setFormIngot("鋨合金")
         .setFormBlock(Materials.BLOCK_CAST_OSMIUM_SUPER_ALLOY.getItemId())
         .build();
 
-    private static final TinkerMaterial UNPATENTABLIUM = new TinkerMaterial(Ids.UNPATENTABLIUM, SlimefunItem.getById("UNPATENTABLIUM").getItem(), "#8dd6c0")
+    private static final TinkerMaterial UNPATENTABLIUM = new TinkerMaterial(Ids.UNPATENTABLIUM, SlimefunItem.getById("非專利商標").getItem(), "#8dd6c0")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.SFW_UNPATENTABLIUM_HEAD)
         .setTraitToolRod(Traits.SFW_UNPATENTABLIUM_ROD)
         .setTraitArmorPlates(Traits.SFW_UNPATENTABLIUM_PLATES)
         .setTraitArmorLinks(Traits.SFW_UNPATENTABLIUM_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_UNPATENTABILUM.getItemId())
-        .setFormIngot("UNPATENTABLIUM")
+        .setFormIngot("非專利商標")
         .setFormBlock(Materials.BLOCK_CAST_UNPATENTABILUM.getItemId())
         .build();
 
