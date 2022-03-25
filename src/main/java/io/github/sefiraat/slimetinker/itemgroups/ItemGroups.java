@@ -19,11 +19,11 @@ public final class ItemGroups {
 
     public static final NestedItemGroup MAIN = new NestedItemGroup(Keys.ITEM_GROUP_MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
-        ThemeUtils.MAIN + "SlimeTinker"
+        ThemeUtils.MAIN + "黏液工匠"
     ));
     public static final SubItemGroup WORKSTATIONS = new SubItemGroup(Keys.ITEM_GROUP_WORKSTATIONS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
-        ThemeUtils.MAIN + "Workstations"
+        ThemeUtils.MAIN + "工作站"
     ));
     public static final SubItemGroup MATERIALS = new SubItemGroup(Keys.ITEM_GROUP_MATERIALS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MATERIALS)),
