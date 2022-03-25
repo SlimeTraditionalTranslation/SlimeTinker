@@ -18,25 +18,25 @@ public final class TinkersMaterialsInfinity {
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
 
-    private static final TinkerMaterial VOID = new TinkerMaterial(Ids.VOID, SlimefunItem.getById("空錠").getItem(), "#5c5756")
+    private static final TinkerMaterial VOID = new TinkerMaterial(Ids.VOID, SlimefunItem.getById("VOID_INGOT").getItem(), "#5c5756")
         .setLiquidTexture(SkullTextures.ALLOY_PURPLE_DEEP)
         .setTraitToolHead(Traits.INFINITY_VOID_HEAD)
         .setTraitToolRod(Traits.INFINITY_VOID_ROD)
         .setTraitArmorPlates(Traits.INFINITY_VOID_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_VOID_LINKS)
-        .setFormNugget("空隙粉塵")
-        .setFormIngot("空錠")
+        .setFormNugget("VOID_DUST")
+        .setFormIngot("VOID_INGOT")
         .setFormBlock(Materials.BLOCK_CAST_VOID.getItemId())
         .build();
 
-    private static final TinkerMaterial MAGSTEEL = new TinkerMaterial(Ids.MAGSTEEL, SlimefunItem.getById("磁鋼").getItem(), "#730000")
+    private static final TinkerMaterial MAGSTEEL = new TinkerMaterial(Ids.MAGSTEEL, SlimefunItem.getById("MAGSTEEL").getItem(), "#730000")
         .setLiquidTexture(SkullTextures.ALLOY_BROWN)
         .setTraitToolHead(Traits.INFINITY_MAGSTEEL_HEAD)
         .setTraitToolRod(Traits.INFINITY_MAGSTEEL_ROD)
         .setTraitArmorPlates(Traits.INFINITY_MAGSTEEL_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_MAGSTEEL_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_MAGSTEEL.getItemId())
-        .setFormIngot("磁鋼")
+        .setFormIngot("MAGSTEEL")
         .setFormBlock(Materials.BLOCK_CAST_MAGSTEEL.getItemId())
         .addAlloyRecipe(
             TinkersMaterialsCore.getCmMap().get(Ids.MAGNESIUM).getLiquidItemStack(2),
@@ -44,14 +44,14 @@ public final class TinkersMaterialsInfinity {
         )
         .build();
 
-    private static final TinkerMaterial TITANIUM = new TinkerMaterial(Ids.TITANIUM, SlimefunItem.getById("鈦").getItem(), "#adadad")
+    private static final TinkerMaterial TITANIUM = new TinkerMaterial(Ids.TITANIUM, SlimefunItem.getById("TITANIUM").getItem(), "#adadad")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_TITANIUM_HEAD)
         .setTraitToolRod(Traits.INFINITY_TITANIUM_ROD)
         .setTraitArmorPlates(Traits.INFINITY_TITANIUM_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_TITANIUM_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_TITANIUM.getItemId())
-        .setFormIngot("鈦")
+        .setFormIngot("TITANIUM")
         .setFormBlock(Materials.BLOCK_CAST_TITANIUM.getItemId())
         .addAlloyRecipe(
             TinkersMaterialsCore.getCmMap().get(Ids.REINFORCED_ALLOY).getLiquidItemStack(1),
@@ -60,178 +60,178 @@ public final class TinkersMaterialsInfinity {
         )
         .build();
 
-    private static final TinkerMaterial IRON_SINGULARITY = new TinkerMaterial(Ids.IRON_SINGULARITY, SlimefunItem.getById("鐵奇點").getItem(), "#8c8c8c")
+    private static final TinkerMaterial IRON_SINGULARITY = new TinkerMaterial(Ids.IRON_SINGULARITY, SlimefunItem.getById("IRON_SINGULARITY").getItem(), "#8c8c8c")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_IRON_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_IRON_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_IRON_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_IRON_SINGULARITY_LINKS)
-        .setFormBlock("鐵奇點")
+        .setFormBlock("IRON_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial GOLD_SINGULARITY = new TinkerMaterial(Ids.GOLD_SINGULARITY, SlimefunItem.getById("黃金奇點").getItem(), "#ffe138")
+    private static final TinkerMaterial GOLD_SINGULARITY = new TinkerMaterial(Ids.GOLD_SINGULARITY, SlimefunItem.getById("GOLD_SINGULARITY").getItem(), "#ffe138")
         .setLiquidTexture(SkullTextures.ALLOY_TAN)
         .setTraitToolHead(Traits.INFINITY_GOLD_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_GOLD_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_GOLD_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_GOLD_SINGULARITY_LINKS)
-        .setFormBlock("黃金奇點")
+        .setFormBlock("GOLD_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial COPPER_SINGULARITY = new TinkerMaterial(Ids.COPPER_SINGULARITY, SlimefunItem.getById("銅奇點").getItem(), "#c99732")
+    private static final TinkerMaterial COPPER_SINGULARITY = new TinkerMaterial(Ids.COPPER_SINGULARITY, SlimefunItem.getById("COPPER_SINGULARITY").getItem(), "#c99732")
         .setLiquidTexture(SkullTextures.ALLOY_BROWN)
         .setTraitToolHead(Traits.INFINITY_COPPER_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_COPPER_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_COPPER_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_COPPER_SINGULARITY_LINKS)
-        .setFormBlock("銅奇點")
+        .setFormBlock("COPPER_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial LEAD_SINGULARITY = new TinkerMaterial(Ids.LEAD_SINGULARITY, SlimefunItem.getById("鉛奇點").getItem(), "#9043ba")
+    private static final TinkerMaterial LEAD_SINGULARITY = new TinkerMaterial(Ids.LEAD_SINGULARITY, SlimefunItem.getById("LEAD_SINGULARITY").getItem(), "#9043ba")
         .setLiquidTexture(SkullTextures.ALLOY_PURPLE)
         .setTraitToolHead(Traits.INFINITY_LEAD_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_LEAD_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_LEAD_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_LEAD_SINGULARITY_LINKS)
-        .setFormBlock("鉛奇點")
+        .setFormBlock("LEAD_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial SILVER_SINGULARITY = new TinkerMaterial(Ids.SILVER_SINGULARITY, SlimefunItem.getById("銀奇點").getItem(), "#d4d4d4")
+    private static final TinkerMaterial SILVER_SINGULARITY = new TinkerMaterial(Ids.SILVER_SINGULARITY, SlimefunItem.getById("SILVER_SINGULARITY").getItem(), "#d4d4d4")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_SILVER_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_SILVER_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_SILVER_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_SILVER_SINGULARITY_LINKS)
-        .setFormBlock("銀奇點")
+        .setFormBlock("SILVER_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial ALUMINUM_SINGULARITY = new TinkerMaterial(Ids.ALUMINUM_SINGULARITY, SlimefunItem.getById("鋁奇點").getItem(), "#b0b0b0")
+    private static final TinkerMaterial ALUMINUM_SINGULARITY = new TinkerMaterial(Ids.ALUMINUM_SINGULARITY, SlimefunItem.getById("ALUMINUM_SINGULARITY").getItem(), "#b0b0b0")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_ALUMINUM_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_ALUMINUM_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_ALUMINUM_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_ALUMINUM_SINGULARITY_LINKS)
-        .setFormBlock("鋁奇點")
+        .setFormBlock("ALUMINUM_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial TIN_SINGULARITY = new TinkerMaterial(Ids.TIN_SINGULARITY, SlimefunItem.getById("錫奇點").getItem(), "#a89b9b")
+    private static final TinkerMaterial TIN_SINGULARITY = new TinkerMaterial(Ids.TIN_SINGULARITY, SlimefunItem.getById("TIN_SINGULARITY").getItem(), "#a89b9b")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_TIN_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_TIN_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_TIN_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_TIN_SINGULARITY_LINKS)
-        .setFormBlock("錫奇點")
+        .setFormBlock("TIN_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial ZINC_SINGULARITY = new TinkerMaterial(Ids.ZINC_SINGULARITY, SlimefunItem.getById("鋅奇點").getItem(), "#9ba8a6")
+    private static final TinkerMaterial ZINC_SINGULARITY = new TinkerMaterial(Ids.ZINC_SINGULARITY, SlimefunItem.getById("ZINC_SINGULARITY").getItem(), "#9ba8a6")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_ZINC_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_ZINC_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_ZINC_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_ZINC_SINGULARITY_LINKS)
-        .setFormBlock("鋅奇點")
+        .setFormBlock("ZINC_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial MAGNESIUM_SINGULARITY = new TinkerMaterial(Ids.MAGNESIUM_SINGULARITY, SlimefunItem.getById("鎂奇點").getItem(), "#e8cef5")
+    private static final TinkerMaterial MAGNESIUM_SINGULARITY = new TinkerMaterial(Ids.MAGNESIUM_SINGULARITY, SlimefunItem.getById("MAGNESIUM_SINGULARITY").getItem(), "#e8cef5")
         .setLiquidTexture(SkullTextures.ALLOY_PINK)
         .setTraitToolHead(Traits.INFINITY_MAGNESIUM_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_MAGNESIUM_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_MAGNESIUM_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_MAGNESIUM_SINGULARITY_LINKS)
-        .setFormBlock("鎂奇點")
+        .setFormBlock("MAGNESIUM_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial DIAMOND_SINGULARITY = new TinkerMaterial(Ids.DIAMOND_SINGULARITY, SlimefunItem.getById("鑽石奇點").getItem(), "#e8cef5")
+    private static final TinkerMaterial DIAMOND_SINGULARITY = new TinkerMaterial(Ids.DIAMOND_SINGULARITY, SlimefunItem.getById("DIAMOND_SINGULARITY").getItem(), "#e8cef5")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE)
-        .setFormBlock("鑽石奇點")
+        .setFormBlock("DIAMOND_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial MYTHRIL = new TinkerMaterial(Ids.MYTHRIL, SlimefunItem.getById("秘銀礦;").getItem(), "#4ebdc7")
+    private static final TinkerMaterial MYTHRIL = new TinkerMaterial(Ids.MYTHRIL, SlimefunItem.getById("MYTHRIL").getItem(), "#4ebdc7")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.INFINITY_MYTHRIL_HEAD)
         .setTraitToolRod(Traits.INFINITY_MYTHRIL_ROD)
         .setTraitArmorPlates(Traits.INFINITY_MYTHRIL_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_MYTHRIL_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_MYTHRIL.getItemId())
-        .setFormIngot("秘銀礦;")
+        .setFormIngot("MYTHRIL")
         .setFormBlock(Materials.BLOCK_CAST_MYTHRIL.getItemId())
         .build();
 
-    private static final TinkerMaterial ADAMANTITE = new TinkerMaterial(Ids.ADAMANTITE, SlimefunItem.getById("金剛石").getItem(), "#c93ec2")
+    private static final TinkerMaterial ADAMANTITE = new TinkerMaterial(Ids.ADAMANTITE, SlimefunItem.getById("ADAMANTITE").getItem(), "#c93ec2")
         .setLiquidTexture(SkullTextures.ALLOY_TAN)
         .setTraitToolHead(Traits.INFINITY_ADAMANTITE_HEAD)
         .setTraitToolRod(Traits.INFINITY_ADAMANTITE_ROD)
         .setTraitArmorPlates(Traits.INFINITY_ADAMANTITE_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_ADAMANTITE_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_ADAMANTITE.getItemId())
-        .setFormIngot("金剛石")
+        .setFormIngot("ADAMANTITE")
         .setFormBlock(Materials.BLOCK_CAST_ADAMANTITE.getItemId())
         .build();
 
-    private static final TinkerMaterial MAGNONIUM = new TinkerMaterial(Ids.MAGNONIUM, SlimefunItem.getById("鎂").getItem(), "#4a0446")
+    private static final TinkerMaterial MAGNONIUM = new TinkerMaterial(Ids.MAGNONIUM, SlimefunItem.getById("MAGNONIUM").getItem(), "#4a0446")
         .setLiquidTexture(SkullTextures.ALLOY_PURPLE)
         .setTraitToolHead(Traits.INFINITY_MAGNONIUM_HEAD)
         .setTraitToolRod(Traits.INFINITY_MAGNONIUM_ROD)
         .setTraitArmorPlates(Traits.INFINITY_MAGNONIUM_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_MAGNONIUM_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_MAGNONIUM.getItemId())
-        .setFormIngot("鎂")
+        .setFormIngot("MAGNONIUM")
         .setFormBlock(Materials.BLOCK_CAST_MAGNONIUM.getItemId())
         .build();
 
-    private static final TinkerMaterial FORTUNE_SINGULARITY = new TinkerMaterial(Ids.FORTUNE_SINGULARITY, SlimefunItem.getById("幸運奇點").getItem(), "#f0d541")
+    private static final TinkerMaterial FORTUNE_SINGULARITY = new TinkerMaterial(Ids.FORTUNE_SINGULARITY, SlimefunItem.getById("FORTUNE_SINGULARITY").getItem(), "#f0d541")
         .setLiquidTexture(SkullTextures.ALLOY_PURPLE)
         .setTraitToolHead(Traits.INFINITY_FORTUNE_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_FORTUNE_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_FORTUNE_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_FORTUNE_SINGULARITY_LINKS)
-        .setFormGem("幸運奇點")
+        .setFormGem("FORTUNE_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial MAGIC_SINGULARITY = new TinkerMaterial(Ids.MAGIC_SINGULARITY, SlimefunItem.getById("魔法奇點").getItem(), "#c941e8")
+    private static final TinkerMaterial MAGIC_SINGULARITY = new TinkerMaterial(Ids.MAGIC_SINGULARITY, SlimefunItem.getById("MAGIC_SINGULARITY").getItem(), "#c941e8")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE)
         .setTraitToolHead(Traits.INFINITY_MAGIC_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_MAGIC_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_MAGIC_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_MAGIC_SINGULARITY_LINKS)
-        .setFormGem("魔法奇點")
+        .setFormGem("MAGIC_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial EARTH_SINGULARITY = new TinkerMaterial(Ids.EARTH_SINGULARITY, SlimefunItem.getById("地球奇點").getItem(), "#44e34f")
+    private static final TinkerMaterial EARTH_SINGULARITY = new TinkerMaterial(Ids.EARTH_SINGULARITY, SlimefunItem.getById("EARTH_SINGULARITY").getItem(), "#44e34f")
         .setLiquidTexture(SkullTextures.ALLOY_GREEN)
         .setTraitToolHead(Traits.INFINITY_EARTH_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_EARTH_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_EARTH_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_EARTH_SINGULARITY_LINKS)
-        .setFormGem("地球奇點")
+        .setFormGem("EARTH_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial METAL_SINGULARITY = new TinkerMaterial(Ids.METAL_SINGULARITY, SlimefunItem.getById("金屬奇點").getItem(), "#5b615b")
+    private static final TinkerMaterial METAL_SINGULARITY = new TinkerMaterial(Ids.METAL_SINGULARITY, SlimefunItem.getById("METAL_SINGULARITY").getItem(), "#5b615b")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.INFINITY_METAL_SINGULARITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_METAL_SINGULARITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_METAL_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_METAL_SINGULARITY_LINKS)
-        .setFormGem("金屬奇點")
+        .setFormGem("METAL_SINGULARITY")
         .build();
 
-    private static final TinkerMaterial INFINITY = new TinkerMaterial(Ids.INFINITY, SlimefunItem.getById("無限錠").getItem(), "#d1ebf0")
+    private static final TinkerMaterial INFINITY = new TinkerMaterial(Ids.INFINITY, SlimefunItem.getById("INFINITE_INGOT").getItem(), "#d1ebf0")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.INFINITY_INFINITY_HEAD)
         .setTraitToolRod(Traits.INFINITY_INFINITY_ROD)
         .setTraitArmorPlates(Traits.INFINITY_INFINITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_INFINITY_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_INFINITY.getItemId())
-        .setFormIngot("無限錠")
+        .setFormIngot("INFINITE_INGOT")
         .setFormBlock(Materials.BLOCK_CAST_INFINITY.getItemId())
         .build();
 
-    private static final TinkerMaterial INFINITY_SINGULARITY = new TinkerMaterial(Ids.INFINITY_SINGULARITY, SlimefunItem.getById("無限奇點").getItem(), "#e8cef5")
+    private static final TinkerMaterial INFINITY_SINGULARITY = new TinkerMaterial(Ids.INFINITY_SINGULARITY, SlimefunItem.getById("INFINITY_SINGULARITY").getItem(), "#e8cef5")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolHead(Traits.INFINITY_INFINITY_SINGULARITY_HEAD)
         .setTraitArmorPlates(Traits.INFINITY_INFINITY_SINGULARITY_PLATES)
         .setTraitArmorLinks(Traits.INFINITY_INFINITY_SINGULARITY_LINKS)
-        .setFormBlock("無限奇點")
+        .setFormBlock("INFINITY_SINGULARITY")
         .build();
 
     static {

@@ -18,44 +18,44 @@ public final class TinkersMaterialsTranscEndence {
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
 
-    private static final TinkerMaterial DAXI_STRENGTH = new TinkerMaterial(Ids.DAXI_STRENGTH, SlimefunItem.getById("大曦之力量").getItem(), "#8321cf")
+    private static final TinkerMaterial DAXI_STRENGTH = new TinkerMaterial(Ids.DAXI_STRENGTH, SlimefunItem.getById("DAXI_STRENGTH").getItem(), "#8321cf")
         .setLiquidTexture(SkullTextures.ALLOY_RED)
         .setTraitToolHead(Traits.TNS_DAXI_STRENGTH)
         .setFormNugget(Materials.NUGGET_CAST_DAXI_STRENGTH.getItemId())
         .setFormIngot(Materials.INGOT_CAST_DAXI_STRENGTH.getItemId())
-        .setFormBlock("大曦之力量")
+        .setFormBlock("DAXI_STRENGTH")
         .build();
 
-    private static final TinkerMaterial DAXI_ABSORPTION = new TinkerMaterial(Ids.DAXI_ABSORPTION, SlimefunItem.getById("大曦之吸收").getItem(), "#8321cf")
+    private static final TinkerMaterial DAXI_ABSORPTION = new TinkerMaterial(Ids.DAXI_ABSORPTION, SlimefunItem.getById("DAXI_ABSORPTION").getItem(), "#8321cf")
         .setLiquidTexture(SkullTextures.ALLOY_RED)
         .setTraitArmorPlates(Traits.TNS_DAXI_ABSORPTION)
         .setFormNugget(Materials.NUGGET_CAST_DAXI_ABSORPTION.getItemId())
         .setFormIngot(Materials.INGOT_CAST_DAXI_ABSORPTION.getItemId())
-        .setFormBlock("大曦之吸收")
+        .setFormBlock("DAXI_ABSORPTION")
         .build();
 
-    private static final TinkerMaterial DAXI_FORTITUDE = new TinkerMaterial(Ids.DAXI_FORTITUDE, SlimefunItem.getById("大曦之剛毅").getItem(), "#8321cf")
+    private static final TinkerMaterial DAXI_FORTITUDE = new TinkerMaterial(Ids.DAXI_FORTITUDE, SlimefunItem.getById("DAXI_FORTITUDE").getItem(), "#8321cf")
         .setLiquidTexture(SkullTextures.ALLOY_RED)
         .setTraitArmorPlates(Traits.TNS_DAXI_FORTITUDE)
         .setFormNugget(Materials.NUGGET_CAST_DAXI_FORTITUDE.getItemId())
         .setFormIngot(Materials.INGOT_CAST_DAXI_FORTITUDE.getItemId())
-        .setFormBlock("大曦之剛毅")
+        .setFormBlock("DAXI_FORTITUDE")
         .build();
 
-    private static final TinkerMaterial DAXI_SATURATION = new TinkerMaterial(Ids.DAXI_SATURATION, SlimefunItem.getById("大曦之飽和").getItem(), "#8321cf")
+    private static final TinkerMaterial DAXI_SATURATION = new TinkerMaterial(Ids.DAXI_SATURATION, SlimefunItem.getById("DAXI_SATURATION").getItem(), "#8321cf")
         .setLiquidTexture(SkullTextures.ALLOY_RED)
         .setTraitArmorPlates(Traits.TNS_DAXI_SATURATION)
         .setFormNugget(Materials.NUGGET_CAST_DAXI_SATURATION.getItemId())
         .setFormIngot(Materials.INGOT_CAST_DAXI_SATURATION.getItemId())
-        .setFormBlock("大曦之飽和")
+        .setFormBlock("DAXI_SATURATION")
         .build();
 
-    private static final TinkerMaterial DAXI_REGENERATION = new TinkerMaterial(Ids.DAXI_REGENERATION, SlimefunItem.getById("大曦之再生").getItem(), "#8321cf")
+    private static final TinkerMaterial DAXI_REGENERATION = new TinkerMaterial(Ids.DAXI_REGENERATION, SlimefunItem.getById("DAXI_REGENERATION").getItem(), "#8321cf")
         .setLiquidTexture(SkullTextures.ALLOY_RED)
         .setTraitArmorPlates(Traits.TNS_DAXI_REGENERATION)
         .setFormNugget(Materials.NUGGET_CAST_DAXI_REGENERATION.getItemId())
         .setFormIngot(Materials.INGOT_CAST_DAXI_REGENERATION.getItemId())
-        .setFormBlock("大曦之再生")
+        .setFormBlock("DAXI_REGENERATION")
         .build();
 
     static {
