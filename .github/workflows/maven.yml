@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - dev
+      - translate/main
   pull_request:
     branches:
       - master
