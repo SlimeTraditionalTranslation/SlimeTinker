@@ -105,7 +105,7 @@ public class MaterialTrait {
     public void setupTrait(@Nonnull TinkerMaterial parentCM) {
         List<String> newLore = new ArrayList<>(Arrays.asList(lore));
         newLore.add("");
-        newLore.add(ThemeUtils.ITEM_TYPEDESC + "Added by: " + addedBy);
+        newLore.add(ThemeUtils.ITEM_TYPEDESC + "添加者: " + addedBy);
         this.itemStack =
             ThemeUtils.themedItemStack(
                 MessageFormat.format(
@@ -154,7 +154,7 @@ public class MaterialTrait {
         SkullTextures.PART_SWORD_BLADE,
         ThemeItemType.PART,
         "Part: Head",
-        ThemeUtils.PASSIVE + "Any 'Head' item (Sword Blade, Axe Head etc.)"
+        ThemeUtils.PASSIVE + "任何「頭」物品（劍刃、斧頭等）"
     );
 
     public static final SlimefunItemStack PROP_BINDING = ThemeUtils.themedItemStack(
@@ -162,7 +162,7 @@ public class MaterialTrait {
         SkullTextures.PART_BINDING,
         ThemeItemType.PART,
         "Part: Binder",
-        ThemeUtils.PASSIVE + "Any 'Binder' item."
+        ThemeUtils.PASSIVE + "任何「活頁夾」 專案。"
     );
 
     public static final SlimefunItemStack PROP_ROD = ThemeUtils.themedItemStack(
@@ -170,7 +170,7 @@ public class MaterialTrait {
         SkullTextures.PART_TOOL_ROD,
         ThemeItemType.PART,
         "Part: Tool Rod",
-        ThemeUtils.PASSIVE + "Any 'Tool Rod' item."
+        ThemeUtils.PASSIVE + "任何「工具桿」專案。"
     );
 
     public static final SlimefunItemStack PROP_PLATES = ThemeUtils.themedItemStack(
@@ -178,7 +178,7 @@ public class MaterialTrait {
         SkullTextures.PART_CHEST_PLATES,
         ThemeItemType.PART,
         "Part: Plates",
-        ThemeUtils.PASSIVE + "Any 'Plate' item (Helm Plates, Boot Plates etc.)"
+        ThemeUtils.PASSIVE + "任何「板」專案（舵板、行李箱板等）"
     );
 
     public static final SlimefunItemStack PROP_GAMBESON = ThemeUtils.themedItemStack(
@@ -186,7 +186,7 @@ public class MaterialTrait {
         SkullTextures.PART_GAMBESON,
         ThemeItemType.PART,
         "Part: Gambeson",
-        ThemeUtils.PASSIVE + "Any 'Gambeson' item."
+        ThemeUtils.PASSIVE + "任何'Gambeson'專案."
     );
 
     public static final SlimefunItemStack PROP_LINKS = ThemeUtils.themedItemStack(
@@ -194,7 +194,7 @@ public class MaterialTrait {
         SkullTextures.PART_LINKS,
         ThemeItemType.PART,
         "Part: Mail Links",
-        ThemeUtils.PASSIVE + "Any 'Mail Link' item."
+        ThemeUtils.PASSIVE + "任何「郵件連結」專案."
     );
 
     @Nonnull

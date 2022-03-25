@@ -61,7 +61,7 @@ public class ToolTemplateExplosive extends ExplosiveTool {
             case Ids.SWORD:
                 return Material.STONE_SWORD;
             default:
-                throw new IllegalStateException("Unexpected value: " + toolDefinition.getClassType());
+                throw new IllegalStateException("意外值: " + toolDefinition.getClassType());
         }
     }
 
