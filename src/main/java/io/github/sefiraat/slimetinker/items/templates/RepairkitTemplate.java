@@ -39,10 +39,10 @@ public class RepairkitTemplate extends UnplaceableBlock {
     public List<String> getLore(String material, ChatColor color) {
         List<String> list = new ArrayList<>();
         list.add("");
-        list.add(ThemeUtils.PASSIVE + "一個修理包。用於維修台");
-        list.add(ThemeUtils.PASSIVE + "用匹配的頭部金屬修理工具.");
+        list.add(ThemeUtils.PASSIVE + "A repair kit. Used in the Repair Bench");
+        list.add(ThemeUtils.PASSIVE + "to mend tools with a matching head-metal.");
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "材料 : " + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + "Material : " + color + ThemeUtils.toTitleCase(material));
         return list;
     }
 

@@ -28,8 +28,8 @@ public class Liquid {
             parent.getId() + "_LIQUID",
             texture,
             ThemeItemType.MOLTEN_METAL,
-            "熔化的 " + titName,
-            ThemeUtils.PASSIVE + "一種熔融合金金屬 " + titName
+            "Molten " + titName,
+            ThemeUtils.PASSIVE + "The molten form of " + titName
         );
 
         this.item = new SlimefunItem(ItemGroups.MOLTEN_METALS, itemStack, DummySmelteryMolten.TYPE, new ItemStack[]{

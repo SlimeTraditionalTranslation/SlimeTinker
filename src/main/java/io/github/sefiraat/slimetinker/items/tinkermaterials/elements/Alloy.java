@@ -33,11 +33,11 @@ public class Alloy {
                 parent.getId() + "_ALLOY",
                 parent.getLiquidTexture(),
                 ThemeItemType.MOLTEN_METAL,
-                "熔化的" + titName,
-                ThemeUtils.PASSIVE + "一種熔融合金金屬" + titName
+                "Molten " + titName,
+                ThemeUtils.PASSIVE + "A molten alloy metal of " + titName
             );
         SlimefunItemStack[] alloyRecipe = parent.getAlloyRecipe();
-        Validate.notNull(alloyRecipe, "合金配方為空。SefiDumb™");
+        Validate.notNull(alloyRecipe, "Alloy recipe is null. SefiDumb™");
         this.item = new SlimefunItem(ItemGroups.ALLOYS, itemStack, DummySmelteryAlloy.TYPE, alloyRecipe);
         item.register(SlimeTinker.getInstance());
         for (SlimefunItemStack i : parent.getAlloyRecipe()) {

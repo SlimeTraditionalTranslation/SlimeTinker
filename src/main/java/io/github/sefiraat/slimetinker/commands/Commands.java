@@ -24,7 +24,7 @@ public class Commands extends BaseCommand {
     @Default
     public void onDefault(CommandSender sender) {
         if (sender instanceof Player) {
-            sender.sendMessage(ThemeUtils.ERROR + "請提供有效的子命令.");
+            sender.sendMessage(ThemeUtils.ERROR + "Please provide a valid subcommand.");
         }
     }
 
@@ -40,7 +40,7 @@ public class Commands extends BaseCommand {
                 Experience.addExp(i, amount, p, false);
             }
         } else {
-            sender.sendMessage(ThemeUtils.ERROR + "這只能被玩家完成.");
+            sender.sendMessage(ThemeUtils.ERROR + "This can only be done as a player.");
         }
     }
 
