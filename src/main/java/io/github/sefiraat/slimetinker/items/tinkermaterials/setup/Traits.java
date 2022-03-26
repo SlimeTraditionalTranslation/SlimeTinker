@@ -22,18 +22,18 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Stability")
+        .setTraitName("續航力")
         .setLore(
-            "Does... nothing!"
+            "就...沒什麼!"
         );
 
     public static final MaterialTrait CORE_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sharp 1")
+        .setTraitName("鋒利 1")
         .setLore(
-            "Gives increased damage, stacks with",
-            "mods and other properties."
+            "增加傷害，可疊加",
+            "模組和其他屬性."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodIron);
 
