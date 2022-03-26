@@ -125,7 +125,7 @@ public final class PlayerDamagedEvents {
                 p.sendMessage(ThemeUtils.WARNING + "保護使您免於死亡。它現在處於冷卻狀態 - 小心！");
                 ItemUtils.setCooldown(i, "PROTECTIVE", 1200000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "技能冷卻中....");
+                p.sendMessage(ThemeUtils.WARNING + "保護技能冷卻中....");
             }
 
         }

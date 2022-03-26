@@ -77,7 +77,7 @@ public final class DurabilityEvents {
         if (friend.getPlayer().getInventory().containsAtLeast(new ItemStack(Material.IRON_INGOT), 1)) {
             ItemUtils.repairItem(friend.getTool(), 50);
             friend.getPlayer().getInventory().removeItem(i);
-            friend.getPlayer().sendMessage(ThemeUtils.SUCCESS + "你的工具被你放在身邊的鐵修好了!");
+            friend.getPlayer().sendMessage(ThemeUtils.SUCCESS + "你的工具用了1個在你身上的鐵錠恢復了˙部分耐久!");
         }
 
     }

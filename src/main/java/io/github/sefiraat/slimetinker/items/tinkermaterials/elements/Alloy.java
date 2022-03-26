@@ -33,8 +33,8 @@ public class Alloy {
                 parent.getId() + "_ALLOY",
                 parent.getLiquidTexture(),
                 ThemeItemType.MOLTEN_METAL,
-                "Molten " + titName,
-                ThemeUtils.PASSIVE + "A molten alloy metal of " + titName
+                "熔融" + titName,
+                ThemeUtils.PASSIVE + "熔融" + titName
             );
         SlimefunItemStack[] alloyRecipe = parent.getAlloyRecipe();
         Validate.notNull(alloyRecipe, "Alloy recipe is null. SefiDumb™");

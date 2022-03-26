@@ -49,7 +49,7 @@ public class ArmourTemplate extends UnplaceableBlock {
             case Ids.BOOTS:
                 return Material.LEATHER_BOOTS;
             default:
-                throw new IllegalStateException("意外值: " + armourDefinition.getClassType());
+                throw new IllegalStateException("Unexpected value: " + armourDefinition.getClassType());
         }
     }
 

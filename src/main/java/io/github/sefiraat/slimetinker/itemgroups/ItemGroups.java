@@ -35,27 +35,27 @@ public final class ItemGroups {
     ));
     public static final SubItemGroup ALLOYS = new SubItemGroup(Keys.ITEM_GROUP_ALLOYS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_ALLOYS)),
-        ThemeUtils.MAIN + "合金金屬"
+        ThemeUtils.MAIN + "熔融合金"
     ));
     public static final SubItemGroup CASTS = new SubItemGroup(Keys.ITEM_GROUP_CASTS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_CASTS)),
-        ThemeUtils.MAIN + "已鑄造"
+        ThemeUtils.MAIN + "鑄件"
     ));
     public static final SubItemGroup PARTS = new SubItemGroup(Keys.ITEM_GROUP_PARTS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_PARTS)),
-        ThemeUtils.MAIN + "零件構建指南"
+        ThemeUtils.MAIN + "零件製作指南"
     ));
     public static final SubItemGroup TOOLS = new SubItemGroup(Keys.ITEM_GROUP_TOOLS, MAIN, new CustomItemStack(
         Material.DIAMOND_SWORD,
-        ThemeUtils.MAIN + "工具構建指南"
+        ThemeUtils.MAIN + "工具製作指南"
     ));
     public static final SubItemGroup ARMOUR = new SubItemGroup(Keys.ITEM_GROUP_ARMOUR, MAIN, new CustomItemStack(
         Material.DIAMOND_CHESTPLATE,
-        ThemeUtils.MAIN + "護甲構建指南"
+        ThemeUtils.MAIN + "護甲製作指南"
     ));
     public static final SubItemGroup TRAITS = new SubItemGroup(Keys.ITEM_GROUP_PROPERTIES, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_TRAITS)),
-        ThemeUtils.MAIN + "金屬特性"
+        ThemeUtils.MAIN + "特性"
     ));
     public static final SubItemGroup MODIFICATIONS = new SubItemGroup(Keys.ITEM_GROUP_MODIFICATIONS, MAIN, new CustomItemStack(
         Material.REDSTONE,
@@ -63,7 +63,7 @@ public final class ItemGroups {
     ));
     public static final SubItemGroup PART_DICT = new SubItemGroup(Keys.ITEM_GROUP_PART_DICT, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.PART_PICKAXE_HEAD)),
-        ThemeUtils.MAIN + "零件辭典"
+        ThemeUtils.MAIN + "零件大全"
     ));
     public static final DummyItemGroup DUMMY = new DummyItemGroup(Keys.ITEM_GROUP_DUMMY, new CustomItemStack(
         Material.BARRIER,

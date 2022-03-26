@@ -67,7 +67,7 @@ public final class EventChannels {
         if (eventShouldCancelIfBroken(i, friend.getEventType())) {
             friend.setActionTaken(true);
             friend.setCancelEvent(true);
-            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "你的工具壞了，你真的應該修理它！");
+            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "你的工具壞了，你應該修理它！");
             return;
         }
 

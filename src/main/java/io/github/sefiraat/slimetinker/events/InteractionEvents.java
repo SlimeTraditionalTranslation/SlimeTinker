@@ -66,16 +66,16 @@ public final class InteractionEvents {
             } else {
                 // Actioning location
                 if (ItemUtils.onCooldown(i, cooldownName)) {
-                    p.sendMessage(ThemeUtils.WARNING + "撤回在冷卻狀態...!");
+                    p.sendMessage(ThemeUtils.WARNING + "召回在冷卻狀態...!");
                     return;
                 } else if (!PersistentDataAPI.hasString(im, keyLoc)) {
-                    p.sendMessage(ThemeUtils.WARNING + "您尚未設置要撤回的位置！");
+                    p.sendMessage(ThemeUtils.WARNING + "您尚未設置要召回的位置！");
                     return;
                 }
                 String sl = PersistentDataAPI.getString(im, keyLoc);
                 Location l = GeneralUtils.deserializeLocation(sl);
                 p.teleport(l);
-                p.sendMessage(ThemeUtils.SUCCESS + "Whoosh!");
+                p.sendMessage(ThemeUtils.SUCCESS + "正在召回中!");
                 ItemUtils.setCooldown(i, cooldownName, 300000);
             }
 
@@ -103,7 +103,7 @@ public final class InteractionEvents {
                 p.getWorld().playEffect(friend.getPlayer().getLocation(), Effect.ENDEREYE_LAUNCH, 10);
                 ItemUtils.setCooldown(i, "NOCLIP", 300000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "無法傳送！再試一次");
+                p.sendMessage(ThemeUtils.WARNING + "無法傳送！請再試一次");
             }
         }
     }
@@ -159,7 +159,7 @@ public final class InteractionEvents {
             // We use helmet to control CD. You HAVE to have all four so using one stops 4 triggers
             Player p = friend.getPlayer();
             ItemStack i = friend.getHelmet();
-            Validate.notNull(i, "頭盔不存在但有 4 層？我叫外掛");
+            Validate.notNull(i, "Helmet doesn't exist but has 4 stacks? I call hax");
             String cdName = "kingsman";
             if (!ItemUtils.onCooldown(i, cdName)) {
                 KingsmanSpam task = new KingsmanSpam(p, 10);
@@ -262,7 +262,7 @@ public final class InteractionEvents {
             ) {
                 NetworkRemote.setGrid(friend.getActiveStack(), block, player);
             } else {
-                player.sendMessage(Theme.ERROR + "必須設置為網絡網格（不是製作網格）。");
+                player.sendMessage(Theme.ERROR + "必須連接一個網格（不能是帶合成的）。");
             }
         } else if (friend.getAction() == Action.LEFT_CLICK_AIR) {
             NetworkRemote.tryOpenGrid(friend.getActiveStack(), player, -1);

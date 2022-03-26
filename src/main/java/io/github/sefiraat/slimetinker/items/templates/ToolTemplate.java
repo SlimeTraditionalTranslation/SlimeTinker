@@ -52,7 +52,7 @@ public class ToolTemplate extends SlimefunItem implements NotPlaceable {
             case Ids.SWORD:
                 return Material.STONE_SWORD;
             default:
-                throw new IllegalStateException("意外值: " + toolDefinition.getClassType());
+                throw new IllegalStateException("Unexpected value: " + toolDefinition.getClassType());
         }
     }
 
