@@ -33,7 +33,7 @@ public final class BlockBreakEvents {
     }
 
     public static void headNice(EventFriend friend) {
-        friend.getPlayer().sendMessage(ThemeUtils.WARNING + "Nice");
+        friend.getPlayer().sendMessage(ThemeUtils.WARNING + "讚啦");
     }
 
     public static void headCorbronze(EventFriend friend) {

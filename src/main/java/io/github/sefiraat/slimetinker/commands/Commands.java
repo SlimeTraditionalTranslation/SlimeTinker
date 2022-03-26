@@ -58,7 +58,7 @@ public class Commands extends BaseCommand {
                 ArmourDefinition armour = new ArmourDefinition(Ids.PLATE, type, plateMat, gambesonMat, linksMat);
                 p.getInventory().addItem(Guide.HELM.getStack(armour));
             } else {
-                sender.sendMessage(ThemeUtils.ERROR + "This can only be done as a player.");
+                sender.sendMessage(ThemeUtils.ERROR + "這只能被玩家完成");
             }
         }
 
@@ -75,7 +75,7 @@ public class Commands extends BaseCommand {
                     p.getInventory().addItem(Guide.SHOVEL.getStack(tool));
                 }
             } else {
-                sender.sendMessage(ThemeUtils.ERROR + "This can only be done as a player.");
+                sender.sendMessage(ThemeUtils.ERROR + "這只能被玩家完成");
             }
         }
 

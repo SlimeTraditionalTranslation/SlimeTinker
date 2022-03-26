@@ -549,7 +549,7 @@ public class EventFriend {
                 bootsExpMod = amount;
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + element);
+                throw new IllegalStateException("意外值: " + element);
         }
     }
 
@@ -570,7 +570,7 @@ public class EventFriend {
             case BOOTS:
                 return boots;
             default:
-                throw new IllegalStateException("Unexpected value: " + element);
+                throw new IllegalStateException("意外值: " + element);
         }
     }
 
@@ -591,7 +591,7 @@ public class EventFriend {
             case BOOTS:
                 return getBootLevel();
             default:
-                throw new IllegalStateException("Unexpected value: " + element);
+                throw new IllegalStateException("意外值: " + element);
         }
     }
 

@@ -61,15 +61,15 @@ public final class InteractionEvents {
             if (p.isSneaking()) {
                 // Setting location
                 PersistentDataAPI.setString(im, keyLoc, GeneralUtils.serializeLocation(p.getLocation()));
-                p.sendMessage(ThemeUtils.SUCCESS + "Location set!");
+                p.sendMessage(ThemeUtils.SUCCESS + "設定位置！");
                 i.setItemMeta(im);
             } else {
                 // Actioning location
                 if (ItemUtils.onCooldown(i, cooldownName)) {
-                    p.sendMessage(ThemeUtils.WARNING + "Recall is on cooldown!");
+                    p.sendMessage(ThemeUtils.WARNING + "撤回在冷卻狀態...!");
                     return;
                 } else if (!PersistentDataAPI.hasString(im, keyLoc)) {
-                    p.sendMessage(ThemeUtils.WARNING + "You have not yet set a location to recall to!");
+                    p.sendMessage(ThemeUtils.WARNING + "您尚未設置要撤回的位置！");
                     return;
                 }
                 String sl = PersistentDataAPI.getString(im, keyLoc);
@@ -103,7 +103,7 @@ public final class InteractionEvents {
                 p.getWorld().playEffect(friend.getPlayer().getLocation(), Effect.ENDEREYE_LAUNCH, 10);
                 ItemUtils.setCooldown(i, "NOCLIP", 300000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "Couldn't teleport! Try again.");
+                p.sendMessage(ThemeUtils.WARNING + "無法傳送！再試一次");
             }
         }
     }
@@ -136,7 +136,7 @@ public final class InteractionEvents {
         ItemStack i = friend.getActiveStack();
         int cdMinutes = 2;
         if (ItemUtils.onCooldown(i, cdName)) {
-            p.sendMessage(ThemeUtils.WARNING + "It's Natural is on cooldown");
+            p.sendMessage(ThemeUtils.WARNING + "這是自然的冷卻時間");
         } else {
             List<Animals> animals = EntityUtils.getNearbyEntitiesByType(Animals.class, p, 3, 3, 3);
             if (animals.size() >= 2) {
@@ -159,14 +159,14 @@ public final class InteractionEvents {
             // We use helmet to control CD. You HAVE to have all four so using one stops 4 triggers
             Player p = friend.getPlayer();
             ItemStack i = friend.getHelmet();
-            Validate.notNull(i, "Helmet doesn't exist but has 4 stacks? I call hax");
+            Validate.notNull(i, "頭盔不存在但有 4 層？我叫外掛");
             String cdName = "kingsman";
             if (!ItemUtils.onCooldown(i, cdName)) {
                 KingsmanSpam task = new KingsmanSpam(p, 10);
                 task.runTaskTimer(SlimeTinker.getInstance(), 0, 20);
                 ItemUtils.setCooldown(i, cdName, 20 * 60000L);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "This ability is on cooldown.");
+                p.sendMessage(ThemeUtils.WARNING + "技能冷卻中...");
             }
         }
     }
@@ -235,7 +235,7 @@ public final class InteractionEvents {
                 ItemUtils.setCooldown(tool, "celebrate", 3600000);
             }
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "This ability is on cooldown.");
+            player.sendMessage(ThemeUtils.WARNING + "技能冷卻中....");
         }
     }
 
@@ -262,7 +262,7 @@ public final class InteractionEvents {
             ) {
                 NetworkRemote.setGrid(friend.getActiveStack(), block, player);
             } else {
-                player.sendMessage(Theme.ERROR + "Must be set to a Network Grid (not crafting grid).");
+                player.sendMessage(Theme.ERROR + "必須設置為網絡網格（不是製作網格）。");
             }
         } else if (friend.getAction() == Action.LEFT_CLICK_AIR) {
             NetworkRemote.tryOpenGrid(friend.getActiveStack(), player, -1);
