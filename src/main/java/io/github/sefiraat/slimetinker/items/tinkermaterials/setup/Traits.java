@@ -322,7 +322,6 @@ public final class Traits {
             "對其造成的傷害翻倍"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateZinc);
-
     public static final MaterialTrait CORE_ZINC_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
@@ -1606,66 +1605,69 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Graceful II")
+        .setTraitName("海豚之力 II")
         .setLore(
-            "DOLPHIN POWERS, ACTIVATE... MORE!"
+            "激活海豚的力量!更多的力量!",
+            "(獲得海豚的恩惠II效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Super Lightweight II")
+        .setTraitName("飄浮 II")
         .setLore(
-            "Makes you lighter than air when sneaking."
+            "蹲下時讓你變得比空氣還輕",
+            "(獲得飄浮II效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sneaky II")
+        .setTraitName("偷襲 II")
         .setLore(
-            "Damage doubled if target is facing away.",
-            "Large tolerence"
+            "當目標看向別處時",
+            "對其造成的傷害+100% "
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Acupuncture II")
+        .setTraitName("針刺療法 II")
         .setLore(
-            "Cactus pricks heal you."
+            "免疫來自仙人掌的傷害",
+            "來自仙人掌的傷害可以治療你"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingZinc);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Flammable II")
+        .setTraitName("燃燒 II")
         .setLore(
-            "Has a (Tool level x 10)% chance to",
-            "set your enemies ablaze for a longer time."
+            "有(工具等級 x 10)%的機率",
+            "讓敵人著火更長時間"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magnetesium II")
+        .setTraitName("磁鐵 II")
         .setLore(
-            "Random items are drawn to you from",
-            "within a 10 block range"
+            "隨機撿起附近10格範圍內的物品"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Light II")
+        .setTraitName("快溜 II")
         .setLore(
-            "Damage dealt -50%. Speed + 2"
+            "輸出傷害-25%",
+            "獲得速度效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingMagnesium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingMagnesium);
@@ -1675,16 +1677,19 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("MagneSight™ II")
         .setLore(
-            "Gain night vision and highlight all mobs"
+            "獲得夜視效果",
+            "並標記出周圍10格內所有生物"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingMagnesium);
 
     public static final MaterialTrait INFINITY_MYTHRIL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Elven Speed")
+        .setTraitName("精靈速度")
         .setLore(
-            "Haste 2, Speed 1. Durability loss +50%"
+            "耐久消耗+50% ",
+            "獲得急迫II效果",
+            "獲得速度效果"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headMythril)
         .addConsumer(TraitEventType.TICK, TickEvents::headMythril);
@@ -1692,37 +1697,43 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sting of Gondolin")
+        .setTraitName("剛多林之刺")
         .setLore(
-            "All nearby, hostile, mobs are repelled."
+            "擊退附近所有的敵對生物"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMythril);
 
     public static final MaterialTrait INFINITY_MYTHRIL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Brightburn")
+        .setTraitName("靈異乍現")
         .setLore(
-            "Gives on stack of Burning Bright! With 4",
-            "stacks, hostile mobs are repelled (not bosses)."
+            "當擁有靈異乍現及以上的魔童效果時",
+            "擊退周圍5格內的所有的敵對生物",
+            "(凋靈與末影龍除外)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait INFINITY_MYTHRIL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Call of the Wild")
+        .setTraitName("野性的呼喚")
         .setLore(
-            "When hit, you sometimes summon a wolf to your aid"
+            "當受到攻擊時",
+            "有機率召喚一隻狼來幫助你"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMythril);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Mystic")
+        .setTraitName("神秘")
         .setLore(
-            "Player Exp + 100% (Mining) +50% (Mobs)"
+            "挖礦時:",
+            "玩家經驗獲取+100% ",
+            "",
+            "擊殺生物時:",
+            "玩家經驗獲取+50%"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headAdamantite)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAdamantite);
@@ -1730,27 +1741,28 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Adamant")
+        .setTraitName("堅硬")
         .setLore(
-            "Become immune to all explosions"
+            "免疫爆炸傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Deflective")
+        .setTraitName("偏轉")
         .setLore(
-            "Projectile Damage -25%"
+            "來自發射器的傷害-25% "
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Experienced")
+        .setTraitName("有經驗的")
         .setLore(
-            "All tool and armour exp +10%"
+            "工具經驗獲取+10%",
+            "玩家經驗獲取+10% "
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksAdamantite)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksAdamantite);
@@ -2153,7 +2165,7 @@ public final class Traits {
     public static final MaterialTrait LITE_ADVANCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Superhot")
+        .setTraitName("極度炙熱")
         .setLore(
             "Chance to set nearby linving things on fire."
         )
