@@ -1770,158 +1770,158 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magnanimous")
+        .setTraitName("慷慨的")
         .setLore(
-            "You're just far too kind"
+            "你太善良了"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headMagnonium);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Flaming Hot")
+        .setTraitName("熾熱")
         .setLore(
-            "Smelts things when possible."
+            "可熔煉掉落物."
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCorbronze);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Escape")
+        .setTraitName("逃脫")
         .setLore(
-            "When hit, teleport away randomly (CD: 10s)."
+            "受到傷害時隨機傳送到附近(CD: 10秒)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBrass);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Oxygenated")
+        .setTraitName("水下也有氧氣")
         .setLore(
-            "Who needs it!?"
+            "(免疫淹水後的傷害)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagnonium);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Fortunate")
+        .setTraitName("幸運的")
         .setLore(
-            "200% drops from fortune. Stacks",
-            "with Lapis modifiers."
+            "獲得雙倍掉落物",
+            "可與青金石模組疊加"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Merchant's Veil")
+        .setTraitName("商人面纱")
         .setLore(
-            "Invisibility with none of the drawbacks!"
+            "(獲得隱身III效果)!"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("How Fortunate")
+        .setTraitName("如此幸運")
         .setLore(
-            "0.5% chance to get a gift when hit."
+            "受到攻擊時有0.5%的機率獲得一件禮物"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Beautiful")
+        .setTraitName("花兒")
         .setLore(
-            "Plants flowers as you walk."
+            "走在草地上時有機率讓周圍開花"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluBronze);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Tricks")
+        .setTraitName("把戲")
         .setLore(
-            "Plays nasty tricks on nearby things."
+            "對周圍所有生物隨機釋放把戲,包括:",
+            "擊退,中毒,隨機傳送,著火,速度"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Secrets Revealed")
+        .setTraitName("揭露秘密")
         .setLore(
-            "Reveals all nearby living (or not!) things."
+            "標記出周圍10格內的所有的生物(也許不會)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Wizard Robes")
+        .setTraitName("巫師袍")
         .setLore(
-            "Chance, when attacking, to create MAGIC"
+            "造成傷害時有機率釋放魔法"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magical Mint")
+        .setTraitName("魔法薄荷")
         .setLore(
-            "It may still be foul, but the Dragon's",
-            "breath will not hurt you."
+            "免疫龍之土息造成的傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagic);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Earth Shaker")
+        .setTraitName("撼地者")
         .setLore(
-            "Knocks back hit mobs and stuns them",
-            "when they land."
+            "擊退並囚固命中的生物"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Grinder")
+        .setTraitName("粉碎機")
         .setLore(
-            "Breaking blocks act as if they have",
-            "gone through the grinder."
+            "破壞方塊時的掉落物",
+            "就像經過了粉碎機一樣"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Lava Walker")
+        .setTraitName("岩漿過客")
         .setLore(
-            "Lava turns into magma blocks beneath your feet."
+            "腳下的岩漿變為岩漿塊"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("It's only natural")
+        .setTraitName("大自然的法則")
         .setLore(
-            "Feeds two nearby animals on right click. (CD: 2m)",
-            "Cooldown fires regardless of success."
+            "右鍵點擊時,餵食周圍的兩隻動物(CD: 2分鐘)",
+            "無論是否餵食成功,該效果都會進入冷卻"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksEarth);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Clean Cut")
+        .setTraitName("乾淨俐落")
         .setLore(
-            "Damage +100%. Haste 2"
+            "+100% 輸出傷害",
+            "獲得急迫II效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMetal);
@@ -1929,10 +1929,10 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conductor")
+        .setTraitName("經驗傳導")
         .setLore(
-            "All player exp is converted to tool",
-            "exp at a 10 : 1 ratio."
+            "所有玩家經驗以10:1的比例",
+            "轉化為工具經驗"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodMetal);
@@ -1942,47 +1942,47 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("KOTR")
         .setLore(
-            "Chance, when hit, to summon a Knight",
-            "of the Round. (It's a Golem ;))"
+            "受到傷害時有機率",
+            "在周圍生成鐵傀儡"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Gleam")
+        .setTraitName("閃光彈")
         .setLore(
-            "Chance when hit to reflect damage and",
-            "dazzle attackers."
+            "受到傷害時,有機率",
+            "反彈傷害並使攻擊者眩暈"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMetal);
 
     public static final MaterialTrait INFINITY_INFINITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite")
+        .setTraitName("無限")
         .setLore(
-            "This tool will live on forever."
+            "這件工具會一直流傳..."
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conceptual Defence")
+        .setTraitName("概念性防御")
         .setLore(
-            "All damage is halved (rounded up)."
+            "承受傷害-50%"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite Capacity")
+        .setTraitName("無限容量")
         .setLore(
-            "Everytime you take damage, 10% is stored",
-            "up to 5 hearts. Right click to release",
-            "the damage on nearby entities"
+            "每次受到傷害，都會儲存10%",
+            "最多 5 顆心的傷害。右鍵單擊釋放",
+            "對附近實體的傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateInfinity)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::plateInfinity);
@@ -1992,17 +1992,19 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("Oroborus")
         .setLore(
-            "20% chance to reflect damage taken."
+            "有20%的機率反彈承受的傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Breakpoint")
+        .setTraitName("斷點")
         .setLore(
-            "Unbreakable. +200% Damage.",
-            "+200% Tool Exp and 3x3 Mining."
+            "無法破壞",
+            "輸出傷害+200% ",
+            "工具經驗獲取+200%",
+            "可挖掘 3x3x3 區域"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingInfinity)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingInfinity)
@@ -2011,22 +2013,21 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinitly Powerful")
+        .setTraitName("無限的力量")
         .setLore(
-            "Every X points of damage taken (before",
-            "reductions) will unlock a new, random,",
-            "enchantment. No upper limits.",
-            "damage required will increase each time"
+            "每承受2000點傷害(減傷計算前)",
+            "可以獲得一個新的隨機附魔",
+            "無等級上限"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite Defence")
+        .setTraitName("無限的防禦")
         .setLore(
-            "All damage taken set to 1 when 4 pieces",
-            "are equipped."
+            "當裝備全套包含無盡防禦的防具時",
+            "所有承受的傷害均減少至1點"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingInfinity);
 
