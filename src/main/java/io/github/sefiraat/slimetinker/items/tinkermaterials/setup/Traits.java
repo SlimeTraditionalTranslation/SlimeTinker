@@ -257,9 +257,9 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("幸运")
+        .setTraitName("幸運")
         .setLore(
-            "造成的傷害減少-50%，但獲得好運",
+            "攻擊的傷害減少-50%",
             "獲得幸運效果"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headTin)
@@ -1525,18 +1525,19 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Recyclable II")
+        .setTraitName("再生 II")
         .setLore(
-            "Chance to restore durability on hit/block break"
+            "使用時有25%的機率恢復耐久"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingAluminum);
 
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Soft II")
+        .setTraitName("柔軟 II")
         .setLore(
-            "Durability loss +100%, tool EXP +100%."
+            "耐久消耗+100%",
+            "工具經驗獲取+50% "
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodSingAluminum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodSingAluminum)
@@ -1545,9 +1546,10 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Foil II")
+        .setTraitName("緊酸 II")
         .setLore(
-            "Damage Taken +50%. Speed + 2"
+            "承受傷害+50%",
+            "獲得速度效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingAluminium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingAluminium);
@@ -1555,18 +1557,19 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Easily Shaped II")
+        .setTraitName("快速修復 II")
         .setLore(
-            "Repairs only need a single kit of ANY metal"
+            "維修只需要一個任何金屬零件"
         );
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Malleable II")
+        .setTraitName("幸運 II")
         .setLore(
-            "Deal 50% less damage but gain lots of",
-            "Luck and Speed."
+            "攻擊傷害-50%",
+            "獲得幸運II效果",
+            "獲得速度II效果"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingTin)
         .addConsumer(TraitEventType.TICK, TickEvents::headSingTin);
@@ -1574,27 +1577,29 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Can II")
+        .setTraitName("隨身罐頭 II")
         .setLore(
-            "No Hunger Loss"
+            "你不再飢餓",
+            "(獲得飽和效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Non-Corrosive II")
+        .setTraitName("抗毒 II")
         .setLore(
-            "Poison heals and immune to hunger and weakness."
+            "免疫中毒、飢餓、虛弱效果",
+            "中毒效果會治療你"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Boost II")
+        .setTraitName("承傷 II")
         .setLore(
-            "When taking heavy damage, gain lots of absorption"
+            "當受到傷害時,獲得傷害吸收II效果"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingTin);
 
