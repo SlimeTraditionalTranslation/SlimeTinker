@@ -1770,7 +1770,7 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magnanimous")
+        .setTraitName("坦蕩")
         .setLore(
             "You're just far too kind"
         )
