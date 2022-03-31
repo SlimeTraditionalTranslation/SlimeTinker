@@ -61,7 +61,7 @@ public final class Experience {
             modSlots++;
             expRequired = (expRequired * EXP_GROWTH);
             promoteMaterial(itemStack, level, player);
-            player.sendMessage(ThemeUtils.SUCCESS + "Your Tinker's tool has leveled up! +1 Modifier Slot");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的匠魂工具或武器升級了! 已獲得1個新的模組欄位");
 
             silverChecks(itemStack, im, player);
 
@@ -93,13 +93,13 @@ public final class Experience {
         } else if (ItemUtils.isArmour(itemStack)) {
             type = PersistentDataAPI.getString(im, Keys.ARMOUR_INFO_ARMOUR_TYPE);
         } else {
-            throw new IllegalArgumentException("Trying to promote something that isn't armour or a tool!");
+            throw new IllegalArgumentException("試圖宣傳不是盔甲或工具的東西");
         }
 
         if (Guide.getGrowthMap().get(type).containsKey(level)) {
             itemStack.setType(Guide.getGrowthMap().get(type).get(level));
             ItemUtils.repairItem(itemStack);
-            player.sendMessage(ThemeUtils.SUCCESS + "Your tool has been promoted!");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的工具或武器已升級!");
         }
 
     }
@@ -122,7 +122,7 @@ public final class Experience {
             for (int i = 0; i < amount; i++) {
                 ItemUtils.incrementRandomEnchant(itemStack, im);
             }
-            player.sendMessage(ThemeUtils.SUCCESS + "It also gained [" + amount + "] random enchantment(s)! Hope it's good :>");
+            player.sendMessage(ThemeUtils.SUCCESS + "獲得了 [" + amount + "] 個隨機附魔! 希望一切順利 :>");
         }
     }
 }
