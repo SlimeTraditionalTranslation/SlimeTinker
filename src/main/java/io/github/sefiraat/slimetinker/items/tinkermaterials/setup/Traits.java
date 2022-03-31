@@ -2485,36 +2485,37 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("Tuff Stuff")
         .setLore(
-            "Knocks back anything hit and stuns."
+            "擊退任何命中的生物",
+            "有機率囚固目標"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headHard);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Tempest")
+        .setTraitName("暴風雨")
         .setLore(
-            "When wearing 4 pieces, chance when hit",
-            "to summon a tempest."
+            "當裝備全套有暴風雨特性的盔甲時",
+            "有機率在周圍召喚暴風雨"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Partial Decay")
+        .setTraitName("部分衰減")
         .setLore(
-            "Chance to damage random nearby living",
-            "things. Will never kill."
+            "有機率隨機對周圍生物造成傷害",
+            "不會致死"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Innovation")
+        .setTraitName("革新")
         .setLore(
-            "+100% Tool and Player EXP during the day."
+            "白天時工具和玩家經驗+100% "
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headUnpatentabilum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headUnpatentabilum);
@@ -2523,18 +2524,18 @@ public final class Traits {
         // Special case in ItemDrop and PlayerDeath
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Incorporeal Right")
+        .setTraitName("無形權利")
         .setLore(
-            "Tool cannot be dropped or lost on death."
+            "工具不能在死亡時掉落或丟失"
         );
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Intense Gaze")
+        .setTraitName("強烈的凝視")
         .setLore(
-            "Entities you look at will teleport to you.",
-            "Does not work on players or bosses."
+            "你看向的實體會傳送到你身邊",
+            "不會對玩家、凋靈、末影龍生效"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateUnpatentabilum);
 
@@ -2543,8 +2544,8 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("KOTR")
         .setLore(
-            "Chance, when hit, to summon a Knight",
-            "of the Round. (It's a Golem ;))"
+            "受到傷害時有機率",
+            "在周圍生成鐵傀儡"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
@@ -2555,65 +2556,66 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Super Dooper Stainless")
+        .setTraitName("閃光彈")
         .setLore(
-            "Like Steel or MagSteel but yet more absurd."
+            "受到傷害時,有機率",
+            "反彈傷害並使攻擊者眩暈"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Cutlery")
+        .setTraitName("超級不銹鋼")
         .setLore(
-            "Hitting animals will directly feed you. Grim"
+            "可以抵擋更多鮮血"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("The Standard")
+        .setTraitName("標準")
         .setLore(
-            "Damage taken reduced by 5%"
+            "受到的傷害降低5%"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Water Safe")
+        .setTraitName("安全水域")
         .setLore(
-            "Gives you water breathing"
+            "獲得水下呼吸效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksStainlessSteel);
 
     public static final MaterialTrait DYN_VEX_GEM_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("NoClip")
+        .setTraitName("土遁")
         .setLore(
-            "Right click while holding to randomly teleport.",
-            "5 min cooldown."
+            "右鍵點擊隨機傳送到附近",
+            "(CD:5分鐘)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::bindVex);
 
     public static final MaterialTrait DYN_VEX_GEM_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Annoying")
+        .setTraitName("惱人")
         .setLore(
-            "Vex gems shouldn't be used like this!"
+            "惱鬼寶石不應該這樣用!"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonVex);
 
     public static final MaterialTrait DYN_STAR_DUST_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Bright Fury")
+        .setTraitName("光明之怒")
         .setLore(
-            "Attacks dazzle and blind while being.",
-            "50% more powerful."
+            "攻擊傷害+50%",
+            "攻擊可使目標眩暈"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStarDust);
 
@@ -2622,8 +2624,9 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Yvaine")
         .setLore(
-            "Gives an ethereal glow and makes villagers",
-            "friendlier to you."
+            "\"不要向流星許願，否則它就會變成女人\"",
+            "獲得發光效果",
+            "周圍的村民會不斷向你聚集"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodStarDust);
 
@@ -2632,79 +2635,88 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Starshine")
         .setLore(
-            "5% chance to heal 1/2 heart during the night"
+            "有5%的機率",
+            "在夜間恢復1點血量(半顆心)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateStardust);
 
     public static final MaterialTrait DYN_STAR_DUST_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Bright-burn")
+        .setTraitName("魔童")
         .setLore(
-            "Gives on stack of Burning Bright! With 4 ",
-            "stacks, hostile mobs are repelled (not bosses)."
+            "獲得1層魔童效果",
+            "當擁有4層及以上的魔童效果時",
+            "擊退周圍5格內的所有的生物",
+            "(凋靈與末影龍除外)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Incorporeal")
+        .setTraitName("靈魂出竅")
         .setLore(
-            "Projectiles just pass right through you."
+            "免疫來自彈射物的傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("HyperCube [B]")
+        .setTraitName("超立方體 [B]")
         .setLore(
-            "Only works with both [A] and [B]. Shift + Right",
-            "click to store a location. Right click to recall",
-            "to that location. (CD: 10m)"
+            "僅適用於 [A] 和 [B]。Shift + Right",
+            "單擊以存儲位置.右鍵單擊以調用",
+            "到那個位置（CD:10分)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Ghost in the shell")
+        .setTraitName("攻殼機動隊")
         .setLore(
-            "Slowly damages all nearby mobs at the cost of durability.",
-            "Mobs cannot die due to this effect."
+            "消耗耐久來緩慢攻擊周圍所有生物",
+            "該特性不會致死",
+            "(消耗耐久不受其他特性,模組,附魔的影響)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Ghostly")
+        .setTraitName("幽靈")
         .setLore(
-            "Hover like a ghost"
+            "像幽靈一樣盤旋",
+            "(獲得飄浮效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGhostly);
 
     public static final MaterialTrait DYN_TESSERACT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("HyperCube [A]")
+        .setTraitName("超立方體 [A]")
         .setLore(
-            "Only works with both [A] and [B]. Shift + Right",
-            "click to store a location. Right click to recall",
-            "to that location. (CD: 10m)"
+            "僅適用於 [A] 和 [B]。Shift + Right",
+            "單擊以存儲位置。右鍵單擊以傳送到那個位置（CD：10m)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headTessMat);
 
     public static final MaterialTrait DYN_TESSERACT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Hyberbolic Tesseration")
+        .setTraitName("光學能量")
         .setLore(
-            "When in your personal home, you store energy.",
-            "Damage taken is removed from this energy pool.",
-            "Required 8x pieces to function and caps at 50",
-            "per piece."
+            "需要全套包含雙光學能量特性的盔甲",
+            "(每件盔甲需要有2個光學能量特性)才能生效",
+            "當你處於異次元之家中時，會不斷積累光學能量",
+            "當受到傷害時，光學能量會被釋放用於抵消傷害",
+            "(傷害為經過增傷/減傷計算後)",
+            "1點光學能量可以抵消1點傷害",
+            "若光學能量不足以抵消全部傷害,則不會抵消任何傷害",
+            "每件盔甲最多可以存儲50點光學能量",
+            "全套盔甲最多可以存儲200點光學能量"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2712,12 +2724,17 @@ public final class Traits {
     public static final MaterialTrait DYN_TESSERACT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Hyberbolic Tesseration")
+        .setTraitName("光學能量")
         .setLore(
-            "When in your personal home, you store energy.",
-            "Damage taken is removed from this energy pool.",
-            "Required 8x pieces to function and caps at 50",
-            "per piece."
+            "需要8個光學能量特性才能生效",
+            "(每件盔甲需要有2個光學能量特性)",
+            "當你處於異次元之家中時，會不斷積累光學能量",
+            "當受到傷害時，光學能量會被釋放用於抵消傷害",
+            "(傷害為經過增傷/減傷計算後)",
+            "1點光學能量可以抵消1點傷害",
+            "若光學能量不足以抵消全部傷害,則不會抵消任何傷害",
+            "每件盔甲最多可以存儲50點光學能量",
+            "全套盔甲最多可以存儲200點光學能量"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2729,55 +2746,50 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_STRENGTH = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("The Power of Daxi")
+        .setTraitName("超能力")
         .setLore(
-            "Has a chance on hit to unleash the",
-            "power of the Strength Daxi for an",
-            "additional 100% damage."
+            "有20%的機率釋放出超能力核心的力量",
+            "造成100%額外傷害"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDaxiStrength);
 
     public static final MaterialTrait TNS_DAXI_ABSORPTION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Absorption")
+        .setTraitName("超能力 - Absorption")
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            "當4種超能力聯合起來後",
+            "你死亡時可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiAbsorption);
 
     public static final MaterialTrait TNS_DAXI_FORTITUDE = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Fortitude")
+        .setTraitName("超能力 - Fortitude")
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            "當4種超能力聯合起來後",
+            "你死亡時可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiFortitude);
 
     public static final MaterialTrait TNS_DAXI_SATURATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Saturation")
+        .setTraitName("超能力 - Saturation")
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            "當4種超能力聯合起來後",
+            "你死亡時可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiSaturation);
 
     public static final MaterialTrait TNS_DAXI_REGENERATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Regeneration")
+        .setTraitName("超能力 - Regeneration")
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            "當4種超能力聯合起來後",
+            "你死亡時可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiRegeneration);
 
@@ -2788,19 +2800,19 @@ public final class Traits {
     public static final MaterialTrait NTW_UTLIMANINIUM = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.NETWORKS_NOTE)
-        .setTraitName("Feeling Connected")
+        .setTraitName("感覺連接")
         .setLore(
-            "Allows you to connect wirelessly",
-            "to a network using direct nural",
-            "connection via your helmet.",
+            "允許您無線連接",
+            "到使用直接神經網絡的網絡",
+            "通過你的頭盔連接",
             "",
-            "Shift + Left Click with an empty",
-            "hand to bind to a grid.",
+            "Shift + 左鍵單擊空白",
+            "手綁定到網格",
             "",
-            "Left Click air with an empty hand to",
-            "try to open the bound grid.",
+            "空手左擊",
+            "嘗試打開綁定網格。",
             "",
-            "Will only work on a helmet."
+            "只能在頭盔上工作."
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksUltimaninium);
 
