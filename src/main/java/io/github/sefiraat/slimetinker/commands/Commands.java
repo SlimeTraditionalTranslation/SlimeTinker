@@ -31,7 +31,7 @@ public class Commands extends BaseCommand {
     @Subcommand("AddExp")
     @CommandPermission("SlimeTinker.Admin")
     @CommandCompletion("<amount>")
-    @Description("Adds EXP to the held item")
+    @Description("向手持物品增加經驗")
     public void tool(CommandSender sender, int amount) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
@@ -46,12 +46,12 @@ public class Commands extends BaseCommand {
 
     @Subcommand("GenerateItem")
     @CommandPermission("SlimeTinker.Admin")
-    @Description("Creates a new SlimeTinker item")
+    @Description("生成匠魂物品")
     public class GenerateItem extends BaseCommand {
 
         @Subcommand("Armour")
         @CommandCompletion("@ITEM_CLASS_ARMOUR @PART_MATERIALS_PLATE @PART_MATERIALS_GAMBESON @PART_MATERIALS_LINKS")
-        @Description("Creates a new SlimeTinker armour piece with the given materials")
+        @Description("使用指定的材料生成匠魂防具")
         public void armour(CommandSender sender, String type, String plateMat, String gambesonMat, String linksMat) {
             if (sender instanceof Player) {
                 Player p = (Player) sender;
@@ -64,7 +64,7 @@ public class Commands extends BaseCommand {
 
         @Subcommand("Tool")
         @CommandCompletion("@ITEM_CLASS_TOOL @PART_MATERIALS_HEAD @PART_MATERIALS_BINDER @PART_MATERIALS_ROD")
-        @Description("Creates a new SlimeTinker tool with the given materials")
+        @Description("使用指定的材料生成匠魂工具")
         public void tool(CommandSender sender, String type, String headMat, String binderMat, String rodMat) {
             if (sender instanceof Player) {
                 Player p = (Player) sender;
