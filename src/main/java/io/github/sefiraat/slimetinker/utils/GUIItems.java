@@ -210,17 +210,17 @@ public final class GUIItems {
             skull = PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.TANK_EMPTY));
         }
         List<String> meta = new ArrayList<>();
-        meta.add(ThemeUtils.GUI_HEAD + "金屬罐");
+        meta.add(ThemeUtils.GUI_HEAD + "Metals Tank");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "金屬容量: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
+        meta.add(ThemeUtils.CLICK_INFO + "Total Metal: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
         meta.add("");
         if (map != null) {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
                 String name =
                     TinkerMaterialManager.getById(e.getKey()).getColor() +
-                        LangUtils.getMaterialName(e.getKey());
+                        ThemeUtils.toTitleCase(e.getKey());
                 String amount = e.getValue().toString();
-                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 單位");
+                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " units.");
             }
         }
         meta.add("");
