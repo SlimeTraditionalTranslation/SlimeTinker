@@ -2410,9 +2410,11 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Rigid Flexibility")
+        .setTraitName("剛性與柔性")
         .setLore(
-            "Speed and Jump + 1. Damage Taken + 10%"
+            "獲得速度效果",
+            "獲得跳躍提升效果",
+            "承受傷害+10%"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateReinforcedSlimesteel)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateReinforcedSlimesteel);
@@ -2420,37 +2422,38 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Deflection")
+        .setTraitName("偏轉")
         .setLore(
-            "10% chance to ignore projectile damage."
+            "有10%的機率免疫來自彈射物的傷害"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_OSMIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Heavy")
+        .setTraitName("重")
         .setLore(
-            "Mines in a 3x3 Area"
+            "可挖掘 3x3x3 區域"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
     public static final MaterialTrait SFW_OSMIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Heavy Pommel")
+        .setTraitName("重型鞍座")
         .setLore(
-            "Struck mobs are slowed and cannot teleport."
+            "命中的目標會被減速",
+            "並且無法傳送"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Increased Mass")
+        .setTraitName("增加質量")
         .setLore(
-            "Attackers will be knocked back.",
-            "Gives you slow when procced"
+            "獲得減速效果",
+            "受到傷害時,攻擊者會被擊退"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateOsmium);
@@ -2458,20 +2461,21 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Draw")
+        .setTraitName("畫筆")
         .setLore(
-            "5% chance to heal by damage dealt."
+            "有5%的機率被承受傷害治療"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Brute")
+        .setTraitName("無禮")
         .setLore(
-            "Slow swinging speed. Hit enemies are stunned",
-            "briefly. Damage +100% with an additional 33%",
-            "chance to crit for a further +100%"
+            "獲得挖掘疲勞效果",
+            "命中的目標會被囚固",
+            "輸出傷害+100%",
+            "有33的機率額外輸出傷害+100%"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headOsmiumSuperalloy)
         .addConsumer(TraitEventType.TICK, TickEvents::headOsmiumSuperalloy);
