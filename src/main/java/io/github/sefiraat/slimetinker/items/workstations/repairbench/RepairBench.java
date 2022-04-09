@@ -40,19 +40,19 @@ public class RepairBench extends MenuBlock {
 
         // No item dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a item into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + "將物品放入第一格");
             return;
         }
 
         // Still no item, nice try
         if (!ItemUtils.isTool(item) && !ItemUtils.isArmour(item)) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's item.");
+            player.sendMessage(ThemeUtils.WARNING + "第一格內不是匠魂裝備ㄋㄟ");
             return;
         }
 
         // No kit!
         if (kit == null || !RepairkitTemplate.isRepairKit(kit)) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a repair kit into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + "將維修工具放入第2格");
             return;
         }
 
@@ -75,7 +75,7 @@ public class RepairBench extends MenuBlock {
             blockMenu.getItemInSlot(INPUT_KIT).setAmount(blockMenu.getItemInSlot(INPUT_KIT).getAmount() - 1);
 
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "The kit type does not match the item material.");
+            player.sendMessage(ThemeUtils.WARNING + "修復工具的材質和被修復的物品材質不一樣");
         }
     }
 

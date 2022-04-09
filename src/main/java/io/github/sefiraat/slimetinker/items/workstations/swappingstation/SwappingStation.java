@@ -43,17 +43,17 @@ public class SwappingStation extends MenuBlock {
 
         // No tool dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a tool into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + "在第一格內放入匠魂裝備");
             return;
         }
 
         if (item.getAmount() > 1) {
-            player.sendMessage(ThemeUtils.WARNING + "Nope - nerd");
+            player.sendMessage(ThemeUtils.WARNING + "不能堆疊");
             return;
         }
 
         if (part == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a replacement part into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + "在第二格內放入替換的零件");
             return;
         }
 
@@ -65,23 +65,23 @@ public class SwappingStation extends MenuBlock {
             if (partClass != null && ItemUtils.partIsTool(partClass)) {
                 swapTool(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
-                player.sendMessage(ThemeUtils.WARNING + "This part cannot be swapped onto this tool.");
+                player.sendMessage(ThemeUtils.WARNING + "該零件不能替換到此工具/武器上");
             }
         } else if (ItemUtils.isArmour(item)) {
             if (partClass != null && ItemUtils.partIsArmour(partClass)) {
                 swapArmour(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
-                player.sendMessage(ThemeUtils.WARNING + "This part cannot be swapped onto this tool.");
+                player.sendMessage(ThemeUtils.WARNING + "該部件不能替換到此護甲上");
             }
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's item.");
+            player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂物品");
         }
     }
 
     private void swapTool(BlockMenu blockMenu, Player player, ItemStack item, String partClass, String partType, String partMaterial) {
         // The part is a head part but the type is either null or not matching the tool (Axe head part for shovel etc.)
         if (partClass.equals(Ids.HEAD) && (partType != null && !partType.equals(ItemUtils.getToolTypeName(item)))) {
-            player.sendMessage(ThemeUtils.WARNING + "This head type cannot be swapped onto this tool.");
+            player.sendMessage(ThemeUtils.WARNING + "該工具頭部與工具類型不一致,無法替換");
             return;
         }
 

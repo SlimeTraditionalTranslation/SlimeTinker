@@ -13,10 +13,9 @@ public final class DummySmelteryAlloy {
         "DUMMY_TINKERS_SMELTERY_ALLOY",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "This alloy is made in the Tinker's",
-        "Smeltery by inputting correct metal",
-        "types and clicking Alloy."
+        "匠魂冶煉廠",
+        "在匠魂冶煉廠中放入類型吻合的金屬",
+        "然後點擊\"冶煉合金\"獲得熔融合金"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 

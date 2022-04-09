@@ -13,8 +13,9 @@ public final class DummyArmourTable {
         "DUMMY_TINKERS_ARMOUR_TABLE",
         Material.CHISELED_NETHER_BRICKS,
         ThemeItemType.MACHINE,
-        "Tinker's Armour Table",
-        "This item is made on a Tinker's Armour Table."
+        "匠魂裝備合成台",
+        "在匠魂護甲合成台",
+        "放入對應零件組裝獲得"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_ARMOUR_TABLE, STACK);
 

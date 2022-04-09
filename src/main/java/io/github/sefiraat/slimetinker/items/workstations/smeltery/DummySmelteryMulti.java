@@ -13,9 +13,9 @@ public final class DummySmelteryMulti {
         "DUMMY_TINKERS_SMELTERY_MULTI",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "This is a multiblock, build in the world",
-        "as shown here."
+        "匠魂冶煉廠",
+        "這是多個方塊，構建在世界上",
+        "如圖所示"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 

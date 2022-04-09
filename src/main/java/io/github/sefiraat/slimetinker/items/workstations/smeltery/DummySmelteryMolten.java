@@ -13,11 +13,10 @@ public final class DummySmelteryMolten {
         "DUMMY_TINKERS_SMELTERY_MOLTEN",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "Molten metals are made by putting",
-        "items made from the metal into the",
-        "Smeltery. Items melt when provided",
-        "enough lava as a heat source."
+        "匠魂冶煉廠",
+        "熔融金屬是將對應的金屬物品",
+        "放入冶煉廠中熔化得到的產物",
+        "需要有岩漿才能熔化金屬"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_M, STACK);
 

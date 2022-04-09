@@ -21,118 +21,118 @@ public final class Parts {
         throw new UnsupportedOperationException("Utility Class");
     }
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = "錯誤";
 
     public static final SlimefunItemStack PART_SHOVEL_HEAD_DUMMY = ThemeUtils.themedItemStack(
         "PART_SHOVEL_HEAD_DUMMY",
         SkullTextures.PART_SHOVEL_HEAD,
         ThemeItemType.CAST,
-        "Part: Shovel Head",
-        ThemeUtils.PASSIVE + "A cast shovel head."
+        "部件: 鏟頭",
+        ThemeUtils.PASSIVE + "一個鏟頭部件"
     );
 
     public static final SlimefunItemStack PART_PICKAXE_HEAD_DUMMY = ThemeUtils.themedItemStack(
         "PART_PICKAXE_HEAD_DUMMY",
         SkullTextures.PART_PICKAXE_HEAD,
         ThemeItemType.CAST,
-        "Part: Pickaxe Head",
-        ThemeUtils.PASSIVE + "A cast pickaxe head."
+        "部件: 鎬頭",
+        ThemeUtils.PASSIVE + "一個鎬頭部件"
     );
 
     public static final SlimefunItemStack PART_AXE_HEAD_DUMMY = ThemeUtils.themedItemStack(
         "PART_AXE_HEAD_DUMMY",
         SkullTextures.PART_AXE_HEAD,
         ThemeItemType.CAST,
-        "Part: Axe Head",
-        ThemeUtils.PASSIVE + "A cast axe head."
+        "部件: 斧刃",
+        ThemeUtils.PASSIVE + "一個斧刃部件"
     );
 
     public static final SlimefunItemStack PART_HOE_HEAD_DUMMY = ThemeUtils.themedItemStack(
         "PART_HOE_HEAD_DUMMY",
         SkullTextures.PART_HOE_HEAD,
         ThemeItemType.CAST,
-        "Part: Hoe Head",
-        ThemeUtils.PASSIVE + "A cast hoe head."
+        "部件: 鋤頭",
+        ThemeUtils.PASSIVE + "一個鋤頭部件"
     );
 
     public static final SlimefunItemStack PART_SWORD_BLADE_DUMMY = ThemeUtils.themedItemStack(
         "PART_SWORD_BLADE_DUMMY",
         SkullTextures.PART_SWORD_BLADE,
         ThemeItemType.CAST,
-        "Part: Sword Blade",
-        ThemeUtils.PASSIVE + "A cast sword blade."
+        "部件: 劍刃",
+        ThemeUtils.PASSIVE + "一個劍刃部件"
     );
 
     public static final SlimefunItemStack PART_TOOL_ROD_DUMMY = ThemeUtils.themedItemStack(
         "PART_TOOL_ROD_DUMMY",
         SkullTextures.PART_TOOL_ROD,
         ThemeItemType.CAST,
-        "Part: Tool Rod",
-        ThemeUtils.PASSIVE + "A cast tool rod."
+        "部件: 手柄",
+        ThemeUtils.PASSIVE + "一個手柄部件"
     );
 
     public static final SlimefunItemStack PART_BINDING_DUMMY = ThemeUtils.themedItemStack(
         "PART_BINDING_DUMMY",
         SkullTextures.PART_BINDING,
         ThemeItemType.CAST,
-        "Part: Binding",
-        ThemeUtils.PASSIVE + "A binging to hold parts together."
+        "部件: 綁定結",
+        ThemeUtils.PASSIVE + "一個綁定結部件"
     );
 
     public static final SlimefunItemStack PART_HELM_PLATE_DUMMY = ThemeUtils.themedItemStack(
         "PART_HELM_PLATE_DUMMY",
         SkullTextures.PART_HELM_PLATES,
         ThemeItemType.CAST,
-        "Part: Helmet Plates",
-        ThemeUtils.PASSIVE + "A cast helmet plate set."
+        "部件: 頭盔板",
+        ThemeUtils.PASSIVE + "一個頭盔板部件"
     );
 
     public static final SlimefunItemStack PART_CHEST_PLATE_DUMMY = ThemeUtils.themedItemStack(
         "PART_CHEST_PLATE_DUMMY",
         SkullTextures.PART_CHEST_PLATES,
         ThemeItemType.CAST,
-        "Part: Chest Plates",
-        ThemeUtils.PASSIVE + "A cast chest plate set."
+        "部件: 胸甲板",
+        ThemeUtils.PASSIVE + "一個胸甲板部件"
     );
 
     public static final SlimefunItemStack PART_LEG_PLATE_DUMMY = ThemeUtils.themedItemStack(
         "PART_LEG_PLATE_DUMMY",
         SkullTextures.PART_LEG_PLATES,
         ThemeItemType.CAST,
-        "Part: Leg Plates",
-        ThemeUtils.PASSIVE + "A cast legging plate set."
+        "部件: 護腿板",
+        ThemeUtils.PASSIVE + "一個護腿板部件"
     );
 
     public static final SlimefunItemStack PART_BOOT_PLATE_DUMMY = ThemeUtils.themedItemStack(
         "PART_BOOT_PLATE_DUMMY",
         SkullTextures.PART_BOOTS_PLATES,
         ThemeItemType.CAST,
-        "Part: Boot Plates",
-        ThemeUtils.PASSIVE + "A cast legging plate set."
+        "部件: 靴子板",
+        ThemeUtils.PASSIVE + "一個靴子板部件"
     );
 
     public static final SlimefunItemStack PART_MAIL_LINKS_DUMMY = ThemeUtils.themedItemStack(
         "PART_MAIL_LINKS_DUMMY",
         SkullTextures.PART_LINKS,
         ThemeItemType.CAST,
-        "Part: Mail Links",
-        ThemeUtils.PASSIVE + "A flexible mesh of cast metal links"
+        "部件: 盔甲接合物",
+        ThemeUtils.PASSIVE + "一個盔甲接合物部件"
     );
 
     public static final SlimefunItemStack PART_GAMBESON_DUMMY = ThemeUtils.themedItemStack(
         "PART_GAMBESON_DUMMY",
         SkullTextures.PART_GAMBESON,
         ThemeItemType.CAST,
-        "Part: Gambeson",
-        ThemeUtils.PASSIVE + "A fabric under-armour garment"
+        "部件: 護身軟甲",
+        ThemeUtils.PASSIVE + "一件盔甲內的軟甲"
     );
 
     public static final SlimefunItemStack PART_REPAIR_KIT_DUMMY = ThemeUtils.themedItemStack(
         "PART_REPAIR_KIT_DUMMY",
         Material.CHEST_MINECART,
         ThemeItemType.CAST,
-        "Part: Repair Kit",
-        ThemeUtils.PASSIVE + "Repairs broken items in the Repair Bench."
+        "部件: 修復工具",
+        ThemeUtils.PASSIVE + "用於在匠魂修復台中修復損壞的裝備"
     );
 
     public static final SlimefunItemStack PART_AXE_HEAD = ThemeUtils.themedItemStack(
@@ -195,10 +195,10 @@ public final class Parts {
         "PART_BINDING_GENERAL_DISPLAY",
         Material.STRING,
         ThemeItemType.CRAFTING,
-        "Binding Material",
-        ThemeUtils.PASSIVE + "A material suitable to make binding from.",
-        ThemeUtils.PASSIVE + "This is not JUST string, experiment with",
-        ThemeUtils.PASSIVE + "similar materials."
+        "綁定結材料",
+        ThemeUtils.PASSIVE + "可以使用任意適合做綁定結的材料",
+        ThemeUtils.PASSIVE + "不僅可以用線,其他適用材料都可以",
+        ThemeUtils.PASSIVE + "按照這樣擺放即可"
     );
 
     public static final SlimefunItemStack PART_HELM_PLATES = ThemeUtils.themedItemStack(
@@ -245,10 +245,10 @@ public final class Parts {
         "PART_GAMBESON_GENERAL_DISPLAY",
         Material.STRING,
         ThemeItemType.CRAFTING,
-        "Gambeson Material",
-        ThemeUtils.PASSIVE + "A material suitable to make a Gambeson.",
-        ThemeUtils.PASSIVE + "This is not JUST string, experiment with",
-        ThemeUtils.PASSIVE + "similar materials."
+        "護身軟甲材料",
+        ThemeUtils.PASSIVE + "可以使用任意適合做護身軟甲的材料",
+        ThemeUtils.PASSIVE + "不僅可以用線,其他適用材料都可以",
+        ThemeUtils.PASSIVE + "按照這樣擺放即可"
     );
 
     // Statics for Recipes

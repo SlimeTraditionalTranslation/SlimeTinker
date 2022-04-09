@@ -13,10 +13,9 @@ public final class DummySmelteryTrait {
         "DUMMY_TINKERS_SMELTERY_PROP",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "When a matching part is made using this",
-        "metal, it will give the finished tool",
-        "this property."
+        "匠魂冶煉廠",
+        "當對應零件使用該金屬製成時",
+        "該部件會獲得此特性"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 

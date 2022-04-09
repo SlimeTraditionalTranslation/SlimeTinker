@@ -42,102 +42,98 @@ public final class Guide {
         "TOOL_SHOVEL_DUMMY",
         Material.STONE_SHOVEL,
         ThemeItemType.TOOL,
-        "Tinker's Shovel",
-        ThemeUtils.PASSIVE + "A shovel formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        "匠魂鏟",
+        ThemeUtils.PASSIVE + "由手柄,綁定結,鏟頭三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂工具根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位"
     );
 
     public static final SlimefunItemStack TOOL_PICKAXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_PICKAXE_DUMMY",
         Material.STONE_PICKAXE,
         ThemeItemType.TOOL,
-        "Tinker's Pickaxe",
-        ThemeUtils.PASSIVE + "A pickaxe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        "匠魂鎬",
+        ThemeUtils.PASSIVE + "由手柄,綁定結,鎬頭三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂工具根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位"
     );
 
     public static final SlimefunItemStack TOOL_AXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_AXE_DUMMY",
         Material.STONE_AXE,
         ThemeItemType.TOOL,
-        "Tinker's Axe",
-        ThemeUtils.PASSIVE + "An axe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        "匠魂斧",
+        ThemeUtils.PASSIVE + "由手柄,綁定結,斧刃三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂工具根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位"
     );
 
     public static final SlimefunItemStack TOOL_HOE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_HOE_DUMMY",
         Material.STONE_HOE,
         ThemeItemType.TOOL,
-        "Tinker's Hoe",
-        ThemeUtils.PASSIVE + "A hoe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        "匠魂鋤",
+        ThemeUtils.PASSIVE + "由手柄,綁定結,鋤頭三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂工具根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位"
     );
 
     public static final SlimefunItemStack TOOL_SWORD_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_SWORD_DUMMY",
         Material.STONE_SWORD,
         ThemeItemType.TOOL,
-        "Tinker's Sword",
-        ThemeUtils.PASSIVE + "A sword formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        "匠魂劍",
+        ThemeUtils.PASSIVE + "由手柄,綁定結,劍刃三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂武器根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位"
     );
 
     public static final SlimefunItemStack ARMOUR_HELMET_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_HELMET_DUMMY",
         Material.LEATHER_HELMET,
         ThemeItemType.ARMOUR,
-        "Tinker's Helmet",
-        ThemeUtils.PASSIVE + "A helmet formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        "匠魂頭盔",
+        ThemeUtils.PASSIVE + "由頭盔板,護身軟甲,盔甲接合物三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂裝備根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位與額外屬性",
+        ThemeUtils.PASSIVE + "會在損壞後自動卸下至物品欄中",
+        ThemeUtils.WARNING + "如果物品欄沒有空間則會掉到地上"
     );
 
     public static final SlimefunItemStack ARMOUR_CHESTPLATE_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_CHESTPLATE_DUMMY",
         Material.LEATHER_CHESTPLATE,
         ThemeItemType.ARMOUR,
-        "Tinker's Chestplate",
-        ThemeUtils.PASSIVE + "A chestplate formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        "匠魂胸甲",
+        ThemeUtils.PASSIVE + "由胸甲板,護身軟甲,盔甲接合物三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂裝備根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位與額外屬性",
+        ThemeUtils.PASSIVE + "會在損壞後自動卸下至物品欄中",
+        ThemeUtils.WARNING + "如果物品欄沒有空間則會掉到地上"
     );
 
     public static final SlimefunItemStack ARMOUR_LEGGINGS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_LEGGINGS_DUMMY",
         Material.LEATHER_LEGGINGS,
         ThemeItemType.ARMOUR,
-        "Tinker's Leggings",
-        ThemeUtils.PASSIVE + "A pair of leggings formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        "匠魂護腿",
+        ThemeUtils.PASSIVE + "由護腿板,護身軟甲,盔甲接合物三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂裝備根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位與額外屬性",
+        ThemeUtils.PASSIVE + "會在損壞後自動卸下至物品欄中",
+        ThemeUtils.WARNING + "如果物品欄沒有空間則會掉到地上"
     );
 
     public static final SlimefunItemStack ARMOUR_BOOTS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_BOOTS_DUMMY",
         Material.LEATHER_BOOTS,
         ThemeItemType.ARMOUR,
-        "Tinker's Boots",
-        ThemeUtils.PASSIVE + "A pair of boots formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        "匠魂靴子",
+        ThemeUtils.PASSIVE + "由靴子板,護身軟甲,盔甲接合物三個零件組成",
+        ThemeUtils.PASSIVE + "匠魂裝備根據不同零件的材質擁有不同屬性",
+        ThemeUtils.PASSIVE + "升級後還能獲得模組欄位與額外屬性",
+        ThemeUtils.PASSIVE + "會在損壞後自動卸下至物品欄中",
+        ThemeUtils.WARNING + "如果物品欄沒有空間則會掉到地上"
     );
 
     public static final SlimefunItemStack TOOL_AXE = ThemeUtils.themedItemStack(
@@ -256,20 +252,24 @@ public final class Guide {
         "TOOL_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "Tinker's Tools Info",
-        ThemeUtils.PASSIVE + "Tinker's tools start at Stone. As you",
-        ThemeUtils.PASSIVE + "level the tools up, they will promote",
-        ThemeUtils.PASSIVE + "through Gold > Iron > Diamond > Netherite."
+        "匠魂工具訊息",
+        ThemeUtils.PASSIVE + "匠魂的工具或武器在使用時",
+        ThemeUtils.PASSIVE + "會獲得熟練度經驗",
+        ThemeUtils.PASSIVE + "積累一定經驗可以獲得升級",
+        ThemeUtils.PASSIVE + "每次升級後可以獲得1個模組欄位",
+        ThemeUtils.PASSIVE + "品質依次為: 石 > 金 > 鐵 > 鑽石 > 獄髓錠"
     );
 
     public static final SlimefunItemStack ARMOUR_INFO = ThemeUtils.themedItemStack(
         "ARMOUR_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "Tinker's Armour Info",
-        ThemeUtils.PASSIVE + "Tinker's armour starts at Leather. As you",
-        ThemeUtils.PASSIVE + "level the pieces up, they will promote",
-        ThemeUtils.PASSIVE + "through Chain > Iron > Diamond > Netherite."
+        "匠魂護甲訊息",
+        ThemeUtils.PASSIVE + "匠魂的裝備在使用時",
+        ThemeUtils.PASSIVE + "會獲得熟練度經驗",
+        ThemeUtils.PASSIVE + "積累一定經驗可以獲得升級",
+        ThemeUtils.PASSIVE + "每次升級後可以獲得1個模組欄位",
+        ThemeUtils.PASSIVE + "品質依次為: 皮革 > 鎖鏈 > 鐵 > 鑽石 > 獄髓錠"
     );
 
     public static final ToolTemplate SHOVEL = new ToolTemplate(ItemGroups.DUMMY, TOOL_SHOVEL, DummyToolTable.TYPE, new ItemStack[9]);
