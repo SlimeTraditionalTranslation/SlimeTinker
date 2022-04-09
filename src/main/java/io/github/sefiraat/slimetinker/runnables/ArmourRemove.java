@@ -43,10 +43,10 @@ public class ArmourRemove extends BukkitRunnable {
         itemStack.setAmount(0);
         if (i.firstEmpty() > -1) {
             i.addItem(newItem);
-            player.sendMessage(ThemeUtils.WARNING + "A piece of armour has broken! It's been placed in your inventory.");
+            player.sendMessage(ThemeUtils.WARNING + "你的某件防具已損壞! 它已自動卸到你的物品欄中");
         } else {
             player.getWorld().dropItemNaturally(player.getLocation(), newItem);
-            player.sendMessage(ThemeUtils.WARNING + "A piece of armour has broken! You had no room for it and it has been dropped.");
+            player.sendMessage(ThemeUtils.WARNING + "你的某件防具已損壞! 你的物品欄已滿,它掉在地上了");
         }
     }
 }
