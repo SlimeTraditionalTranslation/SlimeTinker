@@ -2,67 +2,56 @@
 <img width="800" src="https://github.com/Sefiraat/SlimeTinker/blob/master/images/logo/logo.svg"><br><br>
 </p>
 
-SlimeTinker is a Slimefun4 addon that tries it's best to recreate the amazing Tinker's Construct
-Mod ([link](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) in Vanilla Minecraft.
+黏液工匠是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct  ([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) .
 
-## Download SlimeTinker
+## 下載黏液匠魂
 
 [![Build Status](https://thebusybiscuit.github.io/builds/Sefiraat/SlimeTinker/master/badge.svg)](https://thebusybiscuit.github.io/builds/Sefiraat/SlimeTinker/master)
 
-## Info
+## 內容
 
-For more information about SlimeTinker, please visit my <a href="https://sefiraat.gitbook.io/docs/slimetinker/basics">documentation</a> page.
+想要了解更多關於匠魂,請拜訪 <a href="https://sefiraat.gitbook.io/docs/slimetinker/basics">文件</a> 頁面.
 
-## Features include:
+## 內容介紹:
 
-* The ability to melt all Vanilla and Core Slimefun metals and alloys.
-* Casting out metals into nuggets, ingots and blocks for all metals.
-* Casting into tools parts (Axe Heads, Sword Blades etc.) and casting into Armour Plates and Chain Mail Links.
-* Creation of custom tools based on any combination of Head, Binding and Rod parts for a unique tool
-* Creation of custom armour peices based on any combination of Plates, Gambeson and Mail Link parts for a unique armour
-  peice
-* Each Part/metal combination has a specific trait. Traits range from Auto smelting to Levitation, invisibilty to 3x3
-  mining.
-* Tools and Armour peices level as you use them, as they level they unlock new Modifier slots and can promote from
-  Stone > Gold > Iron > Diamond and Netherite or Leather > Chain > Iron > Diamond > Netherite.
-* Modifier slots can be used to add special modifiers to the tool from bonus drops (on top of looting/fortune) to more
-  haste, damage and more.
-* Tools and armour do not break, they just stop working until you repair them using the same metal type the tool is made
-  of. Armour will fall off when in need of repair
-* Parts can be swapped out at will leaving the tool/armour peices level/mods intact. Want to start with Copper to level
-  faster THEN swap to Reinforced for 3x3? Go for it!
-* All effects/mods (when applicable) work with Vanilla Enchants. Damage, exp and durability modifications are all
-  stackable and work nicely with each other.
-* Configurable traits. You can disable any trait you don't want in the configuration file.
+* 熔化原版Minecraft和黏液科技的金屬。
+* 將熔融金屬鑄造成塊、錠、粒、各式部件(鏟子、鎬子、斧頭、鋤頭、劍、手柄、修復零件)。
+* 可以用前端、接合物、手柄，組合成自己獨一無二的工具或武器。
+* 每個材質的部件都有自己的屬性，例如：自動熔煉、3×3挖掘、隱身、懸浮......
+* 工具或武器的等級，會隨著使用而升級，每次升級可以獲得1次強化次數，升級到一定等級，品質會由「石→金→鐵→鑽石→獄髓」。
+* 強化次數可以為工具增加其他效果，例如：挖掘速度、掠奪/幸運、傷害增加......
+* 耐久度為0時，並不會爆掉，可以利用與前端相同材質的修復零件進行修復。
+* 部件可以隨意更換，且更換後會保留原本的經驗等級、強化效果。
+* 有些效果適用原版附魔，傷害、經驗、耐久是可以疊加的，而且可以互相配合。
 
-For a more detailed look, check out the video from Boomer_1 who runs through the basics of Tinker!
+如需更詳細的了解，請查看 Boomer_1 的視頻，該視頻介紹了 Tinker 的基礎知識！
+
 [![Boomer shows off SlimeTinker](https://res.cloudinary.com/marcomontalbano/image/upload/v1626509062/video_to_markdown/images/youtube--gAUoxj-h26s-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/gAUoxj-h26s "Boomer shows off SlimeTinker")
 
-## Planned Features include:
+## 計劃內容:
 
-* Addition of molten metal types from even more addons!
-* Additional tiers of smeltery that will allow for further automation.
+* 從更多插件中添加熔融金屬類型！
+* 額外的冶煉層將允許進一步的自動化。
 
-## Configuration
+## 配置
 
-SlimeTinker now supports disabling traits. All the traits are enabled by default. To disable a trait, open the file `/plugins/SlimeTinker/traits.yml`, disable the part under a specific material.
+SlimeTinker 現在支持禁用物品。默認情況下啟用所有物品。要禁用特性，請打開文件`/plugins/SlimeTinker/traits.yml`，禁用特定材質下的部分。
+## 建議?
 
-## Suggestions?
+SlimeTinker 有很多屬性和效果，我根本沒有足夠的想法來充實所有這些。所以我
+真的很歡迎 Slimefun Addon 社區 Discord 中的任何和所有建議（請務必遵守
+slimetinker 頻道規則！）。如果你有想法，請使用這個 [邀請](https://discord.gg/J4KurMDCKU)
 
-SlimeTinker has a LOT of properties and effects and I simply do not have enough ideas to flesh out all of it. So I
-really would welcome any and all suggestions in the Slimefun Addon Community Discord (be sure to stick to the
-slimetinker channel!). If you have ideas, please use this [invite](https://discord.gg/J4KurMDCKU)
+## 榮譽
 
-## Credits
-
-Big thanks to [Riley](https://github.com/Mooy1) for the great InfinityLib which sped things up greatly. Another big
-thanks to [Martin](https://github.com/martinbrom) who helped us out with ideas and direction. Thanks
-to [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) for testing, feeding back and breaking things for
-me!
+非常感謝 [Riley](https://github.com/Mooy1) 的偉大 InfinityLib，它大大加快了速度。另一個大
+感謝 [Martin](https://github.com/martinbrom) 幫助我們提出想法和方向。謝謝
+到 [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) 進行測試、反饋和破壞測試
+我！
 
 
-## Thanks!
+## 感謝!
 
-A big thanks to the owners of **mct.tantrum.org** who have tested nearly everything I have made and really given me direction and drive to make these things and was the first server willing to take the buggy mess that Tinker was, at first, onto their server!
+非常感謝 **mct.tantrum.org** 的所有者，他們測試了我所做的幾乎所有東西，並真正為我提供了製作這些東西的方向和動力，並且是第一個願意承擔 Tinker 混亂的服務器，首先，在他們的服務器上！
 
-Another big shoutout to **GentlemanCheesy** of **mc.talosmp.net** for being my first (and as of writing this, only!) sponsor. A few coffee's a month to make me feel better about making these addons <3
+又一次對 **mc.talosmp.net** 的 **GentlemanCheesy** 大喊大叫，因為他是我的第一個（在撰寫本文時，僅此而已！）贊助商。每月喝幾杯咖啡，讓我對製作這些插件感覺更好 <3
