@@ -19,7 +19,7 @@ public final class ItemGroups {
 
     public static final NestedItemGroup MAIN = new NestedItemGroup(Keys.ITEM_GROUP_MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
-        ThemeUtils.MAIN + "黏液工匠"
+        ThemeUtils.MAIN + "黏液匠魂"
     ));
     public static final SubItemGroup WORKSTATIONS = new SubItemGroup(Keys.ITEM_GROUP_WORKSTATIONS, MAIN, new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
@@ -67,7 +67,7 @@ public final class ItemGroups {
     ));
     public static final DummyItemGroup DUMMY = new DummyItemGroup(Keys.ITEM_GROUP_DUMMY, new CustomItemStack(
         Material.BARRIER,
-        ThemeUtils.MAIN + "黏液工匠人偶"
+        ThemeUtils.MAIN + "黏液匠魂人偶"
     ));
 
     public static void set(SlimeTinker p) {

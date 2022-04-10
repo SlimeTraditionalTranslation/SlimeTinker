@@ -33,7 +33,7 @@ public class PartTemplate extends UnplaceableBlock {
         List<String> list = new ArrayList<>();
         list.add("");
         list.add(ThemeUtils.PASSIVE + "工具部件。本身沒有任何作用");
-        list.add(ThemeUtils.PASSIVE + "但可以在工匠桌子");
+        list.add(ThemeUtils.PASSIVE + "但可以在匠魂桌子");
         list.add(ThemeUtils.PASSIVE + "被製成更強大的物品.");
         list.add("");
         list.add(ThemeUtils.CLICK_INFO + "材質  : " + color + ThemeUtils.toTitleCase(material));
