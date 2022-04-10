@@ -2,7 +2,7 @@
 <img width="800" src="https://github.com/Sefiraat/SlimeTinker/blob/master/images/logo/logo.svg"><br><br>
 </p>
 
-黏液工匠是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct  ([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) .
+黏液匠魂是黏液科技的一個附加插件，希望能在原版Minecraft中，重現知名模組Tinker's Construct  ([連結](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)) .
 
 ## 下載黏液匠魂
 
