@@ -24,7 +24,7 @@ public class Commands extends BaseCommand {
     @Default
     public void onDefault(CommandSender sender) {
         if (sender instanceof Player) {
-            sender.sendMessage(ThemeUtils.ERROR + "請提供有效的子命令.");
+            sender.sendMessage(ThemeUtils.ERROR + "請提供有效的指令.");
         }
     }
 
