@@ -1846,7 +1846,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("MagneSight™ II")
-        .setSpTraitName("MagneSight™ II") // 翻譯缺失
+        .setSpTraitName("夜視™ II")
         .setLore(
             "獲得夜視效果",
             "並標記出周圍10格內所有生物"
@@ -2139,7 +2139,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("KOTR")
-        .setSpTraitName("KOTR") // 翻譯缺失
+        .setSpTraitName("鐵傀儡")
         .setLore(
             "受到傷害時有機率",
             "在周圍生成鐵傀儡"
@@ -2194,7 +2194,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("Oroborus")
-        .setSpTraitName("Oroborus") // 翻譯缺失
+        .setSpTraitName("反傷")
         .setLore(
             "有20%的機率反彈承受的傷害"
         )
@@ -2349,9 +2349,10 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
         .setTraitName("Mix it up!")
-        .setSpTraitName("Mix it up!") // 翻譯缺失
+        .setSpTraitName("不義遊戲")
         .setLore(
-            "Mixes things up a bit when hit" // 翻譯缺失
+            "受到攻擊時",
+            "有機率與攻擊者互換位置"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMixedMetal);
 
@@ -2733,7 +2734,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("Tuff Stuff")
-        .setSpTraitName("Tuff Stuff") // 翻譯缺失
+        .setSpTraitName("囚固")
         .setLore(
             "擊退任何命中的生物",
             "有機率囚固目標"
@@ -2798,7 +2799,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("KOTR")
-        .setSpTraitName("KOTR") // 翻譯缺失
+        .setSpTraitName("鐵傀儡")
         .setLore(
             "受到傷害時有機率",
             "在周圍生成鐵傀儡"
@@ -2886,7 +2887,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Yvaine")
-        .setSpTraitName("Yvaine") // 翻譯缺失
+        .setSpTraitName("流星")
         .setLore(
             "\"不要向流星許願，否則它就會變成女人\"", // 翻譯問題
             "獲得發光效果",
@@ -2898,7 +2899,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Starshine")
-        .setSpTraitName("Starshine") // 翻譯缺失
+        .setSpTraitName("星星閃耀")
         .setLore(
             "有5%的機率",
             "在夜間恢復1點血量(半顆心)"
@@ -2970,7 +2971,7 @@ public final class Traits {
         .setSpTraitName("超立方體 [A]")
         .setLore(
             "僅適用於 [A] 和 [B]。Shift + Right",
-            "單擊以存儲位置。右鍵單擊以傳送到那個位置（CD：10m)" // 翻譯缺失
+            "單擊以存儲位置。右鍵單擊以傳送到那個位置（CD：10分)" // 翻譯缺失
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headTessMat);
 
@@ -3031,7 +3032,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("Unite - Absorption")
-        .setSpTraitName("超能力 - Absorption") // 翻譯缺失
+        .setSpTraitName("超能力 - 專心") 
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -3042,7 +3043,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("Unite - Fortitude")
-        .setSpTraitName("超能力 - Fortitude") // 翻譯缺失
+        .setSpTraitName("超能力 - 堅韌")
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -3053,7 +3054,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("Unite - Saturation")
-        .setSpTraitName("超能力 - Saturation") // 翻譯缺失
+        .setSpTraitName("超能力 - 飽和")
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -3064,7 +3065,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("Unite - Regeneration")
-        .setSpTraitName("超能力 - Regeneration") // 翻譯缺失
+        .setSpTraitName("超能力 - 再生")
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
