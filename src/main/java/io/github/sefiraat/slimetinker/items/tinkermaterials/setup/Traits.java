@@ -400,7 +400,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("MagneSight™")
-        .setSpTraitName("MagneSight™") //缺失
+        .setSpTraitName("夜視™") //缺失
         .setLore(
             "獲得夜視效果."
         )
@@ -834,7 +834,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Abra")
-        .setSpTraitName("Abra") // 缺失翻譯
+        .setSpTraitName("阿布拉") // 缺失翻譯
         .setLore(
             "攻擊生物時有33%的機率使目標隨機傳送"
         )
@@ -1098,9 +1098,10 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Doom")
-        .setSpTraitName("Doom") // 缺失翻譯
+        .setSpTraitName("不祥之兆") // 缺失翻譯
         .setLore(
-            "I get a bad feeling from this..."
+            "我感覺很不好...",
+            "(獲得不祥之兆效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderWeepingVine);
 
@@ -1482,7 +1483,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("Steadfast II")
-        .setSpTraitName("堅固Ⅱ") // 翻譯奇怪
+        .setSpTraitName("堅韌Ⅱ") // 翻譯奇怪
         .setLore(
             "免疫所有爆炸",
             "爆炸將治療你"
@@ -2529,9 +2530,8 @@ public final class Traits {
         .setTraitName("Warp")
         .setSpTraitName("別看我")
         .setLore(
-            "使目標看向你的朝向",
-            "(CD: 20秒)" // 翻譯錯誤
-        )
+            "使目標看向你的朝向"
+            )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_PLATES = new MaterialTrait()
@@ -2790,8 +2790,7 @@ public final class Traits {
         .setTraitName("Intense Gaze")
         .setSpTraitName("強烈的凝視")
         .setLore(
-            "你看向的實體會傳送到你身邊",
-            "不會對玩家、凋靈、末影龍生效" // 翻譯錯誤
+            "你看向的實體會傳送到你身邊"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateUnpatentabilum);
 
@@ -2814,10 +2813,11 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Super Dooper Stainless")
-        .setSpTraitName("閃光彈") // 翻譯錯誤 - 全部
+        .setSpTraitName("超級不銹鋼") // 翻譯錯誤 - 全部
         .setLore(
-            "受到傷害時,有機率",
-            "反彈傷害並使攻擊者眩暈"
+            "真的，絕對是不銹鋼",
+            "可以抵擋更多鮮血",
+            "(更多炫酷效果)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStainlessSteel);
 
@@ -2825,9 +2825,9 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Cutlery")
-        .setSpTraitName("超級不銹鋼") // 翻譯錯誤 - 全部
+        .setSpTraitName("餐具") // 翻譯錯誤 - 全部
         .setLore(
-            "可以抵擋更多鮮血"
+            "攻擊動物可直接填飽自己"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodStainlessSteel);
 
@@ -2889,7 +2889,6 @@ public final class Traits {
         .setTraitName("Yvaine")
         .setSpTraitName("流星")
         .setLore(
-            "\"不要向流星許願，否則它就會變成女人\"", // 翻譯問題
             "獲得發光效果",
             "周圍的村民會不斷向你聚集"
         )
@@ -3032,7 +3031,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("Unite - Absorption")
-        .setSpTraitName("超能力 - 專心") 
+        .setSpTraitName("超能力 - 專心")
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
