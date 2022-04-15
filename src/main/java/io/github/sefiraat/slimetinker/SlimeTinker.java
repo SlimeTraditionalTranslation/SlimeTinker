@@ -15,7 +15,7 @@ import io.github.sefiraat.slimetinker.listeners.ListenerManager;
 import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
-import org.bstats.bukkit.Metrics;
+//import org.bstats.bukkit.Metrics;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -37,7 +37,7 @@ public class SlimeTinker extends AbstractAddon {
     @Override
     public void enable() {
 
-        new Metrics(this, 11748);
+        //new Metrics(this, 11748);
 
         instance = this;
 

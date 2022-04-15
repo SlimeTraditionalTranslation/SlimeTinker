@@ -22,7 +22,8 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("續航力")
+        .setTraitName("Stability")
+        .setSpTraitName("續航力")
         .setLore(
             "就...沒什麼!"
         );
@@ -30,7 +31,8 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("鋒利 1")
+        .setTraitName("Sharp 1")
+        .setSpTraitName("鋒利 1")
         .setLore(
             "增加傷害，可疊加"
         )
@@ -39,7 +41,8 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("堅定不移")
+        .setTraitName("Steadfast")
+        .setSpTraitName("堅定不移")
         .setLore(
             "33% 機率免疫爆炸傷害"
         )
@@ -48,7 +51,8 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("腐蝕")
+        .setTraitName("Rusty")
+        .setSpTraitName("腐蝕")
         .setLore(
             "護甲耐久度損失+10%",
             "玩家經驗增加+10%"
@@ -58,7 +62,8 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("金色面紗")
+        .setTraitName("Golden Veil")
+        .setSpTraitName("金色面紗")
         .setLore(
             "使玩家隱形獲得隱身效果",
             "應用在武器身上時:攻擊傷害-100%"
@@ -69,7 +74,8 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("閃閃發光")
+        .setTraitName("All that Glitters")
+        .setSpTraitName("閃閃發光")
         .setLore(
             "讓你全身閃亮亮...",
             "獲得發光效果"
@@ -79,7 +85,8 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("繁榮")
+        .setTraitName("Prosperous")
+        .setSpTraitName("繁榮")
         .setLore(
             "受到傷害時有1%機率獲得到金粒"
         )
@@ -88,7 +95,8 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("以物換物")
+        .setTraitName("Barter")
+        .setSpTraitName("以物換物")
         .setLore(
             "豬布林喜翻你的護甲",
             "(周圍5格內的豬布靈不會攻擊你)"
@@ -98,7 +106,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("智力")
+        .setTraitName("Brains, Not Brawn")
+        .setSpTraitName("智力")
         .setLore(
             "工具經驗獲取+100%",
             "攻擊傷害-50%"
@@ -110,7 +119,8 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("經驗轉換")
+        .setTraitName("Conductive")
+        .setSpTraitName("經驗轉換")
         .setLore(
             "所有工具經驗轉換為玩家經驗."
         );
@@ -118,7 +128,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("初學者")
+        .setTraitName("Beginner")
+        .setSpTraitName("初學者")
         .setLore(
             "受到的傷害+25%",
             "護甲經驗獲得+20%"
@@ -129,7 +140,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("玷污")
+        .setTraitName("Tarnished")
+        .setSpTraitName("玷污")
         .setLore(
             "傷害降低-25%",
             "護甲經驗獲取+20%"
@@ -139,7 +151,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEAD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("劇毒")
+        .setTraitName("Poisonous")
+        .setSpTraitName("劇毒")
         .setLore(
             "擊中時有25%機率使毒中毒."
         )
@@ -148,7 +161,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEAD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("水蛭")
+        .setTraitName("Leech")
+        .setSpTraitName("水蛭")
         .setLore(
             "額外的健康，但會消耗你的能量."
         )
@@ -157,7 +171,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEAD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生病了")
+        .setTraitName("Sickly")
+        .setSpTraitName("生病了")
         .setLore(
             "鉛甲不是個好主意"
         )
@@ -166,7 +181,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEAD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生病了")
+        .setTraitName("Sickly")
+        .setSpTraitName("生病了")
         .setLore(
             "鉛甲不是個好主意"
         )
@@ -176,7 +192,8 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("附魔")
+        .setTraitName("Enchanting")
+        .setSpTraitName("附魔")
         .setLore(
             "工具經驗增益減半",
             "工具升級時獲得隨機附魔",
@@ -186,7 +203,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SILVER_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("觸感柔軟")
+        .setTraitName("Soft Touch")
+        .setSpTraitName("觸感柔軟")
         .setLore(
             "你感覺更輕了",
             "(獲得緩降III效果)"
@@ -196,7 +214,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SILVER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("導電")
+        .setTraitName("Conductivity")
+        .setSpTraitName("導電")
         .setLore(
             "免疫閃電傷害",
             "被閃電擊中時在周圍召喚閃電"
@@ -207,7 +226,8 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("附魔")
+        .setTraitName("Enchanting")
+        .setSpTraitName("附魔")
         .setLore(
             "每次升級時獲得一個隨機附魔",
             "附魔可能不適用於該物品"
@@ -216,7 +236,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("再生")
+        .setTraitName("Recyclable")
+        .setSpTraitName("再生")
         .setLore(
             "擊中/格擋破壞時有機會恢復耐久度"
         )
@@ -225,7 +246,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("柔軟")
+        .setTraitName("Soft")
+        .setSpTraitName("柔軟")
         .setLore(
             "耐久損失+100%",
             "工具經驗+50%"
@@ -237,7 +259,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("緊酸")
+        .setTraitName("Foil")
+        .setSpTraitName("緊酸")
         .setLore(
             "受到的傷害+50%",
             "速度+1"
@@ -249,7 +272,8 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("快速維修")
+        .setTraitName("Easily Shaped")
+        .setSpTraitName("快速維修")
         .setLore(
             "維修只需要一個零件"
         );
@@ -257,7 +281,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("幸運")
+        .setTraitName("Malleable")
+        .setSpTraitName("幸運")
         .setLore(
             "攻擊的傷害減少-50%",
             "獲得幸運效果"
@@ -268,7 +293,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("隨身罐頭")
+        .setTraitName("Can")
+        .setSpTraitName("隨身罐頭")
         .setLore(
             "你的飢餓感就會消失",
             "(獲得飽和效果)"
@@ -278,7 +304,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("抗毒")
+        .setTraitName("Non-Corrosive")
+        .setSpTraitName("抗毒")
         .setLore(
             "免疫中毒效果"
         )
@@ -287,7 +314,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("承傷")
+        .setTraitName("Boost")
+        .setSpTraitName("承傷")
         .setLore(
             "受到重傷時獲得吸收"
         )
@@ -296,7 +324,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ZINC_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("海豚之力")
+        .setTraitName("Graceful")
+        .setSpTraitName("海豚之力")
         .setLore(
             "激活海豚的力量!",
             "(获得海豚的恩惠效果)"
@@ -306,7 +335,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ZINC_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("漂浮")
+        .setTraitName("Super Lightweight")
+        .setSpTraitName("漂浮")
         .setLore(
             "不蹲下的時候讓你變得比空氣還輕.",
             "(獲得飄浮II效果)"
@@ -316,7 +346,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ZINC_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("偷襲")
+        .setTraitName("Sneaky")
+        .setSpTraitName("偷襲")
         .setLore(
             "當目標看向別處時,",
             "對其造成的傷害翻倍"
@@ -325,7 +356,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ZINC_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("針刺療法")
+        .setTraitName("Acupuncture")
+        .setSpTraitName("針刺療法")
         .setLore(
             "不被仙人掌刺傷"
         )
@@ -334,7 +366,8 @@ public final class Traits {
     public static final MaterialTrait CORE_MAGNESIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("鳳凰之力")
+        .setTraitName("Flammable")
+        .setSpTraitName("鳳凰之力")
         .setLore(
             "有(工具等級x5)%機率",
             "點燃你的敵人."
@@ -344,7 +377,8 @@ public final class Traits {
     public static final MaterialTrait CORE_MAGNESIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁鐵")
+        .setTraitName("Magnetesium")
+        .setSpTraitName("磁鐵")
         .setLore(
             "隨機撿起範圍5格內的物品"
         )
@@ -353,7 +387,8 @@ public final class Traits {
     public static final MaterialTrait CORE_MAGNESIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("快溜")
+        .setTraitName("Light")
+        .setSpTraitName("快溜")
         .setLore(
             "造成的傷害-25%",
             "速度 + 1"
@@ -365,6 +400,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("MagneSight™")
+        .setSpTraitName("MagneSight™") //缺失
         .setLore(
             "獲得夜視效果."
         )
@@ -373,7 +409,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不銹鋼")
+        .setTraitName("Stainless")
+        .setSpTraitName("不銹鋼")
         .setLore(
             "可排斥血液."
         )
@@ -382,7 +419,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("輕量")
+        .setTraitName("Lightweight")
+        .setSpTraitName("輕量")
         .setLore(
             "工具經驗+50%",
             "速度+1"
@@ -392,7 +430,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("堅硬")
+        .setTraitName("Hardy")
+        .setSpTraitName("堅硬")
         .setLore(
             "爆炸造成的傷害降低-25%"
         )
@@ -401,7 +440,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("強壯")
+        .setTraitName("Strong")
+        .setSpTraitName("強壯")
         .setLore(
             "生命提升+1"
         )
@@ -410,7 +450,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DAMASCUS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸血鬼")
+        .setTraitName("Vampirism")
+        .setSpTraitName("吸血鬼")
         .setLore(
             "攻擊傷害有機會治愈自己.",
             "造成的傷害因一天中的時間而異."
@@ -420,7 +461,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DAMASCUS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("夜行者")
+        .setTraitName("Nightstalker")
+        .setSpTraitName("夜行者")
         .setLore(
             "可以在黑暗中看的更清晰.",
             "獲得夜視效果."
@@ -430,7 +472,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DAMASCUS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("複利")
+        .setTraitName("Compounding")
+        .setSpTraitName("複利")
         .setLore(
             "獲得生命提升效果",
             "等級取決於含有復用特性護甲數量"
@@ -440,7 +483,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DAMASCUS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("荆棘")
+        .setTraitName("Snroht")
+        .setSpTraitName("荆棘")
         .setLore(
             "荊棘損傷被忽視並反彈"
         )
@@ -449,7 +493,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DURALUMIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("耐用挖掘")
+        .setTraitName("Durable")
+        .setSpTraitName("耐用挖掘")
         .setLore(
             "物品損壞時仍然可使用,但:-50%傷害",
             "獲得挖掘疲勞效果"
@@ -462,7 +507,8 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("輕鬆修復")
+        .setTraitName("Easy Fix")
+        .setSpTraitName("輕鬆修復")
         .setLore(
             "只需 1 個修復工具即可完全修復."
         );
@@ -470,7 +516,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DURALUMIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("耐用")
+        .setTraitName("Durable")
+        .setSpTraitName("耐用")
         .setLore(
             "物品損壞時仍然可使用，但承受傷害+20%"
         )
@@ -479,7 +526,8 @@ public final class Traits {
     public static final MaterialTrait CORE_DURALUMIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("減震器")
+        .setTraitName("Shock Absorbant")
+        .setSpTraitName("減震器")
         .setLore(
             "10% 機率忽略傷害。不添加"
         )
@@ -488,7 +536,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("防火")
+        .setTraitName("Resistance")
+        .setSpTraitName("防火")
         .setLore(
             "獲得防火效果."
         )
@@ -497,7 +546,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不對ㄟ")
+        .setTraitName("Ingheights")
+        .setSpTraitName("不對ㄟ")
         .setLore(
             "這個工具怪怪的OAO。"
         )
@@ -506,7 +556,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("農民")
+        .setTraitName("Farmer")
+        .setSpTraitName("農民")
         .setLore(
             "收穫農作物時額外增加1個掉落物",
             "該效果不會受幸運的影響",
@@ -517,7 +568,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("易碎")
+        .setTraitName("Brittle")
+        .setSpTraitName("易碎")
         .setLore(
             "耐久損失翻倍."
         )
@@ -526,7 +578,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("鋒利 2")
+        .setTraitName("Sharp 2")
+        .setSpTraitName("鋒利 2")
         .setLore(
             "獲得力量效果，可疊加"
         )
@@ -535,7 +588,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("易碎")
+        .setTraitName("Brittle")
+        .setSpTraitName("易碎")
         .setLore(
             "+100% 耐久消耗."
         )
@@ -544,7 +598,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("花兒")
+        .setTraitName("Beautiful")
+        .setSpTraitName("花兒")
         .setLore(
             "走路時有機會讓路旁的土地開花."
         )
@@ -553,7 +608,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("彈出！")
+        .setTraitName("Eject!")
+        .setSpTraitName("彈出！")
         .setLore(
             "如果在低於 1/2 生命值時發動",
             "會彈射起飛!",
@@ -564,7 +620,8 @@ public final class Traits {
     public static final MaterialTrait CORE_HARDENED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("擊退")
+        .setTraitName("Tuff Stuff")
+        .setSpTraitName("擊退")
         .setLore(
             "擊退任何擊中的東西",
             "有機率囚禁目標."
@@ -574,7 +631,8 @@ public final class Traits {
     public static final MaterialTrait CORE_HARDENED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("笨重")
+        .setTraitName("Heavy")
+        .setSpTraitName("笨重")
         .setLore(
             "3x3 區域內的礦井."
         )
@@ -583,7 +641,8 @@ public final class Traits {
     public static final MaterialTrait CORE_HARDENED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("增韌")
+        .setTraitName("Toughened")
+        .setSpTraitName("增韌")
         .setLore(
             "不會失去耐久度."
         )
@@ -592,7 +651,8 @@ public final class Traits {
     public static final MaterialTrait CORE_HARDENED_METAL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("矮人技能")
+        .setTraitName("Dwarven Skills")
+        .setSpTraitName("矮人技能")
         .setLore(
             "採礦時有機會找到稀有文物."
         )
@@ -601,7 +661,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("熾熱")
+        .setTraitName("Flaming Hot")
+        .setSpTraitName("熾熱")
         .setLore(
             "盡可能熔煉破碎的方塊."
         )
@@ -610,7 +671,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("太熱而無法處理")
+        .setTraitName("Too Hot to Handle")
+        .setSpTraitName("太熱而無法處理")
         .setLore(
             "?"
         )
@@ -619,7 +681,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("超級熱")
+        .setTraitName("Superhot")
+        .setSpTraitName("超級熱")
         .setLore(
             "有機會點燃附近的實體"
         )
@@ -628,7 +691,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("熱血的")
+        .setTraitName("Warm Blodded")
+        .setSpTraitName("熱血的")
         .setLore(
             "當你在地獄感到熱時速度+2.",
             "當你在中界感到冷時速度-1"
@@ -638,7 +702,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SOLDER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("隱身")
+        .setTraitName("Hidden")
+        .setSpTraitName("隱身")
         .setLore(
             "授予隱身，立即中斷."
         )
@@ -649,7 +714,8 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("保險")
+        .setTraitName("Fused")
+        .setSpTraitName("保險")
         .setLore(
             "工具不能在地獄掉落被",
             "玩家或死亡."
@@ -658,7 +724,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SOLDER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("易著陸")
+        .setTraitName("Soft Landing")
+        .setSpTraitName("易著陸")
         .setLore(
             "撞牆不再痛"
         )
@@ -668,7 +735,8 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("保險")
+        .setTraitName("Fused")
+        .setSpTraitName("保險")
         .setLore(
             "在死亡時不會掉落也無法丟棄"
         );
@@ -676,7 +744,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BILLON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("速掘")
+        .setTraitName("Fast")
+        .setSpTraitName("速掘")
         .setLore(
             "獲得挖速加速效果",
             "可疊加"
@@ -686,7 +755,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BILLON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("彈簧")
+        .setTraitName("Springs")
+        .setSpTraitName("彈簧")
         .setLore(
             "讓你跳得更高",
             "(獲得跳躍提升IV效果)"
@@ -696,7 +766,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BILLON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("天使")
+        .setTraitName("WHM")
+        .setSpTraitName("天使")
         .setLore(
             "你的攻擊轉化為治療"
         )
@@ -705,7 +776,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BILLON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("熱導體")
+        .setTraitName("Heat Conductor")
+        .setSpTraitName("熱導體")
         .setLore(
             "免疫岩漿的傷害"
         )
@@ -714,7 +786,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("倒楣")
+        .setTraitName("Stiff")
+        .setSpTraitName("倒楣")
         .setLore(
             "攻擊傷害+50%",
             "獲得厄運III效果"
@@ -725,7 +798,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("氧氣")
+        .setTraitName("Oxygenated")
+        .setSpTraitName("氧氣")
         .setLore(
             "獲得水下呼吸效果"
         )
@@ -734,7 +808,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("綁定")
+        .setTraitName("Band")
+        .setSpTraitName("綁定")
         .setLore(
             "耐久損失+200%",
             "傷害降低-1~25%",
@@ -747,6 +822,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Scarpaaarr!")
+        .setSpTraitName("Scarpaaarr!") // 缺失翻譯
         .setLore(
             "耐久消耗+100%",
             "當血量低於一半時受到傷害",
@@ -758,6 +834,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Abra")
+        .setSpTraitName("Abra") // 缺失翻譯
         .setLore(
             "攻擊生物時有33%的機率使目標隨機傳送"
         )
@@ -766,7 +843,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("好學")
+        .setTraitName("Studious")
+        .setSpTraitName("好學")
         .setLore(
             "工具經驗獲取+50%",
             "玩家經驗獲取+50%",
@@ -778,7 +856,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("巫師")
+        .setTraitName("Magus")
+        .setSpTraitName("巫師")
         .setLore(
             "承受的魔法傷害-50%"
         )
@@ -787,7 +866,8 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRASS_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("逃脫")
+        .setTraitName("Escape")
+        .setSpTraitName("逃脫")
         .setLore(
             "受到傷害時隨機傳送到附近",
             "(冷卻: 10秒)"
@@ -797,7 +877,8 @@ public final class Traits {
     public static final MaterialTrait CORE_NICKEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("帶電(負極-)")
+        .setTraitName("Charged Head -")
+        .setSpTraitName("帶電(負極-)")
         .setLore(
             "有20%的機率",
             "攻擊傷害+200%",
@@ -809,7 +890,8 @@ public final class Traits {
     public static final MaterialTrait CORE_NICKEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("帶電(負極-)")
+        .setTraitName("Charged Rod -")
+        .setSpTraitName("帶電(負極-)")
         .setLore(
             "有20%的機率",
             "攻擊傷害+200%",
@@ -821,7 +903,8 @@ public final class Traits {
     public static final MaterialTrait CORE_NICKEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁鐵(負極-)")
+        .setTraitName("Magnetic -")
+        .setSpTraitName("磁鐵(負極-)")
         .setLore(
             "磁鐵的負極",
             "磁鐵可以自動吸收周圍的掉落物",
@@ -832,7 +915,8 @@ public final class Traits {
     public static final MaterialTrait CORE_NICKEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁鐵(負極-)")
+        .setTraitName("Magnetic -")
+        .setSpTraitName("磁鐵(負極-)")
         .setLore(
             "磁鐵的負極",
             "磁鐵可以自動吸收周圍的掉落物",
@@ -843,7 +927,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COBALT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("帶電(正極+)")
+        .setTraitName("Charged Head +")
+        .setSpTraitName("帶電(正極+)")
         .setLore(
             "有20%的機率",
             "攻擊傷害+200%",
@@ -855,7 +940,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COBALT_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("帶電(正極+)")
+        .setTraitName("Charged Rod +")
+        .setSpTraitName("帶電(正極+)")
         .setLore(
             "有20%的機率",
             "攻擊傷害+200%",
@@ -867,7 +953,8 @@ public final class Traits {
     public static final MaterialTrait CORE_COBALT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁鐵(正極+)")
+        .setTraitName("Magnetic +")
+        .setSpTraitName("磁鐵(正極+)")
         .setLore(
             "磁鐵的正極",
             "磁鐵可以自動吸收周圍的掉落物",
@@ -876,9 +963,10 @@ public final class Traits {
         .addConsumer(TraitEventType.TICK, TickEvents::plateCobalt);
 
     public static final MaterialTrait CORE_COBALT_LINKS = new MaterialTrait()
-        .setPartType(MaterialTrait.PROP_PLATES)
+        .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁鐵(正極+)")
+        .setTraitName("Magnetic +")
+        .setSpTraitName("磁鐵(正極+)")
         .setLore(
             "磁鐵的正極",
             "磁鐵可以自動吸收周圍的掉落物",
@@ -889,7 +977,8 @@ public final class Traits {
     public static final MaterialTrait CORE_REINFORCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("槌子")
+        .setTraitName("Bulky")
+        .setSpTraitName("槌子")
         .setLore(
             "可挖掘 3x3x3 區域"
         )
@@ -899,7 +988,8 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("加強化")
+        .setTraitName("Reinforced")
+        .setSpTraitName("加強化")
         .setLore(
             "強化合金板模組擁有雙倍效果"
         )
@@ -909,7 +999,8 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("加強化")
+        .setTraitName("Reinforcable")
+        .setSpTraitName("加強化")
         .setLore(
             "強化合金板模組擁有雙倍效果"
         );
@@ -917,7 +1008,9 @@ public final class Traits {
     public static final MaterialTrait CORE_REINFORCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("防凋零")
+        .setTraitName("Works")
+        .setTraitName("Witherproof")
+        .setSpTraitName("防凋零")
         .setLore(
             "免疫凋零效果"
         );
@@ -925,7 +1018,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STRING_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("罷工")
+        .setTraitName("Works")
+        .setSpTraitName("罷工")
         .setLore(
             "沒有任何效果"
         );
@@ -933,7 +1027,8 @@ public final class Traits {
     public static final MaterialTrait CORE_STRING_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("罷工")
+        .setTraitName("Works")
+        .setSpTraitName("罷工")
         .setLore(
             "沒有任何效果"
         );
@@ -941,7 +1036,8 @@ public final class Traits {
     public static final MaterialTrait CORE_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生長")
+        .setTraitName("Growth")
+        .setSpTraitName("生長")
         .setLore(
             "在白天緩慢修復工具"
         )
@@ -950,7 +1046,8 @@ public final class Traits {
     public static final MaterialTrait CORE_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生長")
+        .setTraitName("Growth")
+        .setSpTraitName("生長")
         .setLore(
             "在白天緩慢修復工具"
         )
@@ -960,7 +1057,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CRIMSON_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("衰變")
+        .setTraitName("Decay")
+        .setSpTraitName("衰變")
         .setLore(
             "在夜間緩慢修復工具."
         )
@@ -969,7 +1067,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CRIMSON_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("衰變")
+        .setTraitName("Decay")
+        .setSpTraitName("衰變")
         .setLore(
             "在夜間緩慢修復工具."
         )
@@ -978,7 +1077,8 @@ public final class Traits {
     public static final MaterialTrait CORE_WARPED_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("恢復")
+        .setTraitName("Refreshing")
+        .setSpTraitName("恢復")
         .setLore(
             "緩慢治療玩家."
         )
@@ -987,7 +1087,8 @@ public final class Traits {
     public static final MaterialTrait CORE_WARPED_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("恢復")
+        .setTraitName("Refreshing")
+        .setSpTraitName("恢復")
         .setLore(
             "緩慢治療玩家."
         )
@@ -997,6 +1098,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Doom")
+        .setSpTraitName("Doom") // 缺失翻譯
         .setLore(
             "I get a bad feeling from this..."
         )
@@ -1005,7 +1107,8 @@ public final class Traits {
     public static final MaterialTrait CORE_WEEPING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不祥之兆")
+        .setTraitName("Doom")
+        .setSpTraitName("不祥之兆")
         .setLore(
             "保護你的村民!",
             "獲得不祥之兆效果"
@@ -1015,7 +1118,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TWISTING_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸引")
+        .setTraitName("Attraction")
+        .setSpTraitName("吸引")
         .setLore(
             "自動吸取5格內的掉落物"
         )
@@ -1024,7 +1128,8 @@ public final class Traits {
     public static final MaterialTrait CORE_TWISTING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸引")
+        .setTraitName("Attraction")
+        .setSpTraitName("吸引")
         .setLore(
             "自動吸取5x5格內的掉落物"
         )
@@ -1033,7 +1138,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SLIME_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("彈性")
+        .setTraitName("Bouncy")
+        .setSpTraitName("彈性")
         .setLore(
             "掉落傷害-50%"
         )
@@ -1042,7 +1148,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SLIME_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("彈性")
+        .setTraitName("Bouncy")
+        .setSpTraitName("彈性")
         .setLore(
             "掉落傷害-25%"
         )
@@ -1051,7 +1158,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SILICON_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("慢學者")
+        .setTraitName("Slow Learner")
+        .setSpTraitName("慢學者")
         .setLore(
             "破壞方塊時",
             "+(5x工具等級)% 工具經驗獲取"
@@ -1061,7 +1169,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SILICON_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("慢學者")
+        .setTraitName("Slow Learner")
+        .setSpTraitName("慢學者")
         .setLore(
             "+(5x護甲等級)% 護甲經驗獲取"
         )
@@ -1070,7 +1179,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEATHER_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("厚皮革")
+        .setTraitName("Thick")
+        .setSpTraitName("厚皮革")
         .setLore(
             "工具經驗獲取+50%"
         )
@@ -1080,7 +1190,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LEATHER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("厚皮革")
+        .setTraitName("Thick")
+        .setSpTraitName("厚皮革")
         .setLore(
             "護甲經驗獲取+10%"
         )
@@ -1089,7 +1200,8 @@ public final class Traits {
     public static final MaterialTrait CORE_FERROSILICON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("氫氣")
+        .setTraitName("Hydrogen")
+        .setSpTraitName("氫氣")
         .setLore(
             "受到傷害時獲得漂浮效果"
         )
@@ -1098,7 +1210,8 @@ public final class Traits {
     public static final MaterialTrait CORE_FERROSILICON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("太陽能")
+        .setTraitName("Solar Powered")
+        .setSpTraitName("太陽能")
         .setLore(
             "在白天持續回復耐久"
         )
@@ -1107,7 +1220,8 @@ public final class Traits {
     public static final MaterialTrait CORE_FERROSILICON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("魔童")
+        .setTraitName("Brightburn")
+        .setSpTraitName("魔童")
         .setLore(
             "獲得1層魔童效果",
             "當擁有4層及以上的魔童效果時",
@@ -1119,7 +1233,8 @@ public final class Traits {
     public static final MaterialTrait CORE_REDSTONE_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("電棍")
+        .setTraitName("Lightning Rod")
+        .setSpTraitName("電棍")
         .setLore(
             "有機率在命中生物時召喚閃電"
         )
@@ -1128,7 +1243,8 @@ public final class Traits {
     public static final MaterialTrait CORE_REDSTONE_ALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("充能")
+        .setTraitName("Powered On")
+        .setSpTraitName("充能")
         .setLore(
             "在 5x2x5 範圍內隨機充能方塊",
             "(激活紅石信號)"
@@ -1138,7 +1254,8 @@ public final class Traits {
     public static final MaterialTrait CORE_REDSTONE_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("誰需要壓力板?")
+        .setTraitName("Who needs pressure plates?")
+        .setSpTraitName("誰需要壓力板?")
         .setLore(
             "你腳下的方塊是充能的"
         )
@@ -1147,7 +1264,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BOOMERITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("梯子模擬器™")
+        .setTraitName("Ladder Simulator™")
+        .setSpTraitName("梯子模擬器™")
         .setLore(
             "右鍵點擊時生成梯子."
         )
@@ -1156,7 +1274,8 @@ public final class Traits {
     public static final MaterialTrait CORE_BOOMERITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("要爆炸了!")
+        .setTraitName("Go Boomer")
+        .setSpTraitName("要爆炸了!")
         .setLore(
             "警告: 即將發生爆炸..."
         )
@@ -1165,7 +1284,8 @@ public final class Traits {
     public static final MaterialTrait CORE_SEFIRITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("慶祝")
+        .setTraitName("Celebrate")
+        .setSpTraitName("慶祝")
         .setLore(
             "現在該慶祝了!"
         )
@@ -1174,7 +1294,8 @@ public final class Traits {
     public static final MaterialTrait CORE_CRINGLEIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("感受節日!")
+        .setTraitName("Feeling Festive")
+        .setSpTraitName("感受節日!")
         .setLore(
             "趕緊享受節日的快樂吧!"
         )
@@ -1183,7 +1304,8 @@ public final class Traits {
     public static final MaterialTrait CORE_LOVE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("這就是你所需要的")
+        .setTraitName("It's all you need")
+        .setSpTraitName("這就是你所需要的")
         .setLore(
             "你被關愛了",
             "(獲得生命回復效果)"
@@ -1193,7 +1315,8 @@ public final class Traits {
     public static final MaterialTrait CORE_NICEINIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("水拉")
+        .setTraitName("Nice")
+        .setSpTraitName("水拉")
         .setLore(
             "水拉"
         )
@@ -1207,7 +1330,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("虛空礦工")
+        .setTraitName("Void Miner")
+        .setSpTraitName("虛空礦工")
         .setLore(
             "在挖掘的時候有機率隨機掉落資源"
 
@@ -1217,7 +1341,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("恐懼虛空")
+        .setTraitName("Fear the Void")
+        .setSpTraitName("恐懼虛空")
         .setLore(
             "攻擊傷害+150%",
             "在末地時:",
@@ -1228,7 +1353,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("虛空旅者")
+        .setTraitName("Planewalker")
+        .setSpTraitName("虛空旅者")
         .setLore(
             "虛空不再是你的敵人",
             "(落入虛空時自動傳送至當前位置向上200格的位置)"
@@ -1238,7 +1364,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("終界霸主")
+        .setTraitName("The End")
+        .setSpTraitName("終界霸主")
         .setLore(
             "來自末影龍,末影人,潛影貝的傷害-10%"
         )
@@ -1247,7 +1374,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGSTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("真正的不銹鋼")
+        .setTraitName("Really Stainless")
+        .setSpTraitName("真正的不銹鋼")
         .setLore(
             "像不銹鋼一樣，但是...真的",
             "(更酷的視覺效果)"
@@ -1257,7 +1385,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGSTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("燃燒")
+        .setTraitName("Flammable")
+        .setSpTraitName("燃燒")
         .setLore(
             "有(工具等級 x 5)%的機率",
             "讓敵人著火"
@@ -1267,7 +1396,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGSTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("玷污")
+        .setTraitName("Tarnished")
+        .setSpTraitName("玷污")
         .setLore(
             "攻擊傷害-20%",
             "護甲經驗獲取+20%"
@@ -1277,7 +1407,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGSTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("防禦")
+        .setTraitName("Defender")
+        .setSpTraitName("防禦")
         .setLore(
             "受到時傷害時有5%的機率",
             "免疫傷害並獲得吸收傷害效果"
@@ -1287,7 +1418,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TITANIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("雙倍強化")
+        .setTraitName("Reinforced")
+        .setSpTraitName("雙倍強化")
         .setLore(
             "強化合金板模組擁有雙倍效果",
             "(只需5個不消耗耐久)"
@@ -1296,7 +1428,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TITANIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("耐用")
+        .setTraitName("Durable")
+        .setSpTraitName("耐用")
         .setLore(
             "工具損壞時仍然可以，但：",
             "-50% 攻擊傷害",
@@ -1307,7 +1440,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TITANIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("地精")
+        .setTraitName("Dwarven Skills")
+        .setSpTraitName("地精")
         .setLore(
             "在挖礦時有機率找到額外的物品",
             "該機率可以疊加"
@@ -1317,7 +1451,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TITANIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("防火")
+        .setTraitName("Heat Resistant")
+        .setSpTraitName("防火")
         .setLore(
             "免疫來自火焰、岩漿與岩漿塊的傷害"
         )
@@ -1326,7 +1461,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("穩定 II")
+        .setTraitName("Stability II")
+        .setSpTraitName("穩定 II")
         .setLore(
             "這東東還是什麼都沒有"
         );
@@ -1334,7 +1470,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("鋒利 1 II")
+        .setTraitName("Sharp 1 II")
+        .setSpTraitName("鋒利 1 II")
         .setLore(
             "多麼糟糕的命名約定",
             "獲得力量II效果(可疊加)"
@@ -1344,7 +1481,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("堅固Ⅱ")
+        .setTraitName("Steadfast II")
+        .setSpTraitName("堅固Ⅱ") // 翻譯奇怪
         .setLore(
             "免疫所有爆炸",
             "爆炸將治療你"
@@ -1354,7 +1492,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("腐蝕 II")
+        .setTraitName("Rusty II")
+        .setSpTraitName("腐蝕 II")
         .setLore(
             "攻擊傷害-10% ",
             "玩家經驗獲取+10% "
@@ -1364,7 +1503,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("金色面纱 II")
+        .setTraitName("Golden Veil II")
+        .setSpTraitName("金色面纱 II")
         .setLore(
             "獲得隱身效果",
             "應用在武器上時:攻擊傷害+50%"
@@ -1375,7 +1515,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("閃閃發光 II")
+        .setTraitName("All That Glitters II")
+        .setSpTraitName("閃閃發光 II")
         .setLore(
             "獲得彩虹發光效果"
         )
@@ -1384,7 +1525,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("繁榮 II")
+        .setTraitName("Prosperous II")
+        .setSpTraitName("繁榮 II")
         .setLore(
             "在受到傷害時",
             "有1%機率掉落1-4個金粒"
@@ -1394,7 +1536,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("以物換物 II")
+        .setTraitName("Barter II")
+        .setSpTraitName("以物換物 II")
         .setLore(
             "豬布靈會被你深深地吸引",
             "(周圍5格內的豬布靈不會攻擊你)"
@@ -1404,7 +1547,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("智力 II")
+        .setTraitName("Brains, Not Brawn II")
+        .setSpTraitName("智力 II")
         .setLore(
             "工具經驗獲取+200%",
             "攻擊傷害-50%"
@@ -1416,7 +1560,8 @@ public final class Traits {
         // Special case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("經驗轉換 II")
+        .setTraitName("Conductive II")
+        .setSpTraitName("經驗轉換 II")
         .setLore(
             "所有工具經驗轉化為玩家經驗",
             "並獲得額外50%的經驗加成"
@@ -1425,7 +1570,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("初學者 II")
+        .setTraitName("Beginner II")
+        .setSpTraitName("初學者 II")
         .setLore(
             "護甲經驗獲取+40%",
             "承受傷害+50%"
@@ -1436,7 +1582,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("玷污 II")
+        .setTraitName("Tarnished II")
+        .setSpTraitName("玷污 II")
         .setLore(
             "攻擊傷害-20%",
             "護甲經驗獲取+40%"
@@ -1446,7 +1593,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("劇毒 II")
+        .setTraitName("Poisonous II")
+        .setSpTraitName("劇毒 II")
         .setLore(
             "攻擊時有50%的機率附加中毒II效果"
         )
@@ -1455,7 +1603,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("水蛭 II")
+        .setTraitName("Leech II")
+        .setSpTraitName("水蛭 II")
         .setLore(
             "獲得額外血量",
             "(獲得生命提升II效果)"
@@ -1465,7 +1614,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("生病了 II")
+        .setTraitName("Sickly II")
+        .setSpTraitName("生病了 II")
         .setLore(
             "鉛甲真的並不是不是個好主意"
         )
@@ -1474,7 +1624,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("生病了 II")
+        .setTraitName("Sickly II")
+        .setSpTraitName("生病了 II")
         .setLore(
             "鉛甲真的並不是個好主意"
         )
@@ -1484,7 +1635,8 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("附魔 II")
+        .setTraitName("Enchanting II")
+        .setSpTraitName("附魔 II")
         .setLore(
             "工具經驗獲取-50%",
             "工具升級時獲得隨時附魔",
@@ -1494,7 +1646,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("觸感柔軟 II")
+        .setTraitName("Soft Touch II")
+        .setSpTraitName("觸感柔軟 II")
         .setLore(
             "你感覺更輕鬆了",
             "(免疫摔落傷害)"
@@ -1504,7 +1657,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("導電 II")
+        .setTraitName("Conductivity II")
+        .setSpTraitName("導電 II")
         .setLore(
             "被擊中時有機會召喚暴風雨.",
             "被閃電擊中時可獲得治療."
@@ -1515,7 +1669,8 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("附魔 II")
+        .setTraitName("Enchanting II")
+        .setSpTraitName("附魔 II")
         .setLore(
             "護甲升級時獲得1-3個隨機附魔",
             "附魔可能並不適用於該護甲"
@@ -1524,7 +1679,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("再生 II")
+        .setTraitName("Recyclable II")
+        .setSpTraitName("再生 II")
         .setLore(
             "使用時有25%的機率恢復耐久"
         )
@@ -1533,7 +1689,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("柔軟 II")
+        .setTraitName("Soft II")
+        .setSpTraitName("柔軟 II")
         .setLore(
             "耐久消耗+100%",
             "工具經驗獲取+50% "
@@ -1545,7 +1702,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("緊酸 II")
+        .setTraitName("Foil II")
+        .setSpTraitName("緊酸 II")
         .setLore(
             "承受傷害+50%",
             "獲得速度效果"
@@ -1556,7 +1714,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("快速修復 II")
+        .setTraitName("Easily Shaped II")
+        .setSpTraitName("快速修復 II")
         .setLore(
             "維修只需要一個任何金屬零件"
         );
@@ -1564,7 +1723,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("幸運 II")
+        .setTraitName("Malleable II")
+        .setSpTraitName("幸運 II")
         .setLore(
             "攻擊傷害-50%",
             "獲得幸運II效果",
@@ -1576,7 +1736,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("隨身罐頭 II")
+        .setTraitName("Can II")
+        .setSpTraitName("隨身罐頭 II")
         .setLore(
             "你不再飢餓",
             "(獲得飽和效果)"
@@ -1586,7 +1747,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("抗毒 II")
+        .setTraitName("Non-Corrosive II")
+        .setSpTraitName("抗毒 II")
         .setLore(
             "免疫中毒、飢餓、虛弱效果",
             "中毒效果會治療你"
@@ -1596,7 +1758,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("承傷 II")
+        .setTraitName("Boost II")
+        .setSpTraitName("承傷 II")
         .setLore(
             "當受到傷害時,獲得傷害吸收II效果"
         )
@@ -1605,7 +1768,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("海豚之力 II")
+        .setTraitName("Graceful II")
+        .setSpTraitName("海豚之力 II")
         .setLore(
             "激活海豚的力量!更多的力量!",
             "(獲得海豚的恩惠II效果)"
@@ -1615,7 +1779,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("飄浮 II")
+        .setTraitName("Super Lightweight II")
+        .setSpTraitName("飄浮 II")
         .setLore(
             "蹲下時讓你變得比空氣還輕",
             "(獲得飄浮II效果)"
@@ -1625,7 +1790,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("偷襲 II")
+        .setTraitName("Sneaky II")
+        .setSpTraitName("偷襲 II")
         .setLore(
             "當目標看向別處時",
             "對其造成的傷害+100% "
@@ -1635,7 +1801,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("針刺療法 II")
+        .setTraitName("Acupuncture II")
+        .setSpTraitName("針刺療法 II")
         .setLore(
             "免疫來自仙人掌的傷害",
             "來自仙人掌的傷害可以治療你"
@@ -1645,7 +1812,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("燃燒 II")
+        .setTraitName("Flammable II")
+        .setSpTraitName("燃燒 II")
         .setLore(
             "有(工具等級 x 10)%的機率",
             "讓敵人著火更長時間"
@@ -1655,7 +1823,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("磁鐵 II")
+        .setTraitName("Magnetesium II")
+        .setSpTraitName("磁鐵 II")
         .setLore(
             "隨機撿起附近10格範圍內的物品"
         )
@@ -1664,7 +1833,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("快溜 II")
+        .setTraitName("Light II")
+        .setSpTraitName("快溜 II")
         .setLore(
             "輸出傷害-25%",
             "獲得速度效果"
@@ -1676,6 +1846,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("MagneSight™ II")
+        .setSpTraitName("MagneSight™ II") // 翻譯缺失
         .setLore(
             "獲得夜視效果",
             "並標記出周圍10格內所有生物"
@@ -1685,7 +1856,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("精靈速度")
+        .setTraitName("Elven Speed")
+        .setSpTraitName("精靈速度")
         .setLore(
             "耐久消耗+50% ",
             "獲得急迫II效果",
@@ -1697,7 +1869,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("剛多林之刺")
+        .setTraitName("Sting of Gondolin")
+        .setSpTraitName("剛多林之刺")
         .setLore(
             "擊退附近所有的敵對生物"
         )
@@ -1706,7 +1879,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("靈異乍現")
+        .setTraitName("Brightburn")
+        .setSpTraitName("靈異乍現")
         .setLore(
             "當擁有靈異乍現及以上的魔童效果時",
             "擊退周圍5格內的所有的敵對生物",
@@ -1717,7 +1891,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("野性的呼喚")
+        .setTraitName("Call of the Wild")
+        .setSpTraitName("野性的呼喚")
         .setLore(
             "當受到攻擊時",
             "有機率召喚一隻狼來幫助你"
@@ -1727,7 +1902,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("神秘")
+        .setTraitName("Mystic")
+        .setSpTraitName("神秘")
         .setLore(
             "挖礦時:",
             "玩家經驗獲取+100% ",
@@ -1741,7 +1917,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("堅硬")
+        .setTraitName("Adamant")
+        .setSpTraitName("堅硬")
         .setLore(
             "免疫爆炸傷害"
         )
@@ -1750,7 +1927,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("偏轉")
+        .setTraitName("Deflective")
+        .setSpTraitName("偏轉")
         .setLore(
             "來自發射器的傷害-25% "
         )
@@ -1759,7 +1937,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("有經驗的")
+        .setTraitName("Experienced")
+        .setSpTraitName("有經驗的")
         .setLore(
             "工具經驗獲取+10%",
             "玩家經驗獲取+10% "
@@ -1770,7 +1949,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("慷慨的")
+        .setTraitName("Magnanimous")
+        .setSpTraitName("慷慨的")
         .setLore(
             "你真的太棒了",
             "謝謝你"
@@ -1780,7 +1960,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("熾熱")
+        .setTraitName("Flaming Hot")
+        .setSpTraitName("熾熱")
         .setLore(
             "可熔煉掉落物."
         )
@@ -1789,7 +1970,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("逃脫")
+        .setTraitName("Escape")
+        .setSpTraitName("逃脫")
         .setLore(
             "受到傷害時隨機傳送到附近(CD: 10秒)"
         )
@@ -1798,7 +1980,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("水下也有氧氣")
+        .setTraitName("Oxygenated")
+        .setSpTraitName("水下也有氧氣")
         .setLore(
             "(免疫淹水後的傷害)"
         )
@@ -1807,7 +1990,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("幸運的")
+        .setTraitName("Fortunate")
+        .setSpTraitName("幸運的")
         .setLore(
             "獲得雙倍掉落物",
             "可與青金石模組疊加"
@@ -1817,7 +2001,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("商人面纱")
+        .setTraitName("Merchant's Veil")
+        .setSpTraitName("商人面纱")
         .setLore(
             "(獲得隱身III效果)!"
         )
@@ -1826,7 +2011,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("如此幸運")
+        .setTraitName("How Fortunate")
+        .setSpTraitName("如此幸運")
         .setLore(
             "受到攻擊時有0.5%的機率獲得一件禮物"
         )
@@ -1835,7 +2021,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("花兒")
+        .setTraitName("Beautiful")
+        .setSpTraitName("花兒")
         .setLore(
             "走在草地上時有機率讓周圍開花"
         )
@@ -1844,7 +2031,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("把戲")
+        .setTraitName("Tricks")
+        .setSpTraitName("把戲")
         .setLore(
             "對周圍所有生物隨機釋放把戲,包括:",
             "擊退,中毒,隨機傳送,著火,速度"
@@ -1854,7 +2042,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("揭露秘密")
+        .setTraitName("Secrets Revealed")
+        .setSpTraitName("揭露秘密")
         .setLore(
             "標記出周圍10格內的所有的生物(也許不會)"
         )
@@ -1863,7 +2052,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("巫師袍")
+        .setTraitName("Wizard Robes")
+        .setSpTraitName("巫師袍")
         .setLore(
             "造成傷害時有機率釋放魔法"
         )
@@ -1872,7 +2062,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("魔法薄荷")
+        .setTraitName("Magical Mint")
+        .setSpTraitName("魔法薄荷")
         .setLore(
             "免疫龍之土息造成的傷害"
         )
@@ -1881,7 +2072,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("撼地者")
+        .setTraitName("Earth Shaker")
+        .setSpTraitName("撼地者")
         .setLore(
             "擊退並囚固命中的生物"
         )
@@ -1890,7 +2082,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("粉碎機")
+        .setTraitName("Grinder")
+        .setSpTraitName("粉碎機")
         .setLore(
             "破壞方塊時的掉落物",
             "就像經過了粉碎機一樣"
@@ -1900,7 +2093,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("岩漿過客")
+        .setTraitName("Lava Walker")
+        .setSpTraitName("岩漿過客")
         .setLore(
             "腳下的岩漿變為岩漿塊"
         )
@@ -1909,7 +2103,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("大自然的法則")
+        .setTraitName("It's only natural")
+        .setSpTraitName("大自然的法則")
         .setLore(
             "右鍵點擊時,餵食周圍的兩隻動物(CD: 2分)",
             "無論是否餵食成功,該效果都會進入冷卻"
@@ -1919,7 +2114,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("乾淨俐落")
+        .setTraitName("Clean Cut")
+        .setSpTraitName("乾淨俐落")
         .setLore(
             "+100% 輸出傷害",
             "獲得急迫II效果"
@@ -1930,7 +2126,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("經驗傳導")
+        .setTraitName("Conductor")
+        .setSpTraitName("經驗傳導")
         .setLore(
             "所有玩家經驗以10:1的比例",
             "轉化為工具經驗"
@@ -1942,6 +2139,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("KOTR")
+        .setSpTraitName("KOTR") // 翻譯缺失
         .setLore(
             "受到傷害時有機率",
             "在周圍生成鐵傀儡"
@@ -1951,7 +2149,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("閃光彈")
+        .setTraitName("Gleam")
+        .setSpTraitName("閃光彈")
         .setLore(
             "受到傷害時,有機率",
             "反彈傷害並使攻擊者眩暈"
@@ -1961,7 +2160,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("無限")
+        .setTraitName("Infinite")
+        .setSpTraitName("無限")
         .setLore(
             "這件工具會一直流傳..."
         )
@@ -1970,7 +2170,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("概念性防御")
+        .setTraitName("Conceptual Defence")
+        .setSpTraitName("概念性防御")
         .setLore(
             "承受傷害-50%"
         )
@@ -1979,7 +2180,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("無限容量")
+        .setTraitName("Infinite Capacity")
+        .setSpTraitName("無限容量")
         .setLore(
             "每次受到傷害，都會儲存10%",
             "最多 5 顆心的傷害。右鍵單擊釋放",
@@ -1992,6 +2194,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("Oroborus")
+        .setSpTraitName("Oroborus") // 翻譯缺失
         .setLore(
             "有20%的機率反彈承受的傷害"
         )
@@ -2000,7 +2203,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("斷點")
+        .setTraitName("Breakpoint")
+        .setSpTraitName("斷點")
         .setLore(
             "無法破壞",
             "輸出傷害+200% ",
@@ -2014,7 +2218,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("無限的力量")
+        .setTraitName("Infinitly Powerful")
+        .setSpTraitName("無限的力量")
         .setLore(
             "每承受2000點傷害(減傷計算前)",
             "可以獲得一個新的隨機附魔",
@@ -2025,7 +2230,8 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("無限的防禦")
+        .setTraitName("Infinite Defence")
+        .setSpTraitName("無限的防禦")
         .setLore(
             "當裝備全套包含無盡防禦的防具時",
             "所有承受的傷害均減少至1點"
@@ -2039,7 +2245,8 @@ public final class Traits {
     public static final MaterialTrait LITE_RUBBER_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("絕緣")
+        .setTraitName("Insulated")
+        .setSpTraitName("絕緣")
         .setLore(
             "對閃電免疫"
         )
@@ -2048,7 +2255,8 @@ public final class Traits {
     public static final MaterialTrait LITE_RUBBER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("汗流浹背")
+        .setTraitName("Sweaty")
+        .setSpTraitName("汗流浹背")
         .setLore(
             "橡膠襯裡太熱了"
         )
@@ -2057,7 +2265,8 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("真正穩定")
+        .setTraitName("Really Stable")
+        .setSpTraitName("真正穩定")
         .setLore(
             "工具等級滿10級後:攻擊傷害+(工具等級 * 10)%"
         )
@@ -2066,7 +2275,8 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("禮儀造就人")
+        .setTraitName("Manners Maketh Man")
+        .setSpTraitName("禮儀造就人")
         .setLore(
             "速度1，傷害+50%。你的戰鬥看起來",
             "超酷."
@@ -2078,7 +2288,8 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("王牌特工")
+        .setTraitName("Kingsman")
+        .setSpTraitName("王牌特工")
         .setLore(
             "需要滿足以下全部條件才能生效:",
             "- 裝備全套有王牌特工特性的盔甲",
@@ -2092,7 +2303,8 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("縮小")
+        .setTraitName("Narrowing")
+        .setSpTraitName("縮小")
         .setLore(
             "攻擊者獲得失明效果"
         )
@@ -2101,7 +2313,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("合金")
+        .setTraitName("Mixed Metals")
+        .setSpTraitName("合金")
         .setLore(
             "隨機獲得其冶煉材料的特性但效果減半",
             "(隨機獲得速度,防火,幸運效果)"
@@ -2111,7 +2324,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("倒霉")
+        .setTraitName("Stiff")
+        .setSpTraitName("倒霉")
         .setLore(
             "攻擊傷害+50%",
             "獲得厄運III效果"
@@ -2122,7 +2336,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("有經驗")
+        .setTraitName("Experienced")
+        .setSpTraitName("有經驗")
         .setLore(
             "工具經驗獲取+10%",
             "玩家經驗獲取+10%"
@@ -2134,15 +2349,17 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
         .setTraitName("Mix it up!")
+        .setSpTraitName("Mix it up!") // 翻譯缺失
         .setLore(
-            "Mixes things up a bit when hit"
+            "Mixes things up a bit when hit" // 翻譯缺失
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMixedMetal);
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("混亂")
+        .setTraitName("Cleave")
+        .setSpTraitName("混亂")
         .setLore(
             "受到攻擊時",
             "有機率與攻擊者互換位置"
@@ -2152,7 +2369,8 @@ public final class Traits {
     public static final MaterialTrait LITE_ADVANCED_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("散射")
+        .setTraitName("Heavy Duty")
+        .setSpTraitName("散射")
         .setLore(
             "攻擊時對周圍所有生物同時造成傷害",
             "散射的傷害不會受到其他特性或模組的影響"
@@ -2163,7 +2381,8 @@ public final class Traits {
         // Event More Advanced (mod affector)
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("負荷更多")
+        .setTraitName("Even More Advanced")
+        .setSpTraitName("負荷更多")
         .setLore(
             "每損失50點耐久,會消耗一塊鐵錠來恢復50點耐久"
         );
@@ -2171,7 +2390,8 @@ public final class Traits {
     public static final MaterialTrait LITE_ADVANCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("極度炙熱")
+        .setTraitName("Superhot")
+        .setSpTraitName("極度炙熱")
         .setLore(
             "有機會將附近的實體點燃"
         )
@@ -2180,7 +2400,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MAG_THOR_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("耐熱")
+        .setTraitName("Heat Resistant")
+        .setSpTraitName("耐熱")
         .setLore(
             "熔岩不再是你的敵人"
         )
@@ -2189,7 +2410,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MAG_THOR_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("吸血鬼")
+        .setTraitName("Vampirism")
+        .setSpTraitName("吸血鬼")
         .setLore(
             "造成傷害時有33%的機率恢復1點血量",
             "(日間)-50% 傷害",
@@ -2200,7 +2422,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MAG_THOR_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("放射性板子")
+        .setTraitName("Radioactive Plates")
+        .setSpTraitName("放射性板子")
         .setLore(
             "使攻擊你的敵人中毒"
         )
@@ -2209,7 +2432,8 @@ public final class Traits {
     public static final MaterialTrait LITE_MAG_THOR_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("建築工人的狂暴")
+        .setTraitName("Building Rage")
+        .setSpTraitName("建築工人的狂暴")
         .setLore(
             "有20%的機率在受到傷害時",
             "獲得加速或急迫效果"
@@ -2219,7 +2443,8 @@ public final class Traits {
     public static final MaterialTrait LITE_CARBON_MESH_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("敏捷")
+        .setTraitName("Nimble")
+        .setSpTraitName("敏捷")
         .setLore(
             "獲得加速效果",
             "承受傷害-33%"
@@ -2230,7 +2455,8 @@ public final class Traits {
     public static final MaterialTrait LITE_CARBON_MESH_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("碳纖維")
+        .setTraitName("Carbon Fibre")
+        .setSpTraitName("碳纖維")
         .setLore(
             "速度+1"
         )
@@ -2239,7 +2465,8 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("糟糕的")
+        .setTraitName("Terrible")
+        .setSpTraitName("糟糕的")
         .setLore(
             "耐久消耗+300%",
             "工具經驗獲取-100%"
@@ -2251,7 +2478,8 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("智力")
+        .setTraitName("Brains, Not Brawn.")
+        .setSpTraitName("智力")
         .setLore(
             "工具經驗獲取+100%",
             "攻擊傷害-50%"
@@ -2262,7 +2490,8 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("可憐")
+        .setTraitName("Pathetic")
+        .setSpTraitName("可憐")
         .setLore(
             "警告: 不要穿上這件盔甲",
             "會有壞事發生",
@@ -2274,7 +2503,8 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("分崩離析")
+        .setTraitName("Falling Apart")
+        .setSpTraitName("分崩離析")
         .setLore(
             "玩家經驗獲取+200%",
             "受到傷害時裝備有機率直接掉落"
@@ -2285,7 +2515,8 @@ public final class Traits {
     public static final MaterialTrait LITE_IRIDIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("保護")
+        .setTraitName("Protective")
+        .setSpTraitName("保護")
         .setLore(
             "使你免於死亡(CD: 20分)"
         )
@@ -2294,17 +2525,19 @@ public final class Traits {
     public static final MaterialTrait LITE_IRIDIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("別看我")
+        .setTraitName("Warp")
+        .setSpTraitName("別看我")
         .setLore(
             "使目標看向你的朝向",
-            "(CD: 20秒)"
+            "(CD: 20秒)" // 翻譯錯誤
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("不屈不撓")
+        .setTraitName("Indomitable")
+        .setSpTraitName("不屈不撓")
         .setLore(
             "受到傷害的10%被忽略和反射"
         )
@@ -2313,7 +2546,8 @@ public final class Traits {
     public static final MaterialTrait LITE_IRIDIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("非常規動力")
+        .setTraitName("Unconventional Power")
+        .setSpTraitName("非常規動力")
         .setLore(
             "承受的傷害會被轉化為能源",
             "並存儲在盔甲中(傷害不會被抵消)",
@@ -2330,7 +2564,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("過度充電")
+        .setTraitName("Overcharge")
+        .setSpTraitName("過度充電")
         .setLore(
             "每次擊中怪物時儲存能量",
             "每10次攻擊就會釋放這波能量"
@@ -2340,7 +2575,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("致盲速度")
+        .setTraitName("Blinding Speed")
+        .setSpTraitName("致盲速度")
         .setLore(
             "獲得速度V效果",
             "獲得失明效果"
@@ -2350,7 +2586,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("重力")
+        .setTraitName("Gravity")
+        .setSpTraitName("重力")
         .setLore(
             "附近的所有實體都對著你慢慢被拉動"
         )
@@ -2359,7 +2596,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("靈魂虹吸")
+        .setTraitName("Soul Siphon")
+        .setSpTraitName("靈魂虹吸")
         .setLore(
             "儲存被殺、敵對、暴徒的靈魂",
             "每100個靈魂傷害+1%",
@@ -2370,7 +2608,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SLIMESTEEL_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("彈性 II")
+        .setTraitName("Bouncy II")
+        .setSpTraitName("彈性 II")
         .setLore(
             "墜落傷害因跳躍提升而減半"
         )
@@ -2380,7 +2619,8 @@ public final class Traits {
     public static final MaterialTrait SFW_SLIMESTEEL_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("月亮彈跳")
+        .setTraitName("Moon Bounce")
+        .setSpTraitName("月亮彈跳")
         .setLore(
             "穿靴子時，免疫跌落傷害",
             "你也會變得更有彈性"
@@ -2390,7 +2630,8 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("強力黏液")
+        .setTraitName("Strong and Sticky")
+        .setSpTraitName("強力黏液")
         .setLore(
             "當物品欄有空間時",
             "掉落的方塊將直接吸入物品欄中"
@@ -2400,7 +2641,8 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("靈活")
+        .setTraitName("Flexibility")
+        .setSpTraitName("靈活")
         .setLore(
             "受到的傷害減少，耐久度降低",
             "反而工具損壞時不起作用"
@@ -2410,7 +2652,8 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("剛性與柔性")
+        .setTraitName("Rigid Flexibility")
+        .setSpTraitName("剛性與柔性")
         .setLore(
             "獲得速度效果",
             "獲得跳躍提升效果",
@@ -2422,7 +2665,8 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("偏轉")
+        .setTraitName("Deflection")
+        .setSpTraitName("偏轉")
         .setLore(
             "有10%的機率免疫來自彈射物的傷害"
         )
@@ -2431,7 +2675,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("重")
+        .setTraitName("Heavy")
+        .setSpTraitName("重")
         .setLore(
             "可挖掘 3x3x3 區域"
         )
@@ -2440,7 +2685,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("重型鞍座")
+        .setTraitName("Heavy Pommel")
+        .setSpTraitName("重型鞍座")
         .setLore(
             "命中的目標會被減速",
             "並且無法傳送"
@@ -2450,7 +2696,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("增加質量")
+        .setTraitName("Increased Mass")
+        .setSpTraitName("增加質量")
         .setLore(
             "獲得減速效果",
             "受到傷害時,攻擊者會被擊退"
@@ -2461,7 +2708,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("畫筆")
+        .setTraitName("Draw")
+        .setSpTraitName("畫筆")
         .setLore(
             "有5%的機率被承受傷害治療"
         )
@@ -2470,7 +2718,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("無禮")
+        .setTraitName("Brute")
+        .setSpTraitName("無禮")
         .setLore(
             "獲得挖掘疲勞效果",
             "命中的目標會被囚固",
@@ -2484,6 +2733,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("Tuff Stuff")
+        .setSpTraitName("Tuff Stuff") // 翻譯缺失
         .setLore(
             "擊退任何命中的生物",
             "有機率囚固目標"
@@ -2493,7 +2743,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("暴風雨")
+        .setTraitName("Tempest")
+        .setSpTraitName("暴風雨")
         .setLore(
             "當裝備全套有暴風雨特性的盔甲時",
             "有機率在周圍召喚暴風雨"
@@ -2503,7 +2754,8 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("部分衰減")
+        .setTraitName("Partial Decay")
+        .setSpTraitName("部分衰減")
         .setLore(
             "有機率隨機對周圍生物造成傷害",
             "不會致死"
@@ -2513,7 +2765,8 @@ public final class Traits {
     public static final MaterialTrait SFW_UNPATENTABLIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("革新")
+        .setTraitName("Innovation")
+        .setSpTraitName("革新")
         .setLore(
             "白天時工具和玩家經驗+100% "
         )
@@ -2524,7 +2777,8 @@ public final class Traits {
         // Special case in ItemDrop and PlayerDeath
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("無形權利")
+        .setTraitName("Incorporeal Right")
+        .setSpTraitName("無形權利")
         .setLore(
             "工具不能在死亡時掉落或丟失"
         );
@@ -2532,10 +2786,11 @@ public final class Traits {
     public static final MaterialTrait SFW_UNPATENTABLIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("強烈的凝視")
+        .setTraitName("Intense Gaze")
+        .setSpTraitName("強烈的凝視")
         .setLore(
             "你看向的實體會傳送到你身邊",
-            "不會對玩家、凋靈、末影龍生效"
+            "不會對玩家、凋靈、末影龍生效" // 翻譯錯誤
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateUnpatentabilum);
 
@@ -2543,6 +2798,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
         .setTraitName("KOTR")
+        .setSpTraitName("KOTR") // 翻譯缺失
         .setLore(
             "受到傷害時有機率",
             "在周圍生成鐵傀儡"
@@ -2556,7 +2812,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("閃光彈")
+        .setTraitName("Super Dooper Stainless")
+        .setSpTraitName("閃光彈") // 翻譯錯誤 - 全部
         .setLore(
             "受到傷害時,有機率",
             "反彈傷害並使攻擊者眩暈"
@@ -2566,7 +2823,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超級不銹鋼")
+        .setTraitName("Cutlery")
+        .setSpTraitName("超級不銹鋼") // 翻譯錯誤 - 全部
         .setLore(
             "可以抵擋更多鮮血"
         )
@@ -2575,7 +2833,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("標準")
+        .setTraitName("The Standard")
+        .setSpTraitName("標準")
         .setLore(
             "受到的傷害降低5%"
         )
@@ -2584,7 +2843,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("安全水域")
+        .setTraitName("Water Safe")
+        .setSpTraitName("安全水域")
         .setLore(
             "獲得水下呼吸效果"
         )
@@ -2593,7 +2853,8 @@ public final class Traits {
     public static final MaterialTrait DYN_VEX_GEM_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("土遁")
+        .setTraitName("NoClip")
+        .setSpTraitName("土遁")
         .setLore(
             "右鍵點擊隨機傳送到附近",
             "(CD:5分鐘)"
@@ -2603,7 +2864,8 @@ public final class Traits {
     public static final MaterialTrait DYN_VEX_GEM_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("惱人")
+        .setTraitName("Annoying")
+        .setSpTraitName("惱人")
         .setLore(
             "惱鬼寶石不應該這樣用!"
         )
@@ -2612,7 +2874,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAR_DUST_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光明之怒")
+        .setTraitName("Bright Fury")
+        .setSpTraitName("光明之怒")
         .setLore(
             "攻擊傷害+50%",
             "攻擊可使目標眩暈"
@@ -2623,8 +2886,9 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Yvaine")
+        .setSpTraitName("Yvaine") // 翻譯缺失
         .setLore(
-            "\"不要向流星許願，否則它就會變成女人\"",
+            "\"不要向流星許願，否則它就會變成女人\"", // 翻譯問題
             "獲得發光效果",
             "周圍的村民會不斷向你聚集"
         )
@@ -2634,6 +2898,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("Starshine")
+        .setSpTraitName("Starshine") // 翻譯缺失
         .setLore(
             "有5%的機率",
             "在夜間恢復1點血量(半顆心)"
@@ -2643,7 +2908,8 @@ public final class Traits {
     public static final MaterialTrait DYN_STAR_DUST_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("魔童")
+        .setTraitName("Bright-burn")
+        .setSpTraitName("魔童")
         .setLore(
             "獲得1層魔童效果",
             "當擁有4層及以上的魔童效果時",
@@ -2655,7 +2921,8 @@ public final class Traits {
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("靈魂出竅")
+        .setTraitName("Incorporeal")
+        .setSpTraitName("靈魂出竅")
         .setLore(
             "免疫來自彈射物的傷害"
         )
@@ -2664,7 +2931,8 @@ public final class Traits {
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超立方體 [B]")
+        .setTraitName("HyperCube [B]")
+        .setSpTraitName("超立方體 [B]")
         .setLore(
             "僅適用於 [A] 和 [B]。Shift + Right",
             "單擊以存儲位置.右鍵單擊以調用",
@@ -2675,7 +2943,8 @@ public final class Traits {
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("攻殼機動隊")
+        .setTraitName("Ghost in the shell")
+        .setSpTraitName("攻殼機動隊")
         .setLore(
             "消耗耐久來緩慢攻擊周圍所有生物",
             "該特性不會致死",
@@ -2686,7 +2955,8 @@ public final class Traits {
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("幽靈")
+        .setTraitName("Ghostly")
+        .setSpTraitName("幽靈")
         .setLore(
             "像幽靈一樣盤旋",
             "(獲得飄浮效果)"
@@ -2696,17 +2966,19 @@ public final class Traits {
     public static final MaterialTrait DYN_TESSERACT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超立方體 [A]")
+        .setTraitName("HyperCube [A]")
+        .setSpTraitName("超立方體 [A]")
         .setLore(
             "僅適用於 [A] 和 [B]。Shift + Right",
-            "單擊以存儲位置。右鍵單擊以傳送到那個位置（CD：10m)"
+            "單擊以存儲位置。右鍵單擊以傳送到那個位置（CD：10m)" // 翻譯缺失
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headTessMat);
 
     public static final MaterialTrait DYN_TESSERACT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光學能量")
+        .setTraitName("Hyberbolic Tesseration")
+        .setSpTraitName("光學能量")
         .setLore(
             "需要全套包含雙光學能量特性的盔甲",
             "(每件盔甲需要有2個光學能量特性)才能生效",
@@ -2724,7 +2996,8 @@ public final class Traits {
     public static final MaterialTrait DYN_TESSERACT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光學能量")
+        .setTraitName("Hyberbolic Tesseration")
+        .setSpTraitName("光學能量")
         .setLore(
             "需要8個光學能量特性才能生效",
             "(每件盔甲需要有2個光學能量特性)",
@@ -2746,7 +3019,8 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_STRENGTH = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力")
+        .setTraitName("The Power of Daxi")
+        .setSpTraitName("超能力")
         .setLore(
             "有20%的機率釋放出超能力核心的力量",
             "造成100%額外傷害"
@@ -2756,7 +3030,8 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_ABSORPTION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力 - Absorption")
+        .setTraitName("Unite - Absorption")
+        .setSpTraitName("超能力 - Absorption") // 翻譯缺失
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -2766,7 +3041,8 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_FORTITUDE = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力 - Fortitude")
+        .setTraitName("Unite - Fortitude")
+        .setSpTraitName("超能力 - Fortitude") // 翻譯缺失
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -2776,7 +3052,8 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_SATURATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力 - Saturation")
+        .setTraitName("Unite - Saturation")
+        .setSpTraitName("超能力 - Saturation") // 翻譯缺失
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -2786,7 +3063,8 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_REGENERATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力 - Regeneration")
+        .setTraitName("Unite - Regeneration")
+        .setSpTraitName("超能力 - Regeneration") // 翻譯缺失
         .setLore(
             "當4種超能力聯合起來後",
             "你死亡時可以保留超能力核心的效果"
@@ -2800,7 +3078,8 @@ public final class Traits {
     public static final MaterialTrait NTW_UTLIMANINIUM = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.NETWORKS_NOTE)
-        .setTraitName("感覺連接")
+        .setTraitName("Feeling Connected")
+        .setSpTraitName("感覺連接")
         .setLore(
             "允許您無線連接",
             "到使用直接神經網絡的網絡",

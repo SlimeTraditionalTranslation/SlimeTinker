@@ -28,6 +28,7 @@ import java.util.function.Consumer;
 public class MaterialTrait {
 
     private String traitName;
+    private String traitspname;
     private String[] lore;
     private String addedBy;
     private SlimefunItemStack partType;
@@ -43,8 +44,19 @@ public class MaterialTrait {
     }
 
     @Nonnull
+    public String getTraitSpName() {
+        return this.traitspname;
+    }
+
+    @Nonnull
     public MaterialTrait setTraitName(@Nonnull String traitName) {
         this.traitName = traitName;
+        return this;
+    }
+
+    @Nonnull
+    public MaterialTrait setSpTraitName(@Nonnull String traitspname) {
+        this.traitspname = traitspname;
         return this;
     }
 
@@ -116,7 +128,7 @@ public class MaterialTrait {
                 ),
                 getTraitTexture(addedBy),
                 ThemeItemType.PROP,
-                "特性: " + traitName,
+                "特性: " + traitspname,
                 newLore
             );
         this.item = new SlimefunItem(ItemGroups.TRAITS, itemStack, DummySmelteryTrait.TYPE, propRecipe(partType, parentCM.getRepresentativeStack()));

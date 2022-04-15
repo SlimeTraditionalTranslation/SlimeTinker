@@ -252,22 +252,22 @@ public class TinkerMaterialManager {
         TinkerMaterial tinkerMaterial = MAP.get(id);
         if (partType == TraitPartType.HEAD) {
             Validate.notNull(tinkerMaterial.getTraitToolHead(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitToolHead().getTraitName();
+            return tinkerMaterial.getTraitToolHead().getTraitSpName();
         } else if (partType == TraitPartType.BINDER) {
             Validate.notNull(tinkerMaterial.getTraitToolBinder(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitToolBinder().getTraitName();
+            return tinkerMaterial.getTraitToolBinder().getTraitSpName();
         } else if (partType == TraitPartType.ROD) {
             Validate.notNull(tinkerMaterial.getTraitToolRod(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitToolRod().getTraitName();
+            return tinkerMaterial.getTraitToolRod().getTraitSpName();
         } else if (partType == TraitPartType.PLATES) {
             Validate.notNull(tinkerMaterial.getTraitArmorPlates(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitArmorPlates().getTraitName();
+            return tinkerMaterial.getTraitArmorPlates().getTraitSpName();
         } else if (partType == TraitPartType.GAMBESON) {
             Validate.notNull(tinkerMaterial.getTraitArmorGambeson(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitArmorGambeson().getTraitName();
+            return tinkerMaterial.getTraitArmorGambeson().getTraitSpName();
         } else if (partType == TraitPartType.LINKS) {
             Validate.notNull(tinkerMaterial.getTraitArmorLinks(), MessageFormat.format(VALIDATE_TRAIT_MESSAGE, id, partType));
-            return tinkerMaterial.getTraitArmorLinks().getTraitName();
+            return tinkerMaterial.getTraitArmorLinks().getTraitSpName();
         }
         return "Error";
     }
