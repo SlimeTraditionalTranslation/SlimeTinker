@@ -121,7 +121,7 @@ public final class Ids {
     public static final String BINDING = "綁定結";
     public static final String ROD = "空格";
     public static final String PLATE = "盤";
-    public static final String GAMBESON = "GAMBESON";
+    public static final String GAMBESON = "護身軟甲";
     public static final String LINKS = "連結";
 
     public static final String SHOVEL = "鏟子";
