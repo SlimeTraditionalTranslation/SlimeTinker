@@ -1483,7 +1483,7 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setTraitName("Steadfast II")
-        .setSpTraitName("堅韌Ⅱ") // 翻譯奇怪
+        .setSpTraitName("堅韌II") // 翻譯奇怪
         .setLore(
             "免疫所有爆炸",
             "爆炸將治療你"

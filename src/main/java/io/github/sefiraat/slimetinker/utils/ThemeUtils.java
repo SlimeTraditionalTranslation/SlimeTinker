@@ -52,21 +52,21 @@ public final class ThemeUtils {
     public static final ChatColor ADD_TRANSCENDENCE = ChatColor.of("#c242f5");
     public static final ChatColor ADD_NETWORKS = ChatColor.of("#05ad08");
 
-    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "Crafting Material";
-    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "Machine";
-    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "Drop";
-    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "Base Resource";
-    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "Chest";
-    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + "Molten Metal";
-    public static final String LORE_LIQUID = ITEM_TYPEDESC + "TinkerMaterial";
-    public static final String LORE_CAST = ITEM_TYPEDESC + "Cast";
-    public static final String LORE_PART = ITEM_TYPEDESC + "Part";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "Tinker's Tool";
-    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "Tinker's Armour";
-    public static final String LORE_INFO = ITEM_TYPEDESC + "Info";
-    public static final String LORE_MOD = ITEM_TYPEDESC + "Modification";
-    public static final String LORE_PROP = ITEM_TYPEDESC + "Material Trait";
-    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Mutliblock";
+    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "合成材料";
+    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "機器";
+    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "掉落物";
+    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "基礎資源";
+    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "箱子";
+    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + "熔融金屬";
+    public static final String LORE_LIQUID = ITEM_TYPEDESC + "匠魂材料";
+    public static final String LORE_CAST = ITEM_TYPEDESC + "鑄件";
+    public static final String LORE_PART = ITEM_TYPEDESC + "零件";
+    public static final String LORE_TOOL = ITEM_TYPEDESC + "匠魂工具";
+    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "匠魂護甲";
+    public static final String LORE_INFO = ITEM_TYPEDESC + "信息";
+    public static final String LORE_MOD = ITEM_TYPEDESC + "模組";
+    public static final String LORE_PROP = ITEM_TYPEDESC + "物質特性";
+    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "多方塊結構";
 
     @Nonnull
     @ParametersAreNonnullByDefault
