@@ -486,8 +486,8 @@ public class TinkerMaterial {
             "PART_HEAD_" + type + name,
             skullTexture,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " Head",
-            ThemeUtils.PASSIVE + "A tool head made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " 頭",
+            ThemeUtils.PASSIVE + "這是由 " + titName + "合成的 "
         );
     }
 
@@ -498,8 +498,8 @@ public class TinkerMaterial {
             "PART_BINDING_" + name,
             SkullTextures.PART_BINDING,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Binding",
-            ThemeUtils.PASSIVE + "A binding made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " 绑定結",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的绑定結"
         );
 
         ItemMeta im = i.getItemMeta();
@@ -518,8 +518,8 @@ public class TinkerMaterial {
             "PART_ROD_" + name,
             SkullTextures.PART_TOOL_ROD,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Rod",
-            ThemeUtils.PASSIVE + "A tool rod made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " 手柄",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的手柄"
         );
     }
 
@@ -530,8 +530,8 @@ public class TinkerMaterial {
             "PART_PLATES_" + type + name,
             skullTexture,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " Plates",
-            ThemeUtils.PASSIVE + "A set of armour plates made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " 板",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的盔甲板"
         );
     }
 
@@ -542,8 +542,8 @@ public class TinkerMaterial {
             "PART_GAMBESON_" + name,
             SkullTextures.PART_GAMBESON,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Gambeson",
-            ThemeUtils.PASSIVE + "A gambeson made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " 護身軟甲",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的護身軟甲"
         );
 
         ItemMeta im = i.getItemMeta();
@@ -561,8 +561,8 @@ public class TinkerMaterial {
             "PART_LINKS_" + name,
             SkullTextures.PART_LINKS,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Mail Links",
-            ThemeUtils.PASSIVE + "A set of mail links made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " 盔甲接合物",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的盔甲接合物"
         );
     }
 
@@ -573,9 +573,8 @@ public class TinkerMaterial {
             "PART_REPAIR_KIT_" + name,
             Material.CHEST_MINECART,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Repair Kit",
-            ThemeUtils.PASSIVE + "A kit that is able to repair items",
-            "made out of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " 修復工具",
+            ThemeUtils.PASSIVE + "由" + titName + "制成的修復工具"
         );
     }
 
