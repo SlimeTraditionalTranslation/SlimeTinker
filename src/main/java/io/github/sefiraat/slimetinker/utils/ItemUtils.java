@@ -160,9 +160,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "H: " + formatMaterialName(matHead));
-        lore.add(ThemeUtils.CLICK_INFO + "B: " + formatMaterialName(matBind));
-        lore.add(ThemeUtils.CLICK_INFO + "R: " + formatMaterialName(matRod));
+        lore.add(ThemeUtils.CLICK_INFO + "頭部: " + formatMaterialName(matHead));
+        lore.add(ThemeUtils.CLICK_INFO + "綁定結: " + formatMaterialName(matBind));
+        lore.add(ThemeUtils.CLICK_INFO + "手柄: " + formatMaterialName(matRod));
         lore.add(ThemeUtils.getLine());
 
         // Material properties
@@ -185,9 +185,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsTool().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等級 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等級 " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
             }
         }
         if (!mapLevels.isEmpty()) {
@@ -210,9 +210,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "P: " + formatMaterialName(matPlate));
-        lore.add(ThemeUtils.CLICK_INFO + "G: " + formatMaterialName(matGambeson));
-        lore.add(ThemeUtils.CLICK_INFO + "L: " + formatMaterialName(matLinks));
+        lore.add(ThemeUtils.CLICK_INFO + "板: " + formatMaterialName(matPlate));
+        lore.add(ThemeUtils.CLICK_INFO + "護身軟甲: " + formatMaterialName(matGambeson));
+        lore.add(ThemeUtils.CLICK_INFO + "盔甲接合物: " + formatMaterialName(matLinks));
         lore.add(ThemeUtils.getLine());
 
         // Material properties
@@ -235,9 +235,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsArmour().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等級 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等級 " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
             }
         }
         if (!mapLevels.isEmpty()) {
