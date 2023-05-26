@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 public class DropItemListener implements Listener {
 
@@ -20,7 +21,7 @@ public class DropItemListener implements Listener {
         ItemStack itemStack = event.getItemDrop().getItemStack();
         if (ItemUtils.cannotDrop(itemStack)) {
             event.setCancelled(true);
-            event.getPlayer().sendMessage(ThemeUtils.WARNING + "This cannot be dropped.");
+            event.getPlayer().sendMessage(ThemeUtils.WARNING + GetText.tr("This cannot be dropped."));
         }
 
     }

@@ -15,7 +15,14 @@ import io.github.sefiraat.slimetinker.listeners.ListenerManager;
 import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
+import org.antlr.v4.runtime.misc.ParseCancellationException;
 import org.bstats.bukkit.Metrics;
+import org.mini2Dx.gettext.GetText;
+import org.mini2Dx.gettext.PoFile;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Locale;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -44,6 +51,24 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("########################################");
         getLogger().info("   Slime Tinker - Created by Sefiraat   ");
         getLogger().info("########################################");
+
+        GetText.setLocale(Locale.TRADITIONAL_CHINESE);
+        InputStream inputStream = getClass().getResourceAsStream("/translations/zh_tw.po");
+        if (inputStream == null) {
+            getLogger().severe("錯誤！無法找到翻譯檔案，請回報給翻譯者。");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        } else {
+            getLogger().info("載入繁體翻譯檔案...");
+            try {
+                PoFile poFile = new PoFile(Locale.TRADITIONAL_CHINESE, inputStream);
+                GetText.add(poFile);
+            } catch (ParseCancellationException | IOException e) {
+                getLogger().severe("錯誤！讀取翻譯時發生錯誤，請回報給翻譯者：" + e.getMessage());
+                getServer().getPluginManager().disablePlugin(this);
+                return;
+            }
+        }
 
         ItemGroups.set(this);
         Materials.set(this);

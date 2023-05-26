@@ -18,6 +18,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -40,19 +41,19 @@ public class RepairBench extends MenuBlock {
 
         // No item dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a item into the first slot.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("Input a item into the first slot."));
             return;
         }
 
         // Still no item, nice try
         if (!ItemUtils.isTool(item) && !ItemUtils.isArmour(item)) {
-            player.sendMessage(ThemeUtils.WARNING + "The item in the first slot isn't a Tinker's item.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("The item in the first slot isn't a Tinker's item."));
             return;
         }
 
         // No kit!
         if (kit == null || !RepairkitTemplate.isRepairKit(kit)) {
-            player.sendMessage(ThemeUtils.WARNING + "Input a repair kit into the second slot.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("Input a repair kit into the second slot."));
             return;
         }
 
@@ -75,7 +76,7 @@ public class RepairBench extends MenuBlock {
             blockMenu.getItemInSlot(INPUT_KIT).setAmount(blockMenu.getItemInSlot(INPUT_KIT).getAmount() - 1);
 
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "The kit type does not match the item material.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("The kit type does not match the item material."));
         }
     }
 

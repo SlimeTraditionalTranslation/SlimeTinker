@@ -10,6 +10,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 public final class Dies {
 
@@ -17,13 +18,13 @@ public final class Dies {
         throw new UnsupportedOperationException("Utility Class");
     }
 
-    public static final String DIE_DESC = "A die to create a cast from";
+    public static final String DIE_DESC = GetText.tr("A die to create a cast from");
     public static final SlimefunItemStack DIE_SHOVEL_HEAD =
         ThemeUtils.themedItemStack(
             "DIE_SHOVEL_HEAD",
             SkullTextures.PART_SHOVEL_HEAD,
             ThemeItemType.CAST,
-            "Die: Stone Shovel Head",
+            GetText.tr("Die: Stone Shovel Head"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_PICKAXE_HEAD =
@@ -31,7 +32,7 @@ public final class Dies {
             "DIE_PICKAXE_HEAD",
             SkullTextures.PART_PICKAXE_HEAD,
             ThemeItemType.CAST,
-            "Die: Stone Pickaxe Head",
+            GetText.tr("Die: Stone Pickaxe Head"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_AXE_HEAD =
@@ -39,7 +40,7 @@ public final class Dies {
             "DIE_AXE_HEAD",
             SkullTextures.PART_AXE_HEAD,
             ThemeItemType.CAST,
-            "Die: Stone Axe Head",
+            GetText.tr("Die: Stone Axe Head"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_HOE_HEAD =
@@ -47,7 +48,7 @@ public final class Dies {
             "DIE_HOE_HEAD",
             SkullTextures.PART_HOE_HEAD,
             ThemeItemType.CAST,
-            "Die: Stone Hoe Head",
+            GetText.tr("Die: Stone Hoe Head"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_SWORD_BLADE =
@@ -55,7 +56,7 @@ public final class Dies {
             "DIE_SWORD_BLADE",
             SkullTextures.PART_SWORD_BLADE,
             ThemeItemType.CAST,
-            "Die: Stone Sword Head",
+            GetText.tr("Die: Stone Sword Head"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_TOOL_ROD =
@@ -63,7 +64,7 @@ public final class Dies {
             "DIE_TOOL_ROD",
             SkullTextures.PART_TOOL_ROD,
             ThemeItemType.CAST,
-            "Die: Tool Rod",
+            GetText.tr("Die: Tool Rod"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_HELM_PLATE =
@@ -71,7 +72,7 @@ public final class Dies {
             "DIE_HELM_PLATE",
             SkullTextures.PART_HELM_PLATES,
             ThemeItemType.CAST,
-            "Die: Stone Helmet Plates",
+            GetText.tr("Die: Stone Helmet Plates"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_CHEST_PLATE =
@@ -79,7 +80,7 @@ public final class Dies {
             "DIE_CHEST_PLATE",
             SkullTextures.PART_CHEST_PLATES,
             ThemeItemType.CAST,
-            "Die: Stone Chest Plates",
+            GetText.tr("Die: Stone Chest Plates"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_LEG_PLATE =
@@ -87,7 +88,7 @@ public final class Dies {
             "DIE_LEG_PLATE",
             SkullTextures.PART_LEG_PLATES,
             ThemeItemType.CAST,
-            "Die: Stone Leg Plates",
+            GetText.tr("Die: Stone Leg Plates"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_BOOT_PLATE =
@@ -95,7 +96,7 @@ public final class Dies {
             "DIE_BOOT_PLATE",
             SkullTextures.PART_BOOTS_PLATES,
             ThemeItemType.CAST,
-            "Die: Stone Boot Plates",
+            GetText.tr("Die: Stone Boot Plates"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_MAIL_LINK =
@@ -103,7 +104,7 @@ public final class Dies {
             "DIE_MAIL_LINK",
             SkullTextures.PART_LINKS,
             ThemeItemType.CAST,
-            "Die: Mail Links",
+            GetText.tr("Die: Mail Links"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     public static final SlimefunItemStack DIE_REPAIR_KIT =
@@ -111,7 +112,7 @@ public final class Dies {
             "DIE_REPAIR_KIT",
             Material.MINECART,
             ThemeItemType.CAST,
-            "Die: Repair Kit",
+            GetText.tr("Die: Repair Kit"),
             ThemeUtils.PASSIVE + DIE_DESC
         );
     protected static final ItemStack[] RECIPE_DIE_SHOVEL_HEAD = new ItemStack[]{

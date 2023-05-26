@@ -9,6 +9,7 @@ import io.github.sefiraat.slimetinker.events.TickEvents;
 import io.github.sefiraat.slimetinker.events.friend.TraitEventType;
 import io.github.sefiraat.slimetinker.items.tinkermaterials.elements.MaterialTrait;
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
+import org.mini2Dx.gettext.GetText;
 
 
 public final class Traits {
@@ -22,46 +23,46 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Stability")
+        .setTraitName(GetText.tr("Stability"))
         .setLore(
-            "Does... nothing!"
+            GetText.tr("Does... nothing!")
         );
 
     public static final MaterialTrait CORE_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sharp 1")
+        .setTraitName(GetText.tr("Sharp 1"))
         .setLore(
-            "Gives increased damage, stacks with",
-            "mods and other properties."
+            GetText.tr("Gives increased damage, stacks with"),
+            GetText.tr("mods and other properties.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodIron);
 
     public static final MaterialTrait CORE_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Steadfast")
+        .setTraitName(GetText.tr("Steadfast"))
         .setLore(
-            "33% chance to ignore an explosion"
+            GetText.tr("33% chance to ignore an explosion")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateIron);
 
     public static final MaterialTrait CORE_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Rusty")
+        .setTraitName(GetText.tr("Rusty"))
         .setLore(
-            "Armour durability loss +10%. Player Exp gain +10%"
+            GetText.tr("Armour durability loss +10%. Player Exp gain +10%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksIron);
 
     public static final MaterialTrait CORE_GOLD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Golden Veil")
+        .setTraitName(GetText.tr("Golden Veil"))
         .setLore(
-            "Makes the player invisible. If used on",
-            "a weapon, -100% damage."
+            GetText.tr("Makes the player invisible. If used on"),
+            GetText.tr("a weapon, -100% damage.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headGold)
         .addConsumer(TraitEventType.TICK, TickEvents::headGold);
@@ -69,37 +70,37 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("All that Glitters")
+        .setTraitName(GetText.tr("All that Glitters"))
         .setLore(
-            "Makes you all shiny..."
+            GetText.tr("Makes you all shiny...")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodGold);
 
     public static final MaterialTrait CORE_GOLD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Prosperous")
+        .setTraitName(GetText.tr("Prosperous"))
         .setLore(
-            "1% chance to drop a gold nugget when hit"
+            GetText.tr("1% chance to drop a gold nugget when hit")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateGold);
 
     public static final MaterialTrait CORE_GOLD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Barter")
+        .setTraitName(GetText.tr("Barter"))
         .setLore(
-            "Piglins like your armour"
+            GetText.tr("Piglins like your armour")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGold);
 
     public static final MaterialTrait CORE_COPPER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Brains, Not Brawn")
+        .setTraitName(GetText.tr("Brains, Not Brawn"))
         .setLore(
-            "Tool exp gain is doubled. Damage",
-            "dealt is halved."
+            GetText.tr("Tool exp gain is doubled. Damage"),
+            GetText.tr("dealt is halved.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCopper);
@@ -108,17 +109,17 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Conductive")
+        .setTraitName(GetText.tr("Conductive"))
         .setLore(
-            "All tool exp is converted to player exp."
+            GetText.tr("All tool exp is converted to player exp.")
         );
 
     public static final MaterialTrait CORE_COPPER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Beginner")
+        .setTraitName(GetText.tr("Beginner"))
         .setLore(
-            "Damage taken +25%. Armour Exp +20%"
+            GetText.tr("Damage taken +25%. Armour Exp +20%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateCopper)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateCopper);
@@ -126,45 +127,45 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Tarnished")
+        .setTraitName(GetText.tr("Tarnished"))
         .setLore(
-            "Outgoing damage reduced by 25%. Armour Exp +20%"
+            GetText.tr("Outgoing damage reduced by 25%. Armour Exp +20%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksCopper);
 
     public static final MaterialTrait CORE_LEAD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Poisonous")
+        .setTraitName(GetText.tr("Poisonous"))
         .setLore(
-            "25% chance to afflict poison on hit."
+            GetText.tr("25% chance to afflict poison on hit.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headLead);
 
     public static final MaterialTrait CORE_LEAD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Leech")
+        .setTraitName(GetText.tr("Leech"))
         .setLore(
-            "Bonus health, but drains your energy."
+            GetText.tr("Bonus health, but drains your energy.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodLead);
 
     public static final MaterialTrait CORE_LEAD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sickly")
+        .setTraitName(GetText.tr("Sickly"))
         .setLore(
-            "Lead Armour is not a good idea"
+            GetText.tr("Lead Armour is not a good idea")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateLead);
 
     public static final MaterialTrait CORE_LEAD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sickly")
+        .setTraitName(GetText.tr("Sickly"))
         .setLore(
-            "Lead Armour is not a good idea"
+            GetText.tr("Lead Armour is not a good idea")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLead);
 
@@ -172,28 +173,28 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Enchanting")
+        .setTraitName(GetText.tr("Enchanting"))
         .setLore(
-            "Tool exp gain is halved. Tools add a",
-            "random vanilla enchant when leveling. May or",
-            "may not match the tool type."
+            GetText.tr("Tool exp gain is halved. Tools add a"),
+            GetText.tr("random vanilla enchant when leveling. May or"),
+            GetText.tr("may not match the tool type.")
         );
 
     public static final MaterialTrait CORE_SILVER_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Soft Touch")
+        .setTraitName(GetText.tr("Soft Touch"))
         .setLore(
-            "You feel lighter."
+            GetText.tr("You feel lighter.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSilver);
 
     public static final MaterialTrait CORE_SILVER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Conductivity")
+        .setTraitName(GetText.tr("Conductivity"))
         .setLore(
-            "Immune to lightning and even reflect it back!"
+            GetText.tr("Immune to lightning and even reflect it back!")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSilver);
 
@@ -201,27 +202,27 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Enchanting")
+        .setTraitName(GetText.tr("Enchanting"))
         .setLore(
-            "Gains a random enchantment every time this",
-            "piece of armour levels up. May not be useful."
+            GetText.tr("Gains a random enchantment every time this"),
+            GetText.tr("piece of armour levels up. May not be useful.")
         );
 
     public static final MaterialTrait CORE_ALUMINUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Recyclable")
+        .setTraitName(GetText.tr("Recyclable"))
         .setLore(
-            "Chance to restore durability on hit/block break"
+            GetText.tr("Chance to restore durability on hit/block break")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headAluminum);
 
     public static final MaterialTrait CORE_ALUMINUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Soft")
+        .setTraitName(GetText.tr("Soft"))
         .setLore(
-            "Durability loss +100%, tool EXP +50%."
+            GetText.tr("Durability loss +100%, tool EXP +50%.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAluminum)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodAluminum)
@@ -230,9 +231,9 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Foil")
+        .setTraitName(GetText.tr("Foil"))
         .setLore(
-            "Damage Taken +50%. Speed + 1"
+            GetText.tr("Damage Taken +50%. Speed + 1")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAluminum)
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluminum);
@@ -241,17 +242,17 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Easily Shaped")
+        .setTraitName(GetText.tr("Easily Shaped"))
         .setLore(
-            "Repairs only need a single kit."
+            GetText.tr("Repairs only need a single kit.")
         );
 
     public static final MaterialTrait CORE_TIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Malleable")
+        .setTraitName(GetText.tr("Malleable"))
         .setLore(
-            "Deal 50% less damage but gain luck."
+            GetText.tr("Deal 50% less damage but gain luck.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headTin)
         .addConsumer(TraitEventType.TICK, TickEvents::headTin);
@@ -259,93 +260,93 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Can")
+        .setTraitName(GetText.tr("Can"))
         .setLore(
-            "Your hunger just fades away"
+            GetText.tr("Your hunger just fades away")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodTin);
 
     public static final MaterialTrait CORE_TIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Non-Corrosive")
+        .setTraitName(GetText.tr("Non-Corrosive"))
         .setLore(
-            "Immune to poison"
+            GetText.tr("Immune to poison")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateTin);
 
     public static final MaterialTrait CORE_TIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Boost")
+        .setTraitName(GetText.tr("Boost"))
         .setLore(
-            "When taking heavy damage, gain absorption"
+            GetText.tr("When taking heavy damage, gain absorption")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksTin);
 
     public static final MaterialTrait CORE_ZINC_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Graceful")
+        .setTraitName(GetText.tr("Graceful"))
         .setLore(
-            "DOLPHIN POWERS, ACTIVATE!"
+            GetText.tr("DOLPHIN POWERS, ACTIVATE!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headZinc);
 
     public static final MaterialTrait CORE_ZINC_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Super Lightweight")
+        .setTraitName(GetText.tr("Super Lightweight"))
         .setLore(
-            "Makes you lighter than air when not sneaking."
+            GetText.tr("Makes you lighter than air when not sneaking.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodZinc);
 
     public static final MaterialTrait CORE_ZINC_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sneaky")
+        .setTraitName(GetText.tr("Sneaky"))
         .setLore(
-            "Damage doubled if target is facing away.",
-            "Small tolerance"
+            GetText.tr("Damage doubled if target is facing away."),
+            GetText.tr("Small tolerance")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateZinc);
 
     public static final MaterialTrait CORE_ZINC_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Acupuncture")
+        .setTraitName(GetText.tr("Acupuncture"))
         .setLore(
-            "Take no damage from cactus pricks"
+            GetText.tr("Take no damage from cactus pricks")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksZinc);
 
     public static final MaterialTrait CORE_MAGNESIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Flammable")
+        .setTraitName(GetText.tr("Flammable"))
         .setLore(
-            "Has a (Tool level x 5)% chance to",
-            "set your enemies ablaze."
+            GetText.tr("Has a (Tool level x 5)% chance to"),
+            GetText.tr("set your enemies ablaze.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagnesium);
 
     public static final MaterialTrait CORE_MAGNESIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magnetesium")
+        .setTraitName(GetText.tr("Magnetesium"))
         .setLore(
-            "Random items are drawn to you from",
-            "within a 5 block range"
+            GetText.tr("Random items are drawn to you from"),
+            GetText.tr("within a 5 block range")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMagnesium);
 
     public static final MaterialTrait CORE_MAGNESIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Light")
+        .setTraitName(GetText.tr("Light"))
         .setLore(
-            "Damage dealt -25%. Speed + 1"
+            GetText.tr("Damage dealt -25%. Speed + 1")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateMagnesium)
         .addConsumer(TraitEventType.TICK, TickEvents::plateMagnesium);
@@ -353,93 +354,93 @@ public final class Traits {
     public static final MaterialTrait CORE_MAGNESIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("MagneSight™")
+        .setTraitName(GetText.tr("MagneSight™"))
         .setLore(
-            "Gain Nightvision."
+            GetText.tr("Gain Nightvision.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksMagnesium);
 
     public static final MaterialTrait CORE_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Stainless")
+        .setTraitName(GetText.tr("Stainless"))
         .setLore(
-            "The tool/weapon repels blood."
+            GetText.tr("The tool/weapon repels blood.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSteel);
 
     public static final MaterialTrait CORE_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Lightweight")
+        .setTraitName(GetText.tr("Lightweight"))
         .setLore(
-            "Tool Exp +50%. Speed + 1"
+            GetText.tr("Tool Exp +50%. Speed + 1")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSteel);
 
     public static final MaterialTrait CORE_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Hardy")
+        .setTraitName(GetText.tr("Hardy"))
         .setLore(
-            "Explosions do 25% less damage"
+            GetText.tr("Explosions do 25% less damage")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSteel);
 
     public static final MaterialTrait CORE_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Strong")
+        .setTraitName(GetText.tr("Strong"))
         .setLore(
-            "Health boost + 1"
+            GetText.tr("Health boost + 1")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Vampirism")
+        .setTraitName(GetText.tr("Vampirism"))
         .setLore(
-            "Chance to heal by damage given.",
-            "Damage dealt varies by time of day."
+            GetText.tr("Chance to heal by damage given."),
+            GetText.tr("Damage dealt varies by time of day.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDamsteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Nightstalker")
+        .setTraitName(GetText.tr("Nightstalker"))
         .setLore(
-            "Gives night vision."
+            GetText.tr("Gives night vision.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodDamsteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Compounding")
+        .setTraitName(GetText.tr("Compounding"))
         .setLore(
-            "Gain extra health equal for each compounding",
-            "piece. Amount stacks on it's own gain"
+            GetText.tr("Gain extra health equal for each compounding"),
+            GetText.tr("piece. Amount stacks on it's own gain")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDamSteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Snroht")
+        .setTraitName(GetText.tr("Snroht"))
         .setLore(
-            "Thorns damage is ignored and relfected back"
+            GetText.tr("Thorns damage is ignored and relfected back")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksDamSteel);
 
     public static final MaterialTrait CORE_DURALUMIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Durable")
+        .setTraitName(GetText.tr("Durable"))
         .setLore(
-            "Ignores being broken but damage 50%,",
-            "mining will be slower and 0 exp."
+            GetText.tr("Ignores being broken but damage 50%,"),
+            GetText.tr("mining will be slower and 0 exp.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDuralium)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headDuralium)
@@ -449,183 +450,183 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Easy Fix")
+        .setTraitName(GetText.tr("Easy Fix"))
         .setLore(
-            "Only 1 kit is needed to fully repair."
+            GetText.tr("Only 1 kit is needed to fully repair.")
         );
 
     public static final MaterialTrait CORE_DURALUMIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Durable")
+        .setTraitName(GetText.tr("Durable"))
         .setLore(
-            "Works when broken but damage taken +20%"
+            GetText.tr("Works when broken but damage taken +20%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateDuralium);
 
     public static final MaterialTrait CORE_DURALUMIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Shock Absorbant")
+        .setTraitName(GetText.tr("Shock Absorbant"))
         .setLore(
-            "10% chance to ignore damage. Not additive"
+            GetText.tr("10% chance to ignore damage. Not additive")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksDuralium);
 
     public static final MaterialTrait CORE_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Resistance")
+        .setTraitName(GetText.tr("Resistance"))
         .setLore(
-            "Gives fire resistance while held."
+            GetText.tr("Gives fire resistance while held.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headBronze);
 
     public static final MaterialTrait CORE_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Ingheights")
+        .setTraitName(GetText.tr("Ingheights"))
         .setLore(
-            "Something is wrong with this tool."
+            GetText.tr("Something is wrong with this tool.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBronze);
 
     public static final MaterialTrait CORE_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Farmer")
+        .setTraitName(GetText.tr("Farmer"))
         .setLore(
-            "All crop drops 1 extra item. Not effected by fortune.",
-            "Does not stack with itself but does with other effects."
+            GetText.tr("All crop drops 1 extra item. Not effected by fortune."),
+            GetText.tr("Does not stack with itself but does with other effects.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::plateBronze);
 
     public static final MaterialTrait CORE_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Brittle")
+        .setTraitName(GetText.tr("Brittle"))
         .setLore(
-            "Durability loss doubled."
+            GetText.tr("Durability loss doubled.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::linksBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Sharp 2")
+        .setTraitName(GetText.tr("Sharp 2"))
         .setLore(
-            "Gives increased damage, stacks with",
-            "mods and other properties."
+            GetText.tr("Gives increased damage, stacks with"),
+            GetText.tr("mods and other properties.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headAlubronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Brittle")
+        .setTraitName(GetText.tr("Brittle"))
         .setLore(
-            "Durability loss is doubled."
+            GetText.tr("Durability loss is doubled.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAluBronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Beautiful")
+        .setTraitName(GetText.tr("Beautiful"))
         .setLore(
-            "Chance to grow flowers as you walk."
+            GetText.tr("Chance to grow flowers as you walk.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluBronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Eject!")
+        .setTraitName(GetText.tr("Eject!"))
         .setLore(
-            "If damaged when below 1/2 health - Eject!"
+            GetText.tr("If damaged when below 1/2 health - Eject!")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBronze);
 
     public static final MaterialTrait CORE_HARDENED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Tuff Stuff")
+        .setTraitName(GetText.tr("Tuff Stuff"))
         .setLore(
-            "Knocks back anything hit with a chance",
-            "to stun."
+            GetText.tr("Knocks back anything hit with a chance"),
+            GetText.tr("to stun.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headHard);
 
     public static final MaterialTrait CORE_HARDENED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Heavy")
+        .setTraitName(GetText.tr("Heavy"))
         .setLore(
-            "Mines in a 3x3 area."
+            GetText.tr("Mines in a 3x3 area.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
     public static final MaterialTrait CORE_HARDENED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Toughened")
+        .setTraitName(GetText.tr("Toughened"))
         .setLore(
-            "Will not lose durability."
+            GetText.tr("Will not lose durability.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::plateHardened);
 
     public static final MaterialTrait CORE_HARDENED_METAL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Dwarven Skills")
+        .setTraitName(GetText.tr("Dwarven Skills"))
         .setLore(
-            "Chance to find rare artifacts while mining."
+            GetText.tr("Chance to find rare artifacts while mining.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksHardened);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Flaming Hot")
+        .setTraitName(GetText.tr("Flaming Hot"))
         .setLore(
-            "Smelts broken blocks when possible."
+            GetText.tr("Smelts broken blocks when possible.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCorbronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Too Hot to Handle")
+        .setTraitName(GetText.tr("Too Hot to Handle"))
         .setLore(
-            "?"
+            GetText.tr("?")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodCorbronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Superhot")
+        .setTraitName(GetText.tr("Superhot"))
         .setLore(
-            "Chance to set nearby entities on fire"
+            GetText.tr("Chance to set nearby entities on fire")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCorBronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Warm Blodded")
+        .setTraitName(GetText.tr("Warm Blodded"))
         .setLore(
-            "Speed + 2 when hot in the nether.",
-            "Slow + 1 when cold in the end"
+            GetText.tr("Speed + 2 when hot in the nether."),
+            GetText.tr("Slow + 1 when cold in the end")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCorBronze);
 
     public static final MaterialTrait CORE_SOLDER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Hidden")
+        .setTraitName(GetText.tr("Hidden"))
         .setLore(
-            "Grants invisibility, breaks instantly."
+            GetText.tr("Grants invisibility, breaks instantly.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSolder)
         .addConsumer(TraitEventType.TICK, TickEvents::headSolder);
@@ -634,18 +635,18 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Fused")
+        .setTraitName(GetText.tr("Fused"))
         .setLore(
-            "Tool cannot be dropped either by the",
-            "player or on death."
+            GetText.tr("Tool cannot be dropped either by the"),
+            GetText.tr("player or on death.")
         );
 
     public static final MaterialTrait CORE_SOLDER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Soft Landing")
+        .setTraitName(GetText.tr("Soft Landing"))
         .setLore(
-            "Hitting walls no longer hurts"
+            GetText.tr("Hitting walls no longer hurts")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSolder);
 
@@ -653,54 +654,54 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Fused")
+        .setTraitName(GetText.tr("Fused"))
         .setLore(
-            "Cannot be dropped on death or on purpose."
+            GetText.tr("Cannot be dropped on death or on purpose.")
         );
 
     public static final MaterialTrait CORE_BILLON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Fast")
+        .setTraitName(GetText.tr("Fast"))
         .setLore(
-            "Move speed increased and haste applied.",
-            "Stacks with modifiers."
+            GetText.tr("Move speed increased and haste applied."),
+            GetText.tr("Stacks with modifiers.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headBillon);
 
     public static final MaterialTrait CORE_BILLON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Springs")
+        .setTraitName(GetText.tr("Springs"))
         .setLore(
-            "Makes you jump higher."
+            GetText.tr("Makes you jump higher.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBillon);
 
     public static final MaterialTrait CORE_BILLON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("WHM")
+        .setTraitName(GetText.tr("WHM"))
         .setLore(
-            "Your attacks heal instead of harm."
+            GetText.tr("Your attacks heal instead of harm.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateBillon);
 
     public static final MaterialTrait CORE_BILLON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Heat Conductor")
+        .setTraitName(GetText.tr("Heat Conductor"))
         .setLore(
-            "Magma blocks no longer cause damage"
+            GetText.tr("Magma blocks no longer cause damage")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksBillon);
 
     public static final MaterialTrait CORE_BRASS_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Stiff")
+        .setTraitName(GetText.tr("Stiff"))
         .setLore(
-            "Damage +50% but makes you unlucky"
+            GetText.tr("Damage +50% but makes you unlucky")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headBrass)
         .addConsumer(TraitEventType.TICK, TickEvents::headBrass);
@@ -708,19 +709,19 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Oxygenated")
+        .setTraitName(GetText.tr("Oxygenated"))
         .setLore(
-            "Gives water breathing while held."
+            GetText.tr("Gives water breathing while held.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBrass);
 
     public static final MaterialTrait CORE_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Band")
+        .setTraitName(GetText.tr("Band"))
         .setLore(
-            "Durability loss + 200%. Damage reduced between 1-25%",
-            "getting lower as durability drops."
+            GetText.tr("Durability loss + 200%. Damage reduced between 1-25%"),
+            GetText.tr("getting lower as durability drops.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateBrass)
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::plateBrass);
@@ -728,29 +729,29 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Scarpaaarr!")
+        .setTraitName(GetText.tr("Scarpaaarr!"))
         .setLore(
-            "Durability loss doubled. When damaged below 1/2 health, gain Speed 3."
+            GetText.tr("Durability loss doubled. When damaged below 1/2 health, gain Speed 3.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Abra")
+        .setTraitName(GetText.tr("Abra"))
         .setLore(
-            "Any hit mob has a % chance to be",
-            "randomly teleported."
+            GetText.tr("Any hit mob has a % chance to be"),
+            GetText.tr("randomly teleported.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAluBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Studious")
+        .setTraitName(GetText.tr("Studious"))
         .setLore(
-            "Tool and Player exp +50% but damage halved",
-            "and you are slower to act."
+            GetText.tr("Tool and Player exp +50% but damage halved"),
+            GetText.tr("and you are slower to act.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodAlubrass)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodAluBrass);
@@ -758,107 +759,107 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magus")
+        .setTraitName(GetText.tr("Magus"))
         .setLore(
-            "Magic Damage -50%"
+            GetText.tr("Magic Damage -50%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAluBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Escape")
+        .setTraitName(GetText.tr("Escape"))
         .setLore(
-            "Randomly teleport then hit (CD: 10s)"
+            GetText.tr("Randomly teleport then hit (CD: 10s)")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBrass);
 
     public static final MaterialTrait CORE_NICKEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Charged Head -")
+        .setTraitName(GetText.tr("Charged Head -"))
         .setLore(
-            "Doesn't do anything... on it's own..."
+            GetText.tr("Doesn't do anything... on it's own...")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_NICKEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Charged Rod -")
+        .setTraitName(GetText.tr("Charged Rod -"))
         .setLore(
-            "Doesn't do anything... on it's own..."
+            GetText.tr("Doesn't do anything... on it's own...")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_NICKEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magnetic -")
+        .setTraitName(GetText.tr("Magnetic -"))
         .setLore(
-            "Gain 1 Stack of Magnetism and 1 Stack of Negativity.",
-            "Magnetism draws in all nearby items.",
-            "Range = Magnetism Level - (∆ Positivity/Negativity)"
+            GetText.tr("Gain 1 Stack of Magnetism and 1 Stack of Negativity."),
+            GetText.tr("Magnetism draws in all nearby items."),
+            GetText.tr("Range = Magnetism Level - (∆ Positivity/Negativity)")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateNickel);
 
     public static final MaterialTrait CORE_NICKEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magnetic -")
+        .setTraitName(GetText.tr("Magnetic -"))
         .setLore(
-            "Gain 1 Stack of Magnetism and 1 Stack of Negativity.",
-            "Magnetism draws in all nearby items.",
-            "Range = Magnetism Level - (∆ Positivity/Negativity)"
+            GetText.tr("Gain 1 Stack of Magnetism and 1 Stack of Negativity."),
+            GetText.tr("Magnetism draws in all nearby items."),
+            GetText.tr("Range = Magnetism Level - (∆ Positivity/Negativity)")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksNickel);
 
     public static final MaterialTrait CORE_COBALT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Charged Head +")
+        .setTraitName(GetText.tr("Charged Head +"))
         .setLore(
-            "Doesn't do anything... on it's own..."
+            GetText.tr("Doesn't do anything... on it's own...")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_COBALT_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Charged Rod +")
+        .setTraitName(GetText.tr("Charged Rod +"))
         .setLore(
-            "Doesn't do anything... on it's own..."
+            GetText.tr("Doesn't do anything... on it's own...")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_COBALT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magnetic +")
+        .setTraitName(GetText.tr("Magnetic +"))
         .setLore(
-            "Gain 1 Stack of Magnetism and 1 Stack of Negativity.",
-            "Magnetism draws in all nearby items.",
-            "Range = Magnetism Level - (∆ Positivity/Negativity)"
+            GetText.tr("Gain 1 Stack of Magnetism and 1 Stack of Negativity."),
+            GetText.tr("Magnetism draws in all nearby items."),
+            GetText.tr("Range = Magnetism Level - (∆ Positivity/Negativity)")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCobalt);
 
     public static final MaterialTrait CORE_COBALT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Magnetic +")
+        .setTraitName(GetText.tr("Magnetic +"))
         .setLore(
-            "Gain 1 Stack of Magnetism and 1 Stack of Positivity.",
-            "Magnetism draws in all nearby items.",
-            "Range = Magnetism Level - (∆ Positivity/Negativity)"
+            GetText.tr("Gain 1 Stack of Magnetism and 1 Stack of Positivity."),
+            GetText.tr("Magnetism draws in all nearby items."),
+            GetText.tr("Range = Magnetism Level - (∆ Positivity/Negativity)")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCobalt);
 
     public static final MaterialTrait CORE_REINFORCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Bulky")
+        .setTraitName(GetText.tr("Bulky"))
         .setLore(
-            "Mines in a 3x3 area"
+            GetText.tr("Mines in a 3x3 area")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
@@ -866,9 +867,9 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Reinforced")
+        .setTraitName(GetText.tr("Reinforced"))
         .setLore(
-            "Any Plate mod on the tool is counted twice."
+            GetText.tr("Any Plate mod on the tool is counted twice.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
@@ -876,52 +877,52 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Reinforcable")
+        .setTraitName(GetText.tr("Reinforcable"))
         .setLore(
-            "Plate mods count twice."
+            GetText.tr("Plate mods count twice.")
         );
 
     public static final MaterialTrait CORE_REINFORCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Witherproof")
+        .setTraitName(GetText.tr("Witherproof"))
         .setLore(
-            "Immune to the wither effect."
+            GetText.tr("Immune to the wither effect.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksReinforced);
 
     public static final MaterialTrait CORE_STRING_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Works")
+        .setTraitName(GetText.tr("Works"))
         .setLore(
-            "No special effects."
+            GetText.tr("No special effects.")
         );
 
     public static final MaterialTrait CORE_STRING_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Works")
+        .setTraitName(GetText.tr("Works"))
         .setLore(
-            "No special effects but makes armour quickly."
+            GetText.tr("No special effects but makes armour quickly.")
         );
 
     public static final MaterialTrait CORE_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Growth")
+        .setTraitName(GetText.tr("Growth"))
         .setLore(
-            "Slowly repairs the tool during the day.",
-            "Stacks with mods. Must be in hand"
+            GetText.tr("Slowly repairs the tool during the day."),
+            GetText.tr("Stacks with mods. Must be in hand")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderVine);
 
     public static final MaterialTrait CORE_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Growth")
+        .setTraitName(GetText.tr("Growth"))
         .setLore(
-            "Slowly repairs during the day."
+            GetText.tr("Slowly repairs during the day.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonVine);
 
@@ -929,120 +930,120 @@ public final class Traits {
     public static final MaterialTrait CORE_CRIMSON_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Decay")
+        .setTraitName(GetText.tr("Decay"))
         .setLore(
-            "Slowly repairs the tool at night.",
-            "Stacks with mods. Must be in hand"
+            GetText.tr("Slowly repairs the tool at night."),
+            GetText.tr("Stacks with mods. Must be in hand")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderCrimsonRoot);
 
     public static final MaterialTrait CORE_CRIMSON_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Decay")
+        .setTraitName(GetText.tr("Decay"))
         .setLore(
-            "Slowly repairs during night."
+            GetText.tr("Slowly repairs during night.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonCrimsonRoots);
 
     public static final MaterialTrait CORE_WARPED_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Refreshing")
+        .setTraitName(GetText.tr("Refreshing"))
         .setLore(
-            "Slowly heals the holder."
+            GetText.tr("Slowly heals the holder.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::bindWarpedRoot);
 
     public static final MaterialTrait CORE_WARPED_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Refreshing")
+        .setTraitName(GetText.tr("Refreshing"))
         .setLore(
-            "Slowly heals the equipping player."
+            GetText.tr("Slowly heals the equipping player.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonWarpedRoots);
 
     public static final MaterialTrait CORE_WEEPING_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Doom")
+        .setTraitName(GetText.tr("Doom"))
         .setLore(
-            "I get a bad feeling from this..."
+            GetText.tr("I get a bad feeling from this...")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderWeepingVine);
 
     public static final MaterialTrait CORE_WEEPING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Doom")
+        .setTraitName(GetText.tr("Doom"))
         .setLore(
-            "Gives you bad omen. Hide your villagers!"
+            GetText.tr("Gives you bad omen. Hide your villagers!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonWeepingVines);
 
     public static final MaterialTrait CORE_TWISTING_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Attraction")
+        .setTraitName(GetText.tr("Attraction"))
         .setLore(
-            "All drops are drawn to you within a",
-            "5 block range."
+            GetText.tr("All drops are drawn to you within a"),
+            GetText.tr("5 block range.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderTwistingVine);
 
     public static final MaterialTrait CORE_TWISTING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Attraction")
+        .setTraitName(GetText.tr("Attraction"))
         .setLore(
-            "Nearby drops (5x5 area) are drawn to you."
+            GetText.tr("Nearby drops (5x5 area) are drawn to you.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonTwistingWines);
 
     public static final MaterialTrait CORE_SLIME_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Bouncy")
+        .setTraitName(GetText.tr("Bouncy"))
         .setLore(
-            "Fall damage is halved."
+            GetText.tr("Fall damage is halved.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindSlime);
 
     public static final MaterialTrait CORE_SLIME_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Bouncy")
+        .setTraitName(GetText.tr("Bouncy"))
         .setLore(
-            "Fall damage -25%"
+            GetText.tr("Fall damage -25%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::gambesonSlime);
 
     public static final MaterialTrait CORE_SILICON_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Slow Learner")
+        .setTraitName(GetText.tr("Slow Learner"))
         .setLore(
-            "Tool exp gain when breaking blocks is",
-            "increased by (Tool Level x 5%)"
+            GetText.tr("Tool exp gain when breaking blocks is"),
+            GetText.tr("increased by (Tool Level x 5%)")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::bindSilicon);
 
     public static final MaterialTrait CORE_SILICON_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Slow Learner")
+        .setTraitName(GetText.tr("Slow Learner"))
         .setLore(
-            "Armour exp gain = (Level * 5%)"
+            GetText.tr("Armour exp gain = (Level * 5%)")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::gambesonSilicon);
 
     public static final MaterialTrait CORE_LEATHER_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Thick")
+        .setTraitName(GetText.tr("Thick"))
         .setLore(
-            "Tool exp gain + 50%"
+            GetText.tr("Tool exp gain + 50%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::binderLeather)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::binderLeather);
@@ -1050,118 +1051,118 @@ public final class Traits {
     public static final MaterialTrait CORE_LEATHER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Thick")
+        .setTraitName(GetText.tr("Thick"))
         .setLore(
-            "Armour exp gain + 10%"
+            GetText.tr("Armour exp gain + 10%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::gambesonLeather);
 
     public static final MaterialTrait CORE_FERROSILICON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Hydrogen")
+        .setTraitName(GetText.tr("Hydrogen"))
         .setLore(
-            "Float away from danger."
+            GetText.tr("Float away from danger.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headFerrosilicon);
 
     public static final MaterialTrait CORE_FERROSILICON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Solar Powered")
+        .setTraitName(GetText.tr("Solar Powered"))
         .setLore(
-            "Restores durability during the day time."
+            GetText.tr("Restores durability during the day time.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateFerrosilicon);
 
     public static final MaterialTrait CORE_FERROSILICON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Brightburn")
+        .setTraitName(GetText.tr("Brightburn"))
         .setLore(
-            "Gives on stack of Burning Bright! With 4 ",
-            "stacks, hostile mobs are repelled (not bosses)."
+            GetText.tr("Gives on stack of Burning Bright! With 4 "),
+            GetText.tr("stacks, hostile mobs are repelled (not bosses).")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Lightning Rod")
+        .setTraitName(GetText.tr("Lightning Rod"))
         .setLore(
-            "A chance to strike hit mobs with lightning."
+            GetText.tr("A chance to strike hit mobs with lightning.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodRedstoneAlloy);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Powered On")
+        .setTraitName(GetText.tr("Powered On"))
         .setLore(
-            "Randomly powers a block within a 5x2x5 range."
+            GetText.tr("Randomly powers a block within a 5x2x5 range.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateRedstoneAlloy);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Who needs pressure plates?")
+        .setTraitName(GetText.tr("Who needs pressure plates?"))
         .setLore(
-            "The block you stand on is powered."
+            GetText.tr("The block you stand on is powered.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksRedstoneAlloy);
 
     public static final MaterialTrait CORE_BOOMERITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Ladder Simulator™")
+        .setTraitName(GetText.tr("Ladder Simulator™"))
         .setLore(
-            "Spawns ladders on right click."
+            GetText.tr("Spawns ladders on right click.")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headBoomerite);
 
     public static final MaterialTrait CORE_BOOMERITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Go Boomer")
+        .setTraitName(GetText.tr("Go Boomer"))
         .setLore(
-            "Warning... things will go boom..."
+            GetText.tr("Warning... things will go boom...")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateBoomerite);
 
     public static final MaterialTrait CORE_SEFIRITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Celebrate")
+        .setTraitName(GetText.tr("Celebrate"))
         .setLore(
-            "Time to celebrate"
+            GetText.tr("Time to celebrate")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headSefirite);
 
     public static final MaterialTrait CORE_CRINGLEIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Feeling Festive")
+        .setTraitName(GetText.tr("Feeling Festive"))
         .setLore(
-            "Get that festive feeling!"
+            GetText.tr("Get that festive feeling!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCringleium);
 
     public static final MaterialTrait CORE_LOVE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("It's all you need")
+        .setTraitName(GetText.tr("It's all you need"))
         .setLore(
-            "You are loved"
+            GetText.tr("You are loved")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLove);
 
     public static final MaterialTrait CORE_NICEINIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("Nice")
+        .setTraitName(GetText.tr("Nice"))
         .setLore(
-            "Nice"
+            GetText.tr("Nice")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headNice)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headNice);
@@ -1169,11 +1170,11 @@ public final class Traits {
     public static final MaterialTrait CORE_ANNIVERSARIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("10 Years of (Slime)fun!")
+        .setTraitName(GetText.tr("10 Years of (Slime)fun!"))
         .setLore(
-            "10 Years of (Slime)fun!",
+            GetText.tr("10 Years of (Slime)fun!"),
             "",
-            "Requires all four armor pieces."
+            GetText.tr("Requires all four armor pieces.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAnniversary);
 
@@ -1184,155 +1185,155 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Void Miner")
+        .setTraitName(GetText.tr("Void Miner"))
         .setLore(
-            "Randomly generates ores while mining/digging."
+            GetText.tr("Randomly generates ores while mining/digging.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headVoid);
 
     public static final MaterialTrait INFINITY_VOID_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Fear the Void")
+        .setTraitName(GetText.tr("Fear the Void"))
         .setLore(
-            "Damage +150%. 250% in the End."
+            GetText.tr("Damage +150%. 250% in the End.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodVoid);
 
     public static final MaterialTrait INFINITY_VOID_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Planewalker")
+        .setTraitName(GetText.tr("Planewalker"))
         .setLore(
-            "The void is no longer your enemy"
+            GetText.tr("The void is no longer your enemy")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateVoid);
 
     public static final MaterialTrait INFINITY_VOID_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("The End")
+        .setTraitName(GetText.tr("The End"))
         .setLore(
-            "Reduce damage from the Dragon, Endermen and",
-            "Shulkers by 10%"
+            GetText.tr("Reduce damage from the Dragon, Endermen and"),
+            GetText.tr("Shulkers by 10%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksVoid);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Really Stainless")
+        .setTraitName(GetText.tr("Really Stainless"))
         .setLore(
-            "Like Stainless, but.. REALLY."
+            GetText.tr("Like Stainless, but.. REALLY.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagSteel);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Flammable")
+        .setTraitName(GetText.tr("Flammable"))
         .setLore(
-            "Has a (Tool level x 5)% chance to",
-            "set your enemies ablaze."
+            GetText.tr("Has a (Tool level x 5)% chance to"),
+            GetText.tr("set your enemies ablaze.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagnesium);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Tarnished")
+        .setTraitName(GetText.tr("Tarnished"))
         .setLore(
-            "Outgoing damage reduced by 25%. Armour Exp +20%"
+            GetText.tr("Outgoing damage reduced by 25%. Armour Exp +20%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksCopper);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Defender")
+        .setTraitName(GetText.tr("Defender"))
         .setLore(
-            "5% chance, when hit, to ignore damage",
-            "and gain absorption."
+            GetText.tr("5% chance, when hit, to ignore damage"),
+            GetText.tr("and gain absorption.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagSteel);
 
     public static final MaterialTrait INFINITY_TITANIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Reinforced")
+        .setTraitName(GetText.tr("Reinforced"))
         .setLore(
-            "Any Plate mod on the tool is counted twice."
+            GetText.tr("Any Plate mod on the tool is counted twice.")
         );
 
     public static final MaterialTrait INFINITY_TITANIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Durable")
+        .setTraitName(GetText.tr("Durable"))
         .setLore(
-            "Ignores being broken but damage 50%,",
-            "mining will be slower and 0 exp."
+            GetText.tr("Ignores being broken but damage 50%,"),
+            GetText.tr("mining will be slower and 0 exp.")
         );
 
     public static final MaterialTrait INFINITY_TITANIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Dwarven Skills")
+        .setTraitName(GetText.tr("Dwarven Skills"))
         .setLore(
-            "Chance to find rare artifacts while mining."
+            GetText.tr("Chance to find rare artifacts while mining.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksHardened);
 
     public static final MaterialTrait INFINITY_TITANIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Heat Resistant")
+        .setTraitName(GetText.tr("Heat Resistant"))
         .setLore(
-            "Immune to fire and lava."
+            GetText.tr("Immune to fire and lava.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksTitanium);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Stability II")
+        .setTraitName(GetText.tr("Stability II"))
         .setLore(
-            "Still does Nothing"
+            GetText.tr("Still does Nothing")
         );
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sharp 1 II")
+        .setTraitName(GetText.tr("Sharp 1 II"))
         .setLore(
-            "What a bad naming convention. +Damage"
+            GetText.tr("What a bad naming convention. +Damage")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingIron);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Steadfast II")
+        .setTraitName(GetText.tr("Steadfast II"))
         .setLore(
-            "Ignore all explosions"
+            GetText.tr("Ignore all explosions")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingIron);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Rusty II")
+        .setTraitName(GetText.tr("Rusty II"))
         .setLore(
-            "Armour durability loss +10%. Player Exp gain +20%"
+            GetText.tr("Armour durability loss +10%. Player Exp gain +20%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSingIron);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Golden Veil II")
+        .setTraitName(GetText.tr("Golden Veil II"))
         .setLore(
-            "Makes the player invisible. If used on",
-            "a weapon, +50% damage."
+            GetText.tr("Makes the player invisible. If used on"),
+            GetText.tr("a weapon, +50% damage.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headSingGold)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingGold);
@@ -1340,36 +1341,36 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("All That Glitters II")
+        .setTraitName(GetText.tr("All That Glitters II"))
         .setLore(
-            "Makes you shiny AND rainbow...y"
+            GetText.tr("Makes you shiny AND rainbow...y")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingGold);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Prosperous II")
+        .setTraitName(GetText.tr("Prosperous II"))
         .setLore(
-            "1% chance to drop 1-4 gold nuggets when hit"
+            GetText.tr("1% chance to drop 1-4 gold nuggets when hit")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingGold);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Barter II")
+        .setTraitName(GetText.tr("Barter II"))
         .setLore(
-            "Piglins REALLY like your armour"
+            GetText.tr("Piglins REALLY like your armour")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingGold);
 
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Brains, Not Brawn II")
+        .setTraitName(GetText.tr("Brains, Not Brawn II"))
         .setLore(
-            "Tool exp +200%, Damage 50%"
+            GetText.tr("Tool exp +200%, Damage 50%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headSingCopper);
@@ -1378,18 +1379,18 @@ public final class Traits {
         // Special case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conductive II")
+        .setTraitName(GetText.tr("Conductive II"))
         .setLore(
-            "All tool exp is converted to player exp",
-            "with a 50% bonus."
+            GetText.tr("All tool exp is converted to player exp"),
+            GetText.tr("with a 50% bonus.")
         );
 
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Beginner II")
+        .setTraitName(GetText.tr("Beginner II"))
         .setLore(
-            "Damage Taken +50%. Armour Exp +40%"
+            GetText.tr("Damage Taken +50%. Armour Exp +40%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingCopper)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingCopper);
@@ -1397,45 +1398,45 @@ public final class Traits {
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Tarnished II")
+        .setTraitName(GetText.tr("Tarnished II"))
         .setLore(
-            "Outgoing damage reduced by 25%. Armour Exp +40%"
+            GetText.tr("Outgoing damage reduced by 25%. Armour Exp +40%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSingCopper);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Poisonous II")
+        .setTraitName(GetText.tr("Poisonous II"))
         .setLore(
-            "Poisons more frequently and for longer."
+            GetText.tr("Poisons more frequently and for longer.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Leech II")
+        .setTraitName(GetText.tr("Leech II"))
         .setLore(
-            "Bonus health, but drains your energy."
+            GetText.tr("Bonus health, but drains your energy.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sickly II")
+        .setTraitName(GetText.tr("Sickly II"))
         .setLore(
-            "Lead armour is a VERY BAD idea"
+            GetText.tr("Lead armour is a VERY BAD idea")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sickly II")
+        .setTraitName(GetText.tr("Sickly II"))
         .setLore(
-            "Lead armour is a VERY BAD idea"
+            GetText.tr("Lead armour is a VERY BAD idea")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingLead);
 
@@ -1443,29 +1444,29 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Enchanting II")
+        .setTraitName(GetText.tr("Enchanting II"))
         .setLore(
-            "Tool exp gain is halved. Tools add 1-3",
-            "randomly selected enchants when leveling",
-            "up. These enchants may not be useful!"
+            GetText.tr("Tool exp gain is halved. Tools add 1-3"),
+            GetText.tr("randomly selected enchants when leveling"),
+            GetText.tr("up. These enchants may not be useful!")
         );
 
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Soft Touch II")
+        .setTraitName(GetText.tr("Soft Touch II"))
         .setLore(
-            "You feel much lighter."
+            GetText.tr("You feel much lighter.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodSingSilver);
 
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conductivity II")
+        .setTraitName(GetText.tr("Conductivity II"))
         .setLore(
-            "Chance to summon a tempest when hit.",
-            "Lightning damage heals you."
+            GetText.tr("Chance to summon a tempest when hit."),
+            GetText.tr("Lightning damage heals you.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingSilver);
 
@@ -1473,27 +1474,27 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Enchanting II")
+        .setTraitName(GetText.tr("Enchanting II"))
         .setLore(
-            "Gains 1-3 random enchantments everytime this",
-            "piece of armour levels up. May not be useful."
+            GetText.tr("Gains 1-3 random enchantments everytime this"),
+            GetText.tr("piece of armour levels up. May not be useful.")
         );
 
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Recyclable II")
+        .setTraitName(GetText.tr("Recyclable II"))
         .setLore(
-            "Chance to restore durability on hit/block break"
+            GetText.tr("Chance to restore durability on hit/block break")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingAluminum);
 
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Soft II")
+        .setTraitName(GetText.tr("Soft II"))
         .setLore(
-            "Durability loss +100%, tool EXP +100%."
+            GetText.tr("Durability loss +100%, tool EXP +100%.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodSingAluminum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodSingAluminum)
@@ -1502,9 +1503,9 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Foil II")
+        .setTraitName(GetText.tr("Foil II"))
         .setLore(
-            "Damage Taken +50%. Speed + 2"
+            GetText.tr("Damage Taken +50%. Speed + 2")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingAluminium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingAluminium);
@@ -1512,18 +1513,18 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Easily Shaped II")
+        .setTraitName(GetText.tr("Easily Shaped II"))
         .setLore(
-            "Repairs only need a single kit of ANY metal"
+            GetText.tr("Repairs only need a single kit of ANY metal")
         );
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Malleable II")
+        .setTraitName(GetText.tr("Malleable II"))
         .setLore(
-            "Deal 50% less damage but gain lots of",
-            "Luck and Speed."
+            GetText.tr("Deal 50% less damage but gain lots of"),
+            GetText.tr("Luck and Speed.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingTin)
         .addConsumer(TraitEventType.TICK, TickEvents::headSingTin);
@@ -1531,93 +1532,93 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Can II")
+        .setTraitName(GetText.tr("Can II"))
         .setLore(
-            "No Hunger Loss"
+            GetText.tr("No Hunger Loss")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Non-Corrosive II")
+        .setTraitName(GetText.tr("Non-Corrosive II"))
         .setLore(
-            "Poison heals and immune to hunger and weakness."
+            GetText.tr("Poison heals and immune to hunger and weakness.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Boost II")
+        .setTraitName(GetText.tr("Boost II"))
         .setLore(
-            "When taking heavy damage, gain lots of absorption"
+            GetText.tr("When taking heavy damage, gain lots of absorption")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingTin);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Graceful II")
+        .setTraitName(GetText.tr("Graceful II"))
         .setLore(
-            "DOLPHIN POWERS, ACTIVATE... MORE!"
+            GetText.tr("DOLPHIN POWERS, ACTIVATE... MORE!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Super Lightweight II")
+        .setTraitName(GetText.tr("Super Lightweight II"))
         .setLore(
-            "Makes you lighter than air when sneaking."
+            GetText.tr("Makes you lighter than air when sneaking.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sneaky II")
+        .setTraitName(GetText.tr("Sneaky II"))
         .setLore(
-            "Damage doubled if target is facing away.",
-            "Large tolerence"
+            GetText.tr("Damage doubled if target is facing away."),
+            GetText.tr("Large tolerence")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Acupuncture II")
+        .setTraitName(GetText.tr("Acupuncture II"))
         .setLore(
-            "Cactus pricks heal you."
+            GetText.tr("Cactus pricks heal you.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingZinc);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Flammable II")
+        .setTraitName(GetText.tr("Flammable II"))
         .setLore(
-            "Has a (Tool level x 10)% chance to",
-            "set your enemies ablaze for a longer time."
+            GetText.tr("Has a (Tool level x 10)% chance to"),
+            GetText.tr("set your enemies ablaze for a longer time.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magnetesium II")
+        .setTraitName(GetText.tr("Magnetesium II"))
         .setLore(
-            "Random items are drawn to you from",
-            "within a 10 block range"
+            GetText.tr("Random items are drawn to you from"),
+            GetText.tr("within a 10 block range")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Light II")
+        .setTraitName(GetText.tr("Light II"))
         .setLore(
-            "Damage dealt -50%. Speed + 2"
+            GetText.tr("Damage dealt -50%. Speed + 2")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingMagnesium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingMagnesium);
@@ -1625,18 +1626,18 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("MagneSight™ II")
+        .setTraitName(GetText.tr("MagneSight™ II"))
         .setLore(
-            "Gain night vision and highlight all mobs"
+            GetText.tr("Gain night vision and highlight all mobs")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingMagnesium);
 
     public static final MaterialTrait INFINITY_MYTHRIL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Elven Speed")
+        .setTraitName(GetText.tr("Elven Speed"))
         .setLore(
-            "Haste 2, Speed 1. Durability loss +50%"
+            GetText.tr("Haste 2, Speed 1. Durability loss +50%")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headMythril)
         .addConsumer(TraitEventType.TICK, TickEvents::headMythril);
@@ -1644,37 +1645,37 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Sting of Gondolin")
+        .setTraitName(GetText.tr("Sting of Gondolin"))
         .setLore(
-            "All nearby, hostile, mobs are repelled."
+            GetText.tr("All nearby, hostile, mobs are repelled.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMythril);
 
     public static final MaterialTrait INFINITY_MYTHRIL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Brightburn")
+        .setTraitName(GetText.tr("Brightburn"))
         .setLore(
-            "Gives on stack of Burning Bright! With 4",
-            "stacks, hostile mobs are repelled (not bosses)."
+            GetText.tr("Gives on stack of Burning Bright! With 4"),
+            GetText.tr("stacks, hostile mobs are repelled (not bosses).")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait INFINITY_MYTHRIL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Call of the Wild")
+        .setTraitName(GetText.tr("Call of the Wild"))
         .setLore(
-            "When hit, you sometimes summon a wolf to your aid"
+            GetText.tr("When hit, you sometimes summon a wolf to your aid")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMythril);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Mystic")
+        .setTraitName(GetText.tr("Mystic"))
         .setLore(
-            "Player Exp + 100% (Mining) +50% (Mobs)"
+            GetText.tr("Player Exp + 100% (Mining) +50% (Mobs)")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headAdamantite)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAdamantite);
@@ -1682,27 +1683,27 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Adamant")
+        .setTraitName(GetText.tr("Adamant"))
         .setLore(
-            "Become immune to all explosions"
+            GetText.tr("Become immune to all explosions")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Deflective")
+        .setTraitName(GetText.tr("Deflective"))
         .setLore(
-            "Projectile Damage -25%"
+            GetText.tr("Projectile Damage -25%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Experienced")
+        .setTraitName(GetText.tr("Experienced"))
         .setLore(
-            "All tool and armour exp +10%"
+            GetText.tr("All tool and armour exp +10%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksAdamantite)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksAdamantite);
@@ -1710,158 +1711,158 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magnanimous")
+        .setTraitName(GetText.tr("Magnanimous"))
         .setLore(
-            "You're just far too kind"
+            GetText.tr("You're just far too kind")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headMagnonium);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Flaming Hot")
+        .setTraitName(GetText.tr("Flaming Hot"))
         .setLore(
-            "Smelts things when possible."
+            GetText.tr("Smelts things when possible.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCorbronze);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Escape")
+        .setTraitName(GetText.tr("Escape"))
         .setLore(
-            "When hit, teleport away randomly (CD: 10s)."
+            GetText.tr("When hit, teleport away randomly (CD: 10s).")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBrass);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Oxygenated")
+        .setTraitName(GetText.tr("Oxygenated"))
         .setLore(
-            "Who needs it!?"
+            GetText.tr("Who needs it!?")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagnonium);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Fortunate")
+        .setTraitName(GetText.tr("Fortunate"))
         .setLore(
-            "200% drops from fortune. Stacks",
-            "with Lapis modifiers."
+            GetText.tr("200% drops from fortune. Stacks"),
+            GetText.tr("with Lapis modifiers.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Merchant's Veil")
+        .setTraitName(GetText.tr("Merchant's Veil"))
         .setLore(
-            "Invisibility with none of the drawbacks!"
+            GetText.tr("Invisibility with none of the drawbacks!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("How Fortunate")
+        .setTraitName(GetText.tr("How Fortunate"))
         .setLore(
-            "0.5% chance to get a gift when hit."
+            GetText.tr("0.5% chance to get a gift when hit.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Beautiful")
+        .setTraitName(GetText.tr("Beautiful"))
         .setLore(
-            "Plants flowers as you walk."
+            GetText.tr("Plants flowers as you walk.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluBronze);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Tricks")
+        .setTraitName(GetText.tr("Tricks"))
         .setLore(
-            "Plays nasty tricks on nearby things."
+            GetText.tr("Plays nasty tricks on nearby things.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Secrets Revealed")
+        .setTraitName(GetText.tr("Secrets Revealed"))
         .setLore(
-            "Reveals all nearby living (or not!) things."
+            GetText.tr("Reveals all nearby living (or not!) things.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Wizard Robes")
+        .setTraitName(GetText.tr("Wizard Robes"))
         .setLore(
-            "Chance, when attacking, to create MAGIC"
+            GetText.tr("Chance, when attacking, to create MAGIC")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Magical Mint")
+        .setTraitName(GetText.tr("Magical Mint"))
         .setLore(
-            "It may still be foul, but the Dragon's",
-            "breath will not hurt you."
+            GetText.tr("It may still be foul, but the Dragon's"),
+            GetText.tr("breath will not hurt you.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagic);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Earth Shaker")
+        .setTraitName(GetText.tr("Earth Shaker"))
         .setLore(
-            "Knocks back hit mobs and stuns them",
-            "when they land."
+            GetText.tr("Knocks back hit mobs and stuns them"),
+            GetText.tr("when they land.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Grinder")
+        .setTraitName(GetText.tr("Grinder"))
         .setLore(
-            "Breaking blocks act as if they have",
-            "gone through the grinder."
+            GetText.tr("Breaking blocks act as if they have"),
+            GetText.tr("gone through the grinder.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Lava Walker")
+        .setTraitName(GetText.tr("Lava Walker"))
         .setLore(
-            "Lava turns into magma blocks beneath your feet."
+            GetText.tr("Lava turns into magma blocks beneath your feet.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("It's only natural")
+        .setTraitName(GetText.tr("It's only natural"))
         .setLore(
-            "Feeds two nearby animals on right click. (CD: 2m)",
-            "Cooldown fires regardless of success."
+            GetText.tr("Feeds two nearby animals on right click. (CD: 2m)"),
+            GetText.tr("Cooldown fires regardless of success.")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksEarth);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Clean Cut")
+        .setTraitName(GetText.tr("Clean Cut"))
         .setLore(
-            "Damage +100%. Haste 2"
+            GetText.tr("Damage +100%. Haste 2")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMetal);
@@ -1869,10 +1870,10 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conductor")
+        .setTraitName(GetText.tr("Conductor"))
         .setLore(
-            "All player exp is converted to tool",
-            "exp at a 10 : 1 ratio."
+            GetText.tr("All player exp is converted to tool"),
+            GetText.tr("exp at a 10 : 1 ratio.")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodMetal);
@@ -1880,49 +1881,49 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("KOTR")
+        .setTraitName(GetText.tr("KOTR"))
         .setLore(
-            "Chance, when hit, to summon a Knight",
-            "of the Round. (It's a Golem ;))"
+            GetText.tr("Chance, when hit, to summon a Knight"),
+            GetText.tr("of the Round. (It's a Golem ;))")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Gleam")
+        .setTraitName(GetText.tr("Gleam"))
         .setLore(
-            "Chance when hit to reflect damage and",
-            "dazzle attackers."
+            GetText.tr("Chance when hit to reflect damage and"),
+            GetText.tr("dazzle attackers.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMetal);
 
     public static final MaterialTrait INFINITY_INFINITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite")
+        .setTraitName(GetText.tr("Infinite"))
         .setLore(
-            "This tool will live on forever."
+            GetText.tr("This tool will live on forever.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Conceptual Defence")
+        .setTraitName(GetText.tr("Conceptual Defence"))
         .setLore(
-            "All damage is halved (rounded up)."
+            GetText.tr("All damage is halved (rounded up).")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite Capacity")
+        .setTraitName(GetText.tr("Infinite Capacity"))
         .setLore(
-            "Everytime you take damage, 10% is stored",
-            "up to 5 hearts. Right click to release",
-            "the damage on nearby entities"
+            GetText.tr("Everytime you take damage, 10% is stored"),
+            GetText.tr("up to 5 hearts. Right click to release"),
+            GetText.tr("the damage on nearby entities")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateInfinity)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::plateInfinity);
@@ -1930,19 +1931,19 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Oroborus")
+        .setTraitName(GetText.tr("Oroborus"))
         .setLore(
-            "20% chance to reflect damage taken."
+            GetText.tr("20% chance to reflect damage taken.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Breakpoint")
+        .setTraitName(GetText.tr("Breakpoint"))
         .setLore(
-            "Unbreakable. +200% Damage.",
-            "+200% Tool Exp and 3x3 Mining."
+            GetText.tr("Unbreakable. +200% Damage."),
+            GetText.tr("+200% Tool Exp and 3x3 Mining.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingInfinity)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingInfinity)
@@ -1951,34 +1952,34 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinitly Powerful")
+        .setTraitName(GetText.tr("Infinitly Powerful"))
         .setLore(
-            "Every X points of damage taken (before",
-            "reductions) will unlock a new, random,",
-            "enchantment. No upper limits.",
-            "damage required will increase each time"
+            GetText.tr("Every X points of damage taken (before"),
+            GetText.tr("reductions) will unlock a new, random,"),
+            GetText.tr("enchantment. No upper limits."),
+            GetText.tr("damage required will increase each time")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("Infinite Defence")
+        .setTraitName(GetText.tr("Infinite Defence"))
         .setLore(
-            "All damage taken set to 1 when 4 pieces",
-            "are equipped."
+            GetText.tr("All damage taken set to 1 when 4 pieces"),
+            GetText.tr("are equipped.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingInfinity);
 
     public static final MaterialTrait INFINITY_REINFORCED_DRACONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setSponsoredBy("Bunkky/ReasonFoundDecoy")
-        .setTraitName("Draconic Tantrum")
+        .setSponsoredBy(GetText.tr("Bunkky/ReasonFoundDecoy"))
+        .setTraitName(GetText.tr("Draconic Tantrum"))
         .setLore(
-            "When hit by the Ender Dragon, gain",
-            "bonus damage for 15 seconds.",
-            "Stacks additively. Stacks refresh duration."
+            GetText.tr("When hit by the Ender Dragon, gain"),
+            GetText.tr("bonus damage for 15 seconds."),
+            GetText.tr("Stacks additively. Stacks refresh duration.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headReinforcedDraconium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headReinforcedDraconium);
@@ -1990,37 +1991,37 @@ public final class Traits {
     public static final MaterialTrait LITE_RUBBER_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Insulated")
+        .setTraitName(GetText.tr("Insulated"))
         .setLore(
-            "Become immune to lightning."
+            GetText.tr("Become immune to lightning.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindRubber);
 
     public static final MaterialTrait LITE_RUBBER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Sweaty")
+        .setTraitName(GetText.tr("Sweaty"))
         .setLore(
-            "A rubber lining is WAY too hot."
+            GetText.tr("A rubber lining is WAY too hot.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonRubber);
 
     public static final MaterialTrait LITE_REFINED_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Really Stable")
+        .setTraitName(GetText.tr("Really Stable"))
         .setLore(
-            "Does nothing. Perhaps if you level it up?."
+            GetText.tr("Does nothing. Perhaps if you level it up?.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headRefinedIron);
 
     public static final MaterialTrait LITE_REFINED_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Manners Maketh Man")
+        .setTraitName(GetText.tr("Manners Maketh Man"))
         .setLore(
-            "Speed 1, Damage + 50%. Your fights look",
-            "super cool."
+            GetText.tr("Speed 1, Damage + 50%. Your fights look"),
+            GetText.tr("super cool.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodRefinedIron)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodRefinedIron)
@@ -2029,40 +2030,40 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Kingsman")
+        .setTraitName(GetText.tr("Kingsman"))
         .setLore(
-            "On right click, summons a colorful cavalcade",
-            "of pure destruction.",
-            "Does nothing if you don't have manners.",
-            "Requires 4 pieces with Kingsman."
+            GetText.tr("On right click, summons a colorful cavalcade"),
+            GetText.tr("of pure destruction."),
+            GetText.tr("Does nothing if you don't have manners."),
+            GetText.tr("Requires 4 pieces with Kingsman.")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::plateRefinedIron);
 
     public static final MaterialTrait LITE_REFINED_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Narrowing")
+        .setTraitName(GetText.tr("Narrowing"))
         .setLore(
-            "Attackers are blinded."
+            GetText.tr("Attackers are blinded.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksRefinedIron);
 
     public static final MaterialTrait LITE_MIXED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Mixed Metals")
+        .setTraitName(GetText.tr("Mixed Metals"))
         .setLore(
-            "Has the effects of all it's ingredients but",
-            "their power is halved."
+            GetText.tr("Has the effects of all it's ingredients but"),
+            GetText.tr("their power is halved.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMixedMetal);
 
     public static final MaterialTrait LITE_MIXED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Stiff")
+        .setTraitName(GetText.tr("Stiff"))
         .setLore(
-            "Double damage. Unlucky!"
+            GetText.tr("Double damage. Unlucky!")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headBrass)
         .addConsumer(TraitEventType.TICK, TickEvents::headBrass);
@@ -2070,9 +2071,9 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Experienced")
+        .setTraitName(GetText.tr("Experienced"))
         .setLore(
-            "All tool/armour exp + 10%"
+            GetText.tr("All tool/armour exp + 10%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksAdamantite)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksAdamantite);
@@ -2080,29 +2081,29 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Mix it up!")
+        .setTraitName(GetText.tr("Mix it up!"))
         .setLore(
-            "Mixes things up a bit when hit"
+            GetText.tr("Mixes things up a bit when hit")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMixedMetal);
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Cleave")
+        .setTraitName(GetText.tr("Cleave"))
         .setLore(
-            "Damage all nearby mobs when you attack.",
-            "Cleave damage does not trigger Tinker's effects."
+            GetText.tr("Damage all nearby mobs when you attack."),
+            GetText.tr("Cleave damage does not trigger Tinker's effects.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAdvancedAlloy);
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Heavy Duty")
+        .setTraitName(GetText.tr("Heavy Duty"))
         .setLore(
-            "When durability gets low, it eats 1 iron",
-            "ingot from your inventory to restore some."
+            GetText.tr("When durability gets low, it eats 1 iron"),
+            GetText.tr("ingot from your inventory to restore some.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAdvancedAlloy);
 
@@ -2110,63 +2111,63 @@ public final class Traits {
         // Event More Advanced (mod affector)
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Even More Advanced")
+        .setTraitName(GetText.tr("Even More Advanced"))
         .setLore(
-            "Advanced modifiers +1 for each piece."
+            GetText.tr("Advanced modifiers +1 for each piece.")
         );
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Superhot")
+        .setTraitName(GetText.tr("Superhot"))
         .setLore(
-            "Chance to set nearby linving things on fire."
+            GetText.tr("Chance to set nearby linving things on fire.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCorBronze);
 
     public static final MaterialTrait LITE_MAG_THOR_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Heat Resistant")
+        .setTraitName(GetText.tr("Heat Resistant"))
         .setLore(
-            "Lava is no longer your enemy."
+            GetText.tr("Lava is no longer your enemy.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headMagThor);
 
     public static final MaterialTrait LITE_MAG_THOR_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Vampirism")
+        .setTraitName(GetText.tr("Vampirism"))
         .setLore(
-            "Chance to heal by damage given.",
-            "Damage dealt varies by time of day."
+            GetText.tr("Chance to heal by damage given."),
+            GetText.tr("Damage dealt varies by time of day.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDamsteel);
 
     public static final MaterialTrait LITE_MAG_THOR_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Radioactive Plates")
+        .setTraitName(GetText.tr("Radioactive Plates"))
         .setLore(
-            "Poisons enemies that attack you."
+            GetText.tr("Poisons enemies that attack you.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMagThor);
 
     public static final MaterialTrait LITE_MAG_THOR_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Building Rage")
+        .setTraitName(GetText.tr("Building Rage"))
         .setLore(
-            "Chance, when hit, to gain Speed 1 and Haste 1"
+            GetText.tr("Chance, when hit, to gain Speed 1 and Haste 1")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagThor);
 
     public static final MaterialTrait LITE_CARBON_MESH_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Nimble")
+        .setTraitName(GetText.tr("Nimble"))
         .setLore(
-            "Speed 1. Take 33% less damage"
+            GetText.tr("Speed 1. Take 33% less damage")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindCarbonMesh)
         .addConsumer(TraitEventType.TICK, TickEvents::bindCarbonMesh);
@@ -2174,18 +2175,18 @@ public final class Traits {
     public static final MaterialTrait LITE_CARBON_MESH_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Carbon Fibre")
+        .setTraitName(GetText.tr("Carbon Fibre"))
         .setLore(
-            "Speed + 1"
+            GetText.tr("Speed + 1")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonCarbonMesh);
 
     public static final MaterialTrait LITE_SCRAP_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Terrible")
+        .setTraitName(GetText.tr("Terrible"))
         .setLore(
-            "+300% durability loss. 0% Exp Gain."
+            GetText.tr("+300% durability loss. 0% Exp Gain.")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headScrap)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headScrap)
@@ -2194,10 +2195,10 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Brains, Not Brawn.")
+        .setTraitName(GetText.tr("Brains, Not Brawn."))
         .setLore(
-            "Tool exp gain is doubled. Damage",
-            "dealt is halved."
+            GetText.tr("Tool exp gain is doubled. Damage"),
+            GetText.tr("dealt is halved.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCopper);
@@ -2205,12 +2206,12 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Pathetic")
+        .setTraitName(GetText.tr("Pathetic"))
         .setLore(
-            "Do not wear this armour.",
-            "VERY BAD THINGS MAY HAPPEN",
-            "YOU HAVE BEEN WARNED",
-            "Exp + 400%."
+            GetText.tr("Do not wear this armour."),
+            GetText.tr("VERY BAD THINGS MAY HAPPEN"),
+            GetText.tr("YOU HAVE BEEN WARNED"),
+            GetText.tr("Exp + 400%.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateScrap)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateScrap);
@@ -2218,10 +2219,10 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Falling Apart")
+        .setTraitName(GetText.tr("Falling Apart"))
         .setLore(
-            "Exp + 200%. Chance for the armour to",
-            "just fall off!"
+            GetText.tr("Exp + 200%. Chance for the armour to"),
+            GetText.tr("just fall off!")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksScrap)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksScrap);
@@ -2229,37 +2230,37 @@ public final class Traits {
     public static final MaterialTrait LITE_IRIDIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Protective")
+        .setTraitName(GetText.tr("Protective"))
         .setLore(
-            "Saves you from deaths. (CD 20m)"
+            GetText.tr("Saves you from deaths. (CD 20m)")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Warp")
+        .setTraitName(GetText.tr("Warp"))
         .setLore(
-            "Turns your opponent around. (CD: 20m)"
+            GetText.tr("Turns your opponent around. (CD: 20m)")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Indomitable")
+        .setTraitName(GetText.tr("Indomitable"))
         .setLore(
-            "10% of all damage is ignored and reflected."
+            GetText.tr("10% of all damage is ignored and reflected.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("Unconventional Power")
+        .setTraitName(GetText.tr("Unconventional Power"))
         .setLore(
-            "Any damage taken is remembered. Right",
-            "Click to charge inventory items."
+            GetText.tr("Any damage taken is remembered. Right"),
+            GetText.tr("Click to charge inventory items.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksIridium)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksIridium);
@@ -2271,48 +2272,48 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Overcharge")
+        .setTraitName(GetText.tr("Overcharge"))
         .setLore(
-            "Stores energy each time you hit a mob.",
-            "Every 10th attack releases this back."
+            GetText.tr("Stores energy each time you hit a mob."),
+            GetText.tr("Every 10th attack releases this back.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Blinding Speed")
+        .setTraitName(GetText.tr("Blinding Speed"))
         .setLore(
-            "Gain insane speed but with a side effect."
+            GetText.tr("Gain insane speed but with a side effect.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Gravity")
+        .setTraitName(GetText.tr("Gravity"))
         .setLore(
-            "All nearby entities are slowly pulled",
-            "towards you"
+            GetText.tr("All nearby entities are slowly pulled"),
+            GetText.tr("towards you")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Soul Siphon")
+        .setTraitName(GetText.tr("Soul Siphon"))
         .setLore(
-            "Stores the souls of killed, hostile, mobs.",
-            "Damage + 1% per 100 souls. Caps at 100%."
+            GetText.tr("Stores the souls of killed, hostile, mobs."),
+            GetText.tr("Damage + 1% per 100 souls. Caps at 100%.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSegganesson);
 
     public static final MaterialTrait SFW_SLIMESTEEL_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Bouncy II")
+        .setTraitName(GetText.tr("Bouncy II"))
         .setLore(
-            "Fall damage halved with a jump boost."
+            GetText.tr("Fall damage halved with a jump boost.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::bindSlimesteel)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindSlimesteel);
@@ -2320,39 +2321,39 @@ public final class Traits {
     public static final MaterialTrait SFW_SLIMESTEEL_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Moon Bounce")
+        .setTraitName(GetText.tr("Moon Bounce"))
         .setLore(
-            "When on boots, fall damage is ignored.",
-            "You also get more bouncy."
+            GetText.tr("When on boots, fall damage is ignored."),
+            GetText.tr("You also get more bouncy.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::gambesonSlimeSteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Strong and Sticky")
+        .setTraitName(GetText.tr("Strong and Sticky"))
         .setLore(
-            "Dropped blocks go into your inventory",
-            "when possible to do so"
+            GetText.tr("Dropped blocks go into your inventory"),
+            GetText.tr("when possible to do so")
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Flexibility")
+        .setTraitName(GetText.tr("Flexibility"))
         .setLore(
-            "Incoming damage reduced and durability is lost",
-            "instead. Doesn't work while tool is broken."
+            GetText.tr("Incoming damage reduced and durability is lost"),
+            GetText.tr("instead. Doesn't work while tool is broken.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Rigid Flexibility")
+        .setTraitName(GetText.tr("Rigid Flexibility"))
         .setLore(
-            "Speed and Jump + 1. Damage Taken + 10%"
+            GetText.tr("Speed and Jump + 1. Damage Taken + 10%")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateReinforcedSlimesteel)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateReinforcedSlimesteel);
@@ -2360,37 +2361,37 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Deflection")
+        .setTraitName(GetText.tr("Deflection"))
         .setLore(
-            "10% chance to ignore projectile damage."
+            GetText.tr("10% chance to ignore projectile damage.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_OSMIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Heavy")
+        .setTraitName(GetText.tr("Heavy"))
         .setLore(
-            "Mines in a 3x3 Area"
+            GetText.tr("Mines in a 3x3 Area")
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
     public static final MaterialTrait SFW_OSMIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Heavy Pommel")
+        .setTraitName(GetText.tr("Heavy Pommel"))
         .setLore(
-            "Struck mobs are slowed and cannot teleport."
+            GetText.tr("Struck mobs are slowed and cannot teleport.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Increased Mass")
+        .setTraitName(GetText.tr("Increased Mass"))
         .setLore(
-            "Attackers will be knocked back.",
-            "Gives you slow when procced"
+            GetText.tr("Attackers will be knocked back."),
+            GetText.tr("Gives you slow when procced")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateOsmium);
@@ -2398,20 +2399,20 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Draw")
+        .setTraitName(GetText.tr("Draw"))
         .setLore(
-            "5% chance to heal by damage dealt."
+            GetText.tr("5% chance to heal by damage dealt.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Brute")
+        .setTraitName(GetText.tr("Brute"))
         .setLore(
-            "Slow swinging speed. Hit enemies are stunned",
-            "briefly. Damage +100% with an additional 33%",
-            "chance to crit for a further +100%"
+            GetText.tr("Slow swinging speed. Hit enemies are stunned"),
+            GetText.tr("briefly. Damage +100% with an additional 33%"),
+            GetText.tr("chance to crit for a further +100%")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headOsmiumSuperalloy)
         .addConsumer(TraitEventType.TICK, TickEvents::headOsmiumSuperalloy);
@@ -2419,38 +2420,38 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Tuff Stuff")
+        .setTraitName(GetText.tr("Tuff Stuff"))
         .setLore(
-            "Knocks back anything hit and stuns."
+            GetText.tr("Knocks back anything hit and stuns.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headHard);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Tempest")
+        .setTraitName(GetText.tr("Tempest"))
         .setLore(
-            "When wearing 4 pieces, chance when hit",
-            "to summon a tempest."
+            GetText.tr("When wearing 4 pieces, chance when hit"),
+            GetText.tr("to summon a tempest.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Partial Decay")
+        .setTraitName(GetText.tr("Partial Decay"))
         .setLore(
-            "Chance to damage random nearby living",
-            "things. Will never kill."
+            GetText.tr("Chance to damage random nearby living"),
+            GetText.tr("things. Will never kill.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Innovation")
+        .setTraitName(GetText.tr("Innovation"))
         .setLore(
-            "+100% Tool and Player EXP during the day."
+            GetText.tr("+100% Tool and Player EXP during the day.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headUnpatentabilum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headUnpatentabilum);
@@ -2459,28 +2460,28 @@ public final class Traits {
         // Special case in ItemDrop and PlayerDeath
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Incorporeal Right")
+        .setTraitName(GetText.tr("Incorporeal Right"))
         .setLore(
-            "Tool cannot be dropped or lost on death."
+            GetText.tr("Tool cannot be dropped or lost on death.")
         );
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("Intense Gaze")
+        .setTraitName(GetText.tr("Intense Gaze"))
         .setLore(
-            "Entities you look at will teleport to you.",
-            "Does not work on players or bosses."
+            GetText.tr("Entities you look at will teleport to you."),
+            GetText.tr("Does not work on players or bosses.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateUnpatentabilum);
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("KOTR")
+        .setTraitName(GetText.tr("KOTR"))
         .setLore(
-            "Chance, when hit, to summon a Knight",
-            "of the Round. (It's a Golem ;))"
+            GetText.tr("Chance, when hit, to summon a Knight"),
+            GetText.tr("of the Round. (It's a Golem ;))")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
@@ -2491,156 +2492,156 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Super Dooper Stainless")
+        .setTraitName(GetText.tr("Super Dooper Stainless"))
         .setLore(
-            "Like Steel or MagSteel but yet more absurd."
+            GetText.tr("Like Steel or MagSteel but yet more absurd.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Cutlery")
+        .setTraitName(GetText.tr("Cutlery"))
         .setLore(
-            "Hitting animals will directly feed you. Grim"
+            GetText.tr("Hitting animals will directly feed you. Grim")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("The Standard")
+        .setTraitName(GetText.tr("The Standard"))
         .setLore(
-            "Damage taken reduced by 5%"
+            GetText.tr("Damage taken reduced by 5%")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Water Safe")
+        .setTraitName(GetText.tr("Water Safe"))
         .setLore(
-            "Gives you water breathing"
+            GetText.tr("Gives you water breathing")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksStainlessSteel);
 
     public static final MaterialTrait DYN_VEX_GEM_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("NoClip")
+        .setTraitName(GetText.tr("NoClip"))
         .setLore(
-            "Right click while holding to randomly teleport.",
-            "5 min cooldown."
+            GetText.tr("Right click while holding to randomly teleport."),
+            GetText.tr("5 min cooldown.")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::bindVex);
 
     public static final MaterialTrait DYN_VEX_GEM_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Annoying")
+        .setTraitName(GetText.tr("Annoying"))
         .setLore(
-            "Vex gems shouldn't be used like this!"
+            GetText.tr("Vex gems shouldn't be used like this!")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonVex);
 
     public static final MaterialTrait DYN_STAR_DUST_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Bright Fury")
+        .setTraitName(GetText.tr("Bright Fury"))
         .setLore(
-            "Attacks dazzle and blind while being.",
-            "50% more powerful."
+            GetText.tr("Attacks dazzle and blind while being."),
+            GetText.tr("50% more powerful.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStarDust);
 
     public static final MaterialTrait DYN_STAR_DUST_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Yvaine")
+        .setTraitName(GetText.tr("Yvaine"))
         .setLore(
-            "Gives an ethereal glow and makes villagers",
-            "friendlier to you."
+            GetText.tr("Gives an ethereal glow and makes villagers"),
+            GetText.tr("friendlier to you.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodStarDust);
 
     public static final MaterialTrait DYN_STAR_DUST_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Starshine")
+        .setTraitName(GetText.tr("Starshine"))
         .setLore(
-            "5% chance to heal 1/2 heart during the night"
+            GetText.tr("5% chance to heal 1/2 heart during the night")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateStardust);
 
     public static final MaterialTrait DYN_STAR_DUST_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Bright-burn")
+        .setTraitName(GetText.tr("Bright-burn"))
         .setLore(
-            "Gives on stack of Burning Bright! With 4 ",
-            "stacks, hostile mobs are repelled (not bosses)."
+            GetText.tr("Gives on stack of Burning Bright! With 4 "),
+            GetText.tr("stacks, hostile mobs are repelled (not bosses).")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Incorporeal")
+        .setTraitName(GetText.tr("Incorporeal"))
         .setLore(
-            "Projectiles just pass right through you."
+            GetText.tr("Projectiles just pass right through you.")
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("HyperCube [B]")
+        .setTraitName(GetText.tr("HyperCube [B]"))
         .setLore(
-            "Only works with both [A] and [B]. Shift + Right",
-            "click to store a location. Right click to recall",
-            "to that location. (CD: 10m)"
+            GetText.tr("Only works with both [A] and [B]. Shift + Right"),
+            GetText.tr("click to store a location. Right click to recall"),
+            GetText.tr("to that location. (CD: 10m)")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Ghost in the shell")
+        .setTraitName(GetText.tr("Ghost in the shell"))
         .setLore(
-            "Slowly damages all nearby mobs at the cost of durability.",
-            "Mobs cannot die due to this effect."
+            GetText.tr("Slowly damages all nearby mobs at the cost of durability."),
+            GetText.tr("Mobs cannot die due to this effect.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Ghostly")
+        .setTraitName(GetText.tr("Ghostly"))
         .setLore(
-            "Hover like a ghost"
+            GetText.tr("Hover like a ghost")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGhostly);
 
     public static final MaterialTrait DYN_TESSERACT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("HyperCube [A]")
+        .setTraitName(GetText.tr("HyperCube [A]"))
         .setLore(
-            "Only works with both [A] and [B]. Shift + Right",
-            "click to store a location. Right click to recall",
-            "to that location. (CD: 10m)"
+            GetText.tr("Only works with both [A] and [B]. Shift + Right"),
+            GetText.tr("click to store a location. Right click to recall"),
+            GetText.tr("to that location. (CD: 10m)")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headTessMat);
 
     public static final MaterialTrait DYN_TESSERACT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Hyberbolic Tesseration")
+        .setTraitName(GetText.tr("Hyberbolic Tesseration"))
         .setLore(
-            "When in your personal home, you store energy.",
-            "Damage taken is removed from this energy pool.",
-            "Required 8x pieces to function and caps at 50",
-            "per piece."
+            GetText.tr("When in your personal home, you store energy."),
+            GetText.tr("Damage taken is removed from this energy pool."),
+            GetText.tr("Required 8x pieces to function and caps at 50"),
+            GetText.tr("per piece.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2648,12 +2649,12 @@ public final class Traits {
     public static final MaterialTrait DYN_TESSERACT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("Hyberbolic Tesseration")
+        .setTraitName(GetText.tr("Hyberbolic Tesseration"))
         .setLore(
-            "When in your personal home, you store energy.",
-            "Damage taken is removed from this energy pool.",
-            "Required 8x pieces to function and caps at 50",
-            "per piece."
+            GetText.tr("When in your personal home, you store energy."),
+            GetText.tr("Damage taken is removed from this energy pool."),
+            GetText.tr("Required 8x pieces to function and caps at 50"),
+            GetText.tr("per piece.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2665,55 +2666,55 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_STRENGTH = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("The Power of Daxi")
+        .setTraitName(GetText.tr("The Power of Daxi"))
         .setLore(
-            "Has a chance on hit to unleash the",
-            "power of the Strength Daxi for an",
-            "additional 100% damage."
+            GetText.tr("Has a chance on hit to unleash the"),
+            GetText.tr("power of the Strength Daxi for an"),
+            GetText.tr("additional 100% damage.")
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDaxiStrength);
 
     public static final MaterialTrait TNS_DAXI_ABSORPTION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Absorption")
+        .setTraitName(GetText.tr("Unite - Absorption"))
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            GetText.tr("When all four defensive Daxi unite,"),
+            GetText.tr("you will be granted the power to"),
+            GetText.tr("retain your Daxi through death.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiAbsorption);
 
     public static final MaterialTrait TNS_DAXI_FORTITUDE = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Fortitude")
+        .setTraitName(GetText.tr("Unite - Fortitude"))
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            GetText.tr("When all four defensive Daxi unite,"),
+            GetText.tr("you will be granted the power to"),
+            GetText.tr("retain your Daxi through death.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiFortitude);
 
     public static final MaterialTrait TNS_DAXI_SATURATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Saturation")
+        .setTraitName(GetText.tr("Unite - Saturation"))
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            GetText.tr("When all four defensive Daxi unite,"),
+            GetText.tr("you will be granted the power to"),
+            GetText.tr("retain your Daxi through death.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiSaturation);
 
     public static final MaterialTrait TNS_DAXI_REGENERATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("Unite - Regeneration")
+        .setTraitName(GetText.tr("Unite - Regeneration"))
         .setLore(
-            "When all four defensive Daxi unite,",
-            "you will be granted the power to",
-            "retain your Daxi through death."
+            GetText.tr("When all four defensive Daxi unite,"),
+            GetText.tr("you will be granted the power to"),
+            GetText.tr("retain your Daxi through death.")
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiRegeneration);
 
@@ -2724,19 +2725,19 @@ public final class Traits {
     public static final MaterialTrait NTW_UTLIMANINIUM = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.NETWORKS_NOTE)
-        .setTraitName("Feeling Connected")
+        .setTraitName(GetText.tr("Feeling Connected"))
         .setLore(
-            "Allows you to connect wirelessly",
-            "to a network using direct nural",
-            "connection via your helmet.",
+            GetText.tr("Allows you to connect wirelessly"),
+            GetText.tr("to a network using direct nural"),
+            GetText.tr("connection via your helmet."),
             "",
-            "Shift + Left Click with an empty",
-            "hand to bind to a grid.",
+            GetText.tr("Shift + Left Click with an empty"),
+            GetText.tr("hand to bind to a grid."),
             "",
-            "Left Click air with an empty hand to",
-            "try to open the bound grid.",
+            GetText.tr("Left Click air with an empty hand to"),
+            GetText.tr("try to open the bound grid."),
             "",
-            "Will only work on a helmet."
+            GetText.tr("Will only work on a helmet.")
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksUltimaninium);
 

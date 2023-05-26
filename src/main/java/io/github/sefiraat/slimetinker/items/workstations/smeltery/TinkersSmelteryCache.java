@@ -18,6 +18,7 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -236,7 +237,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast item is null or not a cast
         if (inputItem == null || !SlimeTinker.getInstance().getCmManager().castingRecipes.containsKey(StackUtils.getIdOrType(inputItem))) {
-            player.sendMessage(ThemeUtils.WARNING + "Please input a valid cast before trying to pour metals.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("Please input a valid cast before trying to pour metals."));
             return;
         }
 
@@ -244,7 +245,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // No metals in the tank - cant pour
         if (!first.isPresent()) {
-            player.sendMessage(ThemeUtils.WARNING + "There isn't any metal to pour.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("There isn't any metal to pour."));
             return;
         }
 
@@ -254,7 +255,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast valid, but this cast and metal combination doesn't work
         if (!result.getOutputs().containsKey(tinkerMaterial)) {
-            player.sendMessage(ThemeUtils.WARNING + "The selected metal cannot be shaped into the selected cast.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("The selected metal cannot be shaped into the selected cast."));
             return;
         }
 
@@ -263,13 +264,13 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Does not have enough metal to cats this specific item
         if (tankContent.get(metalID) < metalAmount) {
-            player.sendMessage(ThemeUtils.WARNING + "You do not have enough metal to fill this cast");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("You do not have enough metal to fill this cast"));
             return;
         }
 
         // Lastly, can we fit the output?
         if (!blockMenu.fits(outputItem, TinkersSmeltery.OUTPUT_SLOT)) {
-            player.sendMessage(ThemeUtils.WARNING + "Please clear your casting table first");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("Please clear your casting table first"));
             return;
         }
 

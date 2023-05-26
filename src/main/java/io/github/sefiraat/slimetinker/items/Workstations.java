@@ -17,6 +17,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 
@@ -31,11 +32,11 @@ public final class Workstations {
         "TINKERS_SMELTERY_CORE",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "Melts down metals into liquids.",
-        "Metals can then be alloyed and",
-        "cast out into various forms.",
-        "Requires lava as fuel"
+        GetText.tr("Tinker's Smeltery"),
+        GetText.tr("Melts down metals into liquids."),
+        GetText.tr("Metals can then be alloyed and"),
+        GetText.tr("cast out into various forms."),
+        GetText.tr("Requires lava as fuel")
     );
 
     // Workbench
@@ -43,11 +44,11 @@ public final class Workstations {
         "TINKERS_WORKBENCH",
         Material.FLETCHING_TABLE,
         ThemeItemType.MACHINE,
-        "Tinker's Workbench",
-        "Used for crafting various items",
-        "and parts for Tinker's tools and",
-        "constructions. Also acts as an",
-        "Enhanced Crafting Table."
+        GetText.tr("Tinker's Workbench"),
+        GetText.tr("Used for crafting various items"),
+        GetText.tr("and parts for Tinker's tools and"),
+        GetText.tr("constructions. Also acts as an"),
+        GetText.tr("Enhanced Crafting Table.")
     );
 
     // Tool Table
@@ -55,8 +56,8 @@ public final class Workstations {
         "TINKERS_TABLE",
         Material.SMITHING_TABLE,
         ThemeItemType.MACHINE,
-        "Tinker's Tool Table",
-        "Combines parts into tools."
+        GetText.tr("Tinker's Tool Table"),
+        GetText.tr("Combines parts into tools.")
     );
 
     // Armour Table
@@ -64,8 +65,8 @@ public final class Workstations {
         "TINKERS_ARMOUR_TABLE",
         Material.SMITHING_TABLE,
         ThemeItemType.MACHINE,
-        "Tinker's Armour Table",
-        "Combines parts into armour pieces."
+        GetText.tr("Tinker's Armour Table"),
+        GetText.tr("Combines parts into armour pieces.")
     );
 
     // Repair
@@ -73,8 +74,8 @@ public final class Workstations {
         "TINKERS_REPAIR_BENCH",
         Material.CARTOGRAPHY_TABLE,
         ThemeItemType.MACHINE,
-        "Tinker's Repair Bench",
-        "Repairs tools and weapons."
+        GetText.tr("Tinker's Repair Bench"),
+        GetText.tr("Repairs tools and weapons.")
     );
 
     // Swapping
@@ -82,8 +83,8 @@ public final class Workstations {
         "TINKERS_SWAPPING_STATION",
         Material.LOOM,
         ThemeItemType.MACHINE,
-        "Tinker's Swapping Station",
-        "Swaps parts of tools with new parts."
+        GetText.tr("Tinker's Swapping Station"),
+        GetText.tr("Swaps parts of tools with new parts.")
     );
 
     // Modification
@@ -91,8 +92,8 @@ public final class Workstations {
         "TINKERS_MOD_STATION",
         Material.GRINDSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Modification Station",
-        "Applies modifications to tools and weapons."
+        GetText.tr("Tinker's Modification Station"),
+        GetText.tr("Applies modifications to tools and weapons.")
     );
 
     private static final ItemStack[] RECIPE_TINKERS_SMELTERY_MULTI = new ItemStack[]{

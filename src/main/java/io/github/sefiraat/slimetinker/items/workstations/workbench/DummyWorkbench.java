@@ -6,6 +6,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.Material;
+import org.mini2Dx.gettext.GetText;
 
 public final class DummyWorkbench {
 
@@ -13,8 +14,8 @@ public final class DummyWorkbench {
         "DUMMY_TINKERS_SMELTERY",
         Material.FLETCHING_TABLE,
         ThemeItemType.MACHINE,
-        "ToolTable",
-        "This item is crafted in the workbench."
+        GetText.tr("ToolTable"),
+        GetText.tr("This item is crafted in the workbench.")
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_WORKBENCH, STACK);
 

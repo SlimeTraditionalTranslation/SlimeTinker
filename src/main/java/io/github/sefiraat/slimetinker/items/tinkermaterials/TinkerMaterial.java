@@ -24,6 +24,7 @@ import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -486,8 +487,8 @@ public class TinkerMaterial {
             "PART_HEAD_" + type + name,
             skullTexture,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " Head",
-            ThemeUtils.PASSIVE + "A tool head made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + GetText.tr(" Head"),
+            ThemeUtils.PASSIVE + GetText.tr("A tool head made of ") + titName + GetText.tr(".")
         );
     }
 
@@ -498,8 +499,8 @@ public class TinkerMaterial {
             "PART_BINDING_" + name,
             SkullTextures.PART_BINDING,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Binding",
-            ThemeUtils.PASSIVE + "A binding made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + GetText.tr(" Binding"),
+            ThemeUtils.PASSIVE + GetText.tr("A binding made of ") + titName + GetText.tr(".")
         );
 
         ItemMeta im = i.getItemMeta();
@@ -518,8 +519,8 @@ public class TinkerMaterial {
             "PART_ROD_" + name,
             SkullTextures.PART_TOOL_ROD,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Rod",
-            ThemeUtils.PASSIVE + "A tool rod made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + GetText.tr(" Rod"),
+            ThemeUtils.PASSIVE + GetText.tr("A tool rod made of ") + titName + GetText.tr(".")
         );
     }
 
@@ -530,8 +531,8 @@ public class TinkerMaterial {
             "PART_PLATES_" + type + name,
             skullTexture,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + " Plates",
-            ThemeUtils.PASSIVE + "A set of armour plates made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + " " + ThemeUtils.toTitleCase(type) + GetText.tr(" Plates"),
+            ThemeUtils.PASSIVE + GetText.tr("A set of armour plates made of ") + titName + GetText.tr(".")
         );
     }
 
@@ -542,8 +543,8 @@ public class TinkerMaterial {
             "PART_GAMBESON_" + name,
             SkullTextures.PART_GAMBESON,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Gambeson",
-            ThemeUtils.PASSIVE + "A gambeson made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + GetText.tr(" Gambeson"),
+            ThemeUtils.PASSIVE + GetText.tr("A gambeson made of ") + titName + GetText.tr(".")
         );
 
         ItemMeta im = i.getItemMeta();
@@ -561,8 +562,8 @@ public class TinkerMaterial {
             "PART_LINKS_" + name,
             SkullTextures.PART_LINKS,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Mail Links",
-            ThemeUtils.PASSIVE + "A set of mail links made of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + GetText.tr(" Mail Links"),
+            ThemeUtils.PASSIVE + GetText.tr("A set of mail links made of ") + titName + GetText.tr(".")
         );
     }
 
@@ -573,9 +574,9 @@ public class TinkerMaterial {
             "PART_REPAIR_KIT_" + name,
             Material.CHEST_MINECART,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " Repair Kit",
-            ThemeUtils.PASSIVE + "A kit that is able to repair items",
-            "made out of " + titName + "."
+            getColor() + titName + ThemeUtils.ITEM_PART + GetText.tr(" Repair Kit"),
+            ThemeUtils.PASSIVE + GetText.tr("A kit that is able to repair items"),
+            GetText.tr("made out of ") + titName + GetText.tr(".")
         );
     }
 

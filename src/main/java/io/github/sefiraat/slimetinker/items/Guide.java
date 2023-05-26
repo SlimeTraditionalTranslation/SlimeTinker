@@ -15,6 +15,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public final class Guide {
         throw new UnsupportedOperationException("Utility Class");
     }
 
-    public static final String DESC_ERROR = "Error";
+    public static final String DESC_ERROR = GetText.tr("Error");
     public static final int LEVEL_TOOLS_NETHERITE = 10;
     public static final int LEVEL_TOOLS_DIAMOND = 8;
     public static final int LEVEL_TOOLS_IRON = 6;
@@ -42,102 +43,102 @@ public final class Guide {
         "TOOL_SHOVEL_DUMMY",
         Material.STONE_SHOVEL,
         ThemeItemType.TOOL,
-        "Tinker's Shovel",
-        ThemeUtils.PASSIVE + "A shovel formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        GetText.tr("Tinker's Shovel"),
+        ThemeUtils.PASSIVE + GetText.tr("A shovel formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers.")
     );
 
     public static final SlimefunItemStack TOOL_PICKAXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_PICKAXE_DUMMY",
         Material.STONE_PICKAXE,
         ThemeItemType.TOOL,
-        "Tinker's Pickaxe",
-        ThemeUtils.PASSIVE + "A pickaxe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        GetText.tr("Tinker's Pickaxe"),
+        ThemeUtils.PASSIVE + GetText.tr("A pickaxe formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers.")
     );
 
     public static final SlimefunItemStack TOOL_AXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_AXE_DUMMY",
         Material.STONE_AXE,
         ThemeItemType.TOOL,
-        "Tinker's Axe",
-        ThemeUtils.PASSIVE + "An axe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        GetText.tr("Tinker's Axe"),
+        ThemeUtils.PASSIVE + GetText.tr("An axe formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers.")
     );
 
     public static final SlimefunItemStack TOOL_HOE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_HOE_DUMMY",
         Material.STONE_HOE,
         ThemeItemType.TOOL,
-        "Tinker's Hoe",
-        ThemeUtils.PASSIVE + "A hoe formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        GetText.tr("Tinker's Hoe"),
+        ThemeUtils.PASSIVE + GetText.tr("A hoe formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers.")
     );
 
     public static final SlimefunItemStack TOOL_SWORD_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_SWORD_DUMMY",
         Material.STONE_SWORD,
         ThemeItemType.TOOL,
-        "Tinker's Sword",
-        ThemeUtils.PASSIVE + "A sword formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's tools can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers."
+        GetText.tr("Tinker's Sword"),
+        ThemeUtils.PASSIVE + GetText.tr("A sword formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers.")
     );
 
     public static final SlimefunItemStack ARMOUR_HELMET_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_HELMET_DUMMY",
         Material.LEATHER_HELMET,
         ThemeItemType.ARMOUR,
-        "Tinker's Helmet",
-        ThemeUtils.PASSIVE + "A helmet formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        GetText.tr("Tinker's Helmet"),
+        ThemeUtils.PASSIVE + GetText.tr("A helmet formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's armour can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers."),
+        ThemeUtils.PASSIVE + GetText.tr("When broken it's unequipped."),
+        ThemeUtils.WARNING + GetText.tr("If there's no room in your inventory"),
+        ThemeUtils.WARNING + GetText.tr("then the item drops on the floor")
     );
 
     public static final SlimefunItemStack ARMOUR_CHESTPLATE_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_CHESTPLATE_DUMMY",
         Material.LEATHER_CHESTPLATE,
         ThemeItemType.ARMOUR,
-        "Tinker's Chestplate",
-        ThemeUtils.PASSIVE + "A chestplate formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        GetText.tr("Tinker's Chestplate"),
+        ThemeUtils.PASSIVE + GetText.tr("A chestplate formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's armour can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers."),
+        ThemeUtils.PASSIVE + GetText.tr("When broken it's unequipped."),
+        ThemeUtils.WARNING + GetText.tr("If there's no room in your inventory"),
+        ThemeUtils.WARNING + GetText.tr("then the item drops on the floor")
     );
 
     public static final SlimefunItemStack ARMOUR_LEGGINGS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_LEGGINGS_DUMMY",
         Material.LEATHER_LEGGINGS,
         ThemeItemType.ARMOUR,
-        "Tinker's Leggings",
-        ThemeUtils.PASSIVE + "A pair of leggings formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        GetText.tr("Tinker's Leggings"),
+        ThemeUtils.PASSIVE + GetText.tr("A pair of leggings formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's armour can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers."),
+        ThemeUtils.PASSIVE + GetText.tr("When broken it's unequipped."),
+        ThemeUtils.WARNING + GetText.tr("If there's no room in your inventory"),
+        ThemeUtils.WARNING + GetText.tr("then the item drops on the floor")
     );
 
     public static final SlimefunItemStack ARMOUR_BOOTS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_BOOTS_DUMMY",
         Material.LEATHER_BOOTS,
         ThemeItemType.ARMOUR,
-        "Tinker's Boots",
-        ThemeUtils.PASSIVE + "A pair of boots formed of three parts.",
-        ThemeUtils.PASSIVE + "Tinker's armour can level up and be",
-        ThemeUtils.PASSIVE + "given extra properties and modifiers.",
-        ThemeUtils.PASSIVE + "When broken it's unequipped.",
-        ThemeUtils.WARNING + "If there's no room in your inventory",
-        ThemeUtils.WARNING + "then the item drops on the floor"
+        GetText.tr("Tinker's Boots"),
+        ThemeUtils.PASSIVE + GetText.tr("A pair of boots formed of three parts."),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's armour can level up and be"),
+        ThemeUtils.PASSIVE + GetText.tr("given extra properties and modifiers."),
+        ThemeUtils.PASSIVE + GetText.tr("When broken it's unequipped."),
+        ThemeUtils.WARNING + GetText.tr("If there's no room in your inventory"),
+        ThemeUtils.WARNING + GetText.tr("then the item drops on the floor")
     );
 
     public static final SlimefunItemStack TOOL_AXE = ThemeUtils.themedItemStack(
@@ -256,20 +257,20 @@ public final class Guide {
         "TOOL_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "Tinker's Tools Info",
-        ThemeUtils.PASSIVE + "Tinker's tools start at Stone. As you",
-        ThemeUtils.PASSIVE + "level the tools up, they will promote",
-        ThemeUtils.PASSIVE + "through Gold > Iron > Diamond > Netherite."
+        GetText.tr("Tinker's Tools Info"),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's tools start at Stone. As you"),
+        ThemeUtils.PASSIVE + GetText.tr("level the tools up, they will promote"),
+        ThemeUtils.PASSIVE + GetText.tr("through Gold > Iron > Diamond > Netherite.")
     );
 
     public static final SlimefunItemStack ARMOUR_INFO = ThemeUtils.themedItemStack(
         "ARMOUR_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "Tinker's Armour Info",
-        ThemeUtils.PASSIVE + "Tinker's armour starts at Leather. As you",
-        ThemeUtils.PASSIVE + "level the pieces up, they will promote",
-        ThemeUtils.PASSIVE + "through Chain > Iron > Diamond > Netherite."
+        GetText.tr("Tinker's Armour Info"),
+        ThemeUtils.PASSIVE + GetText.tr("Tinker's armour starts at Leather. As you"),
+        ThemeUtils.PASSIVE + GetText.tr("level the pieces up, they will promote"),
+        ThemeUtils.PASSIVE + GetText.tr("through Chain > Iron > Diamond > Netherite.")
     );
 
     public static final ToolTemplate SHOVEL = new ToolTemplate(ItemGroups.DUMMY, TOOL_SHOVEL, DummyToolTable.TYPE, new ItemStack[9]);

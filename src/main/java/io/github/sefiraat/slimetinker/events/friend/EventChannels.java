@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.Map;
 
@@ -67,7 +68,7 @@ public final class EventChannels {
         if (eventShouldCancelIfBroken(i, friend.getEventType())) {
             friend.setActionTaken(true);
             friend.setCancelEvent(true);
-            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "Your tool is broken, you should really repair it!");
+            friend.getPlayer().sendMessage(ThemeUtils.WARNING + GetText.tr("Your tool is broken, you should really repair it!"));
             return;
         }
 

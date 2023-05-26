@@ -17,6 +17,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
@@ -137,7 +138,7 @@ public class TinkersSmeltery extends TickingMenuBlock {
         Map<String, Integer> blockMapZY = getBlockMapZY(b);
 
         if (!blockMapXY.equals(blockMapMaster) && !blockMapZY.equals(blockMapMaster)) {
-            player.sendMessage(ThemeUtils.WARNING + "This multiblock has not been setup correctly.");
+            player.sendMessage(ThemeUtils.WARNING + GetText.tr("This multiblock has not been setup correctly."));
             blockMenu.close();
         }
 

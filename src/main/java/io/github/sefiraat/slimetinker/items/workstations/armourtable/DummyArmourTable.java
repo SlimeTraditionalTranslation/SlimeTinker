@@ -6,6 +6,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.Material;
+import org.mini2Dx.gettext.GetText;
 
 public final class DummyArmourTable {
 
@@ -13,8 +14,8 @@ public final class DummyArmourTable {
         "DUMMY_TINKERS_ARMOUR_TABLE",
         Material.CHISELED_NETHER_BRICKS,
         ThemeItemType.MACHINE,
-        "Tinker's Armour Table",
-        "This item is made on a Tinker's Armour Table."
+        GetText.tr("Tinker's Armour Table"),
+        GetText.tr("This item is made on a Tinker's Armour Table.")
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_ARMOUR_TABLE, STACK);
 

@@ -9,6 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
@@ -61,7 +62,7 @@ public final class Experience {
             modSlots++;
             expRequired = (expRequired * EXP_GROWTH);
             promoteMaterial(itemStack, level, player);
-            player.sendMessage(ThemeUtils.SUCCESS + "Your Tinker's tool has leveled up! +1 Modifier Slot");
+            player.sendMessage(ThemeUtils.SUCCESS + GetText.tr("Your Tinker's tool has leveled up! +1 Modifier Slot"));
 
             silverChecks(itemStack, im, player);
 
@@ -99,7 +100,7 @@ public final class Experience {
         if (Guide.getGrowthMap().get(type).containsKey(level)) {
             itemStack.setType(Guide.getGrowthMap().get(type).get(level));
             ItemUtils.repairItem(itemStack);
-            player.sendMessage(ThemeUtils.SUCCESS + "Your tool has been promoted!");
+            player.sendMessage(ThemeUtils.SUCCESS + GetText.tr("Your tool has been promoted!"));
         }
 
     }
@@ -122,7 +123,7 @@ public final class Experience {
             for (int i = 0; i < amount; i++) {
                 ItemUtils.incrementRandomEnchant(itemStack, im);
             }
-            player.sendMessage(ThemeUtils.SUCCESS + "It also gained [" + amount + "] random enchantment(s)! Hope it's good :>");
+            player.sendMessage(ThemeUtils.SUCCESS + GetText.tr("It also gained [") + amount + GetText.tr("] random enchantment(s)! Hope it's good :>"));
         }
     }
 }

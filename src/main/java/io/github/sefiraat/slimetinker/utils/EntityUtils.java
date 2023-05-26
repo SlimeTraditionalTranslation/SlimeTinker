@@ -13,6 +13,7 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -64,7 +65,7 @@ public final class EntityUtils {
      * @return True is target is a Training Dummy
      */
     public static boolean isTrainingDummy(@Nonnull Entity e) {
-        return e.getCustomName() != null && e.getCustomName().equals("Dummy");
+        return e.getCustomName() != null && e.getCustomName().equals(GetText.tr("Dummy"));
     }
 
     /**

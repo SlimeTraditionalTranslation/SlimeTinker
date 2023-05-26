@@ -6,6 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -51,21 +52,21 @@ public final class ThemeUtils {
     public static final ChatColor ADD_NETWORKS = ChatColor.of("#05ad08");
     public static final ChatColor GUIDE = ChatColor.of("#444444");
 
-    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "Crafting Material";
-    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "Machine";
-    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "Drop";
-    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "Base Resource";
-    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "Chest";
-    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + "Molten Metal";
-    public static final String LORE_LIQUID = ITEM_TYPEDESC + "TinkerMaterial";
-    public static final String LORE_CAST = ITEM_TYPEDESC + "Cast";
-    public static final String LORE_PART = ITEM_TYPEDESC + "Part";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "Tinker's Tool";
-    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "Tinker's Armour";
-    public static final String LORE_INFO = ITEM_TYPEDESC + "Info";
-    public static final String LORE_MOD = ITEM_TYPEDESC + "Modification";
-    public static final String LORE_PROP = ITEM_TYPEDESC + "Material Trait";
-    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Mutliblock";
+    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + GetText.tr("Crafting Material");
+    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + GetText.tr("Machine");
+    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + GetText.tr("Drop");
+    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + GetText.tr("Base Resource");
+    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + GetText.tr("Chest");
+    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + GetText.tr("Molten Metal");
+    public static final String LORE_LIQUID = ITEM_TYPEDESC + GetText.tr("TinkerMaterial");
+    public static final String LORE_CAST = ITEM_TYPEDESC + GetText.tr("Cast");
+    public static final String LORE_PART = ITEM_TYPEDESC + GetText.tr("Part");
+    public static final String LORE_TOOL = ITEM_TYPEDESC + GetText.tr("Tinker's Tool");
+    public static final String LORE_ARMOUR = ITEM_TYPEDESC + GetText.tr("Tinker's Armour");
+    public static final String LORE_INFO = ITEM_TYPEDESC + GetText.tr("Info");
+    public static final String LORE_MOD = ITEM_TYPEDESC + GetText.tr("Modification");
+    public static final String LORE_PROP = ITEM_TYPEDESC + GetText.tr("Material Trait");
+    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + GetText.tr("Mutliblock");
 
     @Nonnull
     @ParametersAreNonnullByDefault

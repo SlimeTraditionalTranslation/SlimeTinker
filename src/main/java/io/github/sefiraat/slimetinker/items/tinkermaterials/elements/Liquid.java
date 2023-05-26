@@ -9,6 +9,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 public class Liquid {
 
@@ -28,8 +29,8 @@ public class Liquid {
             parent.getId() + "_LIQUID",
             texture,
             ThemeItemType.MOLTEN_METAL,
-            "Molten " + titName,
-            ThemeUtils.PASSIVE + "The molten form of " + titName
+            GetText.tr("Molten ") + titName,
+            ThemeUtils.PASSIVE + GetText.tr("The molten form of ") + titName
         );
 
         this.item = new SlimefunItem(ItemGroups.MOLTEN_METALS, itemStack, DummySmelteryMolten.TYPE, new ItemStack[]{

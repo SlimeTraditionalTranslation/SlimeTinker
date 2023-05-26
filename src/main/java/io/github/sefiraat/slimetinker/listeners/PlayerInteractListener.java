@@ -15,6 +15,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import static io.github.sefiraat.slimetinker.events.friend.EventChannels.checkArmour;
 import static io.github.sefiraat.slimetinker.events.friend.EventChannels.checkTool;
@@ -50,7 +51,7 @@ public class PlayerInteractListener implements Listener {
                 if (ItemUtils.isTinkersBroken(itemStack)) {
                     event.setCancelled(true);
                     event.getPlayer()
-                         .sendMessage(ThemeUtils.WARNING + "Your tool is broken, you should really repair it!");
+                         .sendMessage(ThemeUtils.WARNING + GetText.tr("Your tool is broken, you should really repair it!"));
                 } else {
                     Experience.addExp(itemStack, 1, event.getPlayer(), true);
                 }

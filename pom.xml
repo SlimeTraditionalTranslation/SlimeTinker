@@ -290,5 +290,11 @@
             <version>MODIFIED_1.0.7</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mini2Dx</groupId>
+            <artifactId>gettext-lib</artifactId>
+            <version>1.11.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

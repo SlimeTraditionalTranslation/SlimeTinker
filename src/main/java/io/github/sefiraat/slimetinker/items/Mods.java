@@ -9,6 +9,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 public final class Mods {
 
@@ -20,53 +21,53 @@ public final class Mods {
         "MOD_REDSTONE_DUMMY",
         Material.REDSTONE,
         ThemeItemType.MOD,
-        "Modification: Redstone",
-        ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-        ThemeUtils.PASSIVE + "will be given Haste matching the level",
-        ThemeUtils.PASSIVE + "of the modification."
+        GetText.tr("Modification: Redstone"),
+        ThemeUtils.PASSIVE + GetText.tr("When applied to a tool, the holder"),
+        ThemeUtils.PASSIVE + GetText.tr("will be given Haste matching the level"),
+        ThemeUtils.PASSIVE + GetText.tr("of the modification.")
     );
 
     public static final SlimefunItemStack MOD_LAPIS_DUMMY = ThemeUtils.themedItemStack(
         "MOD_LAPIS_DUMMY",
         Material.LAPIS_LAZULI,
         ThemeItemType.MOD,
-        "Modification: Lapis",
-        ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-        ThemeUtils.PASSIVE + "will drop bonus items from blocks or",
-        ThemeUtils.PASSIVE + "kills. Calculated after fortune/looting.",
-        ThemeUtils.PASSIVE + "10% per level."
+        GetText.tr("Modification: Lapis"),
+        ThemeUtils.PASSIVE + GetText.tr("When applied to a tool, the holder"),
+        ThemeUtils.PASSIVE + GetText.tr("will drop bonus items from blocks or"),
+        ThemeUtils.PASSIVE + GetText.tr("kills. Calculated after fortune/looting."),
+        ThemeUtils.PASSIVE + GetText.tr("10% per level.")
     );
 
     public static final SlimefunItemStack MOD_QUARTZ_DUMMY = ThemeUtils.themedItemStack(
         "MOD_QUARTZ_DUMMY",
         Material.QUARTZ,
         ThemeItemType.MOD,
-        "Modification: Quartz",
-        ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-        ThemeUtils.PASSIVE + "will deal bonus damage. Calculated after",
-        ThemeUtils.PASSIVE + "sharpness or other damage enchants.",
-        ThemeUtils.PASSIVE + "20% per level"
+        GetText.tr("Modification: Quartz"),
+        ThemeUtils.PASSIVE + GetText.tr("When applied to a tool, the holder"),
+        ThemeUtils.PASSIVE + GetText.tr("will deal bonus damage. Calculated after"),
+        ThemeUtils.PASSIVE + GetText.tr("sharpness or other damage enchants."),
+        ThemeUtils.PASSIVE + GetText.tr("20% per level")
     );
 
     public static final SlimefunItemStack MOD_DIAMOND_DUMMY = ThemeUtils.themedItemStack(
         "MOD_DIAMOND_DUMMY",
         Material.DIAMOND,
         ThemeItemType.MOD,
-        "Modification: Diamond",
-        ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-        ThemeUtils.PASSIVE + "has a chance to reflect damage taken",
-        ThemeUtils.PASSIVE + "back on to the attacker. 10% per level"
+        GetText.tr("Modification: Diamond"),
+        ThemeUtils.PASSIVE + GetText.tr("When applied to a tool, the holder"),
+        ThemeUtils.PASSIVE + GetText.tr("has a chance to reflect damage taken"),
+        ThemeUtils.PASSIVE + GetText.tr("back on to the attacker. 10% per level")
     );
 
     public static final SlimefunItemStack MOD_EMERALD_DUMMY = ThemeUtils.themedItemStack(
         "MOD_EMERALD_DUMMY",
         Material.EMERALD,
         ThemeItemType.MOD,
-        "Modification: Emerald",
-        ThemeUtils.PASSIVE + "When applied to a tool, the holder",
-        ThemeUtils.PASSIVE + "will gain bonus tool EXP per action",
-        ThemeUtils.PASSIVE + "undertaken. +1 exp for tools and 10%",
-        ThemeUtils.PASSIVE + "for weapons."
+        GetText.tr("Modification: Emerald"),
+        ThemeUtils.PASSIVE + GetText.tr("When applied to a tool, the holder"),
+        ThemeUtils.PASSIVE + GetText.tr("will gain bonus tool EXP per action"),
+        ThemeUtils.PASSIVE + GetText.tr("undertaken. +1 exp for tools and 10%"),
+        ThemeUtils.PASSIVE + GetText.tr("for weapons.")
     );
 
 
@@ -74,10 +75,10 @@ public final class Mods {
         "MOD_PLATE_DUMMY",
         Material.OBSIDIAN,
         ThemeItemType.MOD,
-        "Modification: Reinforced Plate",
-        ThemeUtils.PASSIVE + "A tool with this modification has a",
-        ThemeUtils.PASSIVE + "chance to not take durability damage. 10%",
-        ThemeUtils.PASSIVE + "per level - at Level 10 tools are unbreakable"
+        GetText.tr("Modification: Reinforced Plate"),
+        ThemeUtils.PASSIVE + GetText.tr("A tool with this modification has a"),
+        ThemeUtils.PASSIVE + GetText.tr("chance to not take durability damage. 10%"),
+        ThemeUtils.PASSIVE + GetText.tr("per level - at Level 10 tools are unbreakable")
     );
 
 

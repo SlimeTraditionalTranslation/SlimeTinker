@@ -10,6 +10,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.Persis
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -32,11 +33,11 @@ public class PartTemplate extends UnplaceableBlock {
     public List<String> getLore(String material, ChatColor color) {
         List<String> list = new ArrayList<>();
         list.add("");
-        list.add(ThemeUtils.PASSIVE + "A tool part. Useless on it's own but can");
-        list.add(ThemeUtils.PASSIVE + "be made into something greater at the");
-        list.add(ThemeUtils.PASSIVE + "Tinker's table.");
+        list.add(ThemeUtils.PASSIVE + GetText.tr("A tool part. Useless on it's own but can"));
+        list.add(ThemeUtils.PASSIVE + GetText.tr("be made into something greater at the"));
+        list.add(ThemeUtils.PASSIVE + GetText.tr("Tinker's table."));
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "Material : " + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + GetText.tr("Material : ") + color + ThemeUtils.toTitleCase(material));
         return list;
     }
 

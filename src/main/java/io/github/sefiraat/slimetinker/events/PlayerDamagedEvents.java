@@ -33,6 +33,7 @@ import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -122,10 +123,10 @@ public final class PlayerDamagedEvents {
                 p.getWorld().spawnParticle(Particle.REDSTONE, p.getLocation(), 30, 3, 3, 3, 1, dustOptions2);
                 Particle.DustOptions dustOptions3 = new Particle.DustOptions(Color.fromRGB(40, 40, 40), 2);
                 p.getWorld().spawnParticle(Particle.REDSTONE, p.getLocation(), 30, 3, 3, 3, 1, dustOptions3);
-                p.sendMessage(ThemeUtils.WARNING + "Protective has saved you from death. It's now on cooldown - take care!");
+                p.sendMessage(ThemeUtils.WARNING + GetText.tr("Protective has saved you from death. It's now on cooldown - take care!"));
                 ItemUtils.setCooldown(i, "PROTECTIVE", 1200000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "Skill is on cooldown");
+                p.sendMessage(ThemeUtils.WARNING + GetText.tr("Skill is on cooldown"));
             }
 
         }

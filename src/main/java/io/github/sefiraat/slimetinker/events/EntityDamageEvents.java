@@ -30,6 +30,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.List;
 import java.util.Set;
@@ -53,7 +54,7 @@ public final class EntityDamageEvents {
     }
 
     public static void headNice(EventFriend friend) {
-        friend.getPlayer().sendMessage(ThemeUtils.WARNING + "Nice");
+        friend.getPlayer().sendMessage(ThemeUtils.WARNING + GetText.tr("Nice"));
     }
 
     public static void headAluBrass(EventFriend friend) {
@@ -369,7 +370,7 @@ public final class EntityDamageEvents {
             friend.getDamagedEntity().teleport(friend.getDamagedEntity().getLocation().clone().setDirection(friend.getPlayer().getLocation().getDirection()));
             ItemUtils.setCooldown(i, "WARP", 20000);
         } else {
-            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "This skill is on cooldown");
+            friend.getPlayer().sendMessage(ThemeUtils.WARNING + GetText.tr("This skill is on cooldown"));
         }
 
     }

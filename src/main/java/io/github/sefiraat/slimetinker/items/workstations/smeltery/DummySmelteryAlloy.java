@@ -6,6 +6,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.Material;
+import org.mini2Dx.gettext.GetText;
 
 public final class DummySmelteryAlloy {
 
@@ -13,10 +14,10 @@ public final class DummySmelteryAlloy {
         "DUMMY_TINKERS_SMELTERY_ALLOY",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "Tinker's Smeltery",
-        "This alloy is made in the Tinker's",
-        "Smeltery by inputting correct metal",
-        "types and clicking Alloy."
+        GetText.tr("Tinker's Smeltery"),
+        GetText.tr("This alloy is made in the Tinker's"),
+        GetText.tr("Smeltery by inputting correct metal"),
+        GetText.tr("types and clicking Alloy.")
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 

@@ -14,6 +14,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -118,10 +119,10 @@ public class MaterialTrait {
     public void setupTrait(@Nonnull TinkerMaterial parentCM) {
         List<String> newLore = new ArrayList<>(Arrays.asList(lore));
         newLore.add("");
-        newLore.add(ThemeUtils.ITEM_TYPEDESC + "Added by: " + addedBy);
+        newLore.add(ThemeUtils.ITEM_TYPEDESC + GetText.tr("Added by: ") + addedBy);
         if (this.sponsor != null) {
             newLore.add("");
-            newLore.add(ThemeUtils.ITEM_TYPEDESC + "Sponsored by: " + sponsor);
+            newLore.add(ThemeUtils.ITEM_TYPEDESC + GetText.tr("Sponsored by: ") + sponsor);
         }
         this.itemStack =
             ThemeUtils.themedItemStack(
@@ -133,7 +134,7 @@ public class MaterialTrait {
                 ),
                 getTraitTexture(addedBy),
                 ThemeItemType.PROP,
-                "Trait : " + traitName,
+                GetText.tr("Trait : ") + traitName,
                 newLore
             );
         this.item = new SlimefunItem(ItemGroups.TRAITS, itemStack, DummySmelteryTrait.TYPE, propRecipe(partType, parentCM.getRepresentativeStack()));
@@ -170,48 +171,48 @@ public class MaterialTrait {
         "PROP_HEAD",
         SkullTextures.PART_SWORD_BLADE,
         ThemeItemType.PART,
-        "Part: Head",
-        ThemeUtils.PASSIVE + "Any 'Head' item (Sword Blade, Axe Head etc.)"
+        GetText.tr("Part: Head"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Head' item (Sword Blade, Axe Head etc.)")
     );
 
     public static final SlimefunItemStack PROP_BINDING = ThemeUtils.themedItemStack(
         "PROP_BINDING",
         SkullTextures.PART_BINDING,
         ThemeItemType.PART,
-        "Part: Binder",
-        ThemeUtils.PASSIVE + "Any 'Binder' item."
+        GetText.tr("Part: Binder"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Binder' item.")
     );
 
     public static final SlimefunItemStack PROP_ROD = ThemeUtils.themedItemStack(
         "PROP_ROD",
         SkullTextures.PART_TOOL_ROD,
         ThemeItemType.PART,
-        "Part: Tool Rod",
-        ThemeUtils.PASSIVE + "Any 'Tool Rod' item."
+        GetText.tr("Part: Tool Rod"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Tool Rod' item.")
     );
 
     public static final SlimefunItemStack PROP_PLATES = ThemeUtils.themedItemStack(
         "PROP_PLATES",
         SkullTextures.PART_CHEST_PLATES,
         ThemeItemType.PART,
-        "Part: Plates",
-        ThemeUtils.PASSIVE + "Any 'Plate' item (Helm Plates, Boot Plates etc.)"
+        GetText.tr("Part: Plates"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Plate' item (Helm Plates, Boot Plates etc.)")
     );
 
     public static final SlimefunItemStack PROP_GAMBESON = ThemeUtils.themedItemStack(
         "PROP_GAMBESON",
         SkullTextures.PART_GAMBESON,
         ThemeItemType.PART,
-        "Part: Gambeson",
-        ThemeUtils.PASSIVE + "Any 'Gambeson' item."
+        GetText.tr("Part: Gambeson"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Gambeson' item.")
     );
 
     public static final SlimefunItemStack PROP_LINKS = ThemeUtils.themedItemStack(
         "PROP_LINKS",
         SkullTextures.PART_LINKS,
         ThemeItemType.PART,
-        "Part: Mail Links",
-        ThemeUtils.PASSIVE + "Any 'Mail Link' item."
+        GetText.tr("Part: Mail Links"),
+        ThemeUtils.PASSIVE + GetText.tr("Any 'Mail Link' item.")
     );
 
     @Nonnull

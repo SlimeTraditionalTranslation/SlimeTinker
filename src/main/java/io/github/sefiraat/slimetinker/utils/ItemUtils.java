@@ -21,6 +21,7 @@ import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -160,9 +161,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "H: " + formatMaterialName(matHead));
-        lore.add(ThemeUtils.CLICK_INFO + "B: " + formatMaterialName(matBind));
-        lore.add(ThemeUtils.CLICK_INFO + "R: " + formatMaterialName(matRod));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("H: ") + formatMaterialName(matHead));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("B: ") + formatMaterialName(matBind));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("R: ") + formatMaterialName(matRod));
         lore.add(ThemeUtils.getLine());
 
         // Material properties
@@ -185,9 +186,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsTool().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + GetText.tr(" Level ") + entry.getValue() + ThemeUtils.PASSIVE + GetText.tr(" - (") + mapAmounts.get(entry.getKey()) + GetText.tr("/") + amountRequired + GetText.tr(")"));
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + GetText.tr(" Level ") + entry.getValue() + ThemeUtils.PASSIVE + GetText.tr(" - (MAX)"));
             }
         }
         if (!mapLevels.isEmpty()) {
@@ -210,9 +211,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "P: " + formatMaterialName(matPlate));
-        lore.add(ThemeUtils.CLICK_INFO + "G: " + formatMaterialName(matGambeson));
-        lore.add(ThemeUtils.CLICK_INFO + "L: " + formatMaterialName(matLinks));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("P: ") + formatMaterialName(matPlate));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("G: ") + formatMaterialName(matGambeson));
+        lore.add(ThemeUtils.CLICK_INFO + GetText.tr("L: ") + formatMaterialName(matLinks));
         lore.add(ThemeUtils.getLine());
 
         // Material properties
@@ -235,9 +236,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsArmour().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + GetText.tr(" Level ") + entry.getValue() + ThemeUtils.PASSIVE + GetText.tr(" - (") + mapAmounts.get(entry.getKey()) + GetText.tr("/") + amountRequired + GetText.tr(")"));
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " Level " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + GetText.tr(" Level ") + entry.getValue() + ThemeUtils.PASSIVE + GetText.tr(" - (MAX)"));
             }
         }
         if (!mapLevels.isEmpty()) {
@@ -645,14 +646,14 @@ public final class ItemUtils {
 
     @Nonnull
     public static String getLoreExp(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Level: " +
+        return ThemeUtils.ITEM_TOOL + GetText.tr("Level: ") +
             ChatColor.WHITE + getTinkerLevel(c) +
-            ThemeUtils.PASSIVE + " (" + getTinkerExp(c) + " / " + getTinkerRequiredExp(c) + ")";
+            ThemeUtils.PASSIVE + GetText.tr(" (") + getTinkerExp(c) + GetText.tr(" / ") + getTinkerRequiredExp(c) + GetText.tr(")");
     }
 
     @Nonnull
     public static String getLoreModSlots(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Modifier Slots: " +
+        return ThemeUtils.ITEM_TOOL + GetText.tr("Modifier Slots: ") +
             ChatColor.WHITE + getTinkerModifierSlots(c);
     }
 

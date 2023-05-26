@@ -4,6 +4,7 @@ import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
+import org.mini2Dx.gettext.GetText;
 
 @SuppressWarnings("SpellCheckingInspection")
 public final class SupportedPluginsManager {
@@ -21,25 +22,25 @@ public final class SupportedPluginsManager {
 
     public static Plugin TRANSCENDENCE_PLUGIN;
 
-    public static final String CORE_NOTE = ThemeUtils.MAIN + "Core SlimeTinker";
-    public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + "Infinity Expansion";
-    public static final String SLIMEFUN_WARFARE_NOTE = ThemeUtils.ADD_SLIMEFUN_WARFARE + "Slimefun Warfare";
-    public static final String DYNATECH_NOTE = ThemeUtils.ADD_DYNATECH + "DynaTech";
-    public static final String LITEXPANSION_NOTE = ThemeUtils.ADD_LITEXPANSION + "LiteXpansion";
-    public static final String TRANSCENDENCE_NOTE = ThemeUtils.ADD_TRANSCENDENCE + "TranscEndence";
-    public static final String NETWORKS_NOTE = ThemeUtils.ADD_NETWORKS + "Networks";
+    public static final String CORE_NOTE = ThemeUtils.MAIN + GetText.tr("Core SlimeTinker");
+    public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + GetText.tr("Infinity Expansion");
+    public static final String SLIMEFUN_WARFARE_NOTE = ThemeUtils.ADD_SLIMEFUN_WARFARE + GetText.tr("Slimefun Warfare");
+    public static final String DYNATECH_NOTE = ThemeUtils.ADD_DYNATECH + GetText.tr("DynaTech");
+    public static final String LITEXPANSION_NOTE = ThemeUtils.ADD_LITEXPANSION + GetText.tr("LiteXpansion");
+    public static final String TRANSCENDENCE_NOTE = ThemeUtils.ADD_TRANSCENDENCE + GetText.tr("TranscEndence");
+    public static final String NETWORKS_NOTE = ThemeUtils.ADD_NETWORKS + GetText.tr("Networks");
 
     static {
         PluginManager pluginManager = SlimeTinker.getInstance().getServer().getPluginManager();
-        INFINITY_EXPANSION = pluginManager.isPluginEnabled("InfinityExpansion");
-        SLIMEFUN_WARFARE = pluginManager.isPluginEnabled("SlimefunWarfare");
-        DYNATECH = pluginManager.isPluginEnabled("DynaTech");
-        LITEXPANSION = pluginManager.isPluginEnabled("LiteXpansion");
-        TRANSCENDENCE = pluginManager.isPluginEnabled("TranscEndence");
-        NETWORKS = pluginManager.isPluginEnabled("Networks");
+        INFINITY_EXPANSION = pluginManager.isPluginEnabled(GetText.tr("InfinityExpansion"));
+        SLIMEFUN_WARFARE = pluginManager.isPluginEnabled(GetText.tr("SlimefunWarfare"));
+        DYNATECH = pluginManager.isPluginEnabled(GetText.tr("DynaTech"));
+        LITEXPANSION = pluginManager.isPluginEnabled(GetText.tr("LiteXpansion"));
+        TRANSCENDENCE = pluginManager.isPluginEnabled(GetText.tr("TranscEndence"));
+        NETWORKS = pluginManager.isPluginEnabled(GetText.tr("Networks"));
 
         if (TRANSCENDENCE) {
-            TRANSCENDENCE_PLUGIN = pluginManager.getPlugin("TranscEndence");
+            TRANSCENDENCE_PLUGIN = pluginManager.getPlugin(GetText.tr("TranscEndence"));
         }
     }
 

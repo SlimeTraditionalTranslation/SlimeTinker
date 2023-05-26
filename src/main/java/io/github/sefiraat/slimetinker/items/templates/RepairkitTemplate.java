@@ -12,6 +12,7 @@ import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +40,10 @@ public class RepairkitTemplate extends UnplaceableBlock {
     public List<String> getLore(String material, ChatColor color) {
         List<String> list = new ArrayList<>();
         list.add("");
-        list.add(ThemeUtils.PASSIVE + "A repair kit. Used in the Repair Bench");
-        list.add(ThemeUtils.PASSIVE + "to mend tools with a matching head-metal.");
+        list.add(ThemeUtils.PASSIVE + GetText.tr("A repair kit. Used in the Repair Bench"));
+        list.add(ThemeUtils.PASSIVE + GetText.tr("to mend tools with a matching head-metal."));
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "Material : " + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + GetText.tr("Material : ") + color + ThemeUtils.toTitleCase(material));
         return list;
     }
 

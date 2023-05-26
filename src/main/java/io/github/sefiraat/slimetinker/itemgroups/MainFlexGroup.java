@@ -17,6 +17,7 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.mini2Dx.gettext.GetText;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -24,12 +25,12 @@ public class MainFlexGroup extends FlexItemGroup {
 
     private static final ItemStack DOCS_ITEM_STACK = new CustomItemStack(
         Material.BOOK,
-        ThemeUtils.GUIDE + "Documentation Wiki",
-        ThemeUtils.PASSIVE + "Click to get the link to the",
-        ThemeUtils.PASSIVE + "documentation Wiki for SlimeTinker",
-        ThemeUtils.PASSIVE + "and other Sefiraat addons.",
+        ThemeUtils.GUIDE + GetText.tr("Documentation Wiki"),
+        ThemeUtils.PASSIVE + GetText.tr("Click to get the link to the"),
+        ThemeUtils.PASSIVE + GetText.tr("documentation Wiki for SlimeTinker"),
+        ThemeUtils.PASSIVE + GetText.tr("and other Sefiraat addons."),
         "",
-        ThemeUtils.CLICK_INFO + "Guide"
+        ThemeUtils.CLICK_INFO + GetText.tr("Guide")
     );
 
     private static final int GUIDE_BACK = 1;
@@ -104,9 +105,9 @@ public class MainFlexGroup extends FlexItemGroup {
         // Docs
         menu.replaceExistingItem(DOCS, DOCS_ITEM_STACK);
         menu.addMenuClickHandler(DOCS, (player1, i1, itemStack1, clickAction) -> {
-            final TextComponent link = new TextComponent("To access the documentation Wiki, please click here");
+            final TextComponent link = new TextComponent(GetText.tr("To access the documentation Wiki, please click here"));
             link.setColor(ChatColor.YELLOW);
-            link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sefiraat.dev/"));
+            link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, GetText.tr("https://sefiraat.dev/")));
             player.spigot().sendMessage(link);
             return false;
         });

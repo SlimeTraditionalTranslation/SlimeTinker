@@ -16,6 +16,7 @@ import org.bukkit.block.Block;
 import org.bukkit.inventory.FurnaceRecipe;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
+import org.mini2Dx.gettext.GetText;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,7 +34,7 @@ public final class BlockBreakEvents {
     }
 
     public static void headNice(EventFriend friend) {
-        friend.getPlayer().sendMessage(ThemeUtils.WARNING + "Nice");
+        friend.getPlayer().sendMessage(ThemeUtils.WARNING + GetText.tr("Nice"));
     }
 
     public static void headCorbronze(EventFriend friend) {
